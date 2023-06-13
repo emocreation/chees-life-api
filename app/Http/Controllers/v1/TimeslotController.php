@@ -19,7 +19,7 @@ class TimeslotController extends Controller
     public function index()
     {
         $data = Timeslot::enabled()
-            ->availableDate()
+            ->availableDates()
             ->availableQuotas()
             ->sortDate()
             ->with('timeslot_quotas')
