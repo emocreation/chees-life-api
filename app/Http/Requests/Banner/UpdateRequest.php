@@ -2,7 +2,6 @@
 
 namespace App\Http\Requests\Banner;
 
-use Astrotomic\Translatable\Validation\RuleFactory;
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
 use Knuckles\Scribe\Attributes\BodyParam;

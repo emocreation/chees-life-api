@@ -14,13 +14,13 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Role
- * 
+ *
  * @property int $id
  * @property string $name
  * @property string $guard_name
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * 
+ *
  * @property Collection|ModelHasRole[] $model_has_roles
  * @property Collection|Permission[] $permissions
  *
@@ -28,15 +28,15 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Role extends Model
 {
-	protected $table = 'roles';
+    protected $table = 'roles';
 
-	public function model_has_roles()
-	{
-		return $this->hasMany(ModelHasRole::class);
-	}
+    public function model_has_roles()
+    {
+        return $this->hasMany(ModelHasRole::class);
+    }
 
-	public function permissions()
-	{
-		return $this->belongsToMany(Permission::class, 'role_has_permissions');
-	}
+    public function permissions()
+    {
+        return $this->belongsToMany(Permission::class, 'role_has_permissions');
+    }
 }

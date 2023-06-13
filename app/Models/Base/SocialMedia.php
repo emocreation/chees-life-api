@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class SocialMedia
- * 
+ *
  * @property int $id
  * @property int $type
  * @property string|null $link
@@ -23,10 +23,10 @@ use Illuminate\Database\Eloquent\Model;
  */
 class SocialMedia extends Model
 {
-	protected $table = 'social_medias';
+    protected $table = 'social_medias';
 
-	protected $casts = [
-		'type' => 'int',
-		'enable' => 'bool'
-	];
+    protected $casts = [
+        'type' => 'int',
+        'enable' => 'bool'
+    ];
 }

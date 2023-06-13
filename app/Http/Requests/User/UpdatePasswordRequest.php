@@ -4,7 +4,6 @@ namespace App\Http\Requests\User;
 
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Validation\Rule;
 use Knuckles\Scribe\Attributes\BodyParam;
 
 #[BodyParam('currentPassword', 'string', required: true)]

@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Models\Base\Banner as BaseBanner;
 use App\Traits\Searchable;
+use Illuminate\Database\Eloquent\Builder;
 use Spatie\Image\Manipulations;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
@@ -13,16 +14,14 @@ class Banner extends BaseBanner implements HasMedia
 {
     use InteractsWithMedia, Searchable;
 
+    public array $searchable = [
+        'id', 'sequence', 'enable'
+    ];
     protected $fillable = [
         'sequence',
         'enable'
     ];
-
     protected $appends = ['image_url', 'preview_url', 'optimized_url'];
-
-    public array $searchable = [
-        'id', 'sequence', 'enable'
-    ];
 
     protected static function boot()
     {
@@ -47,7 +46,7 @@ class Banner extends BaseBanner implements HasMedia
 
     public function getImageUrlAttribute()
     {
-        return $this->getFirstMediaUrl();
+        return $this->getFirstMediaUrl() !== '' ? $this->getFirstMediaUrl() : null;
     }
 
     public function getPreviewUrlAttribute()
@@ -58,5 +57,15 @@ class Banner extends BaseBanner implements HasMedia
     public function getOptimizedUrlAttribute()
     {
         return $this->getFirstMedia() !== null ? $this->getFirstMedia()->getUrl('optimized') : null;
+    }
+
+    public function scopeEnabled(Builder $query): void
+    {
+        $query->where('enable', 1);
+    }
+
+    public function scopeSequence(Builder $query): void
+    {
+        $query->orderByDesc('sequence');
     }
 }

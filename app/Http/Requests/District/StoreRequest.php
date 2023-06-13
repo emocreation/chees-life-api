@@ -5,7 +5,6 @@ namespace App\Http\Requests\District;
 use Astrotomic\Translatable\Validation\RuleFactory;
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
-use Knuckles\Scribe\Attributes\BodyParam;
 
 class StoreRequest extends FormRequest
 {

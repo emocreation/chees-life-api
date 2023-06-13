@@ -13,31 +13,14 @@ class CustomPathGenerator implements PathGenerator
      */
     public function getPath(Media $media): string
     {
-        $prefix = Str::lower(Str::after($media->getAttributes()['model_type'],'Models\\'));
+        $prefix = Str::lower(Str::after($media->getAttributes()['model_type'], 'Models\\'));
         return $prefix . '/' . $this->getBasePath($media) . '/';
     }
 
     /*
      * Get the path for conversions of the given media, relative to the root storage path.
      */
-    public function getPathForConversions(Media $media): string
-    {
-        $prefix = Str::lower(Str::after($media->getAttributes()['model_type'],'Models\\'));
-        return $prefix . '/' .$this->getBasePath($media) . '/c/';
-    }
 
-    /*
-     * Get the path for responsive images of the given media, relative to the root storage path.
-     */
-    public function getPathForResponsiveImages(Media $media): string
-    {
-        $prefix = Str::lower(Str::after($media->getAttributes()['model_type'],'Models\\'));
-        return $prefix . '/' .$this->getBasePath($media) . '/r/';
-    }
-
-    /*
-     * Get a unique base path for the given media.
-     */
     protected function getBasePath(Media $media): string
     {
         $prefix = config('media-library.prefix', '');
@@ -47,5 +30,25 @@ class CustomPathGenerator implements PathGenerator
         }
 
         return $media->getKey();
+    }
+
+    /*
+     * Get the path for responsive images of the given media, relative to the root storage path.
+     */
+
+    public function getPathForConversions(Media $media): string
+    {
+        $prefix = Str::lower(Str::after($media->getAttributes()['model_type'], 'Models\\'));
+        return $prefix . '/' . $this->getBasePath($media) . '/c/';
+    }
+
+    /*
+     * Get a unique base path for the given media.
+     */
+
+    public function getPathForResponsiveImages(Media $media): string
+    {
+        $prefix = Str::lower(Str::after($media->getAttributes()['model_type'], 'Models\\'));
+        return $prefix . '/' . $this->getBasePath($media) . '/r/';
     }
 }

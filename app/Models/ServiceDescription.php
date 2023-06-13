@@ -11,8 +11,8 @@ class ServiceDescription extends BaseServiceDescription implements TranslatableC
     use Translatable;
 
     public array $translatedAttributes = ['description'];
-    protected $fillable = ['service_id', 'sequence'];
     public array $searchable = ['description'];
+    protected $fillable = ['service_id', 'sequence'];
 
     protected static function boot()
     {

@@ -6,6 +6,7 @@
 
 namespace App\Models\Base;
 
+use App\Models\Customer;
 use App\Models\CustomerHistoryDetail;
 use App\Models\CustomerHistoryTranslation;
 use Carbon\Carbon;
@@ -14,8 +15,9 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class CustomerHistory
- * 
+ *
  * @property int $id
+ * @property int|null $customer_id
  * @property string $name
  * @property string $gender
  * @property Carbon $birthday
@@ -29,14 +31,16 @@ use Illuminate\Database\Eloquent\Model;
  * @property float $height
  * @property float $weight
  * @property Carbon $blood_date
- * @property Carbon $blood_time
+ * @property string $blood_time
  * @property string $address
  * @property string $report
  * @property string|null $remark
+ * @property string|null $stripe_id
  * @property bool $paid
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * 
+ *
+ * @property Customer|null $customer
  * @property Collection|CustomerHistoryDetail[] $customer_history_details
  * @property Collection|CustomerHistoryTranslation[] $customer_history_translations
  *
@@ -44,27 +48,32 @@ use Illuminate\Database\Eloquent\Model;
  */
 class CustomerHistory extends Model
 {
-	protected $table = 'customer_histories';
+    protected $table = 'customer_histories';
 
-	protected $casts = [
-		'birthday' => 'datetime',
-		'covid_diagnosed' => 'bool',
-		'covid_close_contacts' => 'bool',
-		'covid_date' => 'datetime',
-		'height' => 'float',
-		'weight' => 'float',
-		'blood_date' => 'datetime',
-		'blood_time' => 'datetime',
-		'paid' => 'bool'
-	];
+    protected $casts = [
+        'customer_id' => 'int',
+        'birthday' => 'datetime',
+        'covid_diagnosed' => 'bool',
+        'covid_close_contacts' => 'bool',
+        'covid_date' => 'datetime',
+        'height' => 'float',
+        'weight' => 'float',
+        'blood_date' => 'datetime',
+        'paid' => 'bool'
+    ];
 
-	public function customer_history_details()
-	{
-		return $this->hasMany(CustomerHistoryDetail::class);
-	}
+    public function customer()
+    {
+        return $this->belongsTo(Customer::class);
+    }
 
-	public function customer_history_translations()
-	{
-		return $this->hasMany(CustomerHistoryTranslation::class);
-	}
+    public function customer_history_details()
+    {
+        return $this->hasMany(CustomerHistoryDetail::class);
+    }
+
+    public function customer_history_translations()
+    {
+        return $this->hasMany(CustomerHistoryTranslation::class);
+    }
 }

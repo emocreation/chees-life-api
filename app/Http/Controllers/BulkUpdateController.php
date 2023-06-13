@@ -28,6 +28,15 @@ class BulkUpdateController extends Controller
         $this->middleware('permission:update#social_media')->only('socialMedia');
     }
 
+    #[Subgroup("Banners")]
+    #[Endpoint('Bulk Update Banner', 'Bulk update banners param or delete on listing page')]
+    public function banner(BulkUpdateRequest $request)
+    {
+        $validated = $request->validated();
+        $this->bulkUpdate($validated, Banner::class);
+        $this->success();
+    }
+
     private function bulkUpdate($validated, $model)
     {
         $ids = $validated->ids ?? [];
@@ -42,15 +51,6 @@ class BulkUpdateController extends Controller
                 }
             }
         }
-    }
-
-    #[Subgroup("Banners")]
-    #[Endpoint('Bulk Update Banner', 'Bulk update banners param or delete on listing page')]
-    public function banner(BulkUpdateRequest $request)
-    {
-        $validated = $request->validated();
-        $this->bulkUpdate($validated, Banner::class);
-        $this->success();
     }
 
     #[Subgroup("Categories")]

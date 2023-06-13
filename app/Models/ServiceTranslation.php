@@ -6,10 +6,10 @@ use App\Models\Base\ServiceTranslation as BaseServiceTranslation;
 
 class ServiceTranslation extends BaseServiceTranslation
 {
-	protected $fillable = [
-		'service_id',
-		'locale',
-		'title',
-		'subtitle'
-	];
+    protected $fillable = [
+        'service_id',
+        'locale',
+        'title',
+        'subtitle'
+    ];
 }

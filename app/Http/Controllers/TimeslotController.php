@@ -61,22 +61,6 @@ class TimeslotController extends Controller
         return $this->success();
     }
 
-    #[Endpoint('User Update', 'User update')]
-    public function update(UpdateRequest $request, Timeslot $timeslot)
-    {
-        $validated = $request->validated();
-        $timeslot->update($validated);
-        $this->updateRelation($timeslot, 'timeslot_quotas', $validated['timeslot_quotas'] ?? []);
-        return $this->success(data: $timeslot->load('timeslot_quotas'));
-    }
-
-    #[Endpoint('User Delete', 'User delete')]
-    public function destroy(DestroyRequest $request, Timeslot $timeslot)
-    {
-        $timeslot->delete();
-        return $this->success();
-    }
-
     private function getTimeSlots(string $start = '09:00:00', string $end = '19:00:00', string $interval = '30', int $quota = 0): array
     {
         $start_str = strtotime($start);
@@ -97,6 +81,15 @@ class TimeslotController extends Controller
         return $data;
     }
 
+    #[Endpoint('User Update', 'User update')]
+    public function update(UpdateRequest $request, Timeslot $timeslot)
+    {
+        $validated = $request->validated();
+        $timeslot->update($validated);
+        $this->updateRelation($timeslot, 'timeslot_quotas', $validated['timeslot_quotas'] ?? []);
+        return $this->success(data: $timeslot->load('timeslot_quotas'));
+    }
+
     private function updateRelation(Timeslot $model, string $relation, array $validated)
     {
         if ($validated === []) {
@@ -108,5 +101,12 @@ class TimeslotController extends Controller
                 $model->$relation()->updateOrCreate(['id' => $data['id'] ?? null], Arr::except($data, ['id']));
             }
         }
+    }
+
+    #[Endpoint('User Delete', 'User delete')]
+    public function destroy(DestroyRequest $request, Timeslot $timeslot)
+    {
+        $timeslot->delete();
+        return $this->success();
     }
 }

@@ -6,15 +6,15 @@
 
 namespace App\Models\Base;
 
+use App\Models\CustomerHistory;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
 /**
  * Class Customer
- * 
+ *
  * @property int $id
- * @property int|null $customer_id
  * @property string $name
  * @property string $gender
  * @property Carbon $birthday
@@ -24,31 +24,25 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $password
  * @property string|null $address
  * @property Carbon|null $email_verified_at
+ * @property string|null $token
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * 
- * @property \App\Models\Customer|null $customer
- * @property Collection|\App\Models\Customer[] $customers
+ *
+ * @property Collection|CustomerHistory[] $customer_histories
  *
  * @package App\Models\Base
  */
-class Customer extends Model
+class Customer extends Authenticatable
 {
-	protected $table = 'customers';
+    protected $table = 'customers';
 
-	protected $casts = [
-		'customer_id' => 'int',
-		'birthday' => 'datetime',
-		'email_verified_at' => 'datetime'
-	];
+    protected $casts = [
+        'birthday' => 'datetime',
+        'email_verified_at' => 'datetime'
+    ];
 
-	public function customer()
-	{
-		return $this->belongsTo(\App\Models\Customer::class);
-	}
-
-	public function customers()
-	{
-		return $this->hasMany(\App\Models\Customer::class);
-	}
+    public function customer_histories()
+    {
+        return $this->hasMany(CustomerHistory::class);
+    }
 }

@@ -6,11 +6,12 @@ use App\Models\Base\PasswordResetToken as BasePasswordResetToken;
 
 class PasswordResetToken extends BasePasswordResetToken
 {
-	protected $hidden = [
-		'token'
-	];
+    protected $hidden = [
+        'token'
+    ];
 
-	protected $fillable = [
-		'token'
-	];
+    protected $fillable = [
+        'email',
+        'token'
+    ];
 }

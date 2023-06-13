@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Customer;
 use App\Models\Role;
 use Illuminate\Http\Request;
@@ -27,6 +28,16 @@ class OptionController extends Controller
     public function permission()
     {
         return $this->success(data: Permission::all()->pluck('name'));
+    }
+
+    #[Subgroup('Categories')]
+    #[Endpoint('Options', 'List out all records for select options')]
+    public function category()
+    {
+        $data = Category::all()->map(function ($row) {
+            return ['id' => $row->id, 'name' => $row->name];
+        });
+        return $this->success(data: $data);
     }
 
     #[Subgroup('Customers')]

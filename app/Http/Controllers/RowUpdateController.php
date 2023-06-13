@@ -23,6 +23,15 @@ class RowUpdateController extends Controller
         $this->middleware('permission:update#service')->only('service');
     }
 
+    #[Subgroup("Banners")]
+    #[Endpoint('Row Update Banner', 'Datatable row update banner sequence')]
+    public function banner(RowUpdateRequest $request)
+    {
+        $validated = $request->validated();
+        $this->rowUpdate($validated['id'], $validated['sequence'], Banner::class);
+        $this->success();
+    }
+
     private function rowUpdate($id, $sequence, $model)
     {
         $record = $model::find($id);
@@ -46,15 +55,6 @@ class RowUpdateController extends Controller
             }
             $record->update(['sequence' => $new_sequence]);
         }
-    }
-
-    #[Subgroup("Banners")]
-    #[Endpoint('Row Update Banner', 'Datatable row update banner sequence')]
-    public function banner(RowUpdateRequest $request)
-    {
-        $validated = $request->validated();
-        $this->rowUpdate($validated['id'], $validated['sequence'], Banner::class);
-        $this->success();
     }
 
     #[Subgroup("Categories")]

@@ -1,0 +1,2428 @@
+name: 'Frontend API'
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - POST
+    uri: api/v1/auth/register
+    metadata:
+      groupName: 'Frontend API'
+      groupDescription: ''
+      subgroup: Auth
+      subgroupDescription: ''
+      title: Register
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: ''
+        required: true
+        example: deleniti
+        type: string
+        custom: []
+      gender:
+        name: gender
+        description: 'Must be one of <code>F</code> or <code>M</code>.'
+        required: true
+        example: M
+        type: string
+        custom: []
+      birthday:
+        name: birthday
+        description: 'Must be a valid date.'
+        required: true
+        example: '2023-06-13T03:13:53'
+        type: string
+        custom: []
+      hkid:
+        name: hkid
+        description: ''
+        required: true
+        example: sunt
+        type: string
+        custom: []
+      tel:
+        name: tel
+        description: ''
+        required: true
+        example: consequatur
+        type: string
+        custom: []
+      email:
+        name: email
+        description: ''
+        required: true
+        example: oma.stroman@example.net
+        type: string
+        custom: []
+      password:
+        name: password
+        description: ''
+        required: true
+        example: ',:k){T4ed`FfX6/XF<'
+        type: string
+        custom: []
+    cleanBodyParameters:
+      name: deleniti
+      gender: M
+      birthday: '2023-06-13T03:13:53'
+      hkid: sunt
+      tel: consequatur
+      email: oma.stroman@example.net
+      password: ',:k){T4ed`FfX6/XF<'
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/v1/auth/login
+    metadata:
+      groupName: 'Frontend API'
+      groupDescription: ''
+      subgroup: Auth
+      subgroupDescription: ''
+      title: Login
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      email:
+        name: email
+        description: ''
+        required: true
+        example: helen.bahringer@example.org
+        type: string
+        custom: []
+      password:
+        name: password
+        description: ''
+        required: true
+        example: "B10~]aj3JFXhYNuS$'}"
+        type: string
+        custom: []
+    cleanBodyParameters:
+      email: helen.bahringer@example.org
+      password: "B10~]aj3JFXhYNuS$'}"
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/auth/verify/{token}'
+    metadata:
+      groupName: 'Frontend API'
+      groupDescription: ''
+      subgroup: Auth
+      subgroupDescription: ''
+      title: 'Verify Email'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters:
+      token:
+        name: token
+        description: ''
+        required: true
+        example: eum
+        type: string
+        custom: []
+    cleanUrlParameters:
+      token: eum
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 400
+        content: '{"message":"Invalid Token","data":null}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '59'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/v1/auth/verify
+    metadata:
+      groupName: 'Frontend API'
+      groupDescription: ''
+      subgroup: Auth
+      subgroupDescription: ''
+      title: 'Resend Verification Email'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      email:
+        name: email
+        description: ''
+        required: true
+        example: pschimmel@example.net
+        type: string
+        custom: []
+    cleanBodyParameters:
+      email: pschimmel@example.net
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/v1/auth/reset_password
+    metadata:
+      groupName: 'Frontend API'
+      groupDescription: ''
+      subgroup: Auth
+      subgroupDescription: ''
+      title: 'Send Reset Password Email'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      email:
+        name: email
+        description: ''
+        required: true
+        example: jhaley@example.com
+        type: string
+        custom: []
+    cleanBodyParameters:
+      email: jhaley@example.com
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: 'api/v1/auth/reset_password/{token}'
+    metadata:
+      groupName: 'Frontend API'
+      groupDescription: ''
+      subgroup: Auth
+      subgroupDescription: ''
+      title: 'Reset Password'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters:
+      token:
+        name: token
+        description: ''
+        required: true
+        example: quasi
+        type: string
+        custom: []
+    cleanUrlParameters:
+      token: quasi
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      password:
+        name: password
+        description: ''
+        required: true
+        example: RY>+3.c
+        type: string
+        custom: []
+    cleanBodyParameters:
+      password: RY>+3.c
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/auth/logout
+    metadata:
+      groupName: 'Frontend API'
+      groupDescription: ''
+      subgroup: Auth
+      subgroupDescription: ''
+      title: Logout
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer PvVDa16ehck6dEbgf4Z83a5'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/users
+    metadata:
+      groupName: 'Frontend API'
+      groupDescription: ''
+      subgroup: User
+      subgroupDescription: ''
+      title: 'User Info'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer k6vVbePZfDga81c45a6E3dh'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/users/histories
+    metadata:
+      groupName: 'Frontend API'
+      groupDescription: ''
+      subgroup: User
+      subgroupDescription: ''
+      title: 'User Order History'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 3Za14f6bDVakvg56Pc8hedE'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+    uri: api/v1/users
+    metadata:
+      groupName: 'Frontend API'
+      groupDescription: ''
+      subgroup: User
+      subgroupDescription: ''
+      title: 'User Update'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: ''
+        required: true
+        example: animi
+        type: string
+        custom: []
+      gender:
+        name: gender
+        description: 'Must be one of <code>F</code> or <code>M</code>.'
+        required: true
+        example: M
+        type: string
+        custom: []
+      birthday:
+        name: birthday
+        description: 'Must be a valid date.'
+        required: true
+        example: '2023-06-13T03:13:53'
+        type: string
+        custom: []
+      hkid:
+        name: hkid
+        description: ''
+        required: true
+        example: id
+        type: string
+        custom: []
+      tel:
+        name: tel
+        description: ''
+        required: true
+        example: vel
+        type: string
+        custom: []
+      password:
+        name: password
+        description: ''
+        required: false
+        example: ']xZ*/5y)b;^An%GhTJ'
+        type: string
+        custom: []
+      address:
+        name: address
+        description: ''
+        required: false
+        example: sint
+        type: string
+        custom: []
+    cleanBodyParameters:
+      name: animi
+      gender: M
+      birthday: '2023-06-13T03:13:53'
+      hkid: id
+      tel: vel
+      password: ']xZ*/5y)b;^An%GhTJ'
+      address: sint
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer bEcd6hVf3ake6a1g54PDv8Z'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/home
+    metadata:
+      groupName: 'Frontend API'
+      groupDescription: ''
+      subgroup: Home
+      subgroupDescription: ''
+      title: Home
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":{"categories":[{"id":2,"slug":null,"name":"voluptatem222"},{"id":1,"slug":"body-check","name":"\u81ea\u4e3b\u9ad4\u6aa2\u7d44\u5408"}],"banners":[{"id":6,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/4\/logo.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/4\/c\/logo-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/4\/c\/logo-optimized.jpg"},{"id":7,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/5\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/5\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/5\/c\/blank-optimized.jpg"},{"id":8,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/6\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/6\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/6\/c\/blank-optimized.jpg"},{"id":9,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/7\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/7\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/7\/c\/blank-optimized.jpg"},{"id":10,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/8\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/8\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/8\/c\/blank-optimized.jpg"},{"id":11,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/9\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/9\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/9\/c\/blank-optimized.jpg"},{"id":12,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/10\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/10\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/10\/c\/blank-optimized.jpg"},{"id":13,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/11\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/11\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/11\/c\/blank-optimized.jpg"},{"id":14,"image_url":null,"preview_url":null,"optimized_url":null},{"id":15,"image_url":null,"preview_url":null,"optimized_url":null},{"id":16,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/12\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/12\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/12\/c\/blank-optimized.jpg"},{"id":17,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/13\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/13\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/13\/c\/blank-optimized.jpg"},{"id":18,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/14\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/14\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/14\/c\/blank-optimized.jpg"},{"id":19,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/15\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/15\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/15\/c\/blank-optimized.jpg"},{"id":20,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/16\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/16\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/16\/c\/blank-optimized.jpg"},{"id":21,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/17\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/17\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/17\/c\/blank-optimized.jpg"},{"id":22,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/18\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/18\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/18\/c\/blank-optimized.jpg"},{"id":23,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/19\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/19\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/19\/c\/blank-optimized.jpg"},{"id":24,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/20\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/20\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/20\/c\/blank-optimized.jpg"},{"id":25,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/21\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/21\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/21\/c\/blank-optimized.jpg"},{"id":26,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/22\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/22\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/22\/c\/blank-optimized.jpg"},{"id":27,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/23\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/23\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/23\/c\/blank-optimized.jpg"},{"id":28,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/24\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/24\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/24\/c\/blank-optimized.jpg"},{"id":29,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/25\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/25\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/25\/c\/blank-optimized.jpg"},{"id":30,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/26\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/26\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/26\/c\/blank-optimized.jpg"},{"id":31,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/27\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/27\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/27\/c\/blank-optimized.jpg"},{"id":32,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/28\/jHnaG9TQsIU8VfTt0W3GRwOma5SSwQyC7tcxRZqX","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/28\/c\/jHnaG9TQsIU8VfTt0W3GRwOma5SSwQyC7tcxRZqX-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/28\/c\/jHnaG9TQsIU8VfTt0W3GRwOma5SSwQyC7tcxRZqX-optimized.jpg"},{"id":33,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/29\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/29\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/29\/c\/blank-optimized.jpg"},{"id":34,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/30\/2k_demo.jpg","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/30\/c\/2k_demo-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/30\/c\/2k_demo-optimized.jpg"},{"id":35,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/31\/61EjJ8sdyISo9lNn1Ya7TvOW5MWdMs6TaeTR88qu","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/31\/c\/61EjJ8sdyISo9lNn1Ya7TvOW5MWdMs6TaeTR88qu-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/31\/c\/61EjJ8sdyISo9lNn1Ya7TvOW5MWdMs6TaeTR88qu-optimized.jpg"},{"id":36,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/32\/PT3DZLcBCryjZRGA","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/32\/c\/PT3DZLcBCryjZRGA-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/32\/c\/PT3DZLcBCryjZRGA-optimized.jpg"},{"id":37,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/33\/ayjZzoHIczImCqtB.jpg","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/33\/c\/ayjZzoHIczImCqtB-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/33\/c\/ayjZzoHIczImCqtB-optimized.jpg"}],"services":[{"id":1,"slug":"en-title","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[],"image_url":null,"preview_url":null,"optimized_url":null},{"id":2,"slug":"en-title","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":1,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":3,"slug":"en-title","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":2,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":4,"slug":"en-title","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":3,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":5,"slug":"en-title","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":4,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":6,"slug":"en-title-2","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":5,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":7,"slug":"en-title-3","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":6,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":8,"slug":"en-title-4","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":7,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":9,"slug":"en-title-5","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":8,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":10,"slug":"en-titleddd","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[{"id":76,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":11,"slug":"en-title-7","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":10,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":12,"slug":"en-title-8","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":11,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":13,"slug":"en-title-9","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":12,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":14,"slug":"en-title-10","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":13,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":15,"slug":"en-title-11","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":14,"description":"en_description"}],"image_url":"https:\/\/chees-api.dev.com\/storage\/service\/34\/v85JulRWtzQBN4z0.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/service\/34\/c\/v85JulRWtzQBN4z0-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/service\/34\/c\/v85JulRWtzQBN4z0-optimized.jpg"},{"id":16,"slug":"en-title-12","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":15,"description":"en_description"}],"image_url":"https:\/\/chees-api.dev.com\/storage\/service\/35\/rjnmXQO6HOd901dB.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/service\/35\/c\/rjnmXQO6HOd901dB-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/service\/35\/c\/rjnmXQO6HOd901dB-optimized.jpg"},{"id":17,"slug":"en-title-13","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":16,"description":"en_description"}],"image_url":"https:\/\/chees-api.dev.com\/storage\/service\/36\/KEcaldzJpIKzRViz.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/service\/36\/c\/KEcaldzJpIKzRViz-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/service\/36\/c\/KEcaldzJpIKzRViz-optimized.jpg"},{"id":18,"slug":"en-title-14","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":17,"description":"en_description"}],"image_url":"https:\/\/chees-api.dev.com\/storage\/service\/37\/dS6omhDSby8GTSDY.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/service\/37\/c\/dS6omhDSby8GTSDY-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/service\/37\/c\/dS6omhDSby8GTSDY-optimized.jpg"},{"id":19,"slug":"en-title-15","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":18,"description":"en_description"}],"image_url":"https:\/\/chees-api.dev.com\/storage\/service\/38\/LtwgTzo7dqHBBLs0.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/service\/38\/c\/LtwgTzo7dqHBBLs0-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/service\/38\/c\/LtwgTzo7dqHBBLs0-optimized.jpg"},{"id":20,"slug":"en-titleddd-2","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[{"id":77,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":21,"slug":"en-titleddd-3","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[],"image_url":null,"preview_url":null,"optimized_url":null},{"id":22,"slug":"en-titleddd-4","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[{"id":78,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":23,"slug":"en-titleddd-5","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[{"id":79,"description":"en_description"},{"id":80,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":24,"slug":"en-titleddd-6","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[{"id":81,"description":"en_description"},{"id":82,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":25,"slug":"en-titleddd-7","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[{"id":83,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":26,"slug":"en-titleddd-8","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[],"image_url":null,"preview_url":null,"optimized_url":null},{"id":27,"slug":"en-titleddd-9","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[{"id":84,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null}],"reviews":[{"id":2,"review_date":"2023-06-07","rating":5,"customer_name":"adipisci","content":"officiis"},{"id":1,"review_date":"2023-06-06","rating":4,"customer_name":"eaque","content":"aliquid"}],"socialMedias":[{"id":1,"type":0,"type_text":"Facebook","link":"https:\/\/www.facebook.com\/"},{"id":2,"type":1,"type_text":"Instagram","link":"Instagram"},{"id":3,"type":2,"type_text":"Youtube","link":"Youtube"}]}}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '58'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/banners
+    metadata:
+      groupName: 'Frontend API'
+      groupDescription: ''
+      subgroup: Banners
+      subgroupDescription: ''
+      title: 'Banner List'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":[{"id":37,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/33\/ayjZzoHIczImCqtB.jpg","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/33\/c\/ayjZzoHIczImCqtB-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/33\/c\/ayjZzoHIczImCqtB-optimized.jpg"},{"id":36,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/32\/PT3DZLcBCryjZRGA","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/32\/c\/PT3DZLcBCryjZRGA-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/32\/c\/PT3DZLcBCryjZRGA-optimized.jpg"},{"id":35,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/31\/61EjJ8sdyISo9lNn1Ya7TvOW5MWdMs6TaeTR88qu","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/31\/c\/61EjJ8sdyISo9lNn1Ya7TvOW5MWdMs6TaeTR88qu-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/31\/c\/61EjJ8sdyISo9lNn1Ya7TvOW5MWdMs6TaeTR88qu-optimized.jpg"},{"id":34,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/30\/2k_demo.jpg","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/30\/c\/2k_demo-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/30\/c\/2k_demo-optimized.jpg"},{"id":33,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/29\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/29\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/29\/c\/blank-optimized.jpg"},{"id":32,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/28\/jHnaG9TQsIU8VfTt0W3GRwOma5SSwQyC7tcxRZqX","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/28\/c\/jHnaG9TQsIU8VfTt0W3GRwOma5SSwQyC7tcxRZqX-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/28\/c\/jHnaG9TQsIU8VfTt0W3GRwOma5SSwQyC7tcxRZqX-optimized.jpg"},{"id":31,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/27\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/27\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/27\/c\/blank-optimized.jpg"},{"id":30,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/26\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/26\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/26\/c\/blank-optimized.jpg"},{"id":29,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/25\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/25\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/25\/c\/blank-optimized.jpg"},{"id":28,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/24\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/24\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/24\/c\/blank-optimized.jpg"},{"id":27,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/23\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/23\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/23\/c\/blank-optimized.jpg"},{"id":26,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/22\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/22\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/22\/c\/blank-optimized.jpg"},{"id":25,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/21\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/21\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/21\/c\/blank-optimized.jpg"},{"id":24,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/20\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/20\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/20\/c\/blank-optimized.jpg"},{"id":23,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/19\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/19\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/19\/c\/blank-optimized.jpg"},{"id":22,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/18\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/18\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/18\/c\/blank-optimized.jpg"},{"id":21,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/17\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/17\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/17\/c\/blank-optimized.jpg"},{"id":20,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/16\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/16\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/16\/c\/blank-optimized.jpg"},{"id":19,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/15\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/15\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/15\/c\/blank-optimized.jpg"},{"id":18,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/14\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/14\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/14\/c\/blank-optimized.jpg"},{"id":17,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/13\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/13\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/13\/c\/blank-optimized.jpg"},{"id":16,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/12\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/12\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/12\/c\/blank-optimized.jpg"},{"id":15,"image_url":null,"preview_url":null,"optimized_url":null},{"id":14,"image_url":null,"preview_url":null,"optimized_url":null},{"id":13,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/11\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/11\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/11\/c\/blank-optimized.jpg"},{"id":12,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/10\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/10\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/10\/c\/blank-optimized.jpg"},{"id":11,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/9\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/9\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/9\/c\/blank-optimized.jpg"},{"id":10,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/8\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/8\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/8\/c\/blank-optimized.jpg"},{"id":9,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/7\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/7\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/7\/c\/blank-optimized.jpg"},{"id":8,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/6\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/6\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/6\/c\/blank-optimized.jpg"},{"id":7,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/5\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/5\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/5\/c\/blank-optimized.jpg"},{"id":6,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/4\/logo.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/4\/c\/logo-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/4\/c\/logo-optimized.jpg"}]}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '57'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/categories
+    metadata:
+      groupName: 'Frontend API'
+      groupDescription: ''
+      subgroup: Categories
+      subgroupDescription: ''
+      title: 'Category List'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":[{"id":2,"slug":null,"name":"voluptatem222","title":"qui22","description":"Laborum architecto et doloremque dolores expedita."},{"id":1,"slug":"body-check","name":"\u81ea\u4e3b\u9ad4\u6aa2\u7d44\u5408","title":"qui","description":"Laborum architecto et doloremque dolores expedita."}]}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '56'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/categories/{slug}'
+    metadata:
+      groupName: 'Frontend API'
+      groupDescription: ''
+      subgroup: Categories
+      subgroupDescription: ''
+      title: 'Category Detail'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters:
+      slug:
+        name: slug
+        description: 'Category Slug or Id'
+        required: true
+        example: sit
+        type: string
+        custom: []
+    cleanUrlParameters:
+      slug: sit
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 500
+        content: |-
+          {
+              "message": "Attempt to read property \"id\" on null",
+              "exception": "ErrorException",
+              "file": "C:\\laragon\\www\\chees-api\\app\\Http\\Resources\\v1\\CategoryResource.php",
+              "line": 19,
+              "trace": [
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php",
+                      "line": 254,
+                      "function": "handleError",
+                      "class": "Illuminate\\Foundation\\Bootstrap\\HandleExceptions",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\app\\Http\\Resources\\v1\\CategoryResource.php",
+                      "line": 19,
+                      "function": "Illuminate\\Foundation\\Bootstrap\\{closure}",
+                      "class": "Illuminate\\Foundation\\Bootstrap\\HandleExceptions",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Resources\\Json\\JsonResource.php",
+                      "line": 108,
+                      "function": "toArray",
+                      "class": "App\\Http\\Resources\\v1\\CategoryResource",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Resources\\Json\\ResourceResponse.php",
+                      "line": 39,
+                      "function": "resolve",
+                      "class": "Illuminate\\Http\\Resources\\Json\\JsonResource",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Resources\\Json\\JsonResource.php",
+                      "line": 244,
+                      "function": "toResponse",
+                      "class": "Illuminate\\Http\\Resources\\Json\\ResourceResponse",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 893,
+                      "function": "toResponse",
+                      "class": "Illuminate\\Http\\Resources\\Json\\JsonResource",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 878,
+                      "function": "toResponse",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 799,
+                      "function": "prepareResponse",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 141,
+                      "function": "Illuminate\\Routing\\{closure}",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php",
+                      "line": 50,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Routing\\Middleware\\SubstituteBindings",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php",
+                      "line": 159,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php",
+                      "line": 135,
+                      "function": "handleRequest",
+                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php",
+                      "line": 87,
+                      "function": "handleRequestUsingNamedLimiter",
+                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 116,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 800,
+                      "function": "then",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 777,
+                      "function": "runRouteWithinStack",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 741,
+                      "function": "runRoute",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 730,
+                      "function": "dispatchToRoute",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+                      "line": 200,
+                      "function": "dispatch",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 141,
+                      "function": "Illuminate\\Foundation\\Http\\{closure}",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\app\\Http\\Middleware\\Localization.php",
+                      "line": 27,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "App\\Http\\Middleware\\Localization",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php",
+                      "line": 21,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php",
+                      "line": 31,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php",
+                      "line": 21,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php",
+                      "line": 40,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TrimStrings",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php",
+                      "line": 27,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php",
+                      "line": 86,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php",
+                      "line": 62,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Http\\Middleware\\HandleCors",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php",
+                      "line": 39,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Http\\Middleware\\TrustProxies",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 116,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+                      "line": 175,
+                      "function": "then",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+                      "line": 144,
+                      "function": "sendRequestThroughRouter",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 299,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 287,
+                      "function": "callLaravelOrLumenRoute",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 92,
+                      "function": "makeApiCall",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 45,
+                      "function": "makeResponseCall",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 35,
+                      "function": "makeResponseCallIfConditionsPass",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php",
+                      "line": 209,
+                      "function": "__invoke",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php",
+                      "line": 166,
+                      "function": "iterateThroughStrategies",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php",
+                      "line": 95,
+                      "function": "fetchResponses",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php",
+                      "line": 124,
+                      "function": "processRoute",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php",
+                      "line": 71,
+                      "function": "extractEndpointsInfoFromLaravelApp",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php",
+                      "line": 49,
+                      "function": "extractEndpointsInfoAndWriteToDisk",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Commands\\GenerateDocumentation.php",
+                      "line": 51,
+                      "function": "get",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php",
+                      "line": 36,
+                      "function": "handle",
+                      "class": "Knuckles\\Scribe\\Commands\\GenerateDocumentation",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php",
+                      "line": 41,
+                      "function": "Illuminate\\Container\\{closure}",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php",
+                      "line": 93,
+                      "function": "unwrapIfClosure",
+                      "class": "Illuminate\\Container\\Util",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php",
+                      "line": 37,
+                      "function": "callBoundMethod",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php",
+                      "line": 662,
+                      "function": "call",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php",
+                      "line": 208,
+                      "function": "call",
+                      "class": "Illuminate\\Container\\Container",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\symfony\\console\\Command\\Command.php",
+                      "line": 326,
+                      "function": "execute",
+                      "class": "Illuminate\\Console\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php",
+                      "line": 178,
+                      "function": "run",
+                      "class": "Symfony\\Component\\Console\\Command\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\symfony\\console\\Application.php",
+                      "line": 1081,
+                      "function": "run",
+                      "class": "Illuminate\\Console\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\symfony\\console\\Application.php",
+                      "line": 320,
+                      "function": "doRunCommand",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\symfony\\console\\Application.php",
+                      "line": 174,
+                      "function": "doRun",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php",
+                      "line": 200,
+                      "function": "run",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\artisan",
+                      "line": 37,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Console\\Kernel",
+                      "type": "->"
+                  }
+              ]
+          }
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '55'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/reviews
+    metadata:
+      groupName: 'Frontend API'
+      groupDescription: ''
+      subgroup: Reviews
+      subgroupDescription: ''
+      title: 'Review List'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":[{"id":2,"review_date":"2023-06-07","rating":5,"customer_name":"adipisci","content":"officiis"},{"id":1,"review_date":"2023-06-06","rating":4,"customer_name":"eaque","content":"aliquid"}]}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '54'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/districts
+    metadata:
+      groupName: 'Frontend API'
+      groupDescription: ''
+      subgroup: Districts
+      subgroupDescription: ''
+      title: 'District List'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":[{"id":4,"name":"veritatis234","extra_charge":20},{"id":3,"name":"veritatis23","extra_charge":20},{"id":2,"name":"veritatis2","extra_charge":20},{"id":1,"name":"veritatis","extra_charge":20}]}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '53'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/social_medias
+    metadata:
+      groupName: 'Frontend API'
+      groupDescription: ''
+      subgroup: 'Social Media'
+      subgroupDescription: ''
+      title: 'Social Media List'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":[{"id":1,"type":0,"type_text":"Facebook","link":"https:\/\/www.facebook.com\/"},{"id":2,"type":1,"type_text":"Instagram","link":"Instagram"},{"id":3,"type":2,"type_text":"Youtube","link":"Youtube"}]}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '52'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/timeslots
+    metadata:
+      groupName: 'Frontend API'
+      groupDescription: ''
+      subgroup: Timeslots
+      subgroupDescription: ''
+      title: 'Timeslot List'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 500
+        content: |-
+          {
+              "message": "Call to undefined method Illuminate\\Database\\Eloquent\\Builder::availableDate()",
+              "exception": "BadMethodCallException",
+              "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php",
+              "line": 71,
+              "trace": [
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php",
+                      "line": 36,
+                      "function": "throwBadMethodCallException",
+                      "class": "Illuminate\\Database\\Eloquent\\Builder",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php",
+                      "line": 1925,
+                      "function": "forwardCallTo",
+                      "class": "Illuminate\\Database\\Eloquent\\Builder",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\app\\Http\\Controllers\\v1\\TimeslotController.php",
+                      "line": 23,
+                      "function": "__call",
+                      "class": "Illuminate\\Database\\Eloquent\\Builder",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php",
+                      "line": 54,
+                      "function": "index",
+                      "class": "App\\Http\\Controllers\\v1\\TimeslotController",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php",
+                      "line": 43,
+                      "function": "callAction",
+                      "class": "Illuminate\\Routing\\Controller",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php",
+                      "line": 260,
+                      "function": "dispatch",
+                      "class": "Illuminate\\Routing\\ControllerDispatcher",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php",
+                      "line": 205,
+                      "function": "runController",
+                      "class": "Illuminate\\Routing\\Route",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 799,
+                      "function": "run",
+                      "class": "Illuminate\\Routing\\Route",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 141,
+                      "function": "Illuminate\\Routing\\{closure}",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php",
+                      "line": 50,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Routing\\Middleware\\SubstituteBindings",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php",
+                      "line": 159,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php",
+                      "line": 135,
+                      "function": "handleRequest",
+                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php",
+                      "line": 87,
+                      "function": "handleRequestUsingNamedLimiter",
+                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 116,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 800,
+                      "function": "then",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 777,
+                      "function": "runRouteWithinStack",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 741,
+                      "function": "runRoute",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 730,
+                      "function": "dispatchToRoute",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+                      "line": 200,
+                      "function": "dispatch",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 141,
+                      "function": "Illuminate\\Foundation\\Http\\{closure}",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\app\\Http\\Middleware\\Localization.php",
+                      "line": 27,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "App\\Http\\Middleware\\Localization",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php",
+                      "line": 21,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php",
+                      "line": 31,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php",
+                      "line": 21,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php",
+                      "line": 40,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TrimStrings",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php",
+                      "line": 27,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php",
+                      "line": 86,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php",
+                      "line": 62,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Http\\Middleware\\HandleCors",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php",
+                      "line": 39,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Http\\Middleware\\TrustProxies",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 116,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+                      "line": 175,
+                      "function": "then",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+                      "line": 144,
+                      "function": "sendRequestThroughRouter",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 299,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 287,
+                      "function": "callLaravelOrLumenRoute",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 92,
+                      "function": "makeApiCall",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 45,
+                      "function": "makeResponseCall",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 35,
+                      "function": "makeResponseCallIfConditionsPass",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php",
+                      "line": 209,
+                      "function": "__invoke",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php",
+                      "line": 166,
+                      "function": "iterateThroughStrategies",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php",
+                      "line": 95,
+                      "function": "fetchResponses",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php",
+                      "line": 124,
+                      "function": "processRoute",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php",
+                      "line": 71,
+                      "function": "extractEndpointsInfoFromLaravelApp",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php",
+                      "line": 49,
+                      "function": "extractEndpointsInfoAndWriteToDisk",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Commands\\GenerateDocumentation.php",
+                      "line": 51,
+                      "function": "get",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php",
+                      "line": 36,
+                      "function": "handle",
+                      "class": "Knuckles\\Scribe\\Commands\\GenerateDocumentation",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php",
+                      "line": 41,
+                      "function": "Illuminate\\Container\\{closure}",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php",
+                      "line": 93,
+                      "function": "unwrapIfClosure",
+                      "class": "Illuminate\\Container\\Util",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php",
+                      "line": 37,
+                      "function": "callBoundMethod",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php",
+                      "line": 662,
+                      "function": "call",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php",
+                      "line": 208,
+                      "function": "call",
+                      "class": "Illuminate\\Container\\Container",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\symfony\\console\\Command\\Command.php",
+                      "line": 326,
+                      "function": "execute",
+                      "class": "Illuminate\\Console\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php",
+                      "line": 178,
+                      "function": "run",
+                      "class": "Symfony\\Component\\Console\\Command\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\symfony\\console\\Application.php",
+                      "line": 1081,
+                      "function": "run",
+                      "class": "Illuminate\\Console\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\symfony\\console\\Application.php",
+                      "line": 320,
+                      "function": "doRunCommand",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\symfony\\console\\Application.php",
+                      "line": 174,
+                      "function": "doRun",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php",
+                      "line": 200,
+                      "function": "run",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\artisan",
+                      "line": 37,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Console\\Kernel",
+                      "type": "->"
+                  }
+              ]
+          }
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '51'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/services/{slug}'
+    metadata:
+      groupName: 'Frontend API'
+      groupDescription: ''
+      subgroup: Service
+      subgroupDescription: ''
+      title: 'Service List'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters:
+      slug:
+        name: slug
+        description: 'The slug of the service.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+      category_slug:
+        name: category_slug
+        description: 'Category Slug or Id'
+        required: true
+        example: debitis
+        type: string
+        custom: []
+    cleanUrlParameters:
+      slug: 1
+      category_slug: debitis
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":[{"id":27,"category_id":1,"slug":"en-titleddd-9","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","service_descriptions":[{"id":84,"description":"en_description"}]},{"id":26,"category_id":1,"slug":"en-titleddd-8","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","service_descriptions":[]},{"id":25,"category_id":1,"slug":"en-titleddd-7","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","service_descriptions":[{"id":83,"description":"en_description"}]},{"id":24,"category_id":1,"slug":"en-titleddd-6","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","service_descriptions":[{"id":81,"description":"en_description"},{"id":82,"description":"en_description"}]},{"id":23,"category_id":1,"slug":"en-titleddd-5","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","service_descriptions":[{"id":79,"description":"en_description"},{"id":80,"description":"en_description"}]},{"id":22,"category_id":1,"slug":"en-titleddd-4","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","service_descriptions":[{"id":78,"description":"en_description"}]},{"id":21,"category_id":1,"slug":"en-titleddd-3","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","service_descriptions":[]},{"id":20,"category_id":1,"slug":"en-titleddd-2","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","service_descriptions":[{"id":77,"description":"en_description"}]},{"id":19,"category_id":1,"slug":"en-title-15","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":18,"description":"en_description"}]},{"id":18,"category_id":1,"slug":"en-title-14","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":17,"description":"en_description"}]},{"id":17,"category_id":1,"slug":"en-title-13","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":16,"description":"en_description"}]},{"id":16,"category_id":1,"slug":"en-title-12","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":15,"description":"en_description"}]},{"id":15,"category_id":1,"slug":"en-title-11","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":14,"description":"en_description"}]},{"id":14,"category_id":1,"slug":"en-title-10","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":13,"description":"en_description"}]},{"id":13,"category_id":1,"slug":"en-title-9","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":12,"description":"en_description"}]},{"id":12,"category_id":1,"slug":"en-title-8","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":11,"description":"en_description"}]},{"id":11,"category_id":1,"slug":"en-title-7","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":10,"description":"en_description"}]},{"id":10,"category_id":1,"slug":"en-titleddd","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","service_descriptions":[{"id":76,"description":"en_description"}]},{"id":9,"category_id":1,"slug":"en-title-5","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":8,"description":"en_description"}]},{"id":8,"category_id":1,"slug":"en-title-4","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":7,"description":"en_description"}]},{"id":7,"category_id":1,"slug":"en-title-3","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":6,"description":"en_description"}]},{"id":6,"category_id":1,"slug":"en-title-2","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":5,"description":"en_description"}]},{"id":5,"category_id":1,"slug":"en-title","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":4,"description":"en_description"}]},{"id":4,"category_id":1,"slug":"en-title","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":3,"description":"en_description"}]},{"id":3,"category_id":1,"slug":"en-title","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":2,"description":"en_description"}]},{"id":2,"category_id":1,"slug":"en-title","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":1,"description":"en_description"}]},{"id":1,"category_id":1,"slug":"en-title","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[]}]}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '50'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/services/details/{slug}'
+    metadata:
+      groupName: 'Frontend API'
+      groupDescription: ''
+      subgroup: Service
+      subgroupDescription: ''
+      title: 'Service Detail'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters:
+      slug:
+        name: slug
+        description: 'Category Slug or Id'
+        required: true
+        example: reiciendis
+        type: string
+        custom: []
+    cleanUrlParameters:
+      slug: reiciendis
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 500
+        content: |-
+          {
+              "message": "Attempt to read property \"id\" on null",
+              "exception": "ErrorException",
+              "file": "C:\\laragon\\www\\chees-api\\app\\Http\\Resources\\v1\\ServiceResource.php",
+              "line": 19,
+              "trace": [
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php",
+                      "line": 254,
+                      "function": "handleError",
+                      "class": "Illuminate\\Foundation\\Bootstrap\\HandleExceptions",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\app\\Http\\Resources\\v1\\ServiceResource.php",
+                      "line": 19,
+                      "function": "Illuminate\\Foundation\\Bootstrap\\{closure}",
+                      "class": "Illuminate\\Foundation\\Bootstrap\\HandleExceptions",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Resources\\Json\\JsonResource.php",
+                      "line": 108,
+                      "function": "toArray",
+                      "class": "App\\Http\\Resources\\v1\\ServiceResource",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Resources\\Json\\ResourceResponse.php",
+                      "line": 39,
+                      "function": "resolve",
+                      "class": "Illuminate\\Http\\Resources\\Json\\JsonResource",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Resources\\Json\\JsonResource.php",
+                      "line": 244,
+                      "function": "toResponse",
+                      "class": "Illuminate\\Http\\Resources\\Json\\ResourceResponse",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 893,
+                      "function": "toResponse",
+                      "class": "Illuminate\\Http\\Resources\\Json\\JsonResource",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 878,
+                      "function": "toResponse",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 799,
+                      "function": "prepareResponse",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 141,
+                      "function": "Illuminate\\Routing\\{closure}",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php",
+                      "line": 50,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Routing\\Middleware\\SubstituteBindings",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php",
+                      "line": 159,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php",
+                      "line": 135,
+                      "function": "handleRequest",
+                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php",
+                      "line": 87,
+                      "function": "handleRequestUsingNamedLimiter",
+                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 116,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 800,
+                      "function": "then",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 777,
+                      "function": "runRouteWithinStack",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 741,
+                      "function": "runRoute",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 730,
+                      "function": "dispatchToRoute",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+                      "line": 200,
+                      "function": "dispatch",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 141,
+                      "function": "Illuminate\\Foundation\\Http\\{closure}",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\app\\Http\\Middleware\\Localization.php",
+                      "line": 27,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "App\\Http\\Middleware\\Localization",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php",
+                      "line": 21,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php",
+                      "line": 31,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php",
+                      "line": 21,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php",
+                      "line": 40,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TrimStrings",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php",
+                      "line": 27,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php",
+                      "line": 86,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php",
+                      "line": 62,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Http\\Middleware\\HandleCors",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php",
+                      "line": 39,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Http\\Middleware\\TrustProxies",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 116,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+                      "line": 175,
+                      "function": "then",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+                      "line": 144,
+                      "function": "sendRequestThroughRouter",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 299,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 287,
+                      "function": "callLaravelOrLumenRoute",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 92,
+                      "function": "makeApiCall",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 45,
+                      "function": "makeResponseCall",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 35,
+                      "function": "makeResponseCallIfConditionsPass",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php",
+                      "line": 209,
+                      "function": "__invoke",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php",
+                      "line": 166,
+                      "function": "iterateThroughStrategies",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php",
+                      "line": 95,
+                      "function": "fetchResponses",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php",
+                      "line": 124,
+                      "function": "processRoute",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php",
+                      "line": 71,
+                      "function": "extractEndpointsInfoFromLaravelApp",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php",
+                      "line": 49,
+                      "function": "extractEndpointsInfoAndWriteToDisk",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Commands\\GenerateDocumentation.php",
+                      "line": 51,
+                      "function": "get",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php",
+                      "line": 36,
+                      "function": "handle",
+                      "class": "Knuckles\\Scribe\\Commands\\GenerateDocumentation",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php",
+                      "line": 41,
+                      "function": "Illuminate\\Container\\{closure}",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php",
+                      "line": 93,
+                      "function": "unwrapIfClosure",
+                      "class": "Illuminate\\Container\\Util",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php",
+                      "line": 37,
+                      "function": "callBoundMethod",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php",
+                      "line": 662,
+                      "function": "call",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php",
+                      "line": 208,
+                      "function": "call",
+                      "class": "Illuminate\\Container\\Container",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\symfony\\console\\Command\\Command.php",
+                      "line": 326,
+                      "function": "execute",
+                      "class": "Illuminate\\Console\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php",
+                      "line": 178,
+                      "function": "run",
+                      "class": "Symfony\\Component\\Console\\Command\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\symfony\\console\\Application.php",
+                      "line": 1081,
+                      "function": "run",
+                      "class": "Illuminate\\Console\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\symfony\\console\\Application.php",
+                      "line": 320,
+                      "function": "doRunCommand",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\symfony\\console\\Application.php",
+                      "line": 174,
+                      "function": "doRun",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php",
+                      "line": 200,
+                      "function": "run",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\laragon\\www\\chees-api\\artisan",
+                      "line": 37,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Console\\Kernel",
+                      "type": "->"
+                  }
+              ]
+          }
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '49'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/v1/services
+    metadata:
+      groupName: 'Frontend API'
+      groupDescription: ''
+      subgroup: Service
+      subgroupDescription: ''
+      title: Purchase
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []

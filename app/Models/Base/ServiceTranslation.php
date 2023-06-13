@@ -11,28 +11,27 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class ServiceTranslation
- * 
+ *
  * @property int $id
  * @property int $service_id
  * @property string $locale
  * @property string $title
  * @property string|null $subtitle
- * 
+ *
  * @property Service $service
  *
  * @package App\Models\Base
  */
 class ServiceTranslation extends Model
 {
-	protected $table = 'service_translations';
-	public $timestamps = false;
+    public $timestamps = false;
+    protected $table = 'service_translations';
+    protected $casts = [
+        'service_id' => 'int'
+    ];
 
-	protected $casts = [
-		'service_id' => 'int'
-	];
-
-	public function service()
-	{
-		return $this->belongsTo(Service::class);
-	}
+    public function service()
+    {
+        return $this->belongsTo(Service::class);
+    }
 }

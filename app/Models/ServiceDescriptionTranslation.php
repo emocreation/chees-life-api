@@ -6,9 +6,9 @@ use App\Models\Base\ServiceDescriptionTranslation as BaseServiceDescriptionTrans
 
 class ServiceDescriptionTranslation extends BaseServiceDescriptionTranslation
 {
-	protected $fillable = [
-		'service_description_id',
-		'locale',
-		'description'
-	];
+    protected $fillable = [
+        'service_description_id',
+        'locale',
+        'description'
+    ];
 }

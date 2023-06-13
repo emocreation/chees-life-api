@@ -6,7 +6,6 @@ use App\Http\Requests\District\DestroyRequest;
 use App\Http\Requests\District\StoreRequest;
 use App\Http\Requests\District\UpdateRequest;
 use App\Models\District;
-use App\Models\DistrictTranslation;
 use App\Sorts\SortByTranslation;
 use Illuminate\Http\Request;
 use Knuckles\Scribe\Attributes\Endpoint;

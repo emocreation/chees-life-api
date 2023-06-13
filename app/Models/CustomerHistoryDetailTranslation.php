@@ -6,9 +6,9 @@ use App\Models\Base\CustomerHistoryDetailTranslation as BaseCustomerHistoryDetai
 
 class CustomerHistoryDetailTranslation extends BaseCustomerHistoryDetailTranslation
 {
-	protected $fillable = [
-		'customer_history_detail_id',
-		'locale',
-		'title'
-	];
+    protected $fillable = [
+        'customer_history_detail_id',
+        'locale',
+        'title'
+    ];
 }

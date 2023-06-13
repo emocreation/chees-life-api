@@ -48,6 +48,7 @@ class SocialMediaController extends Controller
         return $this->success(data: tap($socialMedia)->update($validated));
 
     }
+
     #[Endpoint('Social Media Delete', 'Social media delete')]
     public function destroy(DestroyRequest $request, SocialMedia $socialMedia)
     {

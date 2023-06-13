@@ -2,9 +2,7 @@
 
 namespace App\Http\Requests\CustomerHistory;
 
-use App\Enums\Gender;
 use Astrotomic\Translatable\Validation\RuleFactory;
-use Illuminate\Validation\Rules\Enum;
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -49,6 +47,7 @@ class StoreRequest extends FormRequest
             '%subtitle%' => 'nullable|string',
             'customer_history_details.*.price' => 'required|string',
             'customer_history_details.*.%title%' => 'required|string',
+            'report_pdf' => 'file|mimes:pdf',
         ]);
     }
 }

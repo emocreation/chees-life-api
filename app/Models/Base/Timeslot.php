@@ -13,28 +13,28 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Timeslot
- * 
+ *
  * @property int $id
  * @property Carbon $available_date
  * @property bool $enable
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * 
+ *
  * @property Collection|TimeslotQuota[] $timeslot_quotas
  *
  * @package App\Models\Base
  */
 class Timeslot extends Model
 {
-	protected $table = 'timeslots';
+    protected $table = 'timeslots';
 
-	protected $casts = [
-		'available_date' => 'datetime',
-		'enable' => 'bool'
-	];
+    protected $casts = [
+        'available_date' => 'datetime',
+        'enable' => 'bool'
+    ];
 
-	public function timeslot_quotas()
-	{
-		return $this->hasMany(TimeslotQuota::class);
-	}
+    public function timeslot_quotas()
+    {
+        return $this->hasMany(TimeslotQuota::class);
+    }
 }

@@ -24,7 +24,7 @@ class ServiceController extends Controller
     #[Endpoint('Service List', 'Service list')]
     #[QueryParam('s', 'string', 'Search keyword')]
     #[QueryParam('p', 'int', 'Page number, default=20')]
-    #[QueryParam('sort', 'string', 'Sort by column name, `-` equal to descending. Accept sequence,slug,price,hot,enable,translations.title#en,translations.title#tc,translations.subtitle#en,translations.subtitle#tc', example: '-sequence')]
+    #[QueryParam('sort', 'string', 'Sort by column name, `-` equal to descending. Accept sequence,slug,price,hot,enable,translations.title#en,translations.title#tc,translations.subtitle#en,translations.subtitle#tc,category.translations.name#en,category.translations.name#tc', example: '-sequence')]
     #[QueryParam('filter[sequence]', 'string', 'Filter by sequence')]
     #[QueryParam('filter[slug]', 'string', 'Filter by slug')]
     #[QueryParam('filter[price]', 'string', 'Filter by price')]
@@ -32,20 +32,25 @@ class ServiceController extends Controller
     #[QueryParam('filter[enable]', 'string', 'Filter by enable')]
     #[QueryParam('filter[translations.title]', 'string', 'Filter by title')]
     #[QueryParam('filter[translations.subtitle]', 'string', 'Filter by subtitle')]
+    #[QueryParam('filter[category.translations.name]', 'string', 'Filter by category name')]
     public function index(Request $request)
     {
         $data = QueryBuilder::for(Service::class)
             ->search($request->s)
             ->defaultSort('-sequence')
             ->allowedSorts(['sequence', 'slug', 'price', 'hot', 'enable',
+                AllowedSort::custom('category.translations.name#en', new SortByTranslation()),
+                AllowedSort::custom('category.translations.name#tc', new SortByTranslation()),
                 AllowedSort::custom('translations.title#en', new SortByTranslation()),
                 AllowedSort::custom('translations.title#tc', new SortByTranslation()),
                 AllowedSort::custom('translations.subtitle#en', new SortByTranslation()),
                 AllowedSort::custom('translations.subtitle#tc', new SortByTranslation()),
             ])
             ->allowedFilters(['sequence', 'slug', 'price', 'hot', 'enable',
+                AllowedFilter::partial('category.translations.name'),
                 AllowedFilter::partial('translations.title'),
                 AllowedFilter::partial('translations.subtitle')])
+            ->with('category')
             ->paginate($request->p ?? 20)
             ->appends($request->query());
         return $this->success(data: $data);
@@ -54,7 +59,7 @@ class ServiceController extends Controller
     #[Endpoint('Service Detail', 'Service detail')]
     public function show(Service $service)
     {
-        return $this->success(data: $service->load('service_descriptions', 'service_details'));
+        return $this->success(data: $service->load('category', 'service_descriptions', 'service_details'));
     }
 
     #[Endpoint('Service Create', 'Service create')]
@@ -88,13 +93,6 @@ class ServiceController extends Controller
         return $this->success(data: $service->load('service_descriptions', 'service_details'));
     }
 
-    #[Endpoint('Service Delete', 'Service delete')]
-    public function destroy(DestroyRequest $request, Service $service)
-    {
-        $service->delete();
-        return $this->success();
-    }
-
     private function updateRelation(Service $model, string $relation, array $validated)
     {
         if ($validated === []) {
@@ -106,6 +104,13 @@ class ServiceController extends Controller
                 $model->$relation()->updateOrCreate(['id' => $data['id'] ?? null], Arr::except($data, ['id']));
             }
         }
+    }
+
+    #[Endpoint('Service Delete', 'Service delete')]
+    public function destroy(DestroyRequest $request, Service $service)
+    {
+        $service->delete();
+        return $this->success();
     }
 }
 

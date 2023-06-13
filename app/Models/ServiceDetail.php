@@ -11,8 +11,8 @@ class ServiceDetail extends BaseServiceDetail implements TranslatableContract
     use Translatable;
 
     public array $translatedAttributes = ['title', 'content'];
-    protected $fillable = ['service_id', 'sequence'];
     public array $searchable = ['title', 'content'];
+    protected $fillable = ['service_id', 'sequence'];
 
     protected static function boot()
     {

@@ -6,12 +6,15 @@ use App\Models\Base\CustomerHistory as BaseCustomerHistory;
 use App\Traits\Searchable;
 use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
 use Astrotomic\Translatable\Translatable;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
 
-class CustomerHistory extends BaseCustomerHistory implements TranslatableContract
+class CustomerHistory extends BaseCustomerHistory implements TranslatableContract, HasMedia
 {
-    use Translatable, Searchable;
+    use Translatable, Searchable, InteractsWithMedia;
 
     public array $translatedAttributes = ['district'];
+    public $appends = ['amount', 'report_url'];
     protected $fillable = [
         'customer_id',
         'name',
@@ -31,10 +34,9 @@ class CustomerHistory extends BaseCustomerHistory implements TranslatableContrac
         'address',
         'report',
         'remark',
+        'stripe_id',
         'paid'
     ];
-
-    public $appends = ['amount'];
 
     public function getAmountAttribute()
     {
@@ -44,5 +46,10 @@ class CustomerHistory extends BaseCustomerHistory implements TranslatableContrac
     public function customer()
     {
         return $this->belongsTo(Customer::class);
+    }
+
+    public function getReportUrlAttribute()
+    {
+        return $this->getFirstMediaUrl() !== '' ? $this->getFirstMediaUrl() : null;
     }
 }

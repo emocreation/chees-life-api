@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class User
- * 
+ *
  * @property int $id
  * @property string $name
  * @property string $email
@@ -25,9 +25,9 @@ use Illuminate\Database\Eloquent\Model;
  */
 class User extends Model
 {
-	protected $table = 'users';
+    protected $table = 'users';
 
-	protected $casts = [
-		'email_verified_at' => 'datetime'
-	];
+    protected $casts = [
+        'email_verified_at' => 'datetime'
+    ];
 }

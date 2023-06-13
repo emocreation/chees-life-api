@@ -62,7 +62,8 @@ return [
              * The route can be referenced by name or path here. Wildcards are supported.
              */
             'exclude' => [
-                'auth.base'
+                'auth.base',
+                'v1.services.webhook',
             ],
 
             /*
@@ -75,6 +76,7 @@ return [
                 'headers' => [
                     'Content-Type' => 'application/json',
                     'Accept' => 'application/json',
+                    'Accept-Language' => 'en',
                 ],
 
                 /*
@@ -138,7 +140,7 @@ return [
      * - "static" will generate a static HTMl page in the /public/docs folder,
      * - "laravel" will generate the documentation as a Blade view, so you can add routing and authentication.
      */
-    'type' => 'static',
+    'type' => 'laravel',
 
     /*
      * Settings for `static` type output.

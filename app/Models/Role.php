@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-use App\Models\Base\Role as BaseRole;
 use App\Traits\Searchable;
 use Spatie\Permission\Models\Role as SpatieRole;
 

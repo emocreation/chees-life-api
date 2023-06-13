@@ -2,7 +2,6 @@
 
 namespace App\Http\Requests\Role;
 
-use Astrotomic\Translatable\Validation\RuleFactory;
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
 

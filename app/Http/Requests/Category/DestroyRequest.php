@@ -12,7 +12,8 @@ class DestroyRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return auth()->user() && auth()->user()->can('delete#category');
+        $category = $this->route('category');
+        return $category->id !== 1 && auth()->user() && auth()->user()->can('delete#category');
     }
 
     /**

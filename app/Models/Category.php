@@ -7,20 +7,20 @@ use App\Traits\Searchable;
 use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
 use Astrotomic\Translatable\Translatable;
 use Cviebrock\EloquentSluggable\Sluggable;
-use Illuminate\Support\Str;
+use Illuminate\Database\Eloquent\Builder;
 
 class Category extends BaseCategory implements TranslatableContract
 {
     use Translatable, Sluggable, Searchable;
 
     public array $translatedAttributes = ['name', 'title', 'description'];
+    public array $searchable = [
+        'slug', 'enable', 'translations.name', 'translations.title', 'translations.description'
+    ];
     protected $fillable = [
         'sequence',
         'slug',
         'enable'
-    ];
-    public array $searchable = [
-        'slug', 'enable', 'translations.name', 'translations.title', 'translations.description'
     ];
 
     protected static function boot()
@@ -43,8 +43,24 @@ class Category extends BaseCategory implements TranslatableContract
     {
         return [
             'slug' => [
-                'source' => 'name'
+                'source' => 'name',
+                'onUpdate' => true,
             ]
         ];
+    }
+
+    public function scopeEnabled(Builder $query): void
+    {
+        $query->where('enable', 1);
+    }
+
+    public function scopeSequence(Builder $query): void
+    {
+        $query->orderByDesc('sequence');
+    }
+
+    public function scopeSlugOrId(Builder $query, string $slug)
+    {
+        $query->where('slug', $slug)->orWhere('id', $slug);
     }
 }

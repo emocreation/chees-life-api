@@ -63,6 +63,10 @@ class CustomerHistoryController extends Controller
     {
         $validated = $request->validated();
         $customerHistory = CustomerHistory::create($validated);
+        //Store file
+        if ($request->hasFile('report_pdf')) {
+            $customerHistory->addMediaFromRequest('report')->toMediaCollection();
+        }
         $customerHistory->customer_history_details()->createMany($validated['customer_history_details'] ?? []);
         return $this->success(data: $customerHistory->load('customer_history_details'));
     }
@@ -72,15 +76,13 @@ class CustomerHistoryController extends Controller
     {
         $validated = $request->validated();
         $customerHistory->update($validated);
+        //Update Image
+        if ($request->hasFile('report_pdf')) {
+            $customerHistory->clearMediaCollection();
+            $customerHistory->addMediaFromRequest('report')->toMediaCollection();
+        }
         $this->updateRelation($customerHistory, 'customer_history_details', $validated['customer_history_details'] ?? []);
         return $this->success(data: $customerHistory->load('customer_history_details'));
-    }
-
-    #[Endpoint('Customer History Delete', 'Customer history delete')]
-    public function destroy(DestroyRequest $request, CustomerHistory $customerHistory)
-    {
-        $customerHistory->delete();
-        return $this->success();
     }
 
     private function updateRelation(CustomerHistory $model, string $relation, array $validated)
@@ -94,5 +96,12 @@ class CustomerHistoryController extends Controller
                 $model->$relation()->updateOrCreate(['id' => $data['id'] ?? null], Arr::except($data, ['id']));
             }
         }
+    }
+
+    #[Endpoint('Customer History Delete', 'Customer history delete')]
+    public function destroy(DestroyRequest $request, CustomerHistory $customerHistory)
+    {
+        $customerHistory->delete();
+        return $this->success();
     }
 }

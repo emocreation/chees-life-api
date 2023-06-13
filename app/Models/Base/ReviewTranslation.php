@@ -11,28 +11,27 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class ReviewTranslation
- * 
+ *
  * @property int $id
  * @property int $review_id
  * @property string $locale
  * @property string $customer_name
  * @property string $content
- * 
+ *
  * @property Review $review
  *
  * @package App\Models\Base
  */
 class ReviewTranslation extends Model
 {
-	protected $table = 'review_translations';
-	public $timestamps = false;
+    public $timestamps = false;
+    protected $table = 'review_translations';
+    protected $casts = [
+        'review_id' => 'int'
+    ];
 
-	protected $casts = [
-		'review_id' => 'int'
-	];
-
-	public function review()
-	{
-		return $this->belongsTo(Review::class);
-	}
+    public function review()
+    {
+        return $this->belongsTo(Review::class);
+    }
 }

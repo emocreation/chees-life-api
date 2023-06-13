@@ -2,10 +2,8 @@
 
 namespace App\Http\Requests\SocialMedia;
 
-use App\Enums\SocialMedia;
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Validation\Rules\Enum;
 
 class UpdateRequest extends FormRequest
 {

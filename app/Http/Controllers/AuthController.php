@@ -31,7 +31,7 @@ class AuthController extends Controller
         Arr::forget($validated, 'remember');
         //Validate login
         if (!Auth::attempt($validated, $remember)) {
-            return response()->json(['message' => __('auth.unauthorized')], 422);
+            return $this->error(__('auth.unauthorized'), 422);
         }
         //Generate token
         $user = $request->user();
@@ -51,21 +51,21 @@ class AuthController extends Controller
 
     #[Group("CMS API")]
     #[Subgroup("Auth")]
+    #[Endpoint('User', 'Retrieve user info')]
+    public function user(Request $request)
+    {
+        //Retrieve user info
+        return $this->success(data: $request->user());
+    }
+
+    #[Group("CMS API")]
+    #[Subgroup("Auth")]
     #[Endpoint('Logout', 'Logout')]
     public function logout(Request $request)
     {
         //Delete token
         $request->user()->currentAccessToken()->delete();
         return $this->success(__('auth.logout'));
-    }
-
-    #[Group("CMS API")]
-    #[Subgroup("Auth")]
-    #[Endpoint('User', 'Retrieve user info')]
-    public function user(Request $request)
-    {
-        //Retrieve user info
-        return $this->success(data: $request->user());
     }
 
     #[Group("CMS API")]

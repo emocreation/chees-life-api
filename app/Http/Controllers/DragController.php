@@ -22,15 +22,6 @@ class DragController extends Controller
         $this->middleware('permission:update#service')->only('service');
     }
 
-    private function drag(array $data, $model)
-    {
-        foreach ($data as $row) {
-            $model::find($row['id'])->update([
-                'sequence' => $row['sequence']
-            ]);
-        }
-    }
-
     #[Group("CMS API")]
     #[Subgroup("Banners")]
     #[Endpoint('Drag Update Banner', 'Datatable drag update banner sequence')]
@@ -39,6 +30,15 @@ class DragController extends Controller
         $validated = $request->validated();
         $this->drag($validated['rows'] ?? [], Banner::class);
         $this->success();
+    }
+
+    private function drag(array $data, $model)
+    {
+        foreach ($data as $row) {
+            $model::find($row['id'])->update([
+                'sequence' => $row['sequence']
+            ]);
+        }
     }
 
     #[Group("CMS API")]

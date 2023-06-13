@@ -13,7 +13,7 @@ return new class extends Migration {
         Schema::create('services', function (Blueprint $table) {
             $table->id();
             $table->unsignedInteger('sequence');
-            $table->string('slug')->index();
+            $table->string('slug')->nullable()->index();
             $table->unsignedInteger('price');
             $table->boolean('hot')->default(false);
             $table->boolean('enable')->default(true);

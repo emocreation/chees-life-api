@@ -47,6 +47,7 @@ class UpdateRequest extends FormRequest
             '%subtitle%' => 'nullable|string',
             'customer_history_details.*.price' => 'required|string',
             'customer_history_details.*.%title%' => 'required|string',
+            'report_pdf' => 'file|mimes:pdf',
         ]);
     }
 }

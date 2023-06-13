@@ -2,8 +2,8 @@
 
 namespace App\Sorts;
 
-use Spatie\QueryBuilder\Sorts\Sort;
 use Illuminate\Database\Eloquent\Builder;
+use Spatie\QueryBuilder\Sorts\Sort;
 
 class SortByRelation implements Sort
 {

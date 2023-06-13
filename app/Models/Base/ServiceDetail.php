@@ -14,13 +14,13 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class ServiceDetail
- * 
+ *
  * @property int $id
  * @property int $service_id
  * @property int $sequence
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * 
+ *
  * @property Service $service
  * @property Collection|ServiceDetailTranslation[] $service_detail_translations
  *
@@ -28,20 +28,20 @@ use Illuminate\Database\Eloquent\Model;
  */
 class ServiceDetail extends Model
 {
-	protected $table = 'service_details';
+    protected $table = 'service_details';
 
-	protected $casts = [
-		'service_id' => 'int',
-		'sequence' => 'int'
-	];
+    protected $casts = [
+        'service_id' => 'int',
+        'sequence' => 'int'
+    ];
 
-	public function service()
-	{
-		return $this->belongsTo(Service::class);
-	}
+    public function service()
+    {
+        return $this->belongsTo(Service::class);
+    }
 
-	public function service_detail_translations()
-	{
-		return $this->hasMany(ServiceDetailTranslation::class);
-	}
+    public function service_detail_translations()
+    {
+        return $this->hasMany(ServiceDetailTranslation::class);
+    }
 }

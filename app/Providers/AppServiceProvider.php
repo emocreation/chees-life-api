@@ -2,12 +2,15 @@
 
 namespace App\Providers;
 
+use App\Models\PasswordResetToken;
+use Illuminate\Auth\Notifications\ResetPassword;
+use Illuminate\Auth\Notifications\VerifyEmail;
 use Illuminate\Database\Connection;
 use Illuminate\Database\Events\QueryExecuted;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
-use Opcodes\LogViewer\Facades\LogViewer;
+use Laravel\Cashier\Cashier;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -24,12 +27,22 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        LogViewer::auth(function ($request) {
+        //Only allow super admin to access log viewer
+        /*LogViewer::auth(function ($request) {
             return $request->user() && $request->user()->hasRole('Super Admin');
-        });
+        });*/
 
         DB::whenQueryingForLongerThan(500, function (Connection $connection, QueryExecuted $event) {
             Log::warning("Database queries exceeded 5 seconds on {$connection->getName()}", ['sql' => $event, 'bindings' => $event->bindings, 'time' => $event->time]);
+        });
+
+        VerifyEmail::createUrlUsing(function ($notifiable) {
+            return route('v1.auth.verify', $notifiable->token);
+        });
+
+        ResetPassword::createUrlUsing(function ($notifiable) {
+            $token = PasswordResetToken::where('email', $notifiable->email)->first()->token;
+            return config('app.password_reset_url') . $token;
         });
     }
 }

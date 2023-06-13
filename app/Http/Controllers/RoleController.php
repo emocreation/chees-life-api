@@ -6,13 +6,13 @@ use App\Http\Requests\Role\DestroyRequest;
 use App\Http\Requests\Role\StoreRequest;
 use App\Http\Requests\Role\UpdateRequest;
 use App\Models\ModelHasRole;
+use App\Models\Role;
 use Illuminate\Http\Request;
 use Knuckles\Scribe\Attributes\Endpoint;
 use Knuckles\Scribe\Attributes\Group;
 use Knuckles\Scribe\Attributes\QueryParam;
 use Knuckles\Scribe\Attributes\Subgroup;
 use Spatie\QueryBuilder\QueryBuilder;
-use App\Models\Role;
 
 #[Group('CMS API')]
 #[Subgroup('Roles')]

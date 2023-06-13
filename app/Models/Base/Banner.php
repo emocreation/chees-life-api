@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Banner
- * 
+ *
  * @property int $id
  * @property int $sequence
  * @property bool $enable
@@ -22,10 +22,10 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Banner extends Model
 {
-	protected $table = 'banners';
+    protected $table = 'banners';
 
-	protected $casts = [
-		'sequence' => 'int',
-		'enable' => 'bool'
-	];
+    protected $casts = [
+        'sequence' => 'int',
+        'enable' => 'bool'
+    ];
 }

@@ -26,7 +26,7 @@ return new class extends Migration {
             $table->unsignedFloat('height', 5);
             $table->unsignedFloat('weight', 5);
             $table->date('blood_date');
-            $table->time('blood_time');
+            $table->string('blood_time');
             $table->text('address');
             $table->enum('report', ['email', 'doctor']);
             $table->text('remark')->nullable();

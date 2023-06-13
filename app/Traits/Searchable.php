@@ -2,8 +2,8 @@
 
 namespace App\Traits;
 
-use Illuminate\Support\Arr;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Arr;
 
 trait Searchable
 {
