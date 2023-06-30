@@ -26,18 +26,17 @@ class DistrictController extends Controller
     #[QueryParam('sort', 'string', 'Sort by column name, `-` equal to descending. Accept sequence,name,enable,translations.name#en,translations.name#tc', example: '-id')]
     #[QueryParam('filter[sequence]', 'int', 'Filter by sequence')]
     #[QueryParam('filter[enable]', 'int', 'Filter by enable')]
-    #[QueryParam('filter[name]', 'string', 'Filter by name')]
-    #[QueryParam('filter[translations.name]', 'string', 'Filter by translations.name#en')]
+    #[QueryParam('filter[translations.name]', 'string', 'Filter by translations.name')]
     public function index(Request $request)
     {
         $data = QueryBuilder::for(District::class)
             ->search($request->s)
             ->defaultSort('-sequence')
-            ->allowedSorts(['sequence', 'name', 'enable',
+            ->allowedSorts(['sequence', 'enable',
                 AllowedSort::custom('translations.name#en', new SortByTranslation()),
                 AllowedSort::custom('translations.name#tc', new SortByTranslation()),
             ])
-            ->allowedFilters(['sequence', 'name', 'enable', AllowedFilter::partial('translations.name')])
+            ->allowedFilters(['sequence', 'enable', AllowedFilter::partial('translations.name')])
             ->paginate($request->p ?? 20)
             ->appends($request->query());
         return $this->success(data: $data);
