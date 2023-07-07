@@ -16,7 +16,7 @@ class User extends Authenticatable
     use HasApiTokens, HasFactory, Notifiable, HasRoles, Searchable;
 
     public array $searchable = [
-        'name', 'email', 'role_name'
+        'name', 'email', 'role.name'
     ];
     /**
      * The attributes that are mass assignable.
