@@ -26,7 +26,7 @@ class TimeslotController extends Controller
         $this->middleware('permission:update#timeslot')->only('update');
         $this->middleware('permission:delete#timeslot')->only('destroy');
     }
-    #[Endpoint('User List', 'User list')]
+    #[Endpoint('Timeslot List', 'Timeslot list')]
     #[QueryParam('s', 'string', 'Search keyword')]
     #[QueryParam('p', 'int', 'Page number, default=20')]
     #[QueryParam('sort', 'string', 'Sort by column name, `-` equal to descending. Accept available_date,enable', example: '-available_date')]
@@ -44,13 +44,13 @@ class TimeslotController extends Controller
         return $this->success(data: $data);
     }
 
-    #[Endpoint('User Detail', 'User detail')]
+    #[Endpoint('Timeslot Detail', 'Timeslot detail')]
     public function show(Timeslot $timeslot)
     {
         return $this->success(data: $timeslot->load('timeslot_quotas'));
     }
 
-    #[Endpoint('User Create', 'User create')]
+    #[Endpoint('Timeslot Create', 'Timeslot create')]
     public function store(StoreRequest $request)
     {
         $validated = $request->validated();
@@ -88,7 +88,7 @@ class TimeslotController extends Controller
         return $data;
     }
 
-    #[Endpoint('User Update', 'User update')]
+    #[Endpoint('Timeslot Update', 'Timeslot update')]
     public function update(UpdateRequest $request, Timeslot $timeslot)
     {
         $validated = $request->validated();
@@ -110,7 +110,7 @@ class TimeslotController extends Controller
         }
     }
 
-    #[Endpoint('User Delete', 'User delete')]
+    #[Endpoint('Timeslot Delete', 'Timeslot delete')]
     public function destroy(DestroyRequest $request, Timeslot $timeslot)
     {
         $timeslot->delete();
