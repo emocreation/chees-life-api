@@ -41,6 +41,8 @@ class AuthController extends Controller
         })->toArray();
         $token = $user->createToken('token', ['cms'])->plainTextToken;
         $user->unsetRelations();
+        $user->role = $user->role_name;
+        $user->makeHidden(['role_name']);
         $data = [
             'token_type' => 'Bearer', 'accessToken' => $token,
             'userData' => $user,
@@ -54,8 +56,11 @@ class AuthController extends Controller
     #[Endpoint('User', 'Retrieve user info')]
     public function user(Request $request)
     {
+        $user = $request->user();
+        $user->role = $user->role_name;
+        $user->makeHidden(['role_name']);
         //Retrieve user info
-        return $this->success(data: $request->user());
+        return $this->success(data: $user);
     }
 
     #[Group("CMS API")]
