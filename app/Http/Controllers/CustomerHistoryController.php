@@ -21,6 +21,13 @@ use Spatie\QueryBuilder\QueryBuilder;
 #[Subgroup('Customer History')]
 class CustomerHistoryController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('permission:view#customer_history')->only('index', 'show');
+        $this->middleware('permission:create#customer_history')->only('store');
+        $this->middleware('permission:update#customer_history')->only('update');
+        $this->middleware('permission:delete#customer_history')->only('destroy');
+    }
     #[Endpoint('Customer History List', 'Customer history list')]
     #[QueryParam('s', 'string', 'Search keyword')]
     #[QueryParam('p', 'int', 'Page number, default=20')]

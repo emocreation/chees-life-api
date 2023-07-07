@@ -20,6 +20,13 @@ use Spatie\QueryBuilder\QueryBuilder;
 #[Subgroup('Districts')]
 class DistrictController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('permission:view#district')->only('index', 'show');
+        $this->middleware('permission:create#district')->only('store');
+        $this->middleware('permission:update#district')->only('update');
+        $this->middleware('permission:delete#district')->only('destroy');
+    }
     #[Endpoint('District List', 'District list')]
     #[QueryParam('s', 'string', 'Search keyword')]
     #[QueryParam('p', 'int', 'Page number, default=20')]

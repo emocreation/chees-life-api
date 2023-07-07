@@ -16,7 +16,6 @@ class RowUpdateController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth');
         $this->middleware('permission:update#banner')->only('banner');
         $this->middleware('permission:update#category')->only('category');
         $this->middleware('permission:update#district')->only('district');

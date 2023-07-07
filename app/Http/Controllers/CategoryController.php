@@ -20,6 +20,13 @@ use Spatie\QueryBuilder\QueryBuilder;
 #[Subgroup('Categories')]
 class CategoryController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('permission:view#category')->only('index', 'show');
+        $this->middleware('permission:create#category')->only('store');
+        $this->middleware('permission:update#category')->only('update');
+        $this->middleware('permission:delete#category')->only('destroy');
+    }
     #[Endpoint('Category List', 'Category list')]
     #[QueryParam('s', 'string', 'Search keyword')]
     #[QueryParam('p', 'int', 'Page number, default=20')]

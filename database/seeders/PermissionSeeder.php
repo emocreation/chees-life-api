@@ -17,7 +17,7 @@ class PermissionSeeder extends Seeder
         app()[PermissionRegistrar::class]->forgetCachedPermissions();
         Role::firstOrCreate(['name' => 'Super Admin']);
 
-        $actions = ['view', 'create', 'update', 'delete'];
+        $actions = ['read', 'create', 'update', 'delete'];
         $sections = [
             'user', 'district', 'social_media', 'category', 'review', 'service', 'customer', 'customer_history', 'banner', 'role', 'timeslot'
         ];

@@ -21,6 +21,13 @@ use Spatie\QueryBuilder\QueryBuilder;
 #[Subgroup('Services')]
 class ServiceController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('permission:view#service')->only('index', 'show');
+        $this->middleware('permission:create#service')->only('store');
+        $this->middleware('permission:update#service')->only('update');
+        $this->middleware('permission:delete#service')->only('destroy');
+    }
     #[Endpoint('Service List', 'Service list')]
     #[QueryParam('s', 'string', 'Search keyword')]
     #[QueryParam('p', 'int', 'Page number, default=20')]

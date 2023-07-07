@@ -20,6 +20,13 @@ use Spatie\QueryBuilder\QueryBuilder;
 #[Subgroup('Reviews')]
 class ReviewController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('permission:view#review')->only('index', 'show');
+        $this->middleware('permission:create#review')->only('store');
+        $this->middleware('permission:update#review')->only('update');
+        $this->middleware('permission:delete#review')->only('destroy');
+    }
 
     #[Endpoint('Review List', 'Review list')]
     #[QueryParam('s', 'string', 'Search keyword')]

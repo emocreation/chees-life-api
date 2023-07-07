@@ -18,6 +18,13 @@ use Spatie\QueryBuilder\QueryBuilder;
 #[Subgroup('Roles')]
 class RoleController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('permission:view#role')->only('index', 'show');
+        $this->middleware('permission:create#role')->only('store');
+        $this->middleware('permission:update#role')->only('update');
+        $this->middleware('permission:delete#role')->only('destroy');
+    }
     #[Endpoint('Role List', 'Role list')]
     #[QueryParam('s', 'string', 'Search keyword')]
     #[QueryParam('p', 'int', 'Page number, default=20')]

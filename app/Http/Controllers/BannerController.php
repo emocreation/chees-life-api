@@ -19,6 +19,14 @@ use Spatie\QueryBuilder\QueryBuilder;
 #[Subgroup('Banners')]
 class BannerController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('permission:view#banner')->only('index', 'show');
+        $this->middleware('permission:create#banner')->only('store');
+        $this->middleware('permission:update#banner')->only('update');
+        $this->middleware('permission:delete#banner')->only('destroy');
+    }
+
     #[Endpoint('Banner List', 'Banner list')]
     #[QueryParam('s', 'string', 'Search keyword')]
     #[QueryParam('p', 'int', 'Page number, default=20')]

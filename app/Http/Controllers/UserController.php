@@ -20,6 +20,13 @@ use Spatie\QueryBuilder\QueryBuilder;
 #[Subgroup('Users')]
 class UserController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('permission:view#user')->only('index', 'show');
+        $this->middleware('permission:create#user')->only('store');
+        $this->middleware('permission:update#user')->only('update');
+        $this->middleware('permission:delete#user')->only('destroy');
+    }
     #[Endpoint('User List', 'User list')]
     #[QueryParam('s', 'string', 'Search keyword')]
     #[QueryParam('p', 'int', 'Page number, default=20')]

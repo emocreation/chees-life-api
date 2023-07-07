@@ -16,6 +16,13 @@ use Spatie\QueryBuilder\QueryBuilder;
 #[Subgroup('Social Media')]
 class SocialMediaController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('permission:view#social_media')->only('index', 'show');
+        $this->middleware('permission:create#social_media')->only('store');
+        $this->middleware('permission:update#social_media')->only('update');
+        $this->middleware('permission:delete#social_media')->only('destroy');
+    }
     #[Endpoint('Social Media List', 'Social media list')]
     #[QueryParam('s', 'string', 'Search keyword')]
     #[QueryParam('p', 'int', 'Page number, default=20')]

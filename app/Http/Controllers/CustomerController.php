@@ -18,6 +18,13 @@ use Spatie\QueryBuilder\QueryBuilder;
 #[Subgroup('Customers')]
 class CustomerController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('permission:view#customer')->only('index', 'show');
+        $this->middleware('permission:create#customer')->only('store');
+        $this->middleware('permission:update#customer')->only('update');
+        $this->middleware('permission:delete#customer')->only('destroy');
+    }
     #[Endpoint('Customer List', 'Customer list')]
     #[QueryParam('s', 'string', 'Search keyword')]
     #[QueryParam('p', 'int', 'Page number, default=20')]
