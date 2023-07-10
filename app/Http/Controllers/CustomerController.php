@@ -68,7 +68,6 @@ class CustomerController extends Controller
     public function update(UpdateRequest $request, Customer $customer)
     {
         $validated = $request->validated();
-        $validated = $validated['password'] ? $validated : Arr::except($validated, 'password');
         $customer->update($validated);
 
         if ($validated['is_verified'] && $customer['email_verified_at'] === null) {
