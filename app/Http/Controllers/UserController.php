@@ -27,6 +27,7 @@ class UserController extends Controller
         $this->middleware('permission:update#user')->only('update');
         $this->middleware('permission:delete#user')->only('destroy');
     }
+
     #[Endpoint('User List', 'User list')]
     #[QueryParam('s', 'string', 'Search keyword')]
     #[QueryParam('p', 'int', 'Page number, default=20')]
@@ -68,7 +69,6 @@ class UserController extends Controller
     public function update(UpdateRequest $request, User $user)
     {
         $validated = $request->validated();
-        $validated = $validated['password'] ? $validated : Arr::except($validated, 'password');
         $user->update($validated);
         $user->syncRoles($validated['role_name']);
         return $this->success(data: $user->refresh());
