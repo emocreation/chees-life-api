@@ -24,6 +24,7 @@ class UpdateRequest extends FormRequest
     public function rules(): array
     {
         return RuleFactory::make([
+            'category_id' => 'required|int|exists:categories,id',
             'price' => 'required|int',
             'hot' => 'bool',
             'enable' => 'required|bool',

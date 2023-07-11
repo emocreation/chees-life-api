@@ -29,7 +29,7 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: deleniti
+        example: consequatur
         type: string
         custom: []
       gender:
@@ -43,45 +43,45 @@ endpoints:
         name: birthday
         description: 'Must be a valid date.'
         required: true
-        example: '2023-06-13T03:13:53'
+        example: '2023-07-10T08:16:13'
         type: string
         custom: []
       hkid:
         name: hkid
         description: ''
         required: true
-        example: sunt
+        example: ad
         type: string
         custom: []
       tel:
         name: tel
         description: ''
         required: true
-        example: consequatur
+        example: adipisci
         type: string
         custom: []
       email:
         name: email
         description: ''
         required: true
-        example: oma.stroman@example.net
+        example: pauline.labadie@example.com
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: ',:k){T4ed`FfX6/XF<'
+        example: '`GR{P)$Je+'
         type: string
         custom: []
     cleanBodyParameters:
-      name: deleniti
+      name: consequatur
       gender: M
-      birthday: '2023-06-13T03:13:53'
-      hkid: sunt
-      tel: consequatur
-      email: oma.stroman@example.net
-      password: ',:k){T4ed`FfX6/XF<'
+      birthday: '2023-07-10T08:16:13'
+      hkid: ad
+      tel: adipisci
+      email: pauline.labadie@example.com
+      password: '`GR{P)$Je+'
     fileParameters: []
     responses: []
     responseFields: []
@@ -116,19 +116,19 @@ endpoints:
         name: email
         description: ''
         required: true
-        example: helen.bahringer@example.org
+        example: jaron.boyer@example.org
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: "B10~]aj3JFXhYNuS$'}"
+        example: "(Y7('R@%[U"
         type: string
         custom: []
     cleanBodyParameters:
-      email: helen.bahringer@example.org
-      password: "B10~]aj3JFXhYNuS$'}"
+      email: jaron.boyer@example.org
+      password: "(Y7('R@%[U"
     fileParameters: []
     responses: []
     responseFields: []
@@ -159,11 +159,11 @@ endpoints:
         name: token
         description: ''
         required: true
-        example: eum
+        example: eius
         type: string
         custom: []
     cleanUrlParameters:
-      token: eum
+      token: eius
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -213,11 +213,11 @@ endpoints:
         name: email
         description: ''
         required: true
-        example: pschimmel@example.net
+        example: yferry@example.org
         type: string
         custom: []
     cleanBodyParameters:
-      email: pschimmel@example.net
+      email: yferry@example.org
     fileParameters: []
     responses: []
     responseFields: []
@@ -252,11 +252,11 @@ endpoints:
         name: email
         description: ''
         required: true
-        example: jhaley@example.com
+        example: ladarius44@example.com
         type: string
         custom: []
     cleanBodyParameters:
-      email: jhaley@example.com
+      email: ladarius44@example.com
     fileParameters: []
     responses: []
     responseFields: []
@@ -287,11 +287,11 @@ endpoints:
         name: token
         description: ''
         required: true
-        example: quasi
+        example: neque
         type: string
         custom: []
     cleanUrlParameters:
-      token: quasi
+      token: neque
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -299,11 +299,11 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: RY>+3.c
+        example: 'jmHw#]k6ebS9IOLxqh5'
         type: string
         custom: []
     cleanBodyParameters:
-      password: RY>+3.c
+      password: 'jmHw#]k6ebS9IOLxqh5'
     fileParameters: []
     responses: []
     responseFields: []
@@ -351,7 +351,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer PvVDa16ehck6dEbgf4Z83a5'
+      - 'Bearer b8d6hcD6VkgaEZvf43aPe15'
     controller: null
     method: null
     route: null
@@ -395,7 +395,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer k6vVbePZfDga81c45a6E3dh'
+      - 'Bearer kdcv1hZVa8DPaEb664eg35f'
     controller: null
     method: null
     route: null
@@ -439,7 +439,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3Za14f6bDVakvg56Pc8hedE'
+      - 'Bearer EPVb6kc5h4gdaDfe1av86Z3'
     controller: null
     method: null
     route: null
@@ -471,66 +471,66 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: animi
+        example: nemo
         type: string
         custom: []
       gender:
         name: gender
         description: 'Must be one of <code>F</code> or <code>M</code>.'
         required: true
-        example: M
+        example: F
         type: string
         custom: []
       birthday:
         name: birthday
         description: 'Must be a valid date.'
         required: true
-        example: '2023-06-13T03:13:53'
+        example: '2023-07-10T08:16:13'
         type: string
         custom: []
       hkid:
         name: hkid
         description: ''
         required: true
-        example: id
+        example: incidunt
         type: string
         custom: []
       tel:
         name: tel
         description: ''
         required: true
-        example: vel
+        example: minus
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: false
-        example: ']xZ*/5y)b;^An%GhTJ'
+        example: J(.)a(|FqDTJh~J
         type: string
         custom: []
       address:
         name: address
         description: ''
         required: false
-        example: sint
+        example: corporis
         type: string
         custom: []
     cleanBodyParameters:
-      name: animi
-      gender: M
-      birthday: '2023-06-13T03:13:53'
-      hkid: id
-      tel: vel
-      password: ']xZ*/5y)b;^An%GhTJ'
-      address: sint
+      name: nemo
+      gender: F
+      birthday: '2023-07-10T08:16:13'
+      hkid: incidunt
+      tel: minus
+      password: J(.)a(|FqDTJh~J
+      address: corporis
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer bEcd6hVf3ake6a1g54PDv8Z'
+      - 'Bearer k4Ved5cgE1D3a6PZbhf86va'
     controller: null
     method: null
     route: null
@@ -683,11 +683,11 @@ endpoints:
         name: slug
         description: 'Category Slug or Id'
         required: true
-        example: sit
+        example: vel
         type: string
         custom: []
     cleanUrlParameters:
-      slug: sit
+      slug: vel
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1333,478 +1333,8 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 500
-        content: |-
-          {
-              "message": "Call to undefined method Illuminate\\Database\\Eloquent\\Builder::availableDate()",
-              "exception": "BadMethodCallException",
-              "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php",
-              "line": 71,
-              "trace": [
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php",
-                      "line": 36,
-                      "function": "throwBadMethodCallException",
-                      "class": "Illuminate\\Database\\Eloquent\\Builder",
-                      "type": "::"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php",
-                      "line": 1925,
-                      "function": "forwardCallTo",
-                      "class": "Illuminate\\Database\\Eloquent\\Builder",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\app\\Http\\Controllers\\v1\\TimeslotController.php",
-                      "line": 23,
-                      "function": "__call",
-                      "class": "Illuminate\\Database\\Eloquent\\Builder",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php",
-                      "line": 54,
-                      "function": "index",
-                      "class": "App\\Http\\Controllers\\v1\\TimeslotController",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php",
-                      "line": 43,
-                      "function": "callAction",
-                      "class": "Illuminate\\Routing\\Controller",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php",
-                      "line": 260,
-                      "function": "dispatch",
-                      "class": "Illuminate\\Routing\\ControllerDispatcher",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php",
-                      "line": 205,
-                      "function": "runController",
-                      "class": "Illuminate\\Routing\\Route",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
-                      "line": 799,
-                      "function": "run",
-                      "class": "Illuminate\\Routing\\Route",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
-                      "line": 141,
-                      "function": "Illuminate\\Routing\\{closure}",
-                      "class": "Illuminate\\Routing\\Router",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php",
-                      "line": 50,
-                      "function": "Illuminate\\Pipeline\\{closure}",
-                      "class": "Illuminate\\Pipeline\\Pipeline",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
-                      "line": 180,
-                      "function": "handle",
-                      "class": "Illuminate\\Routing\\Middleware\\SubstituteBindings",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php",
-                      "line": 159,
-                      "function": "Illuminate\\Pipeline\\{closure}",
-                      "class": "Illuminate\\Pipeline\\Pipeline",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php",
-                      "line": 135,
-                      "function": "handleRequest",
-                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php",
-                      "line": 87,
-                      "function": "handleRequestUsingNamedLimiter",
-                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
-                      "line": 180,
-                      "function": "handle",
-                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
-                      "line": 116,
-                      "function": "Illuminate\\Pipeline\\{closure}",
-                      "class": "Illuminate\\Pipeline\\Pipeline",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
-                      "line": 800,
-                      "function": "then",
-                      "class": "Illuminate\\Pipeline\\Pipeline",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
-                      "line": 777,
-                      "function": "runRouteWithinStack",
-                      "class": "Illuminate\\Routing\\Router",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
-                      "line": 741,
-                      "function": "runRoute",
-                      "class": "Illuminate\\Routing\\Router",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
-                      "line": 730,
-                      "function": "dispatchToRoute",
-                      "class": "Illuminate\\Routing\\Router",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
-                      "line": 200,
-                      "function": "dispatch",
-                      "class": "Illuminate\\Routing\\Router",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
-                      "line": 141,
-                      "function": "Illuminate\\Foundation\\Http\\{closure}",
-                      "class": "Illuminate\\Foundation\\Http\\Kernel",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\app\\Http\\Middleware\\Localization.php",
-                      "line": 27,
-                      "function": "Illuminate\\Pipeline\\{closure}",
-                      "class": "Illuminate\\Pipeline\\Pipeline",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
-                      "line": 180,
-                      "function": "handle",
-                      "class": "App\\Http\\Middleware\\Localization",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php",
-                      "line": 21,
-                      "function": "Illuminate\\Pipeline\\{closure}",
-                      "class": "Illuminate\\Pipeline\\Pipeline",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php",
-                      "line": 31,
-                      "function": "handle",
-                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
-                      "line": 180,
-                      "function": "handle",
-                      "class": "Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php",
-                      "line": 21,
-                      "function": "Illuminate\\Pipeline\\{closure}",
-                      "class": "Illuminate\\Pipeline\\Pipeline",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php",
-                      "line": 40,
-                      "function": "handle",
-                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
-                      "line": 180,
-                      "function": "handle",
-                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TrimStrings",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php",
-                      "line": 27,
-                      "function": "Illuminate\\Pipeline\\{closure}",
-                      "class": "Illuminate\\Pipeline\\Pipeline",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
-                      "line": 180,
-                      "function": "handle",
-                      "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php",
-                      "line": 86,
-                      "function": "Illuminate\\Pipeline\\{closure}",
-                      "class": "Illuminate\\Pipeline\\Pipeline",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
-                      "line": 180,
-                      "function": "handle",
-                      "class": "Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php",
-                      "line": 62,
-                      "function": "Illuminate\\Pipeline\\{closure}",
-                      "class": "Illuminate\\Pipeline\\Pipeline",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
-                      "line": 180,
-                      "function": "handle",
-                      "class": "Illuminate\\Http\\Middleware\\HandleCors",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php",
-                      "line": 39,
-                      "function": "Illuminate\\Pipeline\\{closure}",
-                      "class": "Illuminate\\Pipeline\\Pipeline",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
-                      "line": 180,
-                      "function": "handle",
-                      "class": "Illuminate\\Http\\Middleware\\TrustProxies",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
-                      "line": 116,
-                      "function": "Illuminate\\Pipeline\\{closure}",
-                      "class": "Illuminate\\Pipeline\\Pipeline",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
-                      "line": 175,
-                      "function": "then",
-                      "class": "Illuminate\\Pipeline\\Pipeline",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
-                      "line": 144,
-                      "function": "sendRequestThroughRouter",
-                      "class": "Illuminate\\Foundation\\Http\\Kernel",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
-                      "line": 299,
-                      "function": "handle",
-                      "class": "Illuminate\\Foundation\\Http\\Kernel",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
-                      "line": 287,
-                      "function": "callLaravelOrLumenRoute",
-                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
-                      "line": 92,
-                      "function": "makeApiCall",
-                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
-                      "line": 45,
-                      "function": "makeResponseCall",
-                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
-                      "line": 35,
-                      "function": "makeResponseCallIfConditionsPass",
-                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php",
-                      "line": 209,
-                      "function": "__invoke",
-                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php",
-                      "line": 166,
-                      "function": "iterateThroughStrategies",
-                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php",
-                      "line": 95,
-                      "function": "fetchResponses",
-                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php",
-                      "line": 124,
-                      "function": "processRoute",
-                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php",
-                      "line": 71,
-                      "function": "extractEndpointsInfoFromLaravelApp",
-                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php",
-                      "line": 49,
-                      "function": "extractEndpointsInfoAndWriteToDisk",
-                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\knuckleswtf\\scribe\\src\\Commands\\GenerateDocumentation.php",
-                      "line": 51,
-                      "function": "get",
-                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php",
-                      "line": 36,
-                      "function": "handle",
-                      "class": "Knuckles\\Scribe\\Commands\\GenerateDocumentation",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php",
-                      "line": 41,
-                      "function": "Illuminate\\Container\\{closure}",
-                      "class": "Illuminate\\Container\\BoundMethod",
-                      "type": "::"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php",
-                      "line": 93,
-                      "function": "unwrapIfClosure",
-                      "class": "Illuminate\\Container\\Util",
-                      "type": "::"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php",
-                      "line": 37,
-                      "function": "callBoundMethod",
-                      "class": "Illuminate\\Container\\BoundMethod",
-                      "type": "::"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php",
-                      "line": 662,
-                      "function": "call",
-                      "class": "Illuminate\\Container\\BoundMethod",
-                      "type": "::"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php",
-                      "line": 208,
-                      "function": "call",
-                      "class": "Illuminate\\Container\\Container",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\symfony\\console\\Command\\Command.php",
-                      "line": 326,
-                      "function": "execute",
-                      "class": "Illuminate\\Console\\Command",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php",
-                      "line": 178,
-                      "function": "run",
-                      "class": "Symfony\\Component\\Console\\Command\\Command",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\symfony\\console\\Application.php",
-                      "line": 1081,
-                      "function": "run",
-                      "class": "Illuminate\\Console\\Command",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\symfony\\console\\Application.php",
-                      "line": 320,
-                      "function": "doRunCommand",
-                      "class": "Symfony\\Component\\Console\\Application",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\symfony\\console\\Application.php",
-                      "line": 174,
-                      "function": "doRun",
-                      "class": "Symfony\\Component\\Console\\Application",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php",
-                      "line": 200,
-                      "function": "run",
-                      "class": "Symfony\\Component\\Console\\Application",
-                      "type": "->"
-                  },
-                  {
-                      "file": "C:\\laragon\\www\\chees-api\\artisan",
-                      "line": 37,
-                      "function": "handle",
-                      "class": "Illuminate\\Foundation\\Console\\Kernel",
-                      "type": "->"
-                  }
-              ]
-          }
+        status: 200
+        content: '{"data":[]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -1848,12 +1378,12 @@ endpoints:
         name: category_slug
         description: 'Category Slug or Id'
         required: true
-        example: debitis
+        example: provident
         type: string
         custom: []
     cleanUrlParameters:
       slug: 1
-      category_slug: debitis
+      category_slug: provident
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1899,11 +1429,11 @@ endpoints:
         name: slug
         description: 'Category Slug or Id'
         required: true
-        example: reiciendis
+        example: nisi
         type: string
         custom: []
     cleanUrlParameters:
-      slug: reiciendis
+      slug: nisi
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
