@@ -34,11 +34,11 @@ class UpdateRequest extends FormRequest
             '%subtitle%' => 'nullable|string',
             'service_descriptions.*.id' => 'nullable|int',
             'service_descriptions.*.sequence' => 'nullable|int',
-            'service_descriptions.*.%description%' => 'required|string',
+            'service_descriptions.*.%description%' => 'nullable|string',
             'service_details.*.id' => 'nullable|int',
             'service_details.*.sequence' => 'nullable|int',
-            'service_details.*.%title%' => 'required|string',
-            'service_details.*.%content%' => 'required|string',
+            'service_details.*.%title%' => 'required_with:service_details.*.%content%|string',
+            'service_details.*.%content%' => 'required_with:service_details.*.%title%|string',
             'image' => 'nullable|image',
         ]);
     }

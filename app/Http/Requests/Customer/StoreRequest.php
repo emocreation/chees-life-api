@@ -31,7 +31,7 @@ class StoreRequest extends FormRequest
             'email' => 'required|email|unique:customers,email',
             'address' => 'nullable|string',
             'password' => 'required|string',
-            'is_verified' => 'bool'
+            'is_verified' => 'required|bool'
         ];
     }
 }

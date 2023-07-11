@@ -33,7 +33,7 @@ class UpdateRequest extends FormRequest
             'email' => ['required', 'email', Rule::unique('customers')->ignore($customer->id ?? '')],
             'address' => 'nullable|string',
             'password' => 'nullable|string',
-            'is_verified' => 'bool'
+            'is_verified' => 'required|bool'
         ];
     }
 }

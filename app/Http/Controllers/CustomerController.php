@@ -8,6 +8,7 @@ use App\Http\Requests\Customer\UpdateRequest;
 use App\Models\Customer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Log;
 use Knuckles\Scribe\Attributes\Endpoint;
 use Knuckles\Scribe\Attributes\Group;
 use Knuckles\Scribe\Attributes\QueryParam;
@@ -69,10 +70,9 @@ class CustomerController extends Controller
     {
         $validated = $request->validated();
         $customer->update($validated);
-
         if ($validated['is_verified'] && $customer['email_verified_at'] === null) {
             $customer->update(['email_verified_at' => now()]);
-        } else if ($validated['is_verified'] === false) {
+        } else if ($validated['is_verified'] === false || $validated['is_verified'] === '0') {
             $customer->update(['email_verified_at' => null]);
         }
         return $this->success(data: $customer->refresh());
