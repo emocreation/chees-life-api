@@ -23,6 +23,7 @@ class Service extends BaseService implements TranslatableContract, HasMedia
     ];
     protected $fillable = [
         'sequence',
+        'category_id',
         'slug',
         'price',
         'hot',
