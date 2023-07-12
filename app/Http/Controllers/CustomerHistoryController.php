@@ -53,7 +53,8 @@ class CustomerHistoryController extends Controller
                 AllowedSort::custom('translations.district#tc', new SortByTranslation()),
             ])
             ->allowedFilters(['customer_id', 'name', 'gender', 'birthday', 'hkid', 'tel', 'email', 'address', 'amount', 'created_at',
-                AllowedFilter::partial('translations.district'),])
+                AllowedFilter::partial('translations.district')])
+            ->with('customer')
             ->paginate($request->p ?? 20)
             ->appends($request->query());
         return $this->success(data: $data);

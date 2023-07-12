@@ -13,7 +13,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule): void
     {
         // $schedule->command('inspire')->hourly();
-        $schedule->command('app:clear-reset')->daily();
+        $schedule->command('app:clear-reset')->everyMinute();
         $schedule->command('app:expire-payment')->everyMinute();
     }
 
