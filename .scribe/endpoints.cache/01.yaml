@@ -29,59 +29,59 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: fugiat
+        example: neque
         type: string
         custom: []
       gender:
         name: gender
         description: 'Must be one of <code>F</code> or <code>M</code>.'
         required: true
-        example: F
+        example: M
         type: string
         custom: []
       birthday:
         name: birthday
         description: 'Must be a valid date.'
         required: true
-        example: '2023-07-12T01:44:38'
+        example: '2023-07-12T09:38:40'
         type: string
         custom: []
       hkid:
         name: hkid
         description: ''
         required: true
-        example: necessitatibus
+        example: quo
         type: string
         custom: []
       tel:
         name: tel
         description: ''
         required: true
-        example: modi
+        example: itaque
         type: string
         custom: []
       email:
         name: email
         description: ''
         required: true
-        example: giovanna.reilly@example.org
+        example: jon.rowe@example.net
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: 'K|O*>yq};6Dk}'
+        example: 'oN[vXn87?'
         type: string
         custom: []
     cleanBodyParameters:
-      name: fugiat
-      gender: F
-      birthday: '2023-07-12T01:44:38'
-      hkid: necessitatibus
-      tel: modi
-      email: giovanna.reilly@example.org
-      password: 'K|O*>yq};6Dk}'
+      name: neque
+      gender: M
+      birthday: '2023-07-12T09:38:40'
+      hkid: quo
+      tel: itaque
+      email: jon.rowe@example.net
+      password: 'oN[vXn87?'
     fileParameters: []
     responses: []
     responseFields: []
@@ -116,19 +116,19 @@ endpoints:
         name: email
         description: ''
         required: true
-        example: chickle@example.org
+        example: piper.breitenberg@example.net
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: '}xfRg`zW7pD;'
+        example: 'ExkK,u'
         type: string
         custom: []
     cleanBodyParameters:
-      email: chickle@example.org
-      password: '}xfRg`zW7pD;'
+      email: piper.breitenberg@example.net
+      password: 'ExkK,u'
     fileParameters: []
     responses: []
     responseFields: []
@@ -159,11 +159,11 @@ endpoints:
         name: token
         description: ''
         required: true
-        example: et
+        example: repudiandae
         type: string
         custom: []
     cleanUrlParameters:
-      token: et
+      token: repudiandae
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -213,11 +213,11 @@ endpoints:
         name: email
         description: ''
         required: true
-        example: huels.tara@example.org
+        example: heller.kitty@example.org
         type: string
         custom: []
     cleanBodyParameters:
-      email: huels.tara@example.org
+      email: heller.kitty@example.org
     fileParameters: []
     responses: []
     responseFields: []
@@ -252,11 +252,11 @@ endpoints:
         name: email
         description: ''
         required: true
-        example: felton37@example.com
+        example: hill.erin@example.net
         type: string
         custom: []
     cleanBodyParameters:
-      email: felton37@example.com
+      email: hill.erin@example.net
     fileParameters: []
     responses: []
     responseFields: []
@@ -287,11 +287,11 @@ endpoints:
         name: token
         description: ''
         required: true
-        example: sed
+        example: fuga
         type: string
         custom: []
     cleanUrlParameters:
-      token: sed
+      token: fuga
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -299,11 +299,11 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: u9_1m>/ZcL;
+        example: '>P<xB~'
         type: string
         custom: []
     cleanBodyParameters:
-      password: u9_1m>/ZcL;
+      password: '>P<xB~'
     fileParameters: []
     responses: []
     responseFields: []
@@ -351,7 +351,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer Pkac1VD6hEZd5e46v3ba8fg'
+      - 'Bearer dD65vacea6EZf43kgVb81Ph'
     controller: null
     method: null
     route: null
@@ -395,7 +395,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer avZb86dEPkD634ce1h5fgVa'
+      - 'Bearer ZPa45ebfvda8kVDEh136gc6'
     controller: null
     method: null
     route: null
@@ -439,7 +439,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 5Zaca6b4ev1g6hdEPVDf8k3'
+      - 'Bearer De6f1h68V4Pagvkc35EZabd'
     controller: null
     method: null
     route: null
@@ -471,66 +471,66 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: qui
+        example: veniam
         type: string
         custom: []
       gender:
         name: gender
         description: 'Must be one of <code>F</code> or <code>M</code>.'
         required: true
-        example: M
+        example: F
         type: string
         custom: []
       birthday:
         name: birthday
         description: 'Must be a valid date.'
         required: true
-        example: '2023-07-12T01:44:38'
+        example: '2023-07-12T09:38:41'
         type: string
         custom: []
       hkid:
         name: hkid
         description: ''
         required: true
-        example: accusantium
+        example: ea
         type: string
         custom: []
       tel:
         name: tel
         description: ''
         required: true
-        example: impedit
+        example: qui
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: false
-        example: "u('*?BnQ26c/"
+        example: '=n,cQ!'
         type: string
         custom: []
       address:
         name: address
         description: ''
         required: false
-        example: dolorem
+        example: architecto
         type: string
         custom: []
     cleanBodyParameters:
-      name: qui
-      gender: M
-      birthday: '2023-07-12T01:44:38'
-      hkid: accusantium
-      tel: impedit
-      password: "u('*?BnQ26c/"
-      address: dolorem
+      name: veniam
+      gender: F
+      birthday: '2023-07-12T09:38:41'
+      hkid: ea
+      tel: qui
+      password: '=n,cQ!'
+      address: architecto
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer 41bZev5acdDkaP6g8V36Ehf'
+      - 'Bearer kvafc84g36a5EdVDbP6Zh1e'
     controller: null
     method: null
     route: null
@@ -683,11 +683,11 @@ endpoints:
         name: slug
         description: 'Category Slug or Id'
         required: true
-        example: vero
+        example: sed
         type: string
         custom: []
     cleanUrlParameters:
-      slug: vero
+      slug: sed
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1371,11 +1371,11 @@ endpoints:
         name: category_slug
         description: 'Category Slug or Id'
         required: true
-        example: nostrum
+        example: assumenda
         type: string
         custom: []
     cleanUrlParameters:
-      category_slug: nostrum
+      category_slug: assumenda
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1421,11 +1421,11 @@ endpoints:
         name: slug
         description: 'Category Slug or Id'
         required: true
-        example: est
+        example: recusandae
         type: string
         custom: []
     cleanUrlParameters:
-      slug: est
+      slug: recusandae
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1940,8 +1940,168 @@ endpoints:
     cleanUrlParameters: []
     queryParameters: []
     cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
+    bodyParameters:
+      customer_id:
+        name: customer_id
+        description: ''
+        required: false
+        example: 16
+        type: integer
+        custom: []
+      service_id:
+        name: service_id
+        description: ''
+        required: true
+        example: 17
+        type: integer
+        custom: []
+      district_id:
+        name: district_id
+        description: ''
+        required: true
+        example: 9
+        type: integer
+        custom: []
+      name:
+        name: name
+        description: ''
+        required: true
+        example: est
+        type: string
+        custom: []
+      gender:
+        name: gender
+        description: 'Must be one of <code>F</code> or <code>M</code>.'
+        required: true
+        example: M
+        type: string
+        custom: []
+      birthday:
+        name: birthday
+        description: 'Must be a valid date.'
+        required: true
+        example: '2023-07-12T09:38:41'
+        type: string
+        custom: []
+      hkid:
+        name: hkid
+        description: 'Must not be greater than 32 characters.'
+        required: true
+        example: phqtnirtvzcaoab
+        type: string
+        custom: []
+      tel:
+        name: tel
+        description: ''
+        required: true
+        example: et
+        type: string
+        custom: []
+      email:
+        name: email
+        description: 'Must be a valid email address.'
+        required: true
+        example: ustokes@example.org
+        type: string
+        custom: []
+      medical_record:
+        name: medical_record
+        description: ''
+        required: true
+        example: voluptas
+        type: string
+        custom: []
+      covid_diagnosed:
+        name: covid_diagnosed
+        description: ''
+        required: true
+        example: true
+        type: boolean
+        custom: []
+      covid_close_contacts:
+        name: covid_close_contacts
+        description: ''
+        required: true
+        example: true
+        type: boolean
+        custom: []
+      covid_date:
+        name: covid_date
+        description: 'Must be a valid date.'
+        required: false
+        example: '2023-07-12T09:38:41'
+        type: string
+        custom: []
+      height:
+        name: height
+        description: 'Must be between 0 and 3 digits.'
+        required: true
+        example: '05'
+        type: string
+        custom: []
+      weight:
+        name: weight
+        description: 'Must be between 0 and 3 digits.'
+        required: true
+        example: '86'
+        type: string
+        custom: []
+      blood_date:
+        name: blood_date
+        description: 'Must be a valid date.'
+        required: true
+        example: '2023-07-12T09:38:41'
+        type: string
+        custom: []
+      blood_time:
+        name: blood_time
+        description: ''
+        required: true
+        example: voluptatem
+        type: string
+        custom: []
+      address:
+        name: address
+        description: ''
+        required: true
+        example: error
+        type: string
+        custom: []
+      report:
+        name: report
+        description: 'Must be one of <code>email</code> or <code>doctor</code>.'
+        required: true
+        example: email
+        type: string
+        custom: []
+      remark:
+        name: remark
+        description: ''
+        required: false
+        example: tenetur
+        type: string
+        custom: []
+    cleanBodyParameters:
+      customer_id: 16
+      service_id: 17
+      district_id: 9
+      name: est
+      gender: M
+      birthday: '2023-07-12T09:38:41'
+      hkid: phqtnirtvzcaoab
+      tel: et
+      email: ustokes@example.org
+      medical_record: voluptas
+      covid_diagnosed: true
+      covid_close_contacts: true
+      covid_date: '2023-07-12T09:38:41'
+      height: '05'
+      weight: '86'
+      blood_date: '2023-07-12T09:38:41'
+      blood_time: voluptatem
+      address: error
+      report: email
+      remark: tenetur
     fileParameters: []
     responses: []
     responseFields: []

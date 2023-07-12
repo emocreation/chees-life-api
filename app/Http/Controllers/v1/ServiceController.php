@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\v1;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\v1\Service\PurchaseRequest;
 use App\Http\Resources\v1\ServiceCollection;
 use App\Http\Resources\v1\ServiceResource;
 use App\Models\CustomerHistory;
@@ -53,7 +54,7 @@ class ServiceController extends Controller
 
     #[Endpoint('Purchase')]
     #[Unauthenticated]
-    public function purchase(Request $request)
+    public function purchase(PurchaseRequest $request)
     {
         DB::transaction(function () use ($request) {
             $validated = $request->validated();
@@ -113,8 +114,8 @@ class ServiceController extends Controller
                 $checkout_session = Session::create([
                     'payment_method_types' => ['card'],
                     'mode' => 'payment',
-                    'success_url' => config('stripe.success_url'),
-                    'cancel_url' => config('stripe.cancel_url'),
+                    'success_url' => config('stripe.success_url') . $history->id,
+                    'cancel_url' => config('stripe.cancel_url') . $history->id,
                     'client_reference_id' => $history->id,
                     'line_items' => [
                         [
