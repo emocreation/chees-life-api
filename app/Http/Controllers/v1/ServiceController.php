@@ -56,17 +56,22 @@ class ServiceController extends Controller
     #[Unauthenticated]
     public function purchase(PurchaseRequest $request)
     {
-        DB::transaction(function () use ($request) {
+        $paid = false;
+        $success = false;
+        $param = null;
+        //todo handle error outside
+        DB::transaction(function () use ($request, &$paid, &$success, &$param) {
             $validated = $request->validated();
             $validated['customer_id'] = auth('sanctum')->user()->id ?? null;
 
-            $date_check = Timeslot::where('available_date', $validated['blood_date'])->enable()->first();
+            $date_check = Timeslot::where('available_date', $validated['blood_date'])->enabled()->first();
             if (!$date_check) {
                 return $this->error(__('auth.invalid_date'));
             }
-            [$from, $to] = explode('-', $validated['blood_time'],);
-
-            $time_check = TimeslotQuota::where('from', $from)->where('to', $to)->first();
+            [$from, $to] = explode('-', $validated['blood_time']);
+            Log::debug('time', ['id' => $date_check->id, 'from' => $from, 'to' => $to]);
+            $time_check = TimeslotQuota::where('timeslot_id', $date_check->id)
+                ->where('from', $from)->where('to', $to)->first();
             if (!$time_check) {
                 return $this->error(__('auth.invalid_date'));
             }
@@ -75,7 +80,8 @@ class ServiceController extends Controller
             }
 
             //Keep Quota
-            $time_check->lockForUpdate()->decrement('quota');
+            --$time_check->quota;
+            $time_check->save();
             //Create Order
             $history = CustomerHistory::create($validated);
             $service = Service::findOrFail($validated['service_id']);
@@ -132,12 +138,24 @@ class ServiceController extends Controller
                 ]);
                 $history->update(['stripe_id' => $checkout_session->id]);
                 Log::channel('payment')->info($history->id, $checkout_session->toArray());
-                return $this->success(__('auth.purchase_success'), data: ['url' => $checkout_session->url]);
+                $param = ['url' => $checkout_session->url];
+                $success = true;
+            } else {
+                //No payment
+                $history->update(['paid' => true]);
+                $paid = true;
+                $success = true;
             }
-            //No payment
-            $history->update(['paid' => true]);
-            return $this->success(__('auth.purchase_success'));
         });
+        if ($success && $paid) {
+            return $this->success(__('auth.purchase_success'));
+        }
+
+        if ($success) {
+            return $this->success(__('auth.purchase_success'), data: $param);
+        }
+
+        return $this->error();
     }
 
     public function webhook(Request $request)
