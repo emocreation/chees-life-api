@@ -186,4 +186,6 @@ return [
     ])->toArray(),
 
     'password_reset_url' => env('PASSWORD_RESET_URL'),
+    'verify_success_url' => env('VERIFY_SUCCESS_URL'),
+    'root_url' => env('ROOT_URL'),
 ];

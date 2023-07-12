@@ -14,6 +14,7 @@ use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Str;
 use Knuckles\Scribe\Attributes\Endpoint;
 use Knuckles\Scribe\Attributes\Group;
@@ -46,7 +47,7 @@ class AuthController extends Controller
             return $this->error(__('auth.invalid_token'));
         }
         $customer->update(['email_verified_at' => now(), 'token' => null]);
-        return $this->success();
+        return Redirect::to(config('app.verify_success_url'));
     }
 
     #[Endpoint('Resend Verification Email')]

@@ -10,7 +10,7 @@ use Illuminate\Database\Events\QueryExecuted;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
-use Laravel\Cashier\Cashier;
+use Illuminate\Support\Str;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -37,7 +37,8 @@ class AppServiceProvider extends ServiceProvider
         });
 
         VerifyEmail::createUrlUsing(function ($notifiable) {
-            return route('v1.auth.verify', $notifiable->token);
+            $route = route('v1.auth.verify', $notifiable->token);
+            return Str::replace(config('app.root_url'), config('app.url'), $route);
         });
 
         ResetPassword::createUrlUsing(function ($notifiable) {
