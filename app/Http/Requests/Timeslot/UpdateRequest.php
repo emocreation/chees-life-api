@@ -25,7 +25,7 @@ class UpdateRequest extends FormRequest
         return [
             'available_date' => 'required|date',
             'enable' => 'required|bool',
-            'timeslot_quotas' => 'required|array',
+            'timeslot_quotas' => 'sometime|array',
             'timeslot_quotas.*.id' => 'nullable|int',
             'timeslot_quotas.*.from' => 'required|date_format:H:i:s',
             'timeslot_quotas.*.to' => 'required|date_format:H:i:s',

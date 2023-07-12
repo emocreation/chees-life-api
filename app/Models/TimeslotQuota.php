@@ -12,4 +12,11 @@ class TimeslotQuota extends BaseTimeslotQuota
         'to',
         'quota',
     ];
+
+    protected $casts = [
+        'timeslot_id' => 'int',
+        'from' => 'datetime:H:i:s',
+        'to' => 'datetime:H:i:s',
+        'quota' => 'int'
+    ];
 }
