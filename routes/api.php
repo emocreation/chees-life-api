@@ -126,7 +126,7 @@ Route::name('v1.')->prefix('v1')->group(function () {
     Route::get('social_medias', [v1_SocialMediaController::class, 'index'])->name('social_medias.index');
     Route::get('timeslots', [v1_TimeslotController::class, 'index'])->name('timeslots.index');
 
-    Route::get('services/{slug}', [v1_ServiceController::class, 'index'])->name('services.index');
+    Route::get('services/{category_slug}', [v1_ServiceController::class, 'index'])->name('services.index');
     Route::get('services/details/{slug}', [v1_ServiceController::class, 'show'])->name('services.show');
     Route::post('services', [v1_ServiceController::class, 'purchase'])->name('services.purchase');
     Route::post('services/webhook', [v1_ServiceController::class, 'webhook'])->name('services.webhook');

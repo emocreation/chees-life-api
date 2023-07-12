@@ -27,59 +27,59 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: aut
+        example: fugiat
         type: string
         custom: []
       gender:
         name: gender
         description: 'Must be one of <code>F</code> or <code>M</code>.'
         required: true
-        example: M
+        example: F
         type: string
         custom: []
       birthday:
         name: birthday
         description: 'Must be a valid date.'
         required: true
-        example: '2023-07-11T07:32:51'
+        example: '2023-07-12T01:44:38'
         type: string
         custom: []
       hkid:
         name: hkid
         description: ''
         required: true
-        example: ea
+        example: necessitatibus
         type: string
         custom: []
       tel:
         name: tel
         description: ''
         required: true
-        example: voluptatibus
+        example: modi
         type: string
         custom: []
       email:
         name: email
         description: ''
         required: true
-        example: michelle.fay@example.net
+        example: giovanna.reilly@example.org
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: '3:FD!q@S>swW-b'
+        example: 'K|O*>yq};6Dk}'
         type: string
         custom: []
     cleanBodyParameters:
-      name: aut
-      gender: M
-      birthday: '2023-07-11T07:32:51'
-      hkid: ea
-      tel: voluptatibus
-      email: michelle.fay@example.net
-      password: '3:FD!q@S>swW-b'
+      name: fugiat
+      gender: F
+      birthday: '2023-07-12T01:44:38'
+      hkid: necessitatibus
+      tel: modi
+      email: giovanna.reilly@example.org
+      password: 'K|O*>yq};6Dk}'
     fileParameters: []
     responses: []
     responseFields: []
@@ -114,19 +114,19 @@ endpoints:
         name: email
         description: ''
         required: true
-        example: beatty.constantin@example.net
+        example: chickle@example.org
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: '~c##&iX,ZHj]'
+        example: '}xfRg`zW7pD;'
         type: string
         custom: []
     cleanBodyParameters:
-      email: beatty.constantin@example.net
-      password: '~c##&iX,ZHj]'
+      email: chickle@example.org
+      password: '}xfRg`zW7pD;'
     fileParameters: []
     responses: []
     responseFields: []
@@ -157,11 +157,11 @@ endpoints:
         name: token
         description: ''
         required: true
-        example: explicabo
+        example: et
         type: string
         custom: []
     cleanUrlParameters:
-      token: explicabo
+      token: et
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -211,11 +211,11 @@ endpoints:
         name: email
         description: ''
         required: true
-        example: dietrich.maybelle@example.org
+        example: huels.tara@example.org
         type: string
         custom: []
     cleanBodyParameters:
-      email: dietrich.maybelle@example.org
+      email: huels.tara@example.org
     fileParameters: []
     responses: []
     responseFields: []
@@ -250,11 +250,11 @@ endpoints:
         name: email
         description: ''
         required: true
-        example: lilly13@example.com
+        example: felton37@example.com
         type: string
         custom: []
     cleanBodyParameters:
-      email: lilly13@example.com
+      email: felton37@example.com
     fileParameters: []
     responses: []
     responseFields: []
@@ -285,11 +285,11 @@ endpoints:
         name: token
         description: ''
         required: true
-        example: aliquid
+        example: sed
         type: string
         custom: []
     cleanUrlParameters:
-      token: aliquid
+      token: sed
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -297,11 +297,11 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: 'd&kIs%1'
+        example: u9_1m>/ZcL;
         type: string
         custom: []
     cleanBodyParameters:
-      password: 'd&kIs%1'
+      password: u9_1m>/ZcL;
     fileParameters: []
     responses: []
     responseFields: []
@@ -349,7 +349,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer fkDEPbad5hZe86gV1v3a4c6'
+      - 'Bearer Pkac1VD6hEZd5e46v3ba8fg'
     controller: null
     method: null
     route: null
@@ -393,7 +393,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 5a38gb4V66DcaPvekE1hdfZ'
+      - 'Bearer avZb86dEPkD634ce1h5fgVa'
     controller: null
     method: null
     route: null
@@ -437,7 +437,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 45f36EachVk6Zedav81gbPD'
+      - 'Bearer 5Zaca6b4ev1g6hdEPVDf8k3'
     controller: null
     method: null
     route: null
@@ -469,7 +469,7 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: ut
+        example: qui
         type: string
         custom: []
       gender:
@@ -483,52 +483,52 @@ endpoints:
         name: birthday
         description: 'Must be a valid date.'
         required: true
-        example: '2023-07-11T07:32:52'
+        example: '2023-07-12T01:44:38'
         type: string
         custom: []
       hkid:
         name: hkid
         description: ''
         required: true
-        example: saepe
+        example: accusantium
         type: string
         custom: []
       tel:
         name: tel
         description: ''
         required: true
-        example: sapiente
+        example: impedit
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: false
-        example: '|%<X#~!W'
+        example: "u('*?BnQ26c/"
         type: string
         custom: []
       address:
         name: address
         description: ''
         required: false
-        example: delectus
+        example: dolorem
         type: string
         custom: []
     cleanBodyParameters:
-      name: ut
+      name: qui
       gender: M
-      birthday: '2023-07-11T07:32:52'
-      hkid: saepe
-      tel: sapiente
-      password: '|%<X#~!W'
-      address: delectus
+      birthday: '2023-07-12T01:44:38'
+      hkid: accusantium
+      tel: impedit
+      password: "u('*?BnQ26c/"
+      address: dolorem
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer DP6kdZ6fE5ba8Vecvahg341'
+      - 'Bearer 41bZev5acdDkaP6g8V36Ehf'
     controller: null
     method: null
     route: null
@@ -681,11 +681,11 @@ endpoints:
         name: slug
         description: 'Category Slug or Id'
         required: true
-        example: eos
+        example: vero
         type: string
         custom: []
     cleanUrlParameters:
-      slug: eos
+      slug: vero
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1350,7 +1350,7 @@ endpoints:
   -
     httpMethods:
       - GET
-    uri: 'api/v1/services/{slug}'
+    uri: 'api/v1/services/{category_slug}'
     metadata:
       groupName: 'Frontend API'
       groupDescription: ''
@@ -1365,23 +1365,15 @@ endpoints:
       Accept: application/json
       Accept-Language: en
     urlParameters:
-      slug:
-        name: slug
-        description: 'The slug of the service.'
-        required: true
-        example: 1
-        type: integer
-        custom: []
       category_slug:
         name: category_slug
         description: 'Category Slug or Id'
         required: true
-        example: consequatur
+        example: nostrum
         type: string
         custom: []
     cleanUrlParameters:
-      slug: 1
-      category_slug: consequatur
+      category_slug: nostrum
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1390,7 +1382,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":[{"id":27,"category_id":1,"slug":"en-titleddd-9","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","service_descriptions":[{"id":84,"description":"en_description"}]},{"id":26,"category_id":1,"slug":"en-titleddd-8","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","service_descriptions":[]},{"id":25,"category_id":1,"slug":"en-titleddd-7","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","service_descriptions":[{"id":83,"description":"en_description"}]},{"id":24,"category_id":1,"slug":"en-titleddd-6","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","service_descriptions":[{"id":81,"description":"en_description"},{"id":82,"description":"en_description"}]},{"id":23,"category_id":1,"slug":"en-titleddd-5","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","service_descriptions":[{"id":79,"description":"en_description"},{"id":80,"description":"en_description"}]},{"id":22,"category_id":1,"slug":"en-titleddd-4","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","service_descriptions":[{"id":78,"description":"en_description"}]},{"id":21,"category_id":1,"slug":"en-titleddd-3","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","service_descriptions":[]},{"id":20,"category_id":1,"slug":"en-titleddd-2","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","service_descriptions":[{"id":77,"description":"en_description"}]},{"id":19,"category_id":1,"slug":"en-title-15","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":18,"description":"en_description"}]},{"id":18,"category_id":1,"slug":"en-title-14","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":17,"description":"en_description"}]},{"id":17,"category_id":1,"slug":"en-title-13","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":16,"description":"en_description"}]},{"id":16,"category_id":1,"slug":"en-title-12","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":15,"description":"en_description"}]},{"id":15,"category_id":1,"slug":"en-title-11","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":14,"description":"en_description"}]},{"id":14,"category_id":1,"slug":"en-title-10","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":13,"description":"en_description"}]},{"id":13,"category_id":1,"slug":"en-title-9","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":12,"description":"en_description"}]},{"id":12,"category_id":1,"slug":"en-title-8","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":11,"description":"en_description"}]},{"id":11,"category_id":1,"slug":"en-title-7","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":10,"description":"en_description"}]},{"id":10,"category_id":1,"slug":"en-titleddd","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","service_descriptions":[{"id":76,"description":"en_description"}]},{"id":9,"category_id":1,"slug":"en-title-5","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":8,"description":"en_description"}]},{"id":8,"category_id":1,"slug":"en-title-4","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":7,"description":"en_description"}]},{"id":7,"category_id":1,"slug":"en-title-3","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":6,"description":"en_description"}]},{"id":6,"category_id":1,"slug":"en-title-2","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":5,"description":"en_description"}]},{"id":5,"category_id":1,"slug":"en-title","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":4,"description":"en_description"}]},{"id":4,"category_id":1,"slug":"en-title","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":3,"description":"en_description"}]},{"id":3,"category_id":1,"slug":"en-title","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":2,"description":"en_description"}]},{"id":2,"category_id":1,"slug":"en-title","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[{"id":1,"description":"en_description"}]},{"id":1,"category_id":1,"slug":"en-title","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","service_descriptions":[]}]}'
+        content: '{"data":[]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -1427,11 +1419,11 @@ endpoints:
         name: slug
         description: 'Category Slug or Id'
         required: true
-        example: repellat
+        example: est
         type: string
         custom: []
     cleanUrlParameters:
-      slug: repellat
+      slug: est
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

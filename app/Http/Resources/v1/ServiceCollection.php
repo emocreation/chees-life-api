@@ -19,11 +19,16 @@ class ServiceCollection extends ResourceCollection
                 return [
                     'id' => $item->id,
                     'category_id' => $item->category_id,
+                    'category_slug' => $item->category->slug,
+                    'category_name' => $item->category->name,
                     'slug' => $item->slug,
                     'price' => $item->price,
                     'hot' => $item->hot,
                     'title' => $item->title,
                     'subtitle' => $item->subtitle,
+                    'image_url' => $item->image_url,
+                    'preview_url' => $item->preview_url,
+                    'optimized_url' => $item->optimized_url,
                     'service_descriptions' => $item->service_descriptions->map(function ($item) {
                         return [
                             'id' => $item->id,
