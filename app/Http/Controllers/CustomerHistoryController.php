@@ -75,7 +75,8 @@ class CustomerHistoryController extends Controller
         if ($request->hasFile('report_pdf')) {
             $customerHistory->addMediaFromRequest('report')->toMediaCollection();
         }
-        $customerHistory->customer_history_details()->createMany($validated['customer_history_details'] ?? []);
+        //todo allow cms update
+        //$customerHistory->customer_history_details()->createMany($validated['customer_history_details'] ?? []);
         return $this->success(data: $customerHistory->load('customer_history_details'));
     }
 
@@ -89,7 +90,8 @@ class CustomerHistoryController extends Controller
             $customerHistory->clearMediaCollection();
             $customerHistory->addMediaFromRequest('report')->toMediaCollection();
         }
-        $this->updateRelation($customerHistory, 'customer_history_details', $validated['customer_history_details'] ?? []);
+        //todo allow cms update
+        //$this->updateRelation($customerHistory, 'customer_history_details', $validated['customer_history_details'] ?? []);
         return $this->success(data: $customerHistory->load('customer_history_details'));
     }
 

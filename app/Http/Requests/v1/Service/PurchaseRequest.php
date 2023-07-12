@@ -35,7 +35,7 @@ class PurchaseRequest extends FormRequest
             'medical_record' => 'required|string',
             'covid_diagnosed' => 'required|bool',
             'covid_close_contacts' => 'required|bool',
-            'covid_date' => 'required|date',
+            'covid_date' => 'nullable|date',
             'height' => 'required|decimal:0,2|digits_between:0,3',
             'weight' => 'required|decimal:0,2|digits_between:0,3',
             'blood_date' => 'required|date',

@@ -43,11 +43,6 @@ class CustomerHistory extends BaseCustomerHistory implements TranslatableContrac
         return (int)$this->customer_history_details()->sum('price');
     }
 
-    public function customer()
-    {
-        return $this->belongsTo(Customer::class);
-    }
-
     public function getReportUrlAttribute()
     {
         return $this->getFirstMediaUrl() !== '' ? $this->getFirstMediaUrl() : null;

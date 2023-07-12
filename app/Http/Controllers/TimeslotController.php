@@ -93,7 +93,8 @@ class TimeslotController extends Controller
     {
         $validated = $request->validated();
         $timeslot->update($validated);
-        $this->updateRelation($timeslot, 'timeslot_quotas', $validated['timeslot_quotas'] ?? []);
+        //todo allow cms update
+        //$this->updateRelation($timeslot, 'timeslot_quotas', $validated['timeslot_quotas'] ?? []);
         return $this->success(data: $timeslot->load('timeslot_quotas'));
     }
 
