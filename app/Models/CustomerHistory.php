@@ -6,6 +6,8 @@ use App\Models\Base\CustomerHistory as BaseCustomerHistory;
 use App\Traits\Searchable;
 use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
 use Astrotomic\Translatable\Translatable;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Str;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 
@@ -16,6 +18,7 @@ class CustomerHistory extends BaseCustomerHistory implements TranslatableContrac
     public array $translatedAttributes = ['district'];
     public $appends = ['amount', 'report_url'];
     protected $fillable = [
+        'uuid',
         'customer_id',
         'name',
         'gender',
@@ -23,6 +26,7 @@ class CustomerHistory extends BaseCustomerHistory implements TranslatableContrac
         'hkid',
         'tel',
         'email',
+        'contact_address',
         'medical_record',
         'covid_diagnosed',
         'covid_close_contacts',
@@ -35,8 +39,29 @@ class CustomerHistory extends BaseCustomerHistory implements TranslatableContrac
         'report',
         'remark',
         'stripe_id',
-        'paid'
+        'paid',
+        'locale'
     ];
+
+    protected $casts = [
+        'customer_id' => 'int',
+        'birthday' => 'datetime:Y-m-d',
+        'covid_diagnosed' => 'bool',
+        'covid_close_contacts' => 'bool',
+        'covid_date' => 'datetime:Y-m-d',
+        'height' => 'float',
+        'weight' => 'float',
+        'blood_date' => 'datetime:Y-m-d',
+        'paid' => 'bool'
+    ];
+
+    protected static function boot()
+    {
+        parent::boot();
+        self::creating(function ($model) {
+            $model->uuid = Str::uuid();
+        });
+    }
 
     public function getAmountAttribute()
     {
@@ -46,5 +71,10 @@ class CustomerHistory extends BaseCustomerHistory implements TranslatableContrac
     public function getReportUrlAttribute()
     {
         return $this->getFirstMediaUrl() !== '' ? $this->getFirstMediaUrl() : null;
+    }
+
+    public function scopeUuid(Builder $query, string $uuid)
+    {
+        $query->where('uuid', $uuid);
     }
 }

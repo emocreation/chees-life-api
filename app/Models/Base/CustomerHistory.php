@@ -37,6 +37,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string|null $remark
  * @property string|null $stripe_id
  * @property bool $paid
+ * @property string $locale
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  *

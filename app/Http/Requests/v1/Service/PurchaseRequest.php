@@ -23,15 +23,17 @@ class PurchaseRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'customer_id' => 'nullable|int|exists:customers,id',
+            'name' => 'nullable|string',
+            'gender' => 'nullable|in:F,M',
+            'birthday' => 'nullable|date',
+            'hkid' => 'nullable|string|max:32',
+            'tel' => 'nullable|string',
+            'email' => 'nullable|email',
+            'password' => 'nullable|string',
+
             'service_id' => 'required|int|exists:services,id',
             'district_id' => 'required|int|exists:districts,id',
-            'name' => 'required|string',
-            'gender' => 'required|in:F,M',
-            'birthday' => 'required|date',
-            'hkid' => 'required|string|max:32',
-            'tel' => 'required|string',
-            'email' => 'required|email',
+            'contact_address' => 'nullable|string',
             'medical_record' => 'required|string',
             'covid_diagnosed' => 'required|bool',
             'covid_close_contacts' => 'required|bool',

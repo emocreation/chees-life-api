@@ -5,6 +5,7 @@ namespace App\Models;
 use App\Models\Base\Customer as BaseCustomer;
 use App\Traits\Searchable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Hash;
 use Laravel\Sanctum\HasApiTokens;
@@ -40,5 +41,12 @@ class Customer extends BaseCustomer implements MustVerifyEmail
     public function customer_histories()
     {
         return $this->hasMany(CustomerHistory::class)->orderByDesc('created_at');
+    }
+
+    public function scopeEmailOrHkid(Builder $query, string $email, string $hkid)
+    {
+        $query->where(function ($q) use ($hkid, $email) {
+            return $q->where('email', $email)->orWhere('hkid', $hkid);
+        });
     }
 }

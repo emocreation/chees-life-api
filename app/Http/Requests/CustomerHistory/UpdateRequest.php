@@ -31,6 +31,7 @@ class UpdateRequest extends FormRequest
             'hkid' => 'required|string',
             'tel' => 'required|string',
             'email' => 'required|string',
+            'contact_address' => 'nullable|string',
             'medical_record' => 'required|string',
             'covid_diagnosed' => 'required|bool',
             'covid_close_contacts' => 'required|bool',

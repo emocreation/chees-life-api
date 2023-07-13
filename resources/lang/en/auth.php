@@ -14,4 +14,5 @@ return [
     'quota_exceeded' => 'Quota exceeded',
     'purchase_success' => 'Purchase success',
     'min_payment_charge' => 'The payment amount must at least $4',
+    'already_registered' => 'You are already registered, please login before purchase any service.',
 ];

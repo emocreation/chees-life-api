@@ -39,6 +39,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Route::get('test-mail', [v1_ServiceController::class, 'testMail']);
+
 //CMS API
 Route::name('auth.')->prefix('auth')->controller(AuthController::class)->group(function () {
     Route::get('base', 'base')->name('base');
@@ -116,6 +118,7 @@ Route::name('v1.')->prefix('v1')->group(function () {
         Route::get('histories', 'show')->name('show');
         Route::put('', 'update')->name('update');
     });
+    Route::get('histories/{uuid}', [v1_UserController::class, 'orderHistory'])->name('users.orderHistory');
 
     Route::get('home', [v1_HomeController::class, 'index'])->name('home.index');
     Route::get('banners', [v1_BannerController::class, 'index'])->name('banners.index');
