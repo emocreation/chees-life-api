@@ -73,7 +73,6 @@ class AuthController extends Controller
         $validated = $request->validated();
         //Validate login
         $customer = Customer::where('email', $validated['email'])->first();
-        clock($customer);
         if (!$customer || !Hash::check($validated['password'], $customer->password)) {
             return $this->error(__('auth.unauthorized'), 422);
         }

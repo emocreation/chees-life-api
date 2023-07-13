@@ -33,6 +33,11 @@ class Customer extends BaseCustomer implements MustVerifyEmail
         'token'
     ];
 
+    protected $casts = [
+        'birthday' => 'datetime:Y-m-d',
+        'email_verified_at' => 'datetime:Y-m-d H:i:s'
+    ];
+
     public function setPasswordAttribute(string $password): void
     {
         $this->attributes['password'] = Hash::make($password);
