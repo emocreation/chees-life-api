@@ -73,7 +73,7 @@ class CustomerHistoryController extends Controller
         $customerHistory = CustomerHistory::create($validated);
         //Store file
         if ($request->hasFile('report_pdf')) {
-            $customerHistory->addMediaFromRequest('report')->toMediaCollection();
+            $customerHistory->addMediaFromRequest('report_pdf')->toMediaCollection();
         }
         //todo allow cms update
         //$customerHistory->customer_history_details()->createMany($validated['customer_history_details'] ?? []);
@@ -88,7 +88,7 @@ class CustomerHistoryController extends Controller
         //Update Image
         if ($request->hasFile('report_pdf')) {
             $customerHistory->clearMediaCollection();
-            $customerHistory->addMediaFromRequest('report')->toMediaCollection();
+            $customerHistory->addMediaFromRequest('report_pdf')->toMediaCollection();
         }
         //todo allow cms update
         //$this->updateRelation($customerHistory, 'customer_history_details', $validated['customer_history_details'] ?? []);

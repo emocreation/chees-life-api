@@ -26,9 +26,13 @@ class UpdateRequest extends FormRequest
         return RuleFactory::make([
             'category_id' => 'required|int|exists:categories,id',
             'price' => 'required|int',
+            'description_en' => 'nullable|string',
+            'description_tc' => 'nullable|string',
+            'detail_en' => 'nullable|string',
+            'detail_tc' => 'nullable|string',
             'hot' => 'bool',
             'enable' => 'required|bool',
-            'en' => 'required|array',
+/*            'en' => 'required|array',
             'tc' => 'required|array',
             '%title%' => 'required|string',
             '%subtitle%' => 'nullable|string',
@@ -38,7 +42,7 @@ class UpdateRequest extends FormRequest
             'service_details.*.id' => 'nullable|int',
             'service_details.*.sequence' => 'nullable|int',
             'service_details.*.%title%' => 'required_with:service_details.*.%content%|string',
-            'service_details.*.%content%' => 'required_with:service_details.*.%title%|string',
+            'service_details.*.%content%' => 'required_with:service_details.*.%title%|string',*/
             'image' => 'nullable|image',
         ]);
     }

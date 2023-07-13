@@ -26,6 +26,10 @@ class Service extends BaseService implements TranslatableContract, HasMedia
         'category_id',
         'slug',
         'price',
+        'description_en',
+        'description_tc',
+        'detail_en',
+        'detail_tc',
         'hot',
         'enable'
     ];

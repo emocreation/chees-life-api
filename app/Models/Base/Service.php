@@ -22,6 +22,10 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $sequence
  * @property string|null $slug
  * @property int $price
+ * @property string|null $description_en
+ * @property string|null $description_tc
+ * @property string|null $detail_en
+ * @property string|null $detail_tc
  * @property bool $hot
  * @property bool $enable
  * @property Carbon|null $created_at

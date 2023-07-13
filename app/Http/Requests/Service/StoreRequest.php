@@ -26,15 +26,19 @@ class StoreRequest extends FormRequest
         return RuleFactory::make([
             'category_id' => 'required|int|exists:categories,id',
             'price' => 'required|int',
+            'description_en' => 'nullable|string',
+            'description_tc' => 'nullable|string',
+            'detail_en' => 'nullable|string',
+            'detail_tc' => 'nullable|string',
             'hot' => 'bool',
             'enable' => 'required|bool',
-            'en' => 'required|array',
+/*            'en' => 'required|array',
             'tc' => 'required|array',
             '%title%' => 'required|string',
             '%subtitle%' => 'nullable|string',
             'service_descriptions.*.%description%' => 'required|string',
             'service_details.*.%title%' => 'required|string',
-            'service_details.*.%content%' => 'required|string',
+            'service_details.*.%content%' => 'required|string',*/
             'image' => 'nullable|image',
         ]);
     }

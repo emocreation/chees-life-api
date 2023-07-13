@@ -75,8 +75,8 @@ class ServiceController extends Controller
         $validated = $request->validated();
         $service = Service::create($validated);
         //Create Relation
-        $service->service_descriptions()->createMany($validated['service_descriptions'] ?? []);
-        $service->service_details()->createMany($validated['service_details'] ?? []);
+        //$service->service_descriptions()->createMany($validated['service_descriptions'] ?? []);
+        //$service->service_details()->createMany($validated['service_details'] ?? []);
         //Store file
         if ($request->hasFile('image')) {
             $service->addMediaFromRequest('image')->toMediaCollection();
@@ -90,8 +90,8 @@ class ServiceController extends Controller
         $validated = $request->validated();
         $service->update($validated);
         //Update service's relation
-        $this->updateRelation($service, 'service_descriptions', $validated['service_descriptions'] ?? []);
-        $this->updateRelation($service, 'service_details', $validated['service_details'] ?? []);
+        //$this->updateRelation($service, 'service_descriptions', $validated['service_descriptions'] ?? []);
+        //$this->updateRelation($service, 'service_details', $validated['service_details'] ?? []);
         //Update Image
         if ($request->hasFile('image')) {
             $service->clearMediaCollection();

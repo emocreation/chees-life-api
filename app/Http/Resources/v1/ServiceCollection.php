@@ -29,6 +29,8 @@ class ServiceCollection extends ResourceCollection
                     'image_url' => $item->image_url,
                     'preview_url' => $item->preview_url,
                     'optimized_url' => $item->optimized_url,
+                    'service_description_en' => $item->description_en,
+                    'service_description_tc' => $item->description_tc,
                     'service_descriptions' => $item->service_descriptions->map(function ($item) {
                         return [
                             'id' => $item->id,

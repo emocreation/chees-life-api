@@ -28,6 +28,10 @@ class ServiceResource extends JsonResource
                 'image_url' => $this->resource->image_url,
                 'preview_url' => $this->resource->preview_url,
                 'optimized_url' => $this->resource->optimized_url,
+                'service_description_en' => $this->resource->description_en,
+                'service_description_tc' => $this->resource->description_tc,
+                'service_detail_en' => $this->resource->detail_en,
+                'service_detail_tc' => $this->resource->detail_tc,
                 'service_descriptions' => $this->resource->service_descriptions->map(function ($item) {
                     return [
                         'id' => $item->id,
