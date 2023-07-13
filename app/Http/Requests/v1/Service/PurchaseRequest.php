@@ -34,7 +34,7 @@ class PurchaseRequest extends FormRequest
             'service_id' => 'required|int|exists:services,id',
             'district_id' => 'required|int|exists:districts,id',
             'contact_address' => 'nullable|string',
-            'medical_record' => 'required|string',
+            'medical_record' => 'nullable|string',
             'covid_diagnosed' => 'required|bool',
             'covid_close_contacts' => 'required|bool',
             'covid_date' => 'nullable|date',

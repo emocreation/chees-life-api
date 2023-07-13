@@ -38,13 +38,14 @@ class CustomerHistoryResource extends JsonResource
                 'report' => $this->resource->report,
                 'remark' => $this->resource->remark,
                 'paid' => $this->resource->paid,
+                'report_url' => $this->resource->report_url,
                 'customer_history_details' => $this->resource->customer_history_details->map(function ($item) {
-        return [
-            'id' => $item->id,
-            'title' => $item->title,
-            'price' => $item->price,
-        ];
-    }),
+                    return [
+                        'id' => $item->id,
+                        'title' => $item->title,
+                        'price' => $item->price,
+                    ];
+                }),
             ]
         ];
     }
