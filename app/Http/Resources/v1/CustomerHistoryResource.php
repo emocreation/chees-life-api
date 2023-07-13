@@ -33,17 +33,18 @@ class CustomerHistoryResource extends JsonResource
                 'weight' => $this->resource->weight,
                 'blood_date' => $this->resource->blood_date,
                 'blood_time' => $this->resource->blood_time,
+                'district' => $this->resource->district,
                 'address' => $this->resource->address,
                 'report' => $this->resource->report,
                 'remark' => $this->resource->remark,
                 'paid' => $this->resource->paid,
                 'customer_history_details' => $this->resource->customer_history_details->map(function ($item) {
-                    return [
-                        'id' => $item->id,
-                        'title' => $item->title,
-                        'price' => $item->price,
-                    ];
-                }),
+        return [
+            'id' => $item->id,
+            'title' => $item->title,
+            'price' => $item->price,
+        ];
+    }),
             ]
         ];
     }
