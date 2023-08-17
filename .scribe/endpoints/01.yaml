@@ -27,7 +27,7 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: neque
+        example: sunt
         type: string
         custom: []
       gender:
@@ -41,45 +41,45 @@ endpoints:
         name: birthday
         description: 'Must be a valid date.'
         required: true
-        example: '2023-07-12T09:38:40'
+        example: '2023-08-17T08:16:06'
         type: string
         custom: []
       hkid:
         name: hkid
         description: ''
         required: true
-        example: quo
+        example: fuga
         type: string
         custom: []
       tel:
         name: tel
         description: ''
         required: true
-        example: itaque
+        example: facere
         type: string
         custom: []
       email:
         name: email
         description: ''
         required: true
-        example: jon.rowe@example.net
+        example: xmarquardt@example.org
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: 'oN[vXn87?'
+        example: ':Sh!*Wx2C}Zer'
         type: string
         custom: []
     cleanBodyParameters:
-      name: neque
+      name: sunt
       gender: M
-      birthday: '2023-07-12T09:38:40'
-      hkid: quo
-      tel: itaque
-      email: jon.rowe@example.net
-      password: 'oN[vXn87?'
+      birthday: '2023-08-17T08:16:06'
+      hkid: fuga
+      tel: facere
+      email: xmarquardt@example.org
+      password: ':Sh!*Wx2C}Zer'
     fileParameters: []
     responses: []
     responseFields: []
@@ -114,19 +114,19 @@ endpoints:
         name: email
         description: ''
         required: true
-        example: piper.breitenberg@example.net
+        example: karianne.marks@example.com
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: 'ExkK,u'
+        example: '?Hx]g`me!j'
         type: string
         custom: []
     cleanBodyParameters:
-      email: piper.breitenberg@example.net
-      password: 'ExkK,u'
+      email: karianne.marks@example.com
+      password: '?Hx]g`me!j'
     fileParameters: []
     responses: []
     responseFields: []
@@ -157,11 +157,11 @@ endpoints:
         name: token
         description: ''
         required: true
-        example: repudiandae
+        example: alias
         type: string
         custom: []
     cleanUrlParameters:
-      token: repudiandae
+      token: alias
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -211,11 +211,11 @@ endpoints:
         name: email
         description: ''
         required: true
-        example: heller.kitty@example.org
+        example: erika.ledner@example.net
         type: string
         custom: []
     cleanBodyParameters:
-      email: heller.kitty@example.org
+      email: erika.ledner@example.net
     fileParameters: []
     responses: []
     responseFields: []
@@ -250,11 +250,11 @@ endpoints:
         name: email
         description: ''
         required: true
-        example: hill.erin@example.net
+        example: mohr.lois@example.com
         type: string
         custom: []
     cleanBodyParameters:
-      email: hill.erin@example.net
+      email: mohr.lois@example.com
     fileParameters: []
     responses: []
     responseFields: []
@@ -285,11 +285,11 @@ endpoints:
         name: token
         description: ''
         required: true
-        example: fuga
+        example: qui
         type: string
         custom: []
     cleanUrlParameters:
-      token: fuga
+      token: qui
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -297,11 +297,11 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: '>P<xB~'
+        example: S<JJ>+$z
         type: string
         custom: []
     cleanBodyParameters:
-      password: '>P<xB~'
+      password: S<JJ>+$z
     fileParameters: []
     responses: []
     responseFields: []
@@ -349,7 +349,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer dD65vacea6EZf43kgVb81Ph'
+      - 'Bearer 15dPbekfg4Eh86va6acZDV3'
     controller: null
     method: null
     route: null
@@ -393,7 +393,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer ZPa45ebfvda8kVDEh136gc6'
+      - 'Bearer ekv6Z4E3gaVDPh56c1bdfa8'
     controller: null
     method: null
     route: null
@@ -407,7 +407,7 @@ endpoints:
       groupDescription: ''
       subgroup: User
       subgroupDescription: ''
-      title: 'User Order History'
+      title: 'User Order Histories list'
       description: ''
       authenticated: true
       custom: []
@@ -437,7 +437,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer De6f1h68V4Pagvkc35EZabd'
+      - 'Bearer D5EcPVa6geh63kfd8bvZ4a1'
     controller: null
     method: null
     route: null
@@ -469,7 +469,7 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: veniam
+        example: hic
         type: string
         custom: []
       gender:
@@ -483,52 +483,102 @@ endpoints:
         name: birthday
         description: 'Must be a valid date.'
         required: true
-        example: '2023-07-12T09:38:41'
+        example: '2023-08-17T08:16:06'
         type: string
         custom: []
       hkid:
         name: hkid
         description: ''
         required: true
-        example: ea
+        example: saepe
         type: string
         custom: []
       tel:
         name: tel
         description: ''
         required: true
-        example: qui
+        example: perspiciatis
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: false
-        example: '=n,cQ!'
+        example: '=TLHN^='
         type: string
         custom: []
       address:
         name: address
         description: ''
         required: false
-        example: architecto
+        example: ea
         type: string
         custom: []
     cleanBodyParameters:
-      name: veniam
+      name: hic
       gender: F
-      birthday: '2023-07-12T09:38:41'
-      hkid: ea
-      tel: qui
-      password: '=n,cQ!'
-      address: architecto
+      birthday: '2023-08-17T08:16:06'
+      hkid: saepe
+      tel: perspiciatis
+      password: '=TLHN^='
+      address: ea
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer kvafc84g36a5EdVDbP6Zh1e'
+      - 'Bearer 46vhfPa6adb5Vck3Z1gDeE8'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/histories/{uuid}'
+    metadata:
+      groupName: 'Frontend API'
+      groupDescription: ''
+      subgroup: User
+      subgroupDescription: ''
+      title: 'Order History'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters:
+      uuid:
+        name: uuid
+        description: ''
+        required: true
+        example: c801c110-b818-3465-bc48-59f73c9e5759
+        type: string
+        custom: []
+    cleanUrlParameters:
+      uuid: c801c110-b818-3465-bc48-59f73c9e5759
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 404
+        content: '{"message":"record not found","data":null}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '58'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
     controller: null
     method: null
     route: null
@@ -560,12 +610,12 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"categories":[{"id":2,"slug":null,"name":"voluptatem222"},{"id":1,"slug":"body-check","name":"\u81ea\u4e3b\u9ad4\u6aa2\u7d44\u5408"}],"banners":[{"id":6,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/4\/logo.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/4\/c\/logo-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/4\/c\/logo-optimized.jpg"},{"id":7,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/5\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/5\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/5\/c\/blank-optimized.jpg"},{"id":8,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/6\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/6\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/6\/c\/blank-optimized.jpg"},{"id":9,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/7\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/7\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/7\/c\/blank-optimized.jpg"},{"id":10,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/8\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/8\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/8\/c\/blank-optimized.jpg"},{"id":11,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/9\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/9\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/9\/c\/blank-optimized.jpg"},{"id":12,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/10\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/10\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/10\/c\/blank-optimized.jpg"},{"id":13,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/11\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/11\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/11\/c\/blank-optimized.jpg"},{"id":14,"image_url":null,"preview_url":null,"optimized_url":null},{"id":15,"image_url":null,"preview_url":null,"optimized_url":null},{"id":16,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/12\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/12\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/12\/c\/blank-optimized.jpg"},{"id":17,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/13\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/13\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/13\/c\/blank-optimized.jpg"},{"id":18,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/14\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/14\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/14\/c\/blank-optimized.jpg"},{"id":19,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/15\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/15\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/15\/c\/blank-optimized.jpg"},{"id":20,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/16\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/16\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/16\/c\/blank-optimized.jpg"},{"id":21,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/17\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/17\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/17\/c\/blank-optimized.jpg"},{"id":22,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/18\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/18\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/18\/c\/blank-optimized.jpg"},{"id":23,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/19\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/19\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/19\/c\/blank-optimized.jpg"},{"id":24,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/20\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/20\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/20\/c\/blank-optimized.jpg"},{"id":25,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/21\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/21\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/21\/c\/blank-optimized.jpg"},{"id":26,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/22\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/22\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/22\/c\/blank-optimized.jpg"},{"id":27,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/23\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/23\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/23\/c\/blank-optimized.jpg"},{"id":28,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/24\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/24\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/24\/c\/blank-optimized.jpg"},{"id":29,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/25\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/25\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/25\/c\/blank-optimized.jpg"},{"id":30,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/26\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/26\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/26\/c\/blank-optimized.jpg"},{"id":31,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/27\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/27\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/27\/c\/blank-optimized.jpg"},{"id":32,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/28\/jHnaG9TQsIU8VfTt0W3GRwOma5SSwQyC7tcxRZqX","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/28\/c\/jHnaG9TQsIU8VfTt0W3GRwOma5SSwQyC7tcxRZqX-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/28\/c\/jHnaG9TQsIU8VfTt0W3GRwOma5SSwQyC7tcxRZqX-optimized.jpg"},{"id":33,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/29\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/29\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/29\/c\/blank-optimized.jpg"},{"id":34,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/30\/2k_demo.jpg","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/30\/c\/2k_demo-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/30\/c\/2k_demo-optimized.jpg"},{"id":35,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/31\/61EjJ8sdyISo9lNn1Ya7TvOW5MWdMs6TaeTR88qu","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/31\/c\/61EjJ8sdyISo9lNn1Ya7TvOW5MWdMs6TaeTR88qu-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/31\/c\/61EjJ8sdyISo9lNn1Ya7TvOW5MWdMs6TaeTR88qu-optimized.jpg"},{"id":36,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/32\/PT3DZLcBCryjZRGA","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/32\/c\/PT3DZLcBCryjZRGA-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/32\/c\/PT3DZLcBCryjZRGA-optimized.jpg"},{"id":37,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/33\/ayjZzoHIczImCqtB.jpg","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/33\/c\/ayjZzoHIczImCqtB-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/33\/c\/ayjZzoHIczImCqtB-optimized.jpg"}],"services":[{"id":1,"slug":"en-title","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[],"image_url":null,"preview_url":null,"optimized_url":null},{"id":2,"slug":"en-title","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":1,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":3,"slug":"en-title","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":2,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":4,"slug":"en-title","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":3,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":5,"slug":"en-title","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":4,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":6,"slug":"en-title-2","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":5,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":7,"slug":"en-title-3","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":6,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":8,"slug":"en-title-4","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":7,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":9,"slug":"en-title-5","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":8,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":10,"slug":"en-titleddd","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[{"id":76,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":11,"slug":"en-title-7","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":10,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":12,"slug":"en-title-8","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":11,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":13,"slug":"en-title-9","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":12,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":14,"slug":"en-title-10","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":13,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":15,"slug":"en-title-11","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":14,"description":"en_description"}],"image_url":"https:\/\/chees-api.dev.com\/storage\/service\/34\/v85JulRWtzQBN4z0.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/service\/34\/c\/v85JulRWtzQBN4z0-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/service\/34\/c\/v85JulRWtzQBN4z0-optimized.jpg"},{"id":16,"slug":"en-title-12","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":15,"description":"en_description"}],"image_url":"https:\/\/chees-api.dev.com\/storage\/service\/35\/rjnmXQO6HOd901dB.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/service\/35\/c\/rjnmXQO6HOd901dB-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/service\/35\/c\/rjnmXQO6HOd901dB-optimized.jpg"},{"id":17,"slug":"en-title-13","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":16,"description":"en_description"}],"image_url":"https:\/\/chees-api.dev.com\/storage\/service\/36\/KEcaldzJpIKzRViz.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/service\/36\/c\/KEcaldzJpIKzRViz-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/service\/36\/c\/KEcaldzJpIKzRViz-optimized.jpg"},{"id":18,"slug":"en-title-14","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":17,"description":"en_description"}],"image_url":"https:\/\/chees-api.dev.com\/storage\/service\/37\/dS6omhDSby8GTSDY.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/service\/37\/c\/dS6omhDSby8GTSDY-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/service\/37\/c\/dS6omhDSby8GTSDY-optimized.jpg"},{"id":19,"slug":"en-title-15","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":18,"description":"en_description"}],"image_url":"https:\/\/chees-api.dev.com\/storage\/service\/38\/LtwgTzo7dqHBBLs0.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/service\/38\/c\/LtwgTzo7dqHBBLs0-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/service\/38\/c\/LtwgTzo7dqHBBLs0-optimized.jpg"},{"id":20,"slug":"en-titleddd-2","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[{"id":77,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":21,"slug":"en-titleddd-3","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[],"image_url":null,"preview_url":null,"optimized_url":null},{"id":22,"slug":"en-titleddd-4","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[{"id":78,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":23,"slug":"en-titleddd-5","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[{"id":79,"description":"en_description"},{"id":80,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":24,"slug":"en-titleddd-6","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[{"id":81,"description":"en_description"},{"id":82,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":25,"slug":"en-titleddd-7","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[{"id":83,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":26,"slug":"en-titleddd-8","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[],"image_url":null,"preview_url":null,"optimized_url":null},{"id":27,"slug":"en-titleddd-9","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[{"id":84,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null}],"reviews":[{"id":2,"review_date":"2023-06-07","rating":5,"customer_name":"adipisci","content":"officiis"},{"id":1,"review_date":"2023-06-06","rating":4,"customer_name":"eaque","content":"aliquid"}],"socialMedias":[{"id":1,"type":0,"type_text":"Facebook","link":"https:\/\/www.facebook.com\/"},{"id":2,"type":1,"type_text":"Instagram","link":"Instagram"},{"id":3,"type":2,"type_text":"Youtube","link":"Youtube"}]}}'
+        content: '{"data":{"categories":[{"id":2,"slug":null,"name":"voluptatem222"},{"id":1,"slug":"body-check","name":"\u81ea\u4e3b\u9ad4\u6aa2\u7d44\u5408"}],"banners":[{"id":6,"image_url":null,"preview_url":null,"optimized_url":null},{"id":7,"image_url":null,"preview_url":null,"optimized_url":null},{"id":8,"image_url":null,"preview_url":null,"optimized_url":null},{"id":9,"image_url":null,"preview_url":null,"optimized_url":null},{"id":10,"image_url":null,"preview_url":null,"optimized_url":null},{"id":11,"image_url":null,"preview_url":null,"optimized_url":null},{"id":12,"image_url":null,"preview_url":null,"optimized_url":null},{"id":13,"image_url":null,"preview_url":null,"optimized_url":null},{"id":14,"image_url":null,"preview_url":null,"optimized_url":null},{"id":15,"image_url":null,"preview_url":null,"optimized_url":null},{"id":16,"image_url":null,"preview_url":null,"optimized_url":null},{"id":17,"image_url":null,"preview_url":null,"optimized_url":null},{"id":18,"image_url":null,"preview_url":null,"optimized_url":null},{"id":19,"image_url":null,"preview_url":null,"optimized_url":null},{"id":20,"image_url":null,"preview_url":null,"optimized_url":null},{"id":21,"image_url":null,"preview_url":null,"optimized_url":null},{"id":22,"image_url":null,"preview_url":null,"optimized_url":null},{"id":23,"image_url":null,"preview_url":null,"optimized_url":null},{"id":24,"image_url":null,"preview_url":null,"optimized_url":null},{"id":25,"image_url":null,"preview_url":null,"optimized_url":null},{"id":26,"image_url":null,"preview_url":null,"optimized_url":null},{"id":27,"image_url":null,"preview_url":null,"optimized_url":null},{"id":28,"image_url":null,"preview_url":null,"optimized_url":null},{"id":29,"image_url":null,"preview_url":null,"optimized_url":null},{"id":30,"image_url":null,"preview_url":null,"optimized_url":null},{"id":31,"image_url":null,"preview_url":null,"optimized_url":null},{"id":32,"image_url":null,"preview_url":null,"optimized_url":null},{"id":33,"image_url":null,"preview_url":null,"optimized_url":null},{"id":34,"image_url":null,"preview_url":null,"optimized_url":null},{"id":35,"image_url":null,"preview_url":null,"optimized_url":null},{"id":36,"image_url":null,"preview_url":null,"optimized_url":null},{"id":37,"image_url":null,"preview_url":null,"optimized_url":null}],"services":[{"id":1,"slug":"en-title","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[],"image_url":null,"preview_url":null,"optimized_url":null},{"id":2,"slug":"en-title","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":1,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":3,"slug":"en-title","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":2,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":4,"slug":"en-title","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":3,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":5,"slug":"en-title","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":4,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":6,"slug":"en-title-2","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":5,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":7,"slug":"en-title-3","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":6,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":8,"slug":"en-title-4","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":7,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":9,"slug":"en-title-5","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":8,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":10,"slug":"en-titleddd","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[{"id":76,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":11,"slug":"en-title-7","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":10,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":12,"slug":"en-title-8","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":11,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":13,"slug":"en-title-9","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":12,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":14,"slug":"en-title-10","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":13,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":15,"slug":"en-title-11","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":14,"description":"en_description"}],"image_url":"https:\/\/chees-api.dev.com\/storage\/service\/34\/v85JulRWtzQBN4z0.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/service\/34\/c\/v85JulRWtzQBN4z0-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/service\/34\/c\/v85JulRWtzQBN4z0-optimized.jpg"},{"id":16,"slug":"en-title-12","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":15,"description":"en_description"}],"image_url":"https:\/\/chees-api.dev.com\/storage\/service\/35\/rjnmXQO6HOd901dB.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/service\/35\/c\/rjnmXQO6HOd901dB-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/service\/35\/c\/rjnmXQO6HOd901dB-optimized.jpg"},{"id":17,"slug":"en-title-13","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":16,"description":"en_description"}],"image_url":"https:\/\/chees-api.dev.com\/storage\/service\/36\/KEcaldzJpIKzRViz.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/service\/36\/c\/KEcaldzJpIKzRViz-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/service\/36\/c\/KEcaldzJpIKzRViz-optimized.jpg"},{"id":18,"slug":"en-title-14","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":17,"description":"en_description"}],"image_url":"https:\/\/chees-api.dev.com\/storage\/service\/37\/dS6omhDSby8GTSDY.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/service\/37\/c\/dS6omhDSby8GTSDY-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/service\/37\/c\/dS6omhDSby8GTSDY-optimized.jpg"},{"id":19,"slug":"en-title-15","price":3200,"hot":true,"title":"en_title","subtitle":"en_subtitle","descriptions":[{"id":18,"description":"en_description"}],"image_url":"https:\/\/chees-api.dev.com\/storage\/service\/38\/LtwgTzo7dqHBBLs0.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/service\/38\/c\/LtwgTzo7dqHBBLs0-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/service\/38\/c\/LtwgTzo7dqHBBLs0-optimized.jpg"},{"id":20,"slug":"en-titleddd-2","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[{"id":77,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":21,"slug":"en-titleddd-3","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[],"image_url":null,"preview_url":null,"optimized_url":null},{"id":22,"slug":"en-titleddd-4","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[{"id":78,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":23,"slug":"en-titleddd-5","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[{"id":79,"description":"en_description"},{"id":80,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":24,"slug":"en-titleddd-6","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[{"id":81,"description":"en_description"},{"id":82,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":25,"slug":"en-titleddd-7","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[{"id":83,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null},{"id":26,"slug":"en-titleddd-8","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[],"image_url":null,"preview_url":null,"optimized_url":null},{"id":27,"slug":"en-titleddd-9","price":3200,"hot":true,"title":"en_titleddd","subtitle":"en_subtitle","descriptions":[{"id":84,"description":"en_description"}],"image_url":null,"preview_url":null,"optimized_url":null}],"reviews":[{"id":2,"review_date":"2023-06-07","rating":5,"customer_name":"adipisci","content":"officiis"},{"id":1,"review_date":"2023-06-06","rating":4,"customer_name":"eaque","content":"aliquid"}],"socialMedias":[{"id":1,"type":0,"type_text":"Facebook","link":"https:\/\/www.facebook.com\/"},{"id":2,"type":1,"type_text":"Instagram","link":"Instagram"},{"id":3,"type":2,"type_text":"Youtube","link":"Youtube"}]}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '58'
+          x-ratelimit-remaining: '57'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -602,12 +652,12 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":[{"id":37,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/33\/ayjZzoHIczImCqtB.jpg","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/33\/c\/ayjZzoHIczImCqtB-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/33\/c\/ayjZzoHIczImCqtB-optimized.jpg"},{"id":36,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/32\/PT3DZLcBCryjZRGA","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/32\/c\/PT3DZLcBCryjZRGA-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/32\/c\/PT3DZLcBCryjZRGA-optimized.jpg"},{"id":35,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/31\/61EjJ8sdyISo9lNn1Ya7TvOW5MWdMs6TaeTR88qu","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/31\/c\/61EjJ8sdyISo9lNn1Ya7TvOW5MWdMs6TaeTR88qu-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/31\/c\/61EjJ8sdyISo9lNn1Ya7TvOW5MWdMs6TaeTR88qu-optimized.jpg"},{"id":34,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/30\/2k_demo.jpg","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/30\/c\/2k_demo-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/30\/c\/2k_demo-optimized.jpg"},{"id":33,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/29\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/29\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/29\/c\/blank-optimized.jpg"},{"id":32,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/28\/jHnaG9TQsIU8VfTt0W3GRwOma5SSwQyC7tcxRZqX","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/28\/c\/jHnaG9TQsIU8VfTt0W3GRwOma5SSwQyC7tcxRZqX-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/28\/c\/jHnaG9TQsIU8VfTt0W3GRwOma5SSwQyC7tcxRZqX-optimized.jpg"},{"id":31,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/27\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/27\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/27\/c\/blank-optimized.jpg"},{"id":30,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/26\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/26\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/26\/c\/blank-optimized.jpg"},{"id":29,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/25\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/25\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/25\/c\/blank-optimized.jpg"},{"id":28,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/24\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/24\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/24\/c\/blank-optimized.jpg"},{"id":27,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/23\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/23\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/23\/c\/blank-optimized.jpg"},{"id":26,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/22\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/22\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/22\/c\/blank-optimized.jpg"},{"id":25,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/21\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/21\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/21\/c\/blank-optimized.jpg"},{"id":24,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/20\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/20\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/20\/c\/blank-optimized.jpg"},{"id":23,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/19\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/19\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/19\/c\/blank-optimized.jpg"},{"id":22,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/18\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/18\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/18\/c\/blank-optimized.jpg"},{"id":21,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/17\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/17\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/17\/c\/blank-optimized.jpg"},{"id":20,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/16\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/16\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/16\/c\/blank-optimized.jpg"},{"id":19,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/15\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/15\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/15\/c\/blank-optimized.jpg"},{"id":18,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/14\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/14\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/14\/c\/blank-optimized.jpg"},{"id":17,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/13\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/13\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/13\/c\/blank-optimized.jpg"},{"id":16,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/12\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/12\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/12\/c\/blank-optimized.jpg"},{"id":15,"image_url":null,"preview_url":null,"optimized_url":null},{"id":14,"image_url":null,"preview_url":null,"optimized_url":null},{"id":13,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/11\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/11\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/11\/c\/blank-optimized.jpg"},{"id":12,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/10\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/10\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/10\/c\/blank-optimized.jpg"},{"id":11,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/9\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/9\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/9\/c\/blank-optimized.jpg"},{"id":10,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/8\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/8\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/8\/c\/blank-optimized.jpg"},{"id":9,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/7\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/7\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/7\/c\/blank-optimized.jpg"},{"id":8,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/6\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/6\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/6\/c\/blank-optimized.jpg"},{"id":7,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/5\/blank.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/5\/c\/blank-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/5\/c\/blank-optimized.jpg"},{"id":6,"image_url":"https:\/\/chees-api.dev.com\/storage\/banner\/4\/logo.png","preview_url":"https:\/\/chees-api.dev.com\/storage\/banner\/4\/c\/logo-preview.jpg","optimized_url":"https:\/\/chees-api.dev.com\/storage\/banner\/4\/c\/logo-optimized.jpg"}]}'
+        content: '{"data":[{"id":37,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":36,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":35,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":34,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":33,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":32,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":31,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":30,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":29,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":28,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":27,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":26,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":25,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":24,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":23,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":22,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":21,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":20,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":19,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":18,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":17,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":16,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":15,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":14,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":13,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":12,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":11,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":10,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":9,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":8,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":7,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}},{"id":6,"images":{"image_web_en_url":"","image_web_tc_url":"","image_mobile_en_url":"","image_mobile_tc_url":""}}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '57'
+          x-ratelimit-remaining: '56'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -649,7 +699,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '56'
+          x-ratelimit-remaining: '55'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -681,11 +731,11 @@ endpoints:
         name: slug
         description: 'Category Slug or Id'
         required: true
-        example: sed
+        example: placeat
         type: string
         custom: []
     cleanUrlParameters:
-      slug: sed
+      slug: placeat
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1109,7 +1159,7 @@ endpoints:
                   },
                   {
                       "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php",
-                      "line": 208,
+                      "line": 211,
                       "function": "call",
                       "class": "Illuminate\\Container\\Container",
                       "type": "->"
@@ -1123,7 +1173,7 @@ endpoints:
                   },
                   {
                       "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php",
-                      "line": 178,
+                      "line": 181,
                       "function": "run",
                       "class": "Symfony\\Component\\Console\\Command\\Command",
                       "type": "->"
@@ -1151,7 +1201,7 @@ endpoints:
                   },
                   {
                       "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php",
-                      "line": 200,
+                      "line": 201,
                       "function": "run",
                       "class": "Symfony\\Component\\Console\\Application",
                       "type": "->"
@@ -1169,7 +1219,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '55'
+          x-ratelimit-remaining: '54'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -1211,7 +1261,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '54'
+          x-ratelimit-remaining: '53'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -1253,7 +1303,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '53'
+          x-ratelimit-remaining: '52'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -1295,7 +1345,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '52'
+          x-ratelimit-remaining: '51'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -1337,7 +1387,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '51'
+          x-ratelimit-remaining: '50'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -1369,11 +1419,11 @@ endpoints:
         name: category_slug
         description: 'Category Slug or Id'
         required: true
-        example: assumenda
+        example: ratione
         type: string
         custom: []
     cleanUrlParameters:
-      category_slug: assumenda
+      category_slug: ratione
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1387,7 +1437,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '50'
+          x-ratelimit-remaining: '49'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -1419,11 +1469,11 @@ endpoints:
         name: slug
         description: 'Category Slug or Id'
         required: true
-        example: recusandae
+        example: fuga
         type: string
         custom: []
     cleanUrlParameters:
-      slug: recusandae
+      slug: fuga
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1847,7 +1897,7 @@ endpoints:
                   },
                   {
                       "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php",
-                      "line": 208,
+                      "line": 211,
                       "function": "call",
                       "class": "Illuminate\\Container\\Container",
                       "type": "->"
@@ -1861,7 +1911,7 @@ endpoints:
                   },
                   {
                       "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php",
-                      "line": 178,
+                      "line": 181,
                       "function": "run",
                       "class": "Symfony\\Component\\Console\\Command\\Command",
                       "type": "->"
@@ -1889,7 +1939,7 @@ endpoints:
                   },
                   {
                       "file": "C:\\laragon\\www\\chees-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php",
-                      "line": 200,
+                      "line": 201,
                       "function": "run",
                       "class": "Symfony\\Component\\Console\\Application",
                       "type": "->"
@@ -1907,7 +1957,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '49'
+          x-ratelimit-remaining: '48'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -1939,81 +1989,95 @@ endpoints:
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
-      customer_id:
-        name: customer_id
+      name:
+        name: name
         description: ''
         required: false
-        example: 16
-        type: integer
+        example: magnam
+        type: string
+        custom: []
+      gender:
+        name: gender
+        description: 'Must be one of <code>F</code> or <code>M</code>.'
+        required: false
+        example: F
+        type: string
+        custom: []
+      birthday:
+        name: birthday
+        description: 'Must be a valid date.'
+        required: false
+        example: '2023-08-17T08:16:06'
+        type: string
+        custom: []
+      id_type:
+        name: id_type
+        description: 'Must be one of <code>hkid</code>, <code>passport</code>, or <code>other</code>.'
+        required: false
+        example: other
+        type: string
+        custom: []
+      hkid:
+        name: hkid
+        description: 'Must not be greater than 32 characters.'
+        required: false
+        example: ipviosxodilxywkfjjptjl
+        type: string
+        custom: []
+      tel:
+        name: tel
+        description: ''
+        required: false
+        example: non
+        type: string
+        custom: []
+      email:
+        name: email
+        description: 'Must be a valid email address.'
+        required: false
+        example: sydney07@example.com
+        type: string
+        custom: []
+      password:
+        name: password
+        description: ''
+        required: false
+        example: "VH<C]%-!eh-JrGK#'Or"
+        type: string
         custom: []
       service_id:
         name: service_id
         description: ''
         required: true
-        example: 17
+        example: 2
         type: integer
         custom: []
       district_id:
         name: district_id
         description: ''
         required: true
-        example: 9
+        example: 8
         type: integer
         custom: []
-      name:
-        name: name
+      contact_address:
+        name: contact_address
         description: ''
-        required: true
-        example: est
-        type: string
-        custom: []
-      gender:
-        name: gender
-        description: 'Must be one of <code>F</code> or <code>M</code>.'
-        required: true
-        example: M
-        type: string
-        custom: []
-      birthday:
-        name: birthday
-        description: 'Must be a valid date.'
-        required: true
-        example: '2023-07-12T09:38:41'
-        type: string
-        custom: []
-      hkid:
-        name: hkid
-        description: 'Must not be greater than 32 characters.'
-        required: true
-        example: phqtnirtvzcaoab
-        type: string
-        custom: []
-      tel:
-        name: tel
-        description: ''
-        required: true
-        example: et
-        type: string
-        custom: []
-      email:
-        name: email
-        description: 'Must be a valid email address.'
-        required: true
-        example: ustokes@example.org
+        required: false
+        example: voluptatibus
         type: string
         custom: []
       medical_record:
         name: medical_record
         description: ''
-        required: true
-        example: voluptas
+        required: false
+        example: omnis
         type: string
         custom: []
       covid_diagnosed:
         name: covid_diagnosed
         description: ''
         required: true
-        example: true
+        example: false
         type: boolean
         custom: []
       covid_close_contacts:
@@ -2027,79 +2091,81 @@ endpoints:
         name: covid_date
         description: 'Must be a valid date.'
         required: false
-        example: '2023-07-12T09:38:41'
+        example: '2023-08-17T08:16:06'
         type: string
         custom: []
       height:
         name: height
         description: 'Must be between 0 and 3 digits.'
         required: true
-        example: '05'
+        example: '876'
         type: string
         custom: []
       weight:
         name: weight
         description: 'Must be between 0 and 3 digits.'
         required: true
-        example: '86'
+        example: '777'
         type: string
         custom: []
       blood_date:
         name: blood_date
         description: 'Must be a valid date.'
         required: true
-        example: '2023-07-12T09:38:41'
+        example: '2023-08-17T08:16:06'
         type: string
         custom: []
       blood_time:
         name: blood_time
         description: ''
         required: true
-        example: voluptatem
+        example: debitis
         type: string
         custom: []
       address:
         name: address
         description: ''
         required: true
-        example: error
+        example: molestiae
         type: string
         custom: []
       report:
         name: report
-        description: 'Must be one of <code>email</code> or <code>doctor</code>.'
+        description: 'Must be one of <code>email</code>, <code>whatsapp</code>, or <code>post</code>.'
         required: true
-        example: email
+        example: whatsapp
         type: string
         custom: []
       remark:
         name: remark
         description: ''
         required: false
-        example: tenetur
+        example: amet
         type: string
         custom: []
     cleanBodyParameters:
-      customer_id: 16
-      service_id: 17
-      district_id: 9
-      name: est
-      gender: M
-      birthday: '2023-07-12T09:38:41'
-      hkid: phqtnirtvzcaoab
-      tel: et
-      email: ustokes@example.org
-      medical_record: voluptas
-      covid_diagnosed: true
+      name: magnam
+      gender: F
+      birthday: '2023-08-17T08:16:06'
+      id_type: other
+      hkid: ipviosxodilxywkfjjptjl
+      tel: non
+      email: sydney07@example.com
+      password: "VH<C]%-!eh-JrGK#'Or"
+      service_id: 2
+      district_id: 8
+      contact_address: voluptatibus
+      medical_record: omnis
+      covid_diagnosed: false
       covid_close_contacts: true
-      covid_date: '2023-07-12T09:38:41'
-      height: '05'
-      weight: '86'
-      blood_date: '2023-07-12T09:38:41'
-      blood_time: voluptatem
-      address: error
-      report: email
-      remark: tenetur
+      covid_date: '2023-08-17T08:16:06'
+      height: '876'
+      weight: '777'
+      blood_date: '2023-08-17T08:16:06'
+      blood_time: debitis
+      address: molestiae
+      report: whatsapp
+      remark: amet
     fileParameters: []
     responses: []
     responseFields: []

@@ -2,9 +2,7 @@
 
 namespace App\Http\Requests\CustomerHistory;
 
-use Astrotomic\Translatable\Validation\RuleFactory;
-use Illuminate\Contracts\Validation\ValidationRule;
-use Illuminate\Foundation\Http\FormRequest;
+use Astrotomic\Translatable\Validation\RuleFactory;use Illuminate\Contracts\Validation\ValidationRule;use Illuminate\Foundation\Http\FormRequest;
 
 class StoreRequest extends FormRequest
 {
@@ -25,9 +23,11 @@ class StoreRequest extends FormRequest
     {
         return RuleFactory::make([
             'customer_id' => 'nullable|exists:customers,id',
+            'order_no' => 'required|string',
             'name' => 'required|string',
             'gender' => 'required|in:F,M',
             'birthday' => 'required|date',
+            'id_type' => 'required|string|in:hkid,passport,other',
             'hkid' => 'required|string',
             'tel' => 'required|string',
             'email' => 'required|string',
@@ -41,7 +41,7 @@ class StoreRequest extends FormRequest
             'blood_date' => 'required|date',
             'blood_time' => 'required|string',
             'address' => 'required|string',
-            'report' => 'required|in:email,doctor',
+            'report' => 'required|in:email,whatsapp,post',
             'remark' => 'nullable|string',
             'paid' => 'bool',
             '%district%' => 'required|string',

@@ -25,9 +25,11 @@ class UpdateRequest extends FormRequest
     {
         return RuleFactory::make([
             'customer_id' => 'nullable|exists:customers,id',
+            'order_no' => 'required|string',
             'name' => 'required|string',
             'gender' => 'required|in:F,M',
             'birthday' => 'required|date',
+            'id_type' => 'required|string|in:hkid,passport,other',
             'hkid' => 'required|string',
             'tel' => 'required|string',
             'email' => 'required|string',
@@ -41,7 +43,7 @@ class UpdateRequest extends FormRequest
             'blood_date' => 'required|date',
             'blood_time' => 'required|string',
             'address' => 'required|string',
-            'report' => 'required|in:email,doctor',
+            'report' => 'required|in:email,whatsapp,post',
             'remark' => 'nullable|string',
             'paid' => 'bool',
             '%district%' => 'required|string',

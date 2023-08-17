@@ -19,10 +19,12 @@ class CustomerHistory extends BaseCustomerHistory implements TranslatableContrac
     public $appends = ['amount', 'report_url'];
     protected $fillable = [
         'uuid',
+        'order_no',
         'customer_id',
         'name',
         'gender',
         'birthday',
+        'id_type',
         'hkid',
         'tel',
         'email',

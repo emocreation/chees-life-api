@@ -21,6 +21,7 @@ class CustomerHistoryResource extends JsonResource
                 'name' => $this->resource->name,
                 'gender' => $this->resource->gender,
                 'birthday' => $this->resource->birthday,
+                'id_type' => $this->resource->id_type,
                 'hkid' => $this->resource->hkid,
                 'tel' => $this->resource->tel,
                 'email' => $this->resource->email,

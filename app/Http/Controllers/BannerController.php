@@ -61,7 +61,10 @@ class BannerController extends Controller
     {
         $validated = $request->validated();
         $banner = Banner::create($validated);
-        $banner->addMediaFromRequest('image')->toMediaCollection();
+        $banner->addMediaFromRequest('image_web_en')->toMediaCollection('web_banner_en');
+        $banner->addMediaFromRequest('image_web_tc')->toMediaCollection('web_banner_tc');
+        $banner->addMediaFromRequest('image_mobile_en')->toMediaCollection('mobile_banner_en');
+        $banner->addMediaFromRequest('image_mobile_tc')->toMediaCollection('mobile_banner_tc');
         return $this->success(data: $banner);
     }
 
@@ -71,9 +74,21 @@ class BannerController extends Controller
         $validated = $request->validated();
         $validated['enable'] = $validated['enable'] ?? false;
         $banner->update($validated);
-        if ($request->hasFile('image')) {
+        if ($request->hasFile('image_web_en')) {
             $banner->clearMediaCollection();
-            $banner->addMediaFromRequest('image')->toMediaCollection();
+            $banner->addMediaFromRequest('image_web_en')->toMediaCollection('web_banner_en');
+        }
+        if ($request->hasFile('image_web_tc')) {
+            $banner->clearMediaCollection();
+            $banner->addMediaFromRequest('image_web_tc')->toMediaCollection('web_banner_tc');
+        }
+        if ($request->hasFile('image_mobile_en')) {
+            $banner->clearMediaCollection();
+            $banner->addMediaFromRequest('image_mobile_en')->toMediaCollection('mobile_banner_en');
+        }
+        if ($request->hasFile('image_mobile_tc')) {
+            $banner->clearMediaCollection();
+            $banner->addMediaFromRequest('image_mobile_tc')->toMediaCollection('mobile_banner_tc');
         }
         return $this->success(data: $banner);
     }

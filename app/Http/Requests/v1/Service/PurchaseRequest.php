@@ -26,6 +26,7 @@ class PurchaseRequest extends FormRequest
             'name' => 'nullable|string',
             'gender' => 'nullable|in:F,M',
             'birthday' => 'nullable|date',
+            'id_type' => 'nullable|string|in:hkid,passport,other',
             'hkid' => 'nullable|string|max:32',
             'tel' => 'nullable|string',
             'email' => 'nullable|email',
@@ -43,7 +44,7 @@ class PurchaseRequest extends FormRequest
             'blood_date' => 'required|date',
             'blood_time' => 'required|string',
             'address' => 'required|string',
-            'report' => 'required|in:email,doctor',
+            'report' => 'required|in:email,whatsapp,post',
             'remark' => 'nullable|string',
         ];
     }

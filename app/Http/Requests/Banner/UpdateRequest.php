@@ -6,7 +6,6 @@ use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
 use Knuckles\Scribe\Attributes\BodyParam;
 
-#[BodyParam('image', 'file', 'image', required: true, example: 'No-example')]
 class UpdateRequest extends FormRequest
 {
     /**
@@ -25,7 +24,10 @@ class UpdateRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'image' => 'nullable|image',
+            'image_web_en' => 'nullable|image',
+            'image_web_tc' => 'nullable|image',
+            'image_mobile_en' => 'nullable|image',
+            'image_mobile_tc' => 'nullable|image',
             'enable' => 'nullable|bool'
         ];
     }

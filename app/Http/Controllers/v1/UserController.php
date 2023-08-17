@@ -4,6 +4,7 @@ namespace App\Http\Controllers\v1;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\v1\Customer\UpdateRequest;
+use App\Http\Resources\v1\UserInfoAndHistoryResource;
 use App\Http\Resources\v1\CustomerHistoryResource;
 use App\Models\CustomerHistory;
 use Illuminate\Support\Arr;
@@ -22,10 +23,11 @@ class UserController extends Controller
         return $this->success(data: request()->user());
     }
 
-    #[Endpoint('User Order History')]
+    #[Endpoint('User Order Histories list')]
     public function show()
     {
-        return $this->success(data: request()->user()->load('customer_histories'));
+        $data = request()->user()->load('customer_histories.customer_history_details');
+        return new UserInfoAndHistoryResource($data);
     }
 
     #[Endpoint('User Update')]

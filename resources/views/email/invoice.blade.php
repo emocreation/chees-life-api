@@ -1,510 +1,156 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="hk">
+<!DOCTYPE html>
+<html lang="zh-Hans-HK">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="x-apple-disable-message-reformatting" content=""/>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="color-scheme" content="light dark"/>
-    <meta name="supported-color-schemes" content="light dark"/>
-    <title></title>
-    <style type="text/css" media="all">
-        /* Base ------------------------------ */
-
-        @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap");
-
-        body {
-            width: 100% !important;
-            height: 100%;
-            margin: 0;
-            -webkit-text-size-adjust: none;
-        }
-
-        a {
-            color: #3869D4;
-        }
-
-        a img {
-            border: none;
-        }
-
-        td {
-            word-break: break-word;
-        }
-
-        .preheader {
-            display: none !important;
-            visibility: hidden;
-            mso-hide: all;
-            font-size: 1px;
-            line-height: 1px;
-            max-height: 0;
-            max-width: 0;
-            opacity: 0;
-            overflow: hidden;
-        }
-
-        /* Type ------------------------------ */
-
-        body,
-        td,
-        th {
-            font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
-        }
-
-        h1 {
-            margin-top: 0;
-            color: #333333;
-            font-size: 22px;
-            font-weight: bold;
-            text-align: left;
-        }
-
-        h2 {
-            margin-top: 0;
-            color: #333333;
-            font-size: 16px;
-            font-weight: bold;
-            text-align: left;
-        }
-
-        h3 {
-            margin-top: 0;
-            color: #333333;
-            font-size: 14px;
-            font-weight: bold;
-            text-align: left;
-        }
-
-        td,
-        th {
-            font-size: 16px;
-        }
-
-        p,
-        ul,
-        ol,
-        blockquote {
-            margin: .4em 0 1.1875em;
-            font-size: 16px;
-            line-height: 1.625;
-        }
-
-        p.sub {
-            font-size: 13px;
-        }
-
-        /* Utilities ------------------------------ */
-
-        .align-right {
-            text-align: right;
-        }
-
-        .align-left {
-            text-align: left;
-        }
-
-        .align-center {
-            text-align: center;
-        }
-
-        /* Buttons ------------------------------ */
-
-        .button {
-            background-color: #3869D4;
-            border-top: 10px solid #3869D4;
-            border-right: 18px solid #3869D4;
-            border-bottom: 10px solid #3869D4;
-            border-left: 18px solid #3869D4;
-            display: inline-block;
-            color: #FFF;
-            text-decoration: none;
-            border-radius: 3px;
-            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16);
-            -webkit-text-size-adjust: none;
-            box-sizing: border-box;
-        }
-
-        .button--green {
-            background-color: #22BC66;
-            border-top: 10px solid #22BC66;
-            border-right: 18px solid #22BC66;
-            border-bottom: 10px solid #22BC66;
-            border-left: 18px solid #22BC66;
-        }
-
-        .button--red {
-            background-color: #FF6136;
-            border-top: 10px solid #FF6136;
-            border-right: 18px solid #FF6136;
-            border-bottom: 10px solid #FF6136;
-            border-left: 18px solid #FF6136;
-        }
-
-        @media only screen and (max-width: 500px) {
-            .button {
-                width: 100% !important;
-                text-align: center !important;
-            }
-        }
-
-        /* Attribute list ------------------------------ */
-
-        .attributes {
-            margin: 0 0 21px;
-        }
-
-        .attributes_content {
-            background-color: #F4F4F7;
-            padding: 16px;
-        }
-
-        .attributes_item {
-            padding: 0;
-        }
-
-        /* Related Items ------------------------------ */
-
-        .related {
-            width: 100%;
-            margin: 0;
-            padding: 25px 0 0 0;
-        }
-
-        .related_item {
-            padding: 10px 0;
-            color: #CBCCCF;
-            font-size: 15px;
-            line-height: 18px;
-        }
-
-        .related_item-title {
-            display: block;
-            margin: .5em 0 0;
-        }
-
-        .related_item-thumb {
-            display: block;
-            padding-bottom: 10px;
-        }
-
-        .related_heading {
-            border-top: 1px solid #CBCCCF;
-            text-align: center;
-            padding: 25px 0 10px;
-        }
-
-        /* Discount Code ------------------------------ */
-
-        .discount {
-            width: 100%;
-            margin: 0;
-            padding: 24px;
-            background-color: #F4F4F7;
-            border: 2px dashed #CBCCCF;
-        }
-
-        .discount_heading {
-            text-align: center;
-        }
-
-        .discount_body {
-            text-align: center;
-            font-size: 15px;
-        }
-
-        /* Social Icons ------------------------------ */
-
-        .social {
-            width: auto;
-        }
-
-        .social td {
-            padding: 0;
-            width: auto;
-        }
-
-        .social_icon {
-            height: 20px;
-            margin: 0 8px 10px 8px;
-            padding: 0;
-        }
-
-        /* Data table ------------------------------ */
-
-        .purchase {
-            width: 100%;
-            margin: 0;
-        }
-
-        .purchase_content {
-            width: 100%;
-            margin: 0;
-            padding: 25px 0 0 0;
-        }
-
-        .purchase_item {
-            padding: 10px 0;
-            color: #51545E;
-            font-size: 15px;
-            line-height: 18px;
-        }
-
-        .purchase_heading {
-            padding-bottom: 8px;
-            border-bottom: 1px solid #EAEAEC;
-        }
-
-        .purchase_heading p {
-            margin: 0;
-            color: #85878E;
-            font-size: 12px;
-        }
-
-        .purchase_footer {
-            padding-top: 15px;
-            border-top: 1px solid #EAEAEC;
-        }
-
-        .purchase_total {
-            margin: 0;
-            text-align: right;
-            font-weight: bold;
-            color: #333333;
-        }
-
-        .purchase_total--label {
-            padding: 0 15px 0 0;
-        }
-
-        body {
-            background-color: #F4F4F7;
-            color: #51545E;
-        }
-
-        p {
-            color: #51545E;
-        }
-
-        p.sub {
-            color: #6B6E76;
-        }
-
-        .email-wrapper {
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            background-color: #F4F4F7;
-        }
-
-        .email-content {
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Masthead ----------------------- */
-
-        .email-masthead {
-            padding: 25px 0;
-            text-align: center;
-        }
-
-        .email-masthead_logo {
-            width: 94px;
-        }
-
-        .email-masthead_name {
-            font-size: 16px;
-            font-weight: bold;
-            color: #A8AAAF;
-            text-decoration: none;
-            text-shadow: 0 1px 0 white;
-        }
-
-        /* Body ------------------------------ */
-
-        .email-body {
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            background-color: #FFFFFF;
-        }
-
-        .email-body_inner {
-            width: 570px;
-            margin: 0 auto;
-            padding: 0;
-            background-color: #FFFFFF;
-        }
-
-        .email-footer {
-            width: 570px;
-            margin: 0 auto;
-            padding: 0;
-            text-align: center;
-        }
-
-        .email-footer p {
-            color: #6B6E76;
-        }
-
-        .body-action {
-            width: 100%;
-            margin: 30px auto;
-            padding: 0;
-            text-align: center;
-        }
-
-        .body-sub {
-            margin-top: 25px;
-            padding-top: 25px;
-            border-top: 1px solid #EAEAEC;
-        }
-
-        .content-cell {
-            padding: 35px;
-        }
-
-        /*Media Queries ------------------------------ */
-
-        @media only screen and (max-width: 600px) {
-            .email-body_inner,
-            .email-footer {
-                width: 100% !important;
-            }
-        }
-
-        @media (prefers-color-scheme: dark) {
-            body,
-            .email-body,
-            .email-body_inner,
-            .email-content,
-            .email-wrapper,
-            .email-masthead,
-            .email-footer {
-                background-color: #333333 !important;
-                color: #FFF !important;
-            }
-
-            p,
-            ul,
-            ol,
-            blockquote,
-            h1,
-            h2,
-            h3,
-            span,
-            .purchase_item {
-                color: #FFF !important;
-            }
-
-            .attributes_content,
-            .discount {
-                background-color: #222 !important;
-            }
-
-            .email-masthead_name {
-                text-shadow: none !important;
-            }
-        }
-    </style>
-    <!--[if mso]>
-    <style>
-        .f-fallback {
-            font-family: Arial, sans-serif;
-        }
-    </style>
-    <![endif]-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
+<style>
+    body {
+        background-color: white;
+    }
+
+    .table {
+        border-top: none !important;
+        border-left: none !important;
+        border-right: none !important;
+        border-bottom: none !important;
+    }
+
+    .border {
+        border: 1px solid #000000 !important;
+    }
+
+    .border-left {
+        border-left: 1px solid #000000 !important;
+    }
+
+    .border-right {
+        border-right: 1px solid #000000 !important;
+    }
+
+    .border-top {
+        border-top: 1px solid #000000 !important;
+    }
+
+    .border-bottom {
+        border-bottom: 1px solid #000000 !important;
+    }
+
+    .info_frame {
+        height: 44px;
+        width: auto;
+        position: relative;
+    }
+
+    .underline {
+        border-bottom: 2px solid #000000;
+        width: 100%;
+        display: block;
+    }
+
+    .im {
+        color: #000000;
+    }
+</style>
 <body>
-<table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0">
-    <tr>
-        <td align="center">
-            <table class="email-content" width="100%" cellpadding="0" cellspacing="0">
-                <!-- Email Body -->
-                <tr>
-                    <td class="email-body" width="100%">
-                        <table class="email-body_inner" align="center" width="570" cellpadding="0" cellspacing="0">
-                            <!-- Body content -->
-                            <tr>
-                                <td class="content-cell">
-                                    <div class="f-fallback">
-                                        <h1>
-                                            Hi {{$data['name']}}
-                                            ,</h1>
-                                        <p>Thanks for buying Chee's Life services. This email is the receipt for your purchase.</p>
-                                        <!-- Discount -->
-                                        <table class="purchase" width="100%" cellpadding="0" cellspacing="0">
-                                            <tr><td><b>{{__('email.general')}}</b></td></tr>
-                                            <tr><td>{{__('email.blood_draw_date')}}: {{\Carbon\Carbon::create($data['blood_date'])->format('Y-m-d')}} {{$data['blood_time']}}</td></tr>
-                                            <tr><td>{{__('email.order_id')}}: {{$data['uuid']}}</td></tr>
-                                            <tr><td>{{__('email.report')}}: {{\Illuminate\Support\Str::camel($data['report'])}}</td></tr>
-                                            <tr><td>&nbsp;</td></tr>
-                                            <tr><td><b>{{__('email.address')}}</b></td></tr>
-                                            <tr><td>{{__('email.name')}}: {{$data['name']}}</td></tr>
-                                            <tr><td>{{__('email.address')}}: {{$data['address']}}</td></tr>
-                                            <tr><td>{{__('email.tel')}}: {{$data['tel']}}</td></tr>
-                                            <tr><td>{{__('email.email')}}: {{$data['email']}}</td></tr>
-                                            <tr><td>&nbsp;</td></tr>
-                                            <tr><td><b>{{__('email.service')}}</b></td></tr>
-                                            <tr>
-                                                <td>
-                                                    <table class="purchase_content" width="100%" cellpadding="0"
-                                                           cellspacing="0">
-                                                        <tr>
-                                                            <th class="purchase_heading" align="left" width="5%">
-                                                                <p class="f-fallback">#</p>
-                                                            </th>
-                                                            <th class="purchase_heading" align="left" width="40%">
-                                                                <p class="f-fallback">{{__('email.item')}}</p>
-                                                            </th>
-                                                            <th class="purchase_heading" align="left" width="25%">
-                                                                <p class="f-fallback">{{__('email.price')}}</p>
-                                                            </th>
-                                                        </tr>
-                                                        @foreach($data['customer_history_details'] as $key => $service)
-                                                            <tr>
-                                                                <td class="purchase_item">
-                                                                    <span class="f-fallback">{{$key + 1}}</span>
-                                                                </td>
-                                                                <td class="purchase_item">
-                                                                    <span class="f-fallback">{{$service['title']}}</span>
-                                                                </td>
-                                                                <td class="purchase_item">
-                                                                    <span class="f-fallback">HK${{number_format($service['price'], 2)}}</span>
-                                                                </td>
-                                                            </tr>
-                                                        @endforeach
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                            <tr><td>&nbsp;</td></tr>
-                                            <tr><td><b>{{__('email.amount')}}</b></td></tr>
-                                            <tr><td>{{__('email.payment_method')}}: Credit Card</td></tr>
-                                            <tr><td>{{__('email.order_total')}}: HK${{number_format($data['amount'],2)}}</td></tr>
-                                        </table>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <table class="email-footer" align="center" width="570" cellpadding="0" cellspacing="0">
-                            <tr>
-                                <td class="content-cell" align="center">
-                                    <p class="f-fallback sub align-center">&copy; 2023 Chee's Life. All rights
-                                        reserved.</p>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
+<div class="container">
+    <table class="table table-sm table-borderless">
+        <thead>
+        <tr>
+            <td>
+                <div class="row">
+                    <div class="col-sm-12 info_frame">
+                        <img src="{{asset('img/logo.png')}}" alt="{{__('chees')}}" style="max-height: 150px">
+                    </div>
+                </div>
+                <div class="row" style="padding-top:70px">
+                    <div class="col-sm-12 pt-2">
+                        <div class="row pb-3">
+                            <div class="offset-sm-7 col-sm-5 text-end align-self-end">
+                                <h1 class="pt-3 fw-bold text-decoration-underline">{{ __('email.receipt') }}</h1>
+                            </div>
+                        </div>
+                        <div class="row fw-bold">
+                            <div class="col-sm-2 text-left" style="width: 30%">
+                                <p>{{ __('email.date_text') }}:</p>
+                                <p>{{ __('email.booking_ref') }}:</p>
+                                <p>{{ __('email.customer_full_name') }}:</p>
+                                <p>{{ __('email.contact_number') }}:</p>
+                                <p>{{ __('email.address_optional') }}:</p>
+                            </div>
+                            <div class="col-sm-3 text-left" style="width: 50%">
+                                <p>{{$data->created_at->format('d/m/y')}}</p>
+                                <p class="underline">{{$data->order_no}}</p>
+                                <p class="underline">{{$data->name}}</p>
+                                <p class="underline">{{$data->tel}}</p>
+                                <p class="underline">{{$data->translate($data->locale)->district}} {{$data->address}}</p>
+                            </div>
+                            <div class="col-sm-7"></div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </thead>
+    </table>
+
+    <p style="padding-top:20px">{{ __('email.payment_for_the_following_service') }}</p>
+    <table class="table table-bordered" style="width: 70%">
+        <tbody>
+        @foreach($data->customer_history_details as $key => $item)
+            <tr>
+                @if($key === 0)
+                    <th style="width: 25%">{{++$key}}. {{ __('email.service_items') }}:</th>
+                @else
+                    <th style="width: 25%">{{++$key}}.</th>
+                @endif
+                <th>{{$item->translate($data->locale)->title}}</th>
+            </tr>
+        @endforeach
+        <tr>
+            <th></th>
+            <th>
+                {{ __('email.request_service_date') }} {{$data->blood_date->format('d/m/y')}} {{$data->blood_time }}
+            </th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>
+                {{ __('email.service_amount') }} {{$data->customer_history_details->sum('price')}}
+            </th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>
+                {{ __('email.payment_method') }} {{ __('email.credit_card') }}
+            </th>
+        </tr>
+        </tbody>
+    </table>
+    <h5 style="padding-top: 30px;padding-bottom: 10px">{{ __('email.general_policy') }}</h5>
+    <p>{{__('email.policy_1')}}</p>
+    <p>{{__('email.policy_2')}}</p>
+    <p>{{__('email.policy_3')}}</p>
+    <p>{{__('email.policy_3_note_1')}}</p>
+    <p>{{__('email.policy_3_note_2')}}</p>
+    <p>{{__('email.policy_4')}}</p>
+    <p>{{__('email.policy_5')}}</p>
+    <p>{{__('email.policy_6')}}</p>
+    <p>{{__('email.policy_7')}}</p>
+    <p>{{__('email.policy_8')}}</p>
+    <p>{{__('email.policy_8_1')}}</p>
+    <p>{{__('email.policy_8_2')}}</p>
+    <p>{{__('email.policy_9')}}</p>
+    <p>{{__('email.policy_10')}}</p>
+    <p>{{__('email.policy_10_1')}}</p>
+    <p>{{__('email.policy_10_2')}}</p>
+    <p>{{__('email.policy_11')}}</p>
+    <p>{{__('email.policy_11_1')}}</p>
+    <p>{{__('email.policy_11_2')}}</p>
+    <p>{{__('email.policy_11_3')}}</p>
+    <p>{{__('email.policy_note')}}</p>
+</div>
+
 </body>
 </html>

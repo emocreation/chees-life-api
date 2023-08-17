@@ -5,10 +5,8 @@ namespace App\Models;
 use App\Models\Base\Banner as BaseBanner;
 use App\Traits\Searchable;
 use Illuminate\Database\Eloquent\Builder;
-use Spatie\Image\Manipulations;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
 class Banner extends BaseBanner implements HasMedia
 {
@@ -21,7 +19,7 @@ class Banner extends BaseBanner implements HasMedia
         'sequence',
         'enable'
     ];
-    protected $appends = ['image_url', 'preview_url', 'optimized_url'];
+    protected $appends = ['images'];
 
     protected static function boot()
     {
@@ -31,7 +29,7 @@ class Banner extends BaseBanner implements HasMedia
         });
     }
 
-    public function registerMediaConversions(Media $media = null): void
+    /*public function registerMediaConversions(Media $media = null): void
     {
         $this
             ->addMediaConversion('preview')
@@ -42,21 +40,18 @@ class Banner extends BaseBanner implements HasMedia
             ->addMediaConversion('optimized')
             ->fit(Manipulations::FIT_CROP, 2000, 800)
             ->nonQueued();
-    }
+    }*/
 
-    public function getImageUrlAttribute()
+    public function getImagesAttribute()
     {
-        return $this->getFirstMediaUrl() !== '' ? $this->getFirstMediaUrl() : null;
-    }
-
-    public function getPreviewUrlAttribute()
-    {
-        return $this->getFirstMedia() !== null ? $this->getFirstMedia()->getUrl('preview') : null;
-    }
-
-    public function getOptimizedUrlAttribute()
-    {
-        return $this->getFirstMedia() !== null ? $this->getFirstMedia()->getUrl('optimized') : null;
+        $result = [
+            'image_web_en_url' => $this->getFirstMediaUrl('web_banner_en'),
+            'image_web_tc_url' => $this->getFirstMediaUrl('web_banner_tc'),
+            'image_mobile_en_url' => $this->getFirstMediaUrl('mobile_banner_en'),
+            'image_mobile_tc_url' => $this->getFirstMediaUrl('mobile_banner_tc'),
+        ];
+        $this->unsetRelation('media');
+        return $result;
     }
 
     public function scopeEnabled(Builder $query): void

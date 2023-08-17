@@ -201,7 +201,10 @@ class ServiceController extends Controller
                 $record = CustomerHistory::where('stripe_id', $session->id)
                     ->where('paid', false)
                     ->with('customer_history_details')->first();
-                $record?->update(['paid' => true]);
+                $order_no = 'CBC' . now()->format('Ymd');
+                $count = CustomerHistory::where('order_no', 'like' . $order_no . '%')->count() + 1;
+                $count = sprintf("%03d", $count);
+                $record?->update(['paid' => true, 'order_no' => $order_no . $count]);
                 if ($record) {
                     Mail::to($record->email)->send(new Invoice($record));
                 }
@@ -215,8 +218,9 @@ class ServiceController extends Controller
 
     public function testMail()
     {
-        $record = CustomerHistory::where('id', 3)->with('customer_history_details')->first();
+        $record = CustomerHistory::where('id', 29)->with('customer_history_details')->first();
         if ($record !== null) {
+            //return new Invoice($record);
             Mail::to($record->email)->send(new Invoice($record));
         }
         return 'OK';
