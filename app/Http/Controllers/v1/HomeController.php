@@ -24,7 +24,7 @@ class HomeController extends Controller
     {
         $categories = Category::enabled()->sequence()->get();
         $banners = Banner::enabled()->get();
-        $services = Service::where('category_id', 1)->enabled()->with('service_descriptions')->get();
+        $services = Service::sequence()->enabled()->with('service_descriptions')->limit(9)->get();
         $reviews = Review::enabled()->sortDate()->get();
         $socialMedias = SocialMedia::enabled()->get();
         $data = ['categories' => $categories, 'banners' => $banners, 'services' => $services, 'reviews' => $reviews, 'socialMedias' => $socialMedias];

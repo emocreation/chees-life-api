@@ -39,12 +39,13 @@ class HomeCollection extends ResourceCollection
                         'hot' => $item->hot,
                         'title' => $item->title,
                         'subtitle' => $item->subtitle,
-                        'descriptions' => $item->service_descriptions->map(function ($description) {
+                        'description' => app()->getLocale() === 'tc' ? $item->description_tc : $item->description_en,
+                        /*'descriptions' => $item->service_descriptions->map(function ($description) {
                             return [
                                 'id' => $description->id,
                                 'description' => $description->description
                             ];
-                        }),
+                        }),*/
                         'image_url' => $item->image_url,
                         'preview_url' => $item->preview_url,
                         'optimized_url' => $item->optimized_url,
