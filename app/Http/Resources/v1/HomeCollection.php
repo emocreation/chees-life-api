@@ -27,9 +27,7 @@ class HomeCollection extends ResourceCollection
                 'banners' => $this->collection['banners']->map(function ($item) {
                     return [
                         'id' => $item->id,
-                        'image_url' => $item->image_url,
-                        'preview_url' => $item->preview_url,
-                        'optimized_url' => $item->optimized_url
+                        'images' => $item->images
                     ];
                 }),
                 'services' => $this->collection['services']->map(function ($item) {
