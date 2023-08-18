@@ -27,7 +27,8 @@ class HomeCollection extends ResourceCollection
                 'banners' => $this->collection['banners']->map(function ($item) {
                     return [
                         'id' => $item->id,
-                        'images' => $item->images
+                        'image_web_url' => app()->getLocale() === 'tc' ? $item->images['image_web_tc_url'] : $item->images['image_web_en_url'],
+                        'image_mobile_url' => app()->getLocale() === 'tc' ? $item->images['image_mobile_tc_url'] : $item->images['image_mobile_en_url'],
                     ];
                 }),
                 'services' => $this->collection['services']->map(function ($item) {
