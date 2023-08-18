@@ -38,7 +38,7 @@ class DistrictController extends Controller
     {
         $data = QueryBuilder::for(District::class)
             ->search($request->s)
-            ->defaultSort('-sequence')
+            ->defaultSort('sequence')
             ->allowedSorts(['sequence', 'enable',
                 AllowedSort::custom('translations.name#en', new SortByTranslation()),
                 AllowedSort::custom('translations.name#tc', new SortByTranslation()),

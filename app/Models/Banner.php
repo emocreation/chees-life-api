@@ -24,8 +24,15 @@ class Banner extends BaseBanner implements HasMedia
     protected static function boot()
     {
         parent::boot();
+
         self::creating(function ($model) {
-            $model->sequence = Banner::max('sequence') + 1;
+            $model->sequence = 1;
+        });
+        self::created(function ($model) {
+            Banner::where('id', '!=', $model->id)->increment('sequence');
+        });
+        self::deleted(function ($model) {
+            Banner::where('sequence', '>', $model->sequence)->decrement('sequence');
         });
     }
 
@@ -61,6 +68,6 @@ class Banner extends BaseBanner implements HasMedia
 
     public function scopeSequence(Builder $query): void
     {
-        $query->orderByDesc('sequence');
+        $query->orderBy('sequence');
     }
 }

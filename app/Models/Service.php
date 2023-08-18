@@ -38,8 +38,15 @@ class Service extends BaseService implements TranslatableContract, HasMedia
     protected static function boot()
     {
         parent::boot();
+
         self::creating(function ($model) {
-            $model->sequence = Service::max('sequence') + 1;
+            $model->sequence = 1;
+        });
+        self::created(function ($model) {
+            Service::where('id', '!=', $model->id)->increment('sequence');
+        });
+        self::deleted(function ($model) {
+            Service::where('sequence', '>', $model->sequence)->decrement('sequence');
         });
     }
 
@@ -98,7 +105,7 @@ class Service extends BaseService implements TranslatableContract, HasMedia
 
     public function scopeSequence(Builder $query): void
     {
-        $query->orderByDesc('sequence');
+        $query->orderBy('sequence');
     }
 
     public function scopeCategorySlugOrId(Builder $query, string $slug)

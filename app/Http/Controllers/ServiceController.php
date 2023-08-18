@@ -44,7 +44,7 @@ class ServiceController extends Controller
     {
         $data = QueryBuilder::for(Service::class)
             ->search($request->s)
-            ->defaultSort('-sequence')
+            ->defaultSort('sequence')
             ->allowedSorts(['sequence', 'slug', 'price', 'hot', 'enable',
                 AllowedSort::custom('category.translations.name#en', new SortByTranslation()),
                 AllowedSort::custom('category.translations.name#tc', new SortByTranslation()),

@@ -26,12 +26,16 @@ class Category extends BaseCategory implements TranslatableContract
     protected static function boot()
     {
         parent::boot();
-        self::creating(function ($model) {
-            $model->sequence = Category::max('sequence') + 1;
-            //$model->slug = Str::slug($model->name);
-        });
 
-        //self::saving(fn($model) => $model->slug = Str::slug($model->name));
+        self::creating(function ($model) {
+            $model->sequence = 1;
+        });
+        self::created(function ($model) {
+            Category::where('id', '!=', $model->id)->increment('sequence');
+        });
+        self::deleted(function ($model) {
+            Category::where('sequence', '>', $model->sequence)->decrement('sequence');
+        });
     }
 
     /**
@@ -56,7 +60,7 @@ class Category extends BaseCategory implements TranslatableContract
 
     public function scopeSequence(Builder $query): void
     {
-        $query->orderByDesc('sequence');
+        $query->orderBy('sequence');
     }
 
     public function scopeSlugOrId(Builder $query, string $slug)

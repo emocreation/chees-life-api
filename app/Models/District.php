@@ -25,8 +25,15 @@ class District extends BaseDistrict implements TranslatableContract
     protected static function boot()
     {
         parent::boot();
+
         self::creating(function ($model) {
-            $model->sequence = District::max('sequence') + 1;
+            $model->sequence = 1;
+        });
+        self::created(function ($model) {
+            District::where('id', '!=', $model->id)->increment('sequence');
+        });
+        self::deleted(function ($model) {
+            District::where('sequence', '>', $model->sequence)->decrement('sequence');
         });
     }
 
@@ -37,6 +44,6 @@ class District extends BaseDistrict implements TranslatableContract
 
     public function scopeSequence(Builder $query): void
     {
-        $query->orderByDesc('sequence');
+        $query->orderBy('sequence');
     }
 }

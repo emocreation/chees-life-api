@@ -38,7 +38,7 @@ class BannerController extends Controller
     {
         $data = QueryBuilder::for(Banner::class)
             ->search($request->s)
-            ->defaultSort('-sequence')
+            ->defaultSort('sequence')
             ->allowedSorts(['id', 'sequence', 'enable'])
             ->allowedFilters(['id', 'sequence', 'enable'])
             ->paginate($request->p ?? 20)
