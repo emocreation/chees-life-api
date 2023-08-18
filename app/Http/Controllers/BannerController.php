@@ -75,19 +75,19 @@ class BannerController extends Controller
         $validated['enable'] = $validated['enable'] ?? false;
         $banner->update($validated);
         if ($request->hasFile('image_web_en')) {
-            $banner->clearMediaCollection();
+            $banner->clearMediaCollection('web_banner_en');
             $banner->addMediaFromRequest('image_web_en')->toMediaCollection('web_banner_en');
         }
         if ($request->hasFile('image_web_tc')) {
-            $banner->clearMediaCollection();
+            $banner->clearMediaCollection('web_banner_tc');
             $banner->addMediaFromRequest('image_web_tc')->toMediaCollection('web_banner_tc');
         }
         if ($request->hasFile('image_mobile_en')) {
-            $banner->clearMediaCollection();
+            $banner->clearMediaCollection('mobile_banner_en');
             $banner->addMediaFromRequest('image_mobile_en')->toMediaCollection('mobile_banner_en');
         }
         if ($request->hasFile('image_mobile_tc')) {
-            $banner->clearMediaCollection();
+            $banner->clearMediaCollection('mobile_banner_tc');
             $banner->addMediaFromRequest('image_mobile_tc')->toMediaCollection('mobile_banner_tc');
         }
         return $this->success(data: $banner);
