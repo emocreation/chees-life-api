@@ -8,10 +8,12 @@ use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
 use Astrotomic\Translatable\Translatable;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Builder;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
 
-class Category extends BaseCategory implements TranslatableContract
+class Category extends BaseCategory implements TranslatableContract, HasMedia
 {
-    use Translatable, Sluggable, Searchable;
+    use Translatable, Sluggable, Searchable, InteractsWithMedia;
 
     public array $translatedAttributes = ['name', 'title', 'description'];
     public array $searchable = [
@@ -22,6 +24,7 @@ class Category extends BaseCategory implements TranslatableContract
         'slug',
         'enable'
     ];
+    protected $appends = ['image_url'];
 
     protected static function boot()
     {
@@ -51,6 +54,13 @@ class Category extends BaseCategory implements TranslatableContract
                 'onUpdate' => true,
             ]
         ];
+    }
+
+    public function getImageUrlAttribute()
+    {
+        $url = $this->getFirstMediaUrl() !== '' ? $this->getFirstMediaUrl() : null;
+        $this->unsetRelation('media');
+        return $url;
     }
 
     public function scopeEnabled(Builder $query): void

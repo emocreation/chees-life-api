@@ -21,7 +21,8 @@ class CategoryCollection extends ResourceCollection
                     'slug' => $item->slug,
                     'name' => $item->name,
                     'title' => $item->title,
-                    'description' => $item->description
+                    'description' => $item->description,
+                    'image_url' => $item->image_url
                 ];
             })
         ];

@@ -27,6 +27,7 @@ class CategoryController extends Controller
         $this->middleware('permission:update#category')->only('update');
         $this->middleware('permission:delete#category')->only('destroy');
     }
+
     #[Endpoint('Category List', 'Category list')]
     #[QueryParam('s', 'string', 'Search keyword')]
     #[QueryParam('p', 'int', 'Page number, default=20')]
@@ -70,13 +71,21 @@ class CategoryController extends Controller
     public function store(StoreRequest $request)
     {
         $validated = $request->validated();
-        return $this->success(data: Category::create($validated));
+        $category = Category::create($validated);
+        if ($request->hasFile('image')) {
+            $category->addMediaFromRequest('image')->toMediaCollection();
+        }
+        return $this->success(data: $category);
     }
 
     #[Endpoint('Category Update', 'Category update')]
     public function update(UpdateRequest $request, Category $category)
     {
         $validated = $request->validated();
+        if ($request->hasFile('image')) {
+            $category->clearMediaCollection();
+            $category->addMediaFromRequest('image')->toMediaCollection();
+        }
         return $this->success(data: tap($category)->update($validated));
     }
 

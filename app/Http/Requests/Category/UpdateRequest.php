@@ -29,7 +29,8 @@ class UpdateRequest extends FormRequest
             '%name%' => 'required|string',
             '%title%' => 'required|string',
             '%description%' => 'required|string',
-            'enable' => 'required|bool'
+            'image' => 'nullable|image',
+            'enable' => 'required|bool',
         ]);
     }
 }
