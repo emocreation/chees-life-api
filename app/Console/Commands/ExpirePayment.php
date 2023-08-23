@@ -3,6 +3,8 @@
 namespace App\Console\Commands;
 
 use App\Models\CustomerHistory;
+use App\Models\Timeslot;
+use App\Models\TimeslotQuota;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
@@ -42,7 +44,19 @@ class ExpirePayment extends Command
                     Log::info('payment', $session->toArray());
                     $order->update(['paid' => true]);
                 } else {
+                    //Delete stripe session
                     $session->expire();
+                    //Release stock
+                    $timeslot = Timeslot::where('available_date', $order->blood_date)->first();
+                    if ($timeslot !== null) {
+                        $time_range = explode('-', $timeslot->blood_time);
+                        if (count($time_range) === 2) {
+                            $time_check = TimeslotQuota::where('timeslot_id', $timeslot->id)
+                                ->where('from', $time_range[0])->where('to', $time_range[1])->first();
+                            ++$time_check->quota;
+                            $time_check->save();
+                        }
+                    }
                     $order->delete();
                 }
             }
