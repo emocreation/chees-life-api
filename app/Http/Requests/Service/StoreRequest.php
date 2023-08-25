@@ -32,11 +32,11 @@ class StoreRequest extends FormRequest
             'detail_tc' => 'nullable|string',
             'hot' => 'bool',
             'enable' => 'required|bool',
-/*            'en' => 'required|array',
+            'en' => 'required|array',
             'tc' => 'required|array',
             '%title%' => 'required|string',
             '%subtitle%' => 'nullable|string',
-            'service_descriptions.*.%description%' => 'required|string',
+            /*'service_descriptions.*.%description%' => 'required|string',
             'service_details.*.%title%' => 'required|string',
             'service_details.*.%content%' => 'required|string',*/
             'image' => 'nullable|image',
