@@ -30,6 +30,7 @@ class StoreRequest extends FormRequest
             '%title%' => 'required|string',
             '%description%' => 'required|string',
             'image' => 'nullable|image',
+            'youtube' => 'nullable|string',
             'enable' => 'required|bool',
         ]);
     }

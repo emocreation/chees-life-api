@@ -22,6 +22,7 @@ class Category extends BaseCategory implements TranslatableContract, HasMedia
     protected $fillable = [
         'sequence',
         'slug',
+        'youtube',
         'enable'
     ];
     protected $appends = ['image_url'];

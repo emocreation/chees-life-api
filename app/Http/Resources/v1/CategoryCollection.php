@@ -22,7 +22,8 @@ class CategoryCollection extends ResourceCollection
                     'name' => $item->name,
                     'title' => $item->title,
                     'description' => $item->description,
-                    'image_url' => $item->image_url
+                    'image_url' => $item->image_url,
+                    'youtube_url' => $item->youtube,
                 ];
             })
         ];
