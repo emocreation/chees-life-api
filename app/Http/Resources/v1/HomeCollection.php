@@ -22,7 +22,8 @@ class HomeCollection extends ResourceCollection
                         'id' => $item->id,
                         'slug' => $item->slug,
                         'name' => $item->name,
-                        'image_url' => $item->image_url
+                        'image_url' => $item->image_url,
+                        'youtube_url' => $item->youtube
                     ];
                 }),
                 'banners' => $this->collection['banners']->map(function ($item) {
