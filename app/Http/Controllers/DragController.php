@@ -6,6 +6,7 @@ use App\Http\Requests\Common\DragUpdateRequest;
 use App\Models\Banner;
 use App\Models\Category;
 use App\Models\District;
+use App\Models\LatestNews;
 use App\Models\Service;
 use Knuckles\Scribe\Attributes\Endpoint;
 use Knuckles\Scribe\Attributes\Group;
@@ -67,4 +68,12 @@ class DragController extends Controller
         $this->success();
     }
 
+    #[Group("CMS API")]
+    #[Subgroup("Latest News")]
+    #[Endpoint('Drag Update Latest News', 'Datatable drag update Latest News sequence')]
+    public function latestNews(DragUpdateRequest $request)
+    {
+        $this->drag($validated['rows'] ?? [], LatestNews::class);
+        $this->success();
+    }
 }

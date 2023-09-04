@@ -6,6 +6,7 @@ use App\Http\Requests\Common\RowUpdateRequest;
 use App\Models\Banner;
 use App\Models\Category;
 use App\Models\District;
+use App\Models\LatestNews;
 use App\Models\Service;
 use Knuckles\Scribe\Attributes\Endpoint;
 use Knuckles\Scribe\Attributes\Group;
@@ -80,6 +81,15 @@ class RowUpdateController extends Controller
     {
         $validated = $request->validated();
         $this->rowUpdate($validated['id'], $validated['sequence'], Service::class);
+        $this->success();
+    }
+
+    #[Subgroup("Latest News")]
+    #[Endpoint('Row Update Latest News', 'Datatable row update Latest News sequence')]
+    public function latestNews(RowUpdateRequest $request)
+    {
+        $validated = $request->validated();
+        $this->rowUpdate($validated['id'], $validated['sequence'], LatestNews::class);
         $this->success();
     }
 }

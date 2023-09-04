@@ -26,7 +26,8 @@ class PurchaseRequest extends FormRequest
             'name' => 'nullable|string',
             'gender' => 'nullable|in:F,M',
             'birthday' => 'nullable|date',
-            'id_type' => 'nullable|string|in:hkid,passport,other',
+            'id_type' => 'nullable|string|in:hkid,cnid,passport,other',
+            'id_type_other' => 'nullable|string',
             'hkid' => 'nullable|string|max:32',
             'tel' => 'nullable|string',
             'email' => 'nullable|email',
@@ -44,7 +45,8 @@ class PurchaseRequest extends FormRequest
             'blood_date' => 'required|date',
             'blood_time' => 'required|string',
             'address' => 'required|string',
-            'report' => 'required|in:email,whatsapp,post',
+            'report' => 'required|in:email,whatsapp,post,wechat',
+            'report_explanation' => 'required|in:na,by_phone,by_appointment',
             'remark' => 'nullable|string',
         ];
     }

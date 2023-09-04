@@ -8,6 +8,7 @@ use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\CustomerHistoryController;
 use App\Http\Controllers\DistrictController;
 use App\Http\Controllers\DragController;
+use App\Http\Controllers\LatestNewController;
 use App\Http\Controllers\OptionController;
 use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\RoleController;
@@ -21,6 +22,7 @@ use App\Http\Controllers\v1\BannerController as v1_BannerController;
 use App\Http\Controllers\v1\CategoryController as v1_CategoryController;
 use App\Http\Controllers\v1\DistrictController as v1_DistrictController;
 use App\Http\Controllers\v1\HomeController as v1_HomeController;
+use App\Http\Controllers\v1\LatestNewController as v1_LatestNewController;
 use App\Http\Controllers\v1\ReviewController as v1_ReviewController;
 use App\Http\Controllers\v1\ServiceController as v1_ServiceController;
 use App\Http\Controllers\v1\SocialMediaController as v1_SocialMediaController;
@@ -62,7 +64,8 @@ Route::middleware(['middleware' => 'auth:sanctum', 'abilities:cms'])->group(func
         'services' => ServiceController::class,
         'roles' => RoleController::class,
         'customer_histories' => CustomerHistoryController::class,
-        'timeslots' => TimeslotController::class
+        'timeslots' => TimeslotController::class,
+        'latest_news' => LatestNewController::class,
     ]);
 
     Route::apiResources([
@@ -81,6 +84,7 @@ Route::middleware(['middleware' => 'auth:sanctum', 'abilities:cms'])->group(func
         Route::post('categories', 'category')->name('category');
         Route::post('services', 'service')->name('service');
         Route::post('districts', 'district')->name('district');
+        Route::post('latest_news', 'latestNews')->name('latest-news');
     });
 
     Route::name('drags.')->prefix('drags')->controller(DragController::class)->group(function () {
@@ -88,6 +92,7 @@ Route::middleware(['middleware' => 'auth:sanctum', 'abilities:cms'])->group(func
         Route::post('categories', 'category')->name('category');
         Route::post('services', 'service')->name('service');
         Route::post('districts', 'district')->name('district');
+        Route::post('latest_news', 'latestNews')->name('latest-news');
     });
 
     Route::name('bulk_updates.')->prefix('bulk_updates')->controller(BulkUpdateController::class)->group(function () {
@@ -97,6 +102,7 @@ Route::middleware(['middleware' => 'auth:sanctum', 'abilities:cms'])->group(func
         Route::post('districts', 'district')->name('district');
         Route::post('reviews', 'review')->name('review');
         Route::post('social_medias', 'socialMedia')->name('socialMedia');
+        Route::post('latest_news', 'latestNews')->name('latest-news');
     });
 });
 
@@ -133,6 +139,9 @@ Route::name('v1.')->prefix('v1')->group(function () {
     Route::get('services/details/{slug}', [v1_ServiceController::class, 'show'])->name('services.show');
     Route::post('services', [v1_ServiceController::class, 'purchase'])->name('services.purchase');
     Route::post('services/webhook', [v1_ServiceController::class, 'webhook'])->name('services.webhook');
+
+    Route::get('latest_news', [v1_LatestNewController::class, 'index'])->name('latest-news.index');
+    Route::get('latest_news/{slug}', [v1_LatestNewController::class, 'show'])->name('latest-news.show');
 });
 
 

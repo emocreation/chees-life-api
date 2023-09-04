@@ -20,13 +20,13 @@ class UserController extends Controller
     #[Endpoint('User Info')]
     public function index()
     {
-        return $this->success(data: request()->user());
+        return $this->success(data: request()?->user());
     }
 
     #[Endpoint('User Order Histories list')]
     public function show()
     {
-        $data = request()->user()->load('customer_histories.customer_history_details');
+        $data = request()?->user()->load('customer_histories.customer_history_details');
         return new UserInfoAndHistoryResource($data);
     }
 
@@ -38,8 +38,8 @@ class UserController extends Controller
             unset($validated['password']);
         }
         Arr::forget($validated, 'remember');
-        request()->user()->update($validated);
-        return $this->success(data: request()->user());
+        request()?->user()->update($validated);
+        return $this->success(data: request()?->user());
     }
 
     #[Endpoint('Order History')]

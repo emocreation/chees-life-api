@@ -35,6 +35,7 @@ class UserInfoAndHistoryResource extends JsonResource
                         'gender' => $row->gender,
                         'birthday' => $row->birthday,
                         'id_type' => $row->id_type,
+                        'id_type_other' => $row->id_type_other,
                         'hkid' => $row->hkid,
                         'tel' => $row->tel,
                         'email' => $row->email,
@@ -50,6 +51,7 @@ class UserInfoAndHistoryResource extends JsonResource
                         'district' => $row->district,
                         'address' => $row->address,
                         'report' => $row->report,
+                        'report_explanation' => $row->report_explanation,
                         'remark' => $row->remark,
                         'paid' => $row->paid,
                         'customer_history_details' => $row->customer_history_details->map(function ($row) {

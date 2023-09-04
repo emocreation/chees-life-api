@@ -97,7 +97,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer P1Vh4a86vfaDg3b5dcekZ6E'
+      - 'Bearer adefhv453V66kEa8c1PZbDg'
     controller: null
     method: null
     route: null
@@ -141,7 +141,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 4aE51fhcgZv8bedP6DkVa36'
+      - 'Bearer g1b5ad6vfVEDk8eaZ6c34Ph'
     controller: null
     method: null
     route: null
@@ -173,26 +173,26 @@ endpoints:
         name: currentPassword
         description: ''
         required: true
-        example: molestiae
+        example: delectus
         type: string
         custom: []
       newPassword:
         name: newPassword
         description: ''
         required: true
-        example: sed
+        example: consequatur
         type: string
         custom: []
     cleanBodyParameters:
-      currentPassword: molestiae
-      newPassword: sed
+      currentPassword: delectus
+      newPassword: consequatur
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer bdg68vDEPace6k3fZV14ha5'
+      - 'Bearer a5a3dD68kePvhZVfg46E1bc'
     controller: null
     method: null
     route: null
@@ -222,14 +222,14 @@ endpoints:
         name: s
         description: 'Search keyword'
         required: true
-        example: impedit
+        example: non
         type: string
         custom: []
       p:
         name: p
         description: 'Page number, default=20'
         required: true
-        example: 16
+        example: 19
         type: integer
         custom: []
       sort:
@@ -243,37 +243,37 @@ endpoints:
         name: 'filter[id]'
         description: 'Filter by id'
         required: true
-        example: commodi
+        example: sed
         type: string
         custom: []
       'filter[name]':
         name: 'filter[name]'
         description: 'Filter by name'
         required: true
-        example: 1
+        example: 17
         type: integer
         custom: []
       'filter[email]':
         name: 'filter[email]'
         description: 'Filter by email'
         required: true
-        example: culpa
+        example: nostrum
         type: string
         custom: []
       'filter[role.name]':
         name: 'filter[role.name]'
         description: 'Filter by role name'
         required: true
-        example: qui
+        example: culpa
         type: string
         custom: []
     cleanQueryParameters:
-      s: impedit
-      p: 16
+      s: non
+      p: 19
       sort: id
-      'filter[id]': commodi
-      'filter[name]': 1
-      'filter[email]': culpa
+      'filter[id]': sed
+      'filter[name]': 17
+      'filter[email]': nostrum
     bodyParameters: []
     cleanBodyParameters: []
     fileParameters: []
@@ -291,7 +291,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer efg8a6cZab3E415D6dPVvhk'
+      - 'Bearer c4d653aZk6DbfEe1VvhaPg8'
     controller: null
     method: null
     route: null
@@ -323,42 +323,42 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: et
+        example: sequi
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: false
-        example: elouise.williamson@example.org
+        example: lura19@example.com
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: ':Jh+Jk.Q>Q(bC[O~'
+        example: "T'tvbXVi.cg6UtwW"
         type: string
         custom: []
       role_name:
         name: role_name
         description: ''
         required: true
-        example: ea
+        example: aut
         type: string
         custom: []
     cleanBodyParameters:
-      name: et
-      email: elouise.williamson@example.org
-      password: ':Jh+Jk.Q>Q(bC[O~'
-      role_name: ea
+      name: sequi
+      email: lura19@example.com
+      password: "T'tvbXVi.cg6UtwW"
+      role_name: aut
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer fdgb4eP1Ec6a6ZD3V5vkha8'
+      - 'Bearer vPga86d5Z1eh4c3VDfEba6k'
     controller: null
     method: null
     route: null
@@ -410,7 +410,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer V3afaDPd514gk6E6c8Zbhve'
+      - 'Bearer V3EaZgd6bv45Dh1e6akf8cP'
     controller: null
     method: null
     route: null
@@ -451,42 +451,42 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: sapiente
+        example: ex
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: false
-        example: dschumm@example.org
+        example: jbernhard@example.org
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: false
-        example: '%oLesv|!0T'
+        example: 4HZLd~0A
         type: string
         custom: []
       role_name:
         name: role_name
         description: ''
         required: true
-        example: expedita
+        example: eligendi
         type: string
         custom: []
     cleanBodyParameters:
-      name: sapiente
-      email: dschumm@example.org
-      password: '%oLesv|!0T'
-      role_name: expedita
+      name: ex
+      email: jbernhard@example.org
+      password: 4HZLd~0A
+      role_name: eligendi
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer E46c81Dbeg5aVZh36aPdfvk'
+      - 'Bearer kfe3Pc8a5v1DV64hbaEZd6g'
     controller: null
     method: null
     route: null
@@ -529,7 +529,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer aD6b6veZhPE351g8ca4Vdkf'
+      - 'Bearer hEP43g8c65d6kDafVaeZb1v'
     controller: null
     method: null
     route: null
@@ -559,14 +559,14 @@ endpoints:
         name: s
         description: 'Search keyword'
         required: true
-        example: quis
+        example: in
         type: string
         custom: []
       p:
         name: p
         description: 'Page number, default=20'
         required: true
-        example: 10
+        example: 18
         type: integer
         custom: []
       sort:
@@ -580,44 +580,44 @@ endpoints:
         name: 'filter[review_date]'
         description: 'Filter by review_date'
         required: true
-        example: at
+        example: eos
         type: string
         custom: []
       'filter[rating]':
         name: 'filter[rating]'
         description: 'Filter by rating'
         required: true
-        example: 2
+        example: 1
         type: integer
         custom: []
       'filter[enable]':
         name: 'filter[enable]'
         description: 'Filter by enable'
         required: true
-        example: 14
+        example: 6
         type: integer
         custom: []
       'filter[translations.customer_name]':
         name: 'filter[translations.customer_name]'
         description: 'Filter by translations.customer_name'
         required: true
-        example: dolorum
+        example: consequatur
         type: string
         custom: []
       'filter[translations.content]':
         name: 'filter[translations.content]'
         description: 'Filter by translations.content'
         required: true
-        example: aut
+        example: inventore
         type: string
         custom: []
     cleanQueryParameters:
-      s: quis
-      p: 10
+      s: in
+      p: 18
       sort: '-id'
-      'filter[review_date]': at
-      'filter[rating]': 2
-      'filter[enable]': 14
+      'filter[review_date]': eos
+      'filter[rating]': 1
+      'filter[enable]': 6
     bodyParameters: []
     cleanBodyParameters: []
     fileParameters: []
@@ -635,7 +635,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer c3abE6V4Dvgk8ZdPef65a1h'
+      - 'Bearer 3v6aVkEag68eDcZ4bfhP51d'
     controller: null
     method: null
     route: null
@@ -667,14 +667,14 @@ endpoints:
         name: review_date
         description: 'Must be a valid date.'
         required: true
-        example: '2023-08-17T08:16:06'
+        example: '2023-09-04T02:01:37'
         type: string
         custom: []
       rating:
         name: rating
         description: 'Must be at least 0. Must not be greater than 5.'
         required: true
-        example: 2
+        example: 4
         type: integer
         custom: []
       en:
@@ -695,54 +695,54 @@ endpoints:
         name: en.customer_name
         description: ''
         required: true
-        example: ab
+        example: dolorem
         type: string
         custom: []
       tc.customer_name:
         name: tc.customer_name
         description: ''
         required: true
-        example: culpa
+        example: aut
         type: string
         custom: []
       en.content:
         name: en.content
         description: ''
         required: true
-        example: ut
+        example: nihil
         type: string
         custom: []
       tc.content:
         name: tc.content
         description: ''
         required: true
-        example: qui
+        example: alias
         type: string
         custom: []
       enable:
         name: enable
         description: ''
         required: true
-        example: false
+        example: true
         type: boolean
         custom: []
     cleanBodyParameters:
-      review_date: '2023-08-17T08:16:06'
-      rating: 2
+      review_date: '2023-09-04T02:01:37'
+      rating: 4
       en:
-        customer_name: ab
-        content: ut
+        customer_name: dolorem
+        content: nihil
       tc:
-        customer_name: culpa
-        content: qui
-      enable: false
+        customer_name: aut
+        content: alias
+      enable: true
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer EeD4P6va63a1hZg5cf8Vdbk'
+      - 'Bearer b68a6hV4eg3faZ1vkD5EPdc'
     controller: null
     method: null
     route: null
@@ -794,7 +794,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer ae5bD8PZdkvh4fEcag6316V'
+      - 'Bearer fkePV6h5aaEg684Zdv1b3Dc'
     controller: null
     method: null
     route: null
@@ -835,7 +835,7 @@ endpoints:
         name: review_date
         description: 'Must be a valid date.'
         required: true
-        example: '2023-08-17T08:16:06'
+        example: '2023-09-04T02:01:37'
         type: string
         custom: []
       rating:
@@ -863,28 +863,28 @@ endpoints:
         name: en.customer_name
         description: ''
         required: true
-        example: quam
+        example: nobis
         type: string
         custom: []
       tc.customer_name:
         name: tc.customer_name
         description: ''
         required: true
-        example: voluptas
+        example: occaecati
         type: string
         custom: []
       en.content:
         name: en.content
         description: ''
         required: true
-        example: aut
+        example: voluptatibus
         type: string
         custom: []
       tc.content:
         name: tc.content
         description: ''
         required: true
-        example: et
+        example: eveniet
         type: string
         custom: []
       enable:
@@ -895,14 +895,14 @@ endpoints:
         type: boolean
         custom: []
     cleanBodyParameters:
-      review_date: '2023-08-17T08:16:06'
+      review_date: '2023-09-04T02:01:37'
       rating: 1
       en:
-        customer_name: quam
-        content: aut
+        customer_name: nobis
+        content: voluptatibus
       tc:
-        customer_name: voluptas
-        content: et
+        customer_name: occaecati
+        content: eveniet
       enable: false
     fileParameters: []
     responses: []
@@ -910,7 +910,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer bafcah1g8ePE46ZDd36Vvk5'
+      - 'Bearer 1DvgP63bae4kh5VEacdfZ86'
     controller: null
     method: null
     route: null
@@ -953,7 +953,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer hPac5fbev3E66V1DgZadk48'
+      - 'Bearer VP58Zvhkd6ea614g3bfacDE'
     controller: null
     method: null
     route: null
@@ -983,7 +983,7 @@ endpoints:
         name: s
         description: 'Search keyword'
         required: true
-        example: voluptatem
+        example: dolorem
         type: string
         custom: []
       p:
@@ -1004,29 +1004,29 @@ endpoints:
         name: 'filter[sequence]'
         description: 'Filter by sequence'
         required: true
-        example: 12
+        example: 9
         type: integer
         custom: []
       'filter[enable]':
         name: 'filter[enable]'
         description: 'Filter by enable'
         required: true
-        example: 9
+        example: 10
         type: integer
         custom: []
       'filter[translations.name]':
         name: 'filter[translations.name]'
         description: 'Filter by translations.name'
         required: true
-        example: explicabo
+        example: dolores
         type: string
         custom: []
     cleanQueryParameters:
-      s: voluptatem
+      s: dolorem
       p: 17
       sort: '-id'
-      'filter[sequence]': 12
-      'filter[enable]': 9
+      'filter[sequence]': 9
+      'filter[enable]': 10
     bodyParameters: []
     cleanBodyParameters: []
     fileParameters: []
@@ -1044,7 +1044,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer hDZa5g4av661PV8bcefdk3E'
+      - 'Bearer bf4EDV6ak6h31aegZ8v5Pcd'
     controller: null
     method: null
     route: null
@@ -1076,7 +1076,7 @@ endpoints:
         name: extra_charge
         description: ''
         required: true
-        example: 1
+        example: 3
         type: integer
         custom: []
       en:
@@ -1097,37 +1097,37 @@ endpoints:
         name: en.name
         description: ''
         required: true
-        example: repellat
+        example: nisi
         type: string
         custom: []
       tc.name:
         name: tc.name
         description: ''
         required: true
-        example: dolores
+        example: voluptas
         type: string
         custom: []
       enable:
         name: enable
         description: ''
         required: true
-        example: true
+        example: false
         type: boolean
         custom: []
     cleanBodyParameters:
-      extra_charge: 1
+      extra_charge: 3
       en:
-        name: repellat
+        name: nisi
       tc:
-        name: dolores
-      enable: true
+        name: voluptas
+      enable: false
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer 3ZbDEke6a85dc6PgvhVf4a1'
+      - 'Bearer 1b46f65E8hea3ZgPkdvVcDa'
     controller: null
     method: null
     route: null
@@ -1179,7 +1179,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer fg54cbvDk8PZedV6h163Eaa'
+      - 'Bearer 4ca3EdDaP6V586bfZvk1ghe'
     controller: null
     method: null
     route: null
@@ -1220,7 +1220,7 @@ endpoints:
         name: extra_charge
         description: ''
         required: true
-        example: 10
+        example: 4
         type: integer
         custom: []
       en:
@@ -1241,37 +1241,37 @@ endpoints:
         name: en.name
         description: ''
         required: true
-        example: mollitia
+        example: dolor
         type: string
         custom: []
       tc.name:
         name: tc.name
         description: ''
         required: true
-        example: corporis
+        example: laborum
         type: string
         custom: []
       enable:
         name: enable
         description: ''
         required: true
-        example: true
+        example: false
         type: boolean
         custom: []
     cleanBodyParameters:
-      extra_charge: 10
+      extra_charge: 4
       en:
-        name: mollitia
+        name: dolor
       tc:
-        name: corporis
-      enable: true
+        name: laborum
+      enable: false
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer da8kc613P45DV6EgehZbafv'
+      - 'Bearer 83dEV4P6Zgakev56acfDb1h'
     controller: null
     method: null
     route: null
@@ -1314,7 +1314,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 6e4Eh1kZgf8a6cDV3aPbvd5'
+      - 'Bearer 14f3cvdkD6bgP68VehZE5aa'
     controller: null
     method: null
     route: null
@@ -1344,14 +1344,14 @@ endpoints:
         name: s
         description: 'Search keyword'
         required: true
-        example: harum
+        example: hic
         type: string
         custom: []
       p:
         name: p
         description: 'Page number, default=20'
         required: true
-        example: 3
+        example: 10
         type: integer
         custom: []
       sort:
@@ -1365,51 +1365,51 @@ endpoints:
         name: 'filter[sequence]'
         description: 'Filter by sequence'
         required: true
-        example: 17
+        example: 18
         type: integer
         custom: []
       'filter[enable]':
         name: 'filter[enable]'
         description: 'Filter by enable'
         required: true
-        example: 17
+        example: 12
         type: integer
         custom: []
       'filter[slug]':
         name: 'filter[slug]'
         description: 'Filter by slug'
         required: true
-        example: ex
+        example: repellendus
         type: string
         custom: []
       'filter[translations.name]':
         name: 'filter[translations.name]'
         description: 'Filter by name'
         required: true
-        example: commodi
+        example: ipsa
         type: string
         custom: []
       'filter[translations.description]':
         name: 'filter[translations.description]'
         description: 'Filter by description'
         required: true
-        example: voluptatem
+        example: est
         type: string
         custom: []
       'filter[translations.title]':
         name: 'filter[translations.title]'
         description: 'Filter by title'
         required: true
-        example: possimus
+        example: ipsa
         type: string
         custom: []
     cleanQueryParameters:
-      s: harum
-      p: 3
+      s: hic
+      p: 10
       sort: '-sequence'
-      'filter[sequence]': 17
-      'filter[enable]': 17
-      'filter[slug]': ex
+      'filter[sequence]': 18
+      'filter[enable]': 12
+      'filter[slug]': repellendus
     bodyParameters: []
     cleanBodyParameters: []
     fileParameters: []
@@ -1427,7 +1427,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 4cEPed3fakgVDZb81h6a56v'
+      - 'Bearer Vk41Pd68E36agbDaf5eZhcv'
     controller: null
     method: null
     route: null
@@ -1447,7 +1447,7 @@ endpoints:
       custom: []
     headers:
       Authorization: 'Bearer {YOUR_AUTH_KEY}'
-      Content-Type: application/json
+      Content-Type: multipart/form-data
       Accept: application/json
       Accept-Language: en
     urlParameters: []
@@ -1473,68 +1473,84 @@ endpoints:
         name: en.name
         description: ''
         required: true
-        example: velit
+        example: quidem
         type: string
         custom: []
       tc.name:
         name: tc.name
         description: ''
         required: true
-        example: placeat
+        example: est
         type: string
         custom: []
       en.title:
         name: en.title
         description: ''
         required: true
-        example: nostrum
+        example: quos
         type: string
         custom: []
       tc.title:
         name: tc.title
         description: ''
         required: true
-        example: id
+        example: consectetur
         type: string
         custom: []
       en.description:
         name: en.description
         description: ''
         required: true
-        example: 'Est quibusdam eaque cumque tenetur voluptatem.'
+        example: 'Qui molestiae tempore ab voluptatibus qui modi.'
         type: string
         custom: []
       tc.description:
         name: tc.description
         description: ''
         required: true
-        example: 'Vitae perferendis debitis et ut.'
+        example: 'Et asperiores ipsam ut exercitationem.'
+        type: string
+        custom: []
+      image:
+        name: image
+        description: 'Must be an image.'
+        required: false
+        example: null
+        type: file
+        custom: []
+      youtube:
+        name: youtube
+        description: ''
+        required: false
+        example: sunt
         type: string
         custom: []
       enable:
         name: enable
         description: ''
         required: true
-        example: true
+        example: false
         type: boolean
         custom: []
     cleanBodyParameters:
       en:
-        name: velit
-        title: nostrum
-        description: 'Est quibusdam eaque cumque tenetur voluptatem.'
+        name: quidem
+        title: quos
+        description: 'Qui molestiae tempore ab voluptatibus qui modi.'
       tc:
-        name: placeat
-        title: id
-        description: 'Vitae perferendis debitis et ut.'
-      enable: true
-    fileParameters: []
+        name: est
+        title: consectetur
+        description: 'Et asperiores ipsam ut exercitationem.'
+      youtube: sunt
+      enable: false
+    fileParameters:
+      image: null
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer f1eDkhb4aPdZ6EV368vac5g'
+      - 'Bearer Dk5Vf6P6E1a8Zgc3hd4beav'
     controller: null
     method: null
     route: null
@@ -1586,7 +1602,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer eV68aE4hZbdackfvg61PD53'
+      - 'Bearer d3Dfg16akP458VEh6vZaecb'
     controller: null
     method: null
     route: null
@@ -1607,7 +1623,7 @@ endpoints:
       custom: []
     headers:
       Authorization: 'Bearer {YOUR_AUTH_KEY}'
-      Content-Type: application/json
+      Content-Type: multipart/form-data
       Accept: application/json
       Accept-Language: en
     urlParameters:
@@ -1641,68 +1657,84 @@ endpoints:
         name: en.name
         description: ''
         required: true
-        example: sunt
+        example: consequatur
         type: string
         custom: []
       tc.name:
         name: tc.name
         description: ''
         required: true
-        example: sed
+        example: nihil
         type: string
         custom: []
       en.title:
         name: en.title
         description: ''
         required: true
-        example: quo
+        example: assumenda
         type: string
         custom: []
       tc.title:
         name: tc.title
         description: ''
         required: true
-        example: temporibus
+        example: deleniti
         type: string
         custom: []
       en.description:
         name: en.description
         description: ''
         required: true
-        example: 'Beatae harum facilis fugit optio explicabo.'
+        example: 'Aut minus voluptatem voluptates qui non ut.'
         type: string
         custom: []
       tc.description:
         name: tc.description
         description: ''
         required: true
-        example: 'Amet magni ut illum nulla perspiciatis amet molestias beatae.'
+        example: 'Sapiente a enim molestiae non.'
+        type: string
+        custom: []
+      image:
+        name: image
+        description: 'Must be an image.'
+        required: false
+        example: null
+        type: file
+        custom: []
+      youtube:
+        name: youtube
+        description: ''
+        required: false
+        example: omnis
         type: string
         custom: []
       enable:
         name: enable
         description: ''
         required: true
-        example: true
+        example: false
         type: boolean
         custom: []
     cleanBodyParameters:
       en:
-        name: sunt
-        title: quo
-        description: 'Beatae harum facilis fugit optio explicabo.'
+        name: consequatur
+        title: assumenda
+        description: 'Aut minus voluptatem voluptates qui non ut.'
       tc:
-        name: sed
-        title: temporibus
-        description: 'Amet magni ut illum nulla perspiciatis amet molestias beatae.'
-      enable: true
-    fileParameters: []
+        name: nihil
+        title: deleniti
+        description: 'Sapiente a enim molestiae non.'
+      youtube: omnis
+      enable: false
+    fileParameters:
+      image: null
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer Phge6cvDZbkE56df1aa38V4'
+      - 'Bearer 5hd6k41g8PaevDfbVE6cZa3'
     controller: null
     method: null
     route: null
@@ -1745,7 +1777,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer PZe5cVgb134aEvf6h8aDkd6'
+      - 'Bearer af6aEV6edZ81bDgh45kP3cv'
     controller: null
     method: null
     route: null
@@ -1775,14 +1807,14 @@ endpoints:
         name: s
         description: 'Search keyword'
         required: true
-        example: voluptatem
+        example: voluptatibus
         type: string
         custom: []
       p:
         name: p
         description: 'Page number, default=20'
         required: true
-        example: 4
+        example: 17
         type: integer
         custom: []
       sort:
@@ -1796,62 +1828,62 @@ endpoints:
         name: 'filter[name]'
         description: 'Filter by name'
         required: true
-        example: soluta
+        example: praesentium
         type: string
         custom: []
       'filter[gender]':
         name: 'filter[gender]'
         description: 'Filter by gender'
         required: true
-        example: quia
+        example: qui
         type: string
         custom: []
       'filter[email]':
         name: 'filter[email]'
         description: 'Filter by email'
         required: true
-        example: iure
+        example: officia
         type: string
         custom: []
       'filter[address]':
         name: 'filter[address]'
         description: 'Filter by address'
         required: true
-        example: dolor
+        example: tempora
         type: string
         custom: []
       'filter[tel]':
         name: 'filter[tel]'
         description: 'Filter by tel'
         required: true
-        example: facilis
+        example: harum
         type: string
         custom: []
       'filter[hkid]':
         name: 'filter[hkid]'
         description: 'Filter by hkid'
         required: true
-        example: alias
+        example: dolor
         type: string
         custom: []
       'filter[birthday]':
         name: 'filter[birthday]'
         description: 'Filter by birthday'
         required: true
-        example: quo
+        example: omnis
         type: string
         custom: []
     cleanQueryParameters:
-      s: voluptatem
-      p: 4
+      s: voluptatibus
+      p: 17
       sort: '-id'
-      'filter[name]': soluta
-      'filter[gender]': quia
-      'filter[email]': iure
-      'filter[address]': dolor
-      'filter[tel]': facilis
-      'filter[hkid]': alias
-      'filter[birthday]': quo
+      'filter[name]': praesentium
+      'filter[gender]': qui
+      'filter[email]': officia
+      'filter[address]': tempora
+      'filter[tel]': harum
+      'filter[hkid]': dolor
+      'filter[birthday]': omnis
     bodyParameters: []
     cleanBodyParameters: []
     fileParameters: []
@@ -1869,7 +1901,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer gZfab8dcDVvk13e664EhP5a'
+      - 'Bearer 86gVba6DEdkefa4135hPcvZ'
     controller: null
     method: null
     route: null
@@ -1901,56 +1933,56 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: quia
+        example: beatae
         type: string
         custom: []
       gender:
         name: gender
         description: ''
         required: true
-        example: perferendis
+        example: qui
         type: string
         custom: []
       birthday:
         name: birthday
         description: 'Must be a valid date.'
         required: true
-        example: '2023-08-17T08:16:06'
+        example: '2023-09-04T02:01:37'
         type: string
         custom: []
       hkid:
         name: hkid
         description: ''
         required: true
-        example: quibusdam
+        example: doloremque
         type: string
         custom: []
       tel:
         name: tel
         description: ''
         required: true
-        example: rerum
+        example: non
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: cory.schinner@example.org
+        example: mbogisich@example.net
         type: string
         custom: []
       address:
         name: address
         description: ''
         required: false
-        example: ad
+        example: voluptate
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: 'N-$+8%3}6'
+        example: 'l)EMd"s73z^~-yyB8O-'
         type: string
         custom: []
       is_verified:
@@ -1961,14 +1993,14 @@ endpoints:
         type: boolean
         custom: []
     cleanBodyParameters:
-      name: quia
-      gender: perferendis
-      birthday: '2023-08-17T08:16:06'
-      hkid: quibusdam
-      tel: rerum
-      email: cory.schinner@example.org
-      address: ad
-      password: 'N-$+8%3}6'
+      name: beatae
+      gender: qui
+      birthday: '2023-09-04T02:01:37'
+      hkid: doloremque
+      tel: non
+      email: mbogisich@example.net
+      address: voluptate
+      password: 'l)EMd"s73z^~-yyB8O-'
       is_verified: false
     fileParameters: []
     responses: []
@@ -1976,7 +2008,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer d6aPVhcg1vbZkeED8fa4356'
+      - 'Bearer VPZg1hEeafc648v36k5daDb'
     controller: null
     method: null
     route: null
@@ -2028,7 +2060,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer c6ZV8P5fagbv1kdE4Da3he6'
+      - 'Bearer d4fca5aV6DbeP6g81kE3Zhv'
     controller: null
     method: null
     route: null
@@ -2069,21 +2101,21 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: natus
+        example: est
         type: string
         custom: []
       gender:
         name: gender
         description: ''
         required: true
-        example: quaerat
+        example: voluptatem
         type: string
         custom: []
       birthday:
         name: birthday
         description: 'Must be a valid date.'
         required: true
-        example: '2023-08-17T08:16:06'
+        example: '2023-09-04T02:01:37'
         type: string
         custom: []
       hkid:
@@ -2097,54 +2129,54 @@ endpoints:
         name: tel
         description: ''
         required: true
-        example: deleniti
+        example: id
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: terrance43@example.com
+        example: block.marcos@example.com
         type: string
         custom: []
       address:
         name: address
         description: ''
         required: false
-        example: quis
+        example: ea
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: false
-        example: 'Y?wB^ogH7'
+        example: 'z[%?kb$fMP2J'
         type: string
         custom: []
       is_verified:
         name: is_verified
         description: ''
         required: true
-        example: true
+        example: false
         type: boolean
         custom: []
     cleanBodyParameters:
-      name: natus
-      gender: quaerat
-      birthday: '2023-08-17T08:16:06'
+      name: est
+      gender: voluptatem
+      birthday: '2023-09-04T02:01:37'
       hkid: velit
-      tel: deleniti
-      email: terrance43@example.com
-      address: quis
-      password: 'Y?wB^ogH7'
-      is_verified: true
+      tel: id
+      email: block.marcos@example.com
+      address: ea
+      password: 'z[%?kb$fMP2J'
+      is_verified: false
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer D6Phf3gae6kdEaV85vZc41b'
+      - 'Bearer bgZd6hcEvkP8f5V413De6aa'
     controller: null
     method: null
     route: null
@@ -2187,7 +2219,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 53kEePdacvfbg1VDZ468a6h'
+      - 'Bearer cD1ek3bf6hP4avZdga8E56V'
     controller: null
     method: null
     route: null
@@ -2217,14 +2249,14 @@ endpoints:
         name: s
         description: 'Search keyword'
         required: true
-        example: aut
+        example: temporibus
         type: string
         custom: []
       p:
         name: p
         description: 'Page number, default=20'
         required: true
-        example: 2
+        example: 19
         type: integer
         custom: []
       sort:
@@ -2238,7 +2270,7 @@ endpoints:
         name: 'filter[id]'
         description: 'Filter by id'
         required: true
-        example: dolores
+        example: et
         type: string
         custom: []
       'filter[sequence]':
@@ -2252,16 +2284,16 @@ endpoints:
         name: 'filter[enable]'
         description: 'Filter by enable'
         required: true
-        example: 4
+        example: 7
         type: integer
         custom: []
     cleanQueryParameters:
-      s: aut
-      p: 2
+      s: temporibus
+      p: 19
       sort: '-id'
-      'filter[id]': dolores
+      'filter[id]': et
       'filter[sequence]': 2
-      'filter[enable]': 4
+      'filter[enable]': 7
     bodyParameters: []
     cleanBodyParameters: []
     fileParameters: []
@@ -2279,7 +2311,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 6PEe5k3DZVch8vfb6d4ag1a'
+      - 'Bearer v665ad13haDPebfV8Ecg4kZ'
     controller: null
     method: null
     route: null
@@ -2339,11 +2371,11 @@ endpoints:
         name: enable
         description: ''
         required: false
-        example: false
+        example: true
         type: boolean
         custom: []
     cleanBodyParameters:
-      enable: false
+      enable: true
     fileParameters:
       image_web_en: null
       image_web_tc: null
@@ -2354,7 +2386,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1ve4PZfbDVEa536dacgkh68'
+      - 'Bearer de8cf6a1P5DbvaEVhZ63g4k'
     controller: null
     method: null
     route: null
@@ -2406,7 +2438,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer DkEfVcav6ae6381bdgPZ54h'
+      - 'Bearer a56chZbagf43ek8dEV16vPD'
     controller: null
     method: null
     route: null
@@ -2475,11 +2507,11 @@ endpoints:
         name: enable
         description: ''
         required: false
-        example: true
+        example: false
         type: boolean
         custom: []
     cleanBodyParameters:
-      enable: true
+      enable: false
     fileParameters:
       image_web_en: null
       image_web_tc: null
@@ -2490,7 +2522,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer Df6Pba1ZdcEaeVhk3584gv6'
+      - 'Bearer a56d8Dv6gPVaEe4fb3cZ1kh'
     controller: null
     method: null
     route: null
@@ -2533,7 +2565,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3dagvE4D18V6cbPkZ5efa6h'
+      - 'Bearer DZha64V3bv1aE68gck5efdP'
     controller: null
     method: null
     route: null
@@ -2563,14 +2595,14 @@ endpoints:
         name: s
         description: 'Search keyword'
         required: true
-        example: porro
+        example: quis
         type: string
         custom: []
       p:
         name: p
         description: 'Page number, default=20'
         required: true
-        example: 11
+        example: 3
         type: integer
         custom: []
       sort:
@@ -2584,67 +2616,67 @@ endpoints:
         name: 'filter[sequence]'
         description: 'Filter by sequence'
         required: true
-        example: sunt
+        example: voluptatum
         type: string
         custom: []
       'filter[slug]':
         name: 'filter[slug]'
         description: 'Filter by slug'
         required: true
-        example: fuga
+        example: ullam
         type: string
         custom: []
       'filter[price]':
         name: 'filter[price]'
         description: 'Filter by price'
         required: true
-        example: cum
+        example: qui
         type: string
         custom: []
       'filter[hot]':
         name: 'filter[hot]'
         description: 'Filter by hot'
         required: true
-        example: sed
+        example: reiciendis
         type: string
         custom: []
       'filter[enable]':
         name: 'filter[enable]'
         description: 'Filter by enable'
         required: true
-        example: repudiandae
+        example: rerum
         type: string
         custom: []
       'filter[translations.title]':
         name: 'filter[translations.title]'
         description: 'Filter by title'
         required: true
-        example: incidunt
+        example: inventore
         type: string
         custom: []
       'filter[translations.subtitle]':
         name: 'filter[translations.subtitle]'
         description: 'Filter by subtitle'
         required: true
-        example: tenetur
+        example: aut
         type: string
         custom: []
       'filter[category.translations.name]':
         name: 'filter[category.translations.name]'
         description: 'Filter by category name'
         required: true
-        example: inventore
+        example: qui
         type: string
         custom: []
     cleanQueryParameters:
-      s: porro
-      p: 11
+      s: quis
+      p: 3
       sort: '-sequence'
-      'filter[sequence]': sunt
-      'filter[slug]': fuga
-      'filter[price]': cum
-      'filter[hot]': sed
-      'filter[enable]': repudiandae
+      'filter[sequence]': voluptatum
+      'filter[slug]': ullam
+      'filter[price]': qui
+      'filter[hot]': reiciendis
+      'filter[enable]': rerum
     bodyParameters: []
     cleanBodyParameters: []
     fileParameters: []
@@ -2662,7 +2694,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer D6v15Edae6bZf3k8agPh4cV'
+      - 'Bearer feva5cg6d1V368PbE4DhkaZ'
     controller: null
     method: null
     route: null
@@ -2694,42 +2726,42 @@ endpoints:
         name: category_id
         description: ''
         required: true
-        example: 10
+        example: 5
         type: integer
         custom: []
       price:
         name: price
         description: ''
         required: true
-        example: 19
+        example: 8
         type: integer
         custom: []
       description_en:
         name: description_en
         description: ''
         required: false
-        example: consectetur
+        example: ad
         type: string
         custom: []
       description_tc:
         name: description_tc
         description: ''
         required: false
-        example: dolorem
+        example: voluptatibus
         type: string
         custom: []
       detail_en:
         name: detail_en
         description: ''
         required: false
-        example: eos
+        example: qui
         type: string
         custom: []
       detail_tc:
         name: detail_tc
         description: ''
         required: false
-        example: voluptatem
+        example: rerum
         type: string
         custom: []
       hot:
@@ -2743,8 +2775,50 @@ endpoints:
         name: enable
         description: ''
         required: true
-        example: true
+        example: false
         type: boolean
+        custom: []
+      en:
+        name: en
+        description: ''
+        required: true
+        example: []
+        type: object
+        custom: []
+      tc:
+        name: tc
+        description: ''
+        required: true
+        example: []
+        type: object
+        custom: []
+      en.title:
+        name: en.title
+        description: ''
+        required: true
+        example: distinctio
+        type: string
+        custom: []
+      tc.title:
+        name: tc.title
+        description: ''
+        required: true
+        example: neque
+        type: string
+        custom: []
+      en.subtitle:
+        name: en.subtitle
+        description: ''
+        required: false
+        example: aut
+        type: string
+        custom: []
+      tc.subtitle:
+        name: tc.subtitle
+        description: ''
+        required: false
+        example: quo
+        type: string
         custom: []
       image:
         name: image
@@ -2754,14 +2828,20 @@ endpoints:
         type: file
         custom: []
     cleanBodyParameters:
-      category_id: 10
-      price: 19
-      description_en: consectetur
-      description_tc: dolorem
-      detail_en: eos
-      detail_tc: voluptatem
+      category_id: 5
+      price: 8
+      description_en: ad
+      description_tc: voluptatibus
+      detail_en: qui
+      detail_tc: rerum
       hot: false
-      enable: true
+      enable: false
+      en:
+        title: distinctio
+        subtitle: aut
+      tc:
+        title: neque
+        subtitle: quo
     fileParameters:
       image: null
     responses: []
@@ -2769,7 +2849,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1ZvcVefPb345Dgda6kh6aE8'
+      - 'Bearer c616534Ph8deDgbakVvafZE'
     controller: null
     method: null
     route: null
@@ -2821,7 +2901,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer v61Dbd4e3fhaZEV68cPgk5a'
+      - 'Bearer b4EP1cf5kg3vhV68dZaaD6e'
     controller: null
     method: null
     route: null
@@ -2862,42 +2942,42 @@ endpoints:
         name: category_id
         description: ''
         required: true
-        example: 4
+        example: 15
         type: integer
         custom: []
       price:
         name: price
         description: ''
         required: true
-        example: 2
+        example: 8
         type: integer
         custom: []
       description_en:
         name: description_en
         description: ''
         required: false
-        example: corporis
+        example: rem
         type: string
         custom: []
       description_tc:
         name: description_tc
         description: ''
         required: false
-        example: cumque
+        example: vel
         type: string
         custom: []
       detail_en:
         name: detail_en
         description: ''
         required: false
-        example: voluptatem
+        example: et
         type: string
         custom: []
       detail_tc:
         name: detail_tc
         description: ''
         required: false
-        example: at
+        example: doloribus
         type: string
         custom: []
       hot:
@@ -2914,6 +2994,48 @@ endpoints:
         example: false
         type: boolean
         custom: []
+      en:
+        name: en
+        description: ''
+        required: true
+        example: []
+        type: object
+        custom: []
+      tc:
+        name: tc
+        description: ''
+        required: true
+        example: []
+        type: object
+        custom: []
+      en.title:
+        name: en.title
+        description: ''
+        required: true
+        example: quo
+        type: string
+        custom: []
+      tc.title:
+        name: tc.title
+        description: ''
+        required: true
+        example: culpa
+        type: string
+        custom: []
+      en.subtitle:
+        name: en.subtitle
+        description: ''
+        required: false
+        example: nesciunt
+        type: string
+        custom: []
+      tc.subtitle:
+        name: tc.subtitle
+        description: ''
+        required: false
+        example: id
+        type: string
+        custom: []
       image:
         name: image
         description: 'Must be an image.'
@@ -2922,14 +3044,20 @@ endpoints:
         type: file
         custom: []
     cleanBodyParameters:
-      category_id: 4
-      price: 2
-      description_en: corporis
-      description_tc: cumque
-      detail_en: voluptatem
-      detail_tc: at
+      category_id: 15
+      price: 8
+      description_en: rem
+      description_tc: vel
+      detail_en: et
+      detail_tc: doloribus
       hot: true
       enable: false
+      en:
+        title: quo
+        subtitle: nesciunt
+      tc:
+        title: culpa
+        subtitle: id
     fileParameters:
       image: null
     responses: []
@@ -2937,7 +3065,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 6hPea63cDZEf18v4bkg5Vad'
+      - 'Bearer EV358f4Zk6evga1hDdP6bca'
     controller: null
     method: null
     route: null
@@ -2980,7 +3108,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 85DPV613g4vcakdhE6ebfaZ'
+      - 'Bearer da6fPEZbD14358gVvh6acek'
     controller: null
     method: null
     route: null
@@ -3010,14 +3138,14 @@ endpoints:
         name: s
         description: 'Search keyword'
         required: true
-        example: et
+        example: soluta
         type: string
         custom: []
       p:
         name: p
         description: 'Page number, default=20'
         required: true
-        example: 20
+        example: 6
         type: integer
         custom: []
       sort:
@@ -3031,22 +3159,22 @@ endpoints:
         name: 'filter[id]'
         description: 'Filter by id'
         required: true
-        example: nulla
+        example: et
         type: string
         custom: []
       'filter[sequence]':
         name: 'filter[sequence]'
         description: 'Filter by sequence'
         required: true
-        example: 14
+        example: 6
         type: integer
         custom: []
     cleanQueryParameters:
-      s: et
-      p: 20
+      s: soluta
+      p: 6
       sort: id
-      'filter[id]': nulla
-      'filter[sequence]': 14
+      'filter[id]': et
+      'filter[sequence]': 6
     bodyParameters: []
     cleanBodyParameters: []
     fileParameters: []
@@ -3064,7 +3192,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer Pdvag38e1V6Ea6f4b5kDhcZ'
+      - 'Bearer 51gkD34cV8vZada6behP6Ef'
     controller: null
     method: null
     route: null
@@ -3096,7 +3224,7 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: molestias
+        example: rerum
         type: string
         custom: []
       permissions:
@@ -3104,20 +3232,20 @@ endpoints:
         description: ''
         required: false
         example:
-          - sit
+          - amet
         type: 'string[]'
         custom: []
     cleanBodyParameters:
-      name: molestias
+      name: rerum
       permissions:
-        - sit
+        - amet
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer k1fDcda36gaVZe8vE6Pb4h5'
+      - 'Bearer f3bDZa6e8cghvkPEda41V65'
     controller: null
     method: null
     route: null
@@ -3169,7 +3297,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 5gceEvhb3k8fPZ6dVDa46a1'
+      - 'Bearer b684aDvPd1fgcZa56hE3Vke'
     controller: null
     method: null
     route: null
@@ -3210,7 +3338,7 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: sequi
+        example: excepturi
         type: string
         custom: []
       permissions:
@@ -3218,20 +3346,20 @@ endpoints:
         description: ''
         required: false
         example:
-          - earum
+          - labore
         type: 'string[]'
         custom: []
     cleanBodyParameters:
-      name: sequi
+      name: excepturi
       permissions:
-        - earum
+        - labore
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer aefdD6v38b5ch14EPag6ZkV'
+      - 'Bearer ZaaVvf6hb5Dd4Pk8E1cge63'
     controller: null
     method: null
     route: null
@@ -3274,7 +3402,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer Za6bgVP1v65df8EDcakh3e4'
+      - 'Bearer h1EZ3eVgDf5ak86bcaPd4v6'
     controller: null
     method: null
     route: null
@@ -3304,14 +3432,14 @@ endpoints:
         name: s
         description: 'Search keyword'
         required: true
-        example: tempore
+        example: ipsum
         type: string
         custom: []
       p:
         name: p
         description: 'Page number, default=20'
         required: true
-        example: 20
+        example: 18
         type: integer
         custom: []
       sort:
@@ -3325,93 +3453,93 @@ endpoints:
         name: 'filter[customer_id]'
         description: 'Filter by customer_id'
         required: true
-        example: harum
+        example: dolore
         type: string
         custom: []
       'filter[name]':
         name: 'filter[name]'
         description: 'Filter by name'
         required: true
-        example: voluptatum
+        example: omnis
         type: string
         custom: []
       'filter[gender]':
         name: 'filter[gender]'
         description: 'Filter by gender'
         required: true
-        example: itaque
+        example: eum
         type: string
         custom: []
       'filter[birthday]':
         name: 'filter[birthday]'
         description: 'Filter by birthday'
         required: true
-        example: fugiat
+        example: cupiditate
         type: string
         custom: []
       'filter[hkid]':
         name: 'filter[hkid]'
         description: 'Filter by hkid'
         required: true
-        example: veritatis
+        example: blanditiis
         type: string
         custom: []
       'filter[tel]':
         name: 'filter[tel]'
         description: 'Filter by tel'
         required: true
-        example: inventore
+        example: quae
         type: string
         custom: []
       'filter[email]':
         name: 'filter[email]'
         description: 'Filter by email'
         required: true
-        example: voluptatem
+        example: eius
         type: string
         custom: []
       'filter[address]':
         name: 'filter[address]'
         description: 'Filter by address'
         required: true
-        example: et
+        example: dignissimos
         type: string
         custom: []
       'filter[amount]':
         name: 'filter[amount]'
         description: 'Filter by amount'
         required: true
-        example: explicabo
+        example: eos
         type: string
         custom: []
       'filter[created_at]':
         name: 'filter[created_at]'
         description: 'Filter by created_at'
         required: true
-        example: consectetur
+        example: dolore
         type: string
         custom: []
       'filter[translations.district]':
         name: 'filter[translations.district]'
         description: 'Filter by district'
         required: true
-        example: ut
+        example: in
         type: string
         custom: []
     cleanQueryParameters:
-      s: tempore
-      p: 20
+      s: ipsum
+      p: 18
       sort: '-created_at'
-      'filter[customer_id]': harum
-      'filter[name]': voluptatum
-      'filter[gender]': itaque
-      'filter[birthday]': fugiat
-      'filter[hkid]': veritatis
-      'filter[tel]': inventore
-      'filter[email]': voluptatem
-      'filter[address]': et
-      'filter[amount]': explicabo
-      'filter[created_at]': consectetur
+      'filter[customer_id]': dolore
+      'filter[name]': omnis
+      'filter[gender]': eum
+      'filter[birthday]': cupiditate
+      'filter[hkid]': blanditiis
+      'filter[tel]': quae
+      'filter[email]': eius
+      'filter[address]': dignissimos
+      'filter[amount]': eos
+      'filter[created_at]': dolore
     bodyParameters: []
     cleanBodyParameters: []
     fileParameters: []
@@ -3429,7 +3557,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer ae68b1Z4E35Ddfhac6gPvVk'
+      - 'Bearer cf8Vh3E66ZkDeag4vd1abP5'
     controller: null
     method: null
     route: null
@@ -3468,14 +3596,14 @@ endpoints:
         name: order_no
         description: ''
         required: true
-        example: rerum
+        example: voluptates
         type: string
         custom: []
       name:
         name: name
         description: ''
         required: true
-        example: cumque
+        example: expedita
         type: string
         custom: []
       gender:
@@ -3489,7 +3617,7 @@ endpoints:
         name: birthday
         description: 'Must be a valid date.'
         required: true
-        example: '2023-08-17T08:16:06'
+        example: '2023-09-04T02:01:37'
         type: string
         custom: []
       id_type:
@@ -3503,42 +3631,42 @@ endpoints:
         name: hkid
         description: ''
         required: true
-        example: aut
+        example: ullam
         type: string
         custom: []
       tel:
         name: tel
         description: ''
         required: true
-        example: sint
+        example: consequuntur
         type: string
         custom: []
       email:
         name: email
         description: ''
         required: true
-        example: orie69@example.com
+        example: carroll.ambrose@example.com
         type: string
         custom: []
       contact_address:
         name: contact_address
         description: ''
         required: false
-        example: accusamus
+        example: aperiam
         type: string
         custom: []
       medical_record:
         name: medical_record
         description: ''
         required: true
-        example: sit
+        example: quae
         type: string
         custom: []
       covid_diagnosed:
         name: covid_diagnosed
         description: ''
         required: true
-        example: false
+        example: true
         type: boolean
         custom: []
       covid_close_contacts:
@@ -3552,7 +3680,7 @@ endpoints:
         name: covid_date
         description: 'Must be a valid date.'
         required: false
-        example: '2023-08-17T08:16:06'
+        example: '2023-09-04T02:01:37'
         type: string
         custom: []
       height:
@@ -3573,35 +3701,35 @@ endpoints:
         name: blood_date
         description: 'Must be a valid date.'
         required: true
-        example: '2023-08-17T08:16:06'
+        example: '2023-09-04T02:01:37'
         type: string
         custom: []
       blood_time:
         name: blood_time
         description: ''
         required: true
-        example: incidunt
+        example: laborum
         type: string
         custom: []
       address:
         name: address
         description: ''
         required: true
-        example: nemo
+        example: et
         type: string
         custom: []
       report:
         name: report
         description: 'Must be one of <code>email</code>, <code>whatsapp</code>, or <code>post</code>.'
         required: true
-        example: email
+        example: post
         type: string
         custom: []
       remark:
         name: remark
         description: ''
         required: false
-        example: et
+        example: voluptas
         type: string
         custom: []
       paid:
@@ -3622,7 +3750,7 @@ endpoints:
         name: en.district
         description: ''
         required: true
-        example: nobis
+        example: non
         type: string
         custom: []
       tc:
@@ -3636,21 +3764,21 @@ endpoints:
         name: tc.district
         description: ''
         required: true
-        example: explicabo
+        example: at
         type: string
         custom: []
       en.subtitle:
         name: en.subtitle
         description: ''
         required: false
-        example: dignissimos
+        example: corporis
         type: string
         custom: []
       tc.subtitle:
         name: tc.subtitle
         description: ''
         required: false
-        example: quia
+        example: quo
         type: string
         custom: []
       report_pdf:
@@ -3672,7 +3800,7 @@ endpoints:
         name: 'customer_history_details[].price'
         description: ''
         required: true
-        example: aperiam
+        example: voluptas
         type: string
         custom: []
       'customer_history_details[].en':
@@ -3686,7 +3814,7 @@ endpoints:
         name: 'customer_history_details[].en.title'
         description: ''
         required: true
-        example: nulla
+        example: itaque
         type: string
         custom: []
       'customer_history_details[].tc':
@@ -3700,44 +3828,44 @@ endpoints:
         name: 'customer_history_details[].tc.title'
         description: ''
         required: true
-        example: reprehenderit
+        example: harum
         type: string
         custom: []
     cleanBodyParameters:
-      order_no: rerum
-      name: cumque
+      order_no: voluptates
+      name: expedita
       gender: F
-      birthday: '2023-08-17T08:16:06'
+      birthday: '2023-09-04T02:01:37'
       id_type: other
-      hkid: aut
-      tel: sint
-      email: orie69@example.com
-      contact_address: accusamus
-      medical_record: sit
-      covid_diagnosed: false
+      hkid: ullam
+      tel: consequuntur
+      email: carroll.ambrose@example.com
+      contact_address: aperiam
+      medical_record: quae
+      covid_diagnosed: true
       covid_close_contacts: false
-      covid_date: '2023-08-17T08:16:06'
+      covid_date: '2023-09-04T02:01:37'
       height: ''
       weight: ''
-      blood_date: '2023-08-17T08:16:06'
-      blood_time: incidunt
-      address: nemo
-      report: email
-      remark: et
+      blood_date: '2023-09-04T02:01:37'
+      blood_time: laborum
+      address: et
+      report: post
+      remark: voluptas
       paid: true
       en:
-        district: nobis
-        subtitle: dignissimos
+        district: non
+        subtitle: corporis
       tc:
-        district: explicabo
-        subtitle: quia
+        district: at
+        subtitle: quo
       customer_history_details:
         -
-          price: aperiam
+          price: voluptas
           en:
-            title: nulla
+            title: itaque
           tc:
-            title: reprehenderit
+            title: harum
     fileParameters:
       report_pdf: null
     responses: []
@@ -3745,7 +3873,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 66cD1fa4vPV5Eg8eaZ3dhbk'
+      - 'Bearer V1agbheP6fa8DcZk6d53v4E'
     controller: null
     method: null
     route: null
@@ -3797,7 +3925,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer D1k4vb8aaP3f5eEZh6c6gVd'
+      - 'Bearer v65dgcVPDEa46f8kab1Zeh3'
     controller: null
     method: null
     route: null
@@ -3845,28 +3973,28 @@ endpoints:
         name: order_no
         description: ''
         required: true
-        example: rerum
+        example: hic
         type: string
         custom: []
       name:
         name: name
         description: ''
         required: true
-        example: quis
+        example: deleniti
         type: string
         custom: []
       gender:
         name: gender
         description: 'Must be one of <code>F</code> or <code>M</code>.'
         required: true
-        example: M
+        example: F
         type: string
         custom: []
       birthday:
         name: birthday
         description: 'Must be a valid date.'
         required: true
-        example: '2023-08-17T08:16:06'
+        example: '2023-09-04T02:01:37'
         type: string
         custom: []
       id_type:
@@ -3880,42 +4008,42 @@ endpoints:
         name: hkid
         description: ''
         required: true
-        example: delectus
+        example: ad
         type: string
         custom: []
       tel:
         name: tel
         description: ''
         required: true
-        example: architecto
+        example: sit
         type: string
         custom: []
       email:
         name: email
         description: ''
         required: true
-        example: lizeth63@example.org
+        example: ymann@example.net
         type: string
         custom: []
       contact_address:
         name: contact_address
         description: ''
         required: false
-        example: officia
+        example: est
         type: string
         custom: []
       medical_record:
         name: medical_record
         description: ''
         required: true
-        example: repellat
+        example: aut
         type: string
         custom: []
       covid_diagnosed:
         name: covid_diagnosed
         description: ''
         required: true
-        example: true
+        example: false
         type: boolean
         custom: []
       covid_close_contacts:
@@ -3929,56 +4057,56 @@ endpoints:
         name: covid_date
         description: 'Must be a valid date.'
         required: false
-        example: '2023-08-17T08:16:06'
+        example: '2023-09-04T02:01:37'
         type: string
         custom: []
       height:
         name: height
         description: 'Must be between 0 and 3 digits.'
         required: true
-        example: '154'
+        example: '0'
         type: string
         custom: []
       weight:
         name: weight
         description: 'Must be between 0 and 3 digits.'
         required: true
-        example: '47'
+        example: '52'
         type: string
         custom: []
       blood_date:
         name: blood_date
         description: 'Must be a valid date.'
         required: true
-        example: '2023-08-17T08:16:06'
+        example: '2023-09-04T02:01:37'
         type: string
         custom: []
       blood_time:
         name: blood_time
         description: ''
         required: true
-        example: nobis
+        example: quisquam
         type: string
         custom: []
       address:
         name: address
         description: ''
         required: true
-        example: nihil
+        example: sit
         type: string
         custom: []
       report:
         name: report
         description: 'Must be one of <code>email</code>, <code>whatsapp</code>, or <code>post</code>.'
         required: true
-        example: email
+        example: whatsapp
         type: string
         custom: []
       remark:
         name: remark
         description: ''
         required: false
-        example: officiis
+        example: quasi
         type: string
         custom: []
       paid:
@@ -3999,7 +4127,7 @@ endpoints:
         name: en.district
         description: ''
         required: true
-        example: saepe
+        example: ut
         type: string
         custom: []
       tc:
@@ -4013,21 +4141,21 @@ endpoints:
         name: tc.district
         description: ''
         required: true
-        example: magnam
+        example: ut
         type: string
         custom: []
       en.subtitle:
         name: en.subtitle
         description: ''
         required: false
-        example: aliquam
+        example: a
         type: string
         custom: []
       tc.subtitle:
         name: tc.subtitle
         description: ''
         required: false
-        example: sed
+        example: minus
         type: string
         custom: []
       report_pdf:
@@ -4049,7 +4177,7 @@ endpoints:
         name: 'customer_history_details[].price'
         description: ''
         required: true
-        example: eos
+        example: totam
         type: string
         custom: []
       'customer_history_details[].en':
@@ -4063,7 +4191,7 @@ endpoints:
         name: 'customer_history_details[].en.title'
         description: ''
         required: true
-        example: est
+        example: quaerat
         type: string
         custom: []
       'customer_history_details[].tc':
@@ -4077,44 +4205,44 @@ endpoints:
         name: 'customer_history_details[].tc.title'
         description: ''
         required: true
-        example: exercitationem
+        example: quo
         type: string
         custom: []
     cleanBodyParameters:
-      order_no: rerum
-      name: quis
-      gender: M
-      birthday: '2023-08-17T08:16:06'
+      order_no: hic
+      name: deleniti
+      gender: F
+      birthday: '2023-09-04T02:01:37'
       id_type: other
-      hkid: delectus
-      tel: architecto
-      email: lizeth63@example.org
-      contact_address: officia
-      medical_record: repellat
-      covid_diagnosed: true
+      hkid: ad
+      tel: sit
+      email: ymann@example.net
+      contact_address: est
+      medical_record: aut
+      covid_diagnosed: false
       covid_close_contacts: false
-      covid_date: '2023-08-17T08:16:06'
-      height: '154'
-      weight: '47'
-      blood_date: '2023-08-17T08:16:06'
-      blood_time: nobis
-      address: nihil
-      report: email
-      remark: officiis
+      covid_date: '2023-09-04T02:01:37'
+      height: '0'
+      weight: '52'
+      blood_date: '2023-09-04T02:01:37'
+      blood_time: quisquam
+      address: sit
+      report: whatsapp
+      remark: quasi
       paid: false
       en:
-        district: saepe
-        subtitle: aliquam
+        district: ut
+        subtitle: a
       tc:
-        district: magnam
-        subtitle: sed
+        district: ut
+        subtitle: minus
       customer_history_details:
         -
-          price: eos
+          price: totam
           en:
-            title: est
+            title: quaerat
           tc:
-            title: exercitationem
+            title: quo
     fileParameters:
       report_pdf: null
     responses: []
@@ -4122,7 +4250,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 6Za4a63V1gbEhPfvkDc5ed8'
+      - 'Bearer 3abvE6hV1edgD8Z5c4Pfa6k'
     controller: null
     method: null
     route: null
@@ -4165,7 +4293,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer Vk64ZgP1avh3ca6D8f5deEb'
+      - 'Bearer haebPVf3vc64185EZ6dDkga'
     controller: null
     method: null
     route: null
@@ -4195,14 +4323,14 @@ endpoints:
         name: s
         description: 'Search keyword'
         required: true
-        example: quisquam
+        example: placeat
         type: string
         custom: []
       p:
         name: p
         description: 'Page number, default=20'
         required: true
-        example: 7
+        example: 5
         type: integer
         custom: []
       sort:
@@ -4216,22 +4344,22 @@ endpoints:
         name: 'filter[available]'
         description: 'Filter by available'
         required: true
-        example: quos
+        example: corporis
         type: string
         custom: []
       'filter[enable]':
         name: 'filter[enable]'
         description: 'Filter by enable'
         required: true
-        example: 13
+        example: 11
         type: integer
         custom: []
     cleanQueryParameters:
-      s: quisquam
-      p: 7
+      s: placeat
+      p: 5
       sort: '-available_date'
-      'filter[available]': quos
-      'filter[enable]': 13
+      'filter[available]': corporis
+      'filter[enable]': 11
     bodyParameters: []
     cleanBodyParameters: []
     fileParameters: []
@@ -4249,7 +4377,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer fkb4v6VaE1cehD53Pag6d8Z'
+      - 'Bearer c3Dfa6hd6Pkvgeb4a5E18VZ'
     controller: null
     method: null
     route: null
@@ -4281,35 +4409,35 @@ endpoints:
         name: date_from
         description: 'Must be a valid date.'
         required: true
-        example: '2023-08-17T08:16:06'
+        example: '2023-09-04T02:01:37'
         type: string
         custom: []
       date_to:
         name: date_to
         description: 'Must be a valid date.'
         required: true
-        example: '2023-08-17T08:16:06'
+        example: '2023-09-04T02:01:37'
         type: string
         custom: []
       time_from:
         name: time_from
         description: 'Must be a valid date in the format <code>H:i:s</code>.'
         required: true
-        example: '08:16:06'
+        example: '02:01:37'
         type: string
         custom: []
       time_to:
         name: time_to
         description: 'Must be a valid date in the format <code>H:i:s</code>.'
         required: true
-        example: '08:16:06'
+        example: '02:01:37'
         type: string
         custom: []
       interval:
         name: interval
         description: ''
         required: true
-        example: 7
+        example: 12
         type: integer
         custom: []
       enable:
@@ -4323,24 +4451,24 @@ endpoints:
         name: quota
         description: ''
         required: true
-        example: 15
+        example: 10
         type: integer
         custom: []
     cleanBodyParameters:
-      date_from: '2023-08-17T08:16:06'
-      date_to: '2023-08-17T08:16:06'
-      time_from: '08:16:06'
-      time_to: '08:16:06'
-      interval: 7
+      date_from: '2023-09-04T02:01:37'
+      date_to: '2023-09-04T02:01:37'
+      time_from: '02:01:37'
+      time_to: '02:01:37'
+      interval: 12
       enable: true
-      quota: 15
+      quota: 10
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer kZDPVfgdb56v8ce1h3aEa64'
+      - 'Bearer Zh684bacvDdf31eaV5k6PgE'
     controller: null
     method: null
     route: null
@@ -4392,7 +4520,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 81b6d5cg4Eava6VPfehZkD3'
+      - 'Bearer 5Zd4kVbfah6ecv86g3EaPD1'
     controller: null
     method: null
     route: null
@@ -4433,14 +4561,14 @@ endpoints:
         name: available_date
         description: 'Must be a valid date.'
         required: true
-        example: '2023-08-17T08:16:06'
+        example: '2023-09-04T02:01:37'
         type: string
         custom: []
       enable:
         name: enable
         description: ''
         required: true
-        example: false
+        example: true
         type: boolean
         custom: []
       timeslot_quotas:
@@ -4448,49 +4576,49 @@ endpoints:
         description: ''
         required: false
         example:
-          - et
+          - qui
         type: 'integer[]'
         custom: []
       'timeslot_quotas[].id':
         name: 'timeslot_quotas[].id'
         description: ''
         required: false
-        example: 2
+        example: 14
         type: integer
         custom: []
       'timeslot_quotas[].from':
         name: 'timeslot_quotas[].from'
         description: 'Must be a valid date in the format <code>H:i:s</code>.'
         required: true
-        example: '08:16:06'
+        example: '02:01:37'
         type: string
         custom: []
       'timeslot_quotas[].to':
         name: 'timeslot_quotas[].to'
         description: 'Must be a valid date in the format <code>H:i:s</code>.'
         required: true
-        example: '08:16:06'
+        example: '02:01:37'
         type: string
         custom: []
       'timeslot_quotas[].quota':
         name: 'timeslot_quotas[].quota'
         description: ''
         required: true
-        example: 14
+        example: 18
         type: integer
         custom: []
     cleanBodyParameters:
-      available_date: '2023-08-17T08:16:06'
-      enable: false
+      available_date: '2023-09-04T02:01:37'
+      enable: true
       timeslot_quotas:
-        - et
+        - qui
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer 8PdvZV6ab34hk1cfgE5Dae6'
+      - 'Bearer dV43ha8Z6cebv6EkD51Pagf'
     controller: null
     method: null
     route: null
@@ -4533,7 +4661,464 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1ZgadVkPvDfceah4E65b386'
+      - 'Bearer f8Dgahd16eEkbca4V5Pv3Z6'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/latest_news
+    metadata:
+      groupName: 'CMS API'
+      groupDescription: ''
+      subgroup: 'Latest News'
+      subgroupDescription: ''
+      title: 'Latest News List'
+      description: 'Latest News list'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters:
+      s:
+        name: s
+        description: 'Search keyword'
+        required: true
+        example: voluptatibus
+        type: string
+        custom: []
+      p:
+        name: p
+        description: 'Page number, default=20'
+        required: true
+        example: 9
+        type: integer
+        custom: []
+      sort:
+        name: sort
+        description: 'Sort by column name, `-` equal to descending. Accept sequence,slug,price,hot,enable,translations.title#en,translations.title#tc'
+        required: true
+        example: '-news_date'
+        type: string
+        custom: []
+      'filter[sequence]':
+        name: 'filter[sequence]'
+        description: 'Filter by sequence'
+        required: true
+        example: dignissimos
+        type: string
+        custom: []
+      'filter[slug]':
+        name: 'filter[slug]'
+        description: 'Filter by slug'
+        required: true
+        example: alias
+        type: string
+        custom: []
+      'filter[news_date]':
+        name: 'filter[news_date]'
+        description: 'Filter by news_date'
+        required: true
+        example: qui
+        type: string
+        custom: []
+      'filter[enable]':
+        name: 'filter[enable]'
+        description: 'Filter by enable'
+        required: true
+        example: asperiores
+        type: string
+        custom: []
+      'filter[translations.title]':
+        name: 'filter[translations.title]'
+        description: 'Filter by title'
+        required: true
+        example: animi
+        type: string
+        custom: []
+    cleanQueryParameters:
+      s: voluptatibus
+      p: 9
+      sort: '-news_date'
+      'filter[sequence]': dignissimos
+      'filter[slug]': alias
+      'filter[news_date]': qui
+      'filter[enable]': asperiores
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer Ea1v4P3eac65DbVZkdhfg86'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/latest_news
+    metadata:
+      groupName: 'CMS API'
+      groupDescription: ''
+      subgroup: 'Latest News'
+      subgroupDescription: ''
+      title: 'Latest News Create'
+      description: 'Latest News create'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: multipart/form-data
+      Accept: application/json
+      Accept-Language: en
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      news_date:
+        name: news_date
+        description: 'Must be a valid date.'
+        required: true
+        example: '2023-09-04T02:01:37'
+        type: string
+        custom: []
+      enable:
+        name: enable
+        description: ''
+        required: true
+        example: false
+        type: boolean
+        custom: []
+      en:
+        name: en
+        description: ''
+        required: true
+        example: []
+        type: object
+        custom: []
+      tc:
+        name: tc
+        description: ''
+        required: true
+        example: []
+        type: object
+        custom: []
+      en.title:
+        name: en.title
+        description: ''
+        required: true
+        example: aliquid
+        type: string
+        custom: []
+      tc.title:
+        name: tc.title
+        description: ''
+        required: true
+        example: rerum
+        type: string
+        custom: []
+      en.introduction:
+        name: en.introduction
+        description: ''
+        required: false
+        example: quos
+        type: string
+        custom: []
+      tc.introduction:
+        name: tc.introduction
+        description: ''
+        required: false
+        example: eligendi
+        type: string
+        custom: []
+      en.description:
+        name: en.description
+        description: ''
+        required: false
+        example: 'Totam quibusdam cum qui.'
+        type: string
+        custom: []
+      tc.description:
+        name: tc.description
+        description: ''
+        required: false
+        example: 'Sapiente aut qui tempore dolorum et.'
+        type: string
+        custom: []
+      image:
+        name: image
+        description: 'Must be an image.'
+        required: false
+        example: null
+        type: file
+        custom: []
+    cleanBodyParameters:
+      news_date: '2023-09-04T02:01:37'
+      enable: false
+      en:
+        title: aliquid
+        introduction: quos
+        description: 'Totam quibusdam cum qui.'
+      tc:
+        title: rerum
+        introduction: eligendi
+        description: 'Sapiente aut qui tempore dolorum et.'
+    fileParameters:
+      image: null
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer aP8DaZEc6efk3dh1bv54Vg6'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/latest_news/{id}'
+    metadata:
+      groupName: 'CMS API'
+      groupDescription: ''
+      subgroup: 'Latest News'
+      subgroupDescription: ''
+      title: 'Latest News Detail'
+      description: 'Latest News detail'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the latest news.'
+        required: true
+        example: 12
+        type: integer
+        custom: []
+    cleanUrlParameters:
+      id: 12
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer bd4h5PDac8v6Z6Eef1gVak3'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/latest_news/{id}'
+    metadata:
+      groupName: 'CMS API'
+      groupDescription: ''
+      subgroup: 'Latest News'
+      subgroupDescription: ''
+      title: 'Latest News Update'
+      description: 'Latest News update'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: multipart/form-data
+      Accept: application/json
+      Accept-Language: en
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the latest news.'
+        required: true
+        example: 4
+        type: integer
+        custom: []
+    cleanUrlParameters:
+      id: 4
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      news_date:
+        name: news_date
+        description: 'Must be a valid date.'
+        required: true
+        example: '2023-09-04T02:01:37'
+        type: string
+        custom: []
+      enable:
+        name: enable
+        description: ''
+        required: true
+        example: false
+        type: boolean
+        custom: []
+      en:
+        name: en
+        description: ''
+        required: true
+        example: []
+        type: object
+        custom: []
+      tc:
+        name: tc
+        description: ''
+        required: true
+        example: []
+        type: object
+        custom: []
+      en.title:
+        name: en.title
+        description: ''
+        required: true
+        example: ipsa
+        type: string
+        custom: []
+      tc.title:
+        name: tc.title
+        description: ''
+        required: true
+        example: ipsa
+        type: string
+        custom: []
+      en.introduction:
+        name: en.introduction
+        description: ''
+        required: false
+        example: quia
+        type: string
+        custom: []
+      tc.introduction:
+        name: tc.introduction
+        description: ''
+        required: false
+        example: velit
+        type: string
+        custom: []
+      en.description:
+        name: en.description
+        description: ''
+        required: false
+        example: 'Quia voluptate harum ratione tenetur eligendi.'
+        type: string
+        custom: []
+      tc.description:
+        name: tc.description
+        description: ''
+        required: false
+        example: 'Ut nemo illum molestiae.'
+        type: string
+        custom: []
+      image:
+        name: image
+        description: 'Must be an image.'
+        required: false
+        example: null
+        type: file
+        custom: []
+    cleanBodyParameters:
+      news_date: '2023-09-04T02:01:37'
+      enable: false
+      en:
+        title: ipsa
+        introduction: quia
+        description: 'Quia voluptate harum ratione tenetur eligendi.'
+      tc:
+        title: ipsa
+        introduction: velit
+        description: 'Ut nemo illum molestiae.'
+    fileParameters:
+      image: null
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 18bcEfZvg6Vake64Dad5h3P'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/latest_news/{id}'
+    metadata:
+      groupName: 'CMS API'
+      groupDescription: ''
+      subgroup: 'Latest News'
+      subgroupDescription: ''
+      title: 'Latest News Delete'
+      description: 'Latest News delete'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the latest news.'
+        required: true
+        example: 18
+        type: integer
+        custom: []
+    cleanUrlParameters:
+      id: 18
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer b1da6Zv5cV863feaDkE4ghP'
     controller: null
     method: null
     route: null
@@ -4563,14 +5148,14 @@ endpoints:
         name: s
         description: 'Search keyword'
         required: true
-        example: non
+        example: necessitatibus
         type: string
         custom: []
       p:
         name: p
         description: 'Page number, default=20'
         required: true
-        example: 20
+        example: 3
         type: integer
         custom: []
       sort:
@@ -4584,30 +5169,30 @@ endpoints:
         name: 'filter[type]'
         description: 'Filter by type'
         required: true
-        example: iusto
+        example: voluptates
         type: string
         custom: []
       'filter[enable]':
         name: 'filter[enable]'
         description: 'Filter by enable'
         required: true
-        example: 7
+        example: 4
         type: integer
         custom: []
       'filter[link]':
         name: 'filter[link]'
         description: 'Filter by link'
         required: true
-        example: incidunt
+        example: aut
         type: string
         custom: []
     cleanQueryParameters:
-      s: non
-      p: 20
+      s: necessitatibus
+      p: 3
       sort: type
-      'filter[type]': iusto
-      'filter[enable]': 7
-      'filter[link]': incidunt
+      'filter[type]': voluptates
+      'filter[enable]': 4
+      'filter[link]': aut
     bodyParameters: []
     cleanBodyParameters: []
     fileParameters: []
@@ -4625,7 +5210,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer Eh6P5vcekZVgDfdab81364a'
+      - 'Bearer hgd43k6V8Za6aev5fEb1DcP'
     controller: null
     method: null
     route: null
@@ -4677,7 +5262,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer Dca34ed5E16Zkg8Pbv6ahfV'
+      - 'Bearer 1P5cZ346vdafahebDE6Vk8g'
     controller: null
     method: null
     route: null
@@ -4718,26 +5303,26 @@ endpoints:
         name: link
         description: ''
         required: false
-        example: enim
+        example: quae
         type: string
         custom: []
       enable:
         name: enable
         description: ''
         required: true
-        example: true
+        example: false
         type: boolean
         custom: []
     cleanBodyParameters:
-      link: enim
-      enable: true
+      link: quae
+      enable: false
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer bahdE8Pe3Z1D6Vg6vkfc5a4'
+      - 'Bearer PEaagkhc4D5Zbde1Vf3v686'
     controller: null
     method: null
     route: null
@@ -4780,7 +5365,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1Z35aeP64hvdkEfa6g8VbDc'
+      - 'Bearer 8baVvhDPakcgZf51E4d63e6'
     controller: null
     method: null
     route: null
@@ -4824,7 +5409,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer DfVkeb16Pd8hga5ca4v3ZE6'
+      - 'Bearer f8VeEakZ41DPcdh5gb3va66'
     controller: null
     method: null
     route: null
@@ -4868,7 +5453,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer V15c6e86ZEgafdDhP3kav4b'
+      - 'Bearer dhEg8f6eba1aZ3vc6P5Dk4V'
     controller: null
     method: null
     route: null
@@ -4898,28 +5483,28 @@ endpoints:
         name: 'filter[id]'
         description: 'Filter by customer id'
         required: true
-        example: 12
+        example: 17
         type: integer
         custom: []
       'filter[name]':
         name: 'filter[name]'
         description: 'Filter by customer name'
         required: true
-        example: sed
+        example: corporis
         type: string
         custom: []
       'filter[tel]':
         name: 'filter[tel]'
         description: 'Filter by customer tel'
         required: true
-        example: sit
+        example: quam
         type: string
         custom: []
       'filter[email]':
         name: 'filter[email]'
         description: 'Filter by customer email'
         required: true
-        example: nostrum
+        example: explicabo
         type: string
         custom: []
       sort:
@@ -4930,10 +5515,10 @@ endpoints:
         type: string
         custom: []
     cleanQueryParameters:
-      'filter[id]': 12
-      'filter[name]': sed
-      'filter[tel]': sit
-      'filter[email]': nostrum
+      'filter[id]': 17
+      'filter[name]': corporis
+      'filter[tel]': quam
+      'filter[email]': explicabo
       sort: '-id'
     bodyParameters: []
     cleanBodyParameters: []
@@ -4952,7 +5537,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer fhP8v3egaVa6bZkc1D6d5E4'
+      - 'Bearer dPk5V13a8gavDZcb4ef66hE'
     controller: null
     method: null
     route: null
@@ -4996,7 +5581,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1V4kP86abcZEh5aeg6dD3vf'
+      - 'Bearer dagfhVE3PZkv1Da86cb45e6'
     controller: null
     method: null
     route: null
@@ -5028,7 +5613,7 @@ endpoints:
         name: id
         description: 'The id of the record'
         required: true
-        example: 10
+        example: 18
         type: integer
         custom: []
       sequence:
@@ -5039,7 +5624,7 @@ endpoints:
         type: integer
         custom: []
     cleanBodyParameters:
-      id: 10
+      id: 18
       sequence: 6
     fileParameters: []
     responses: []
@@ -5047,7 +5632,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 5kVePZvDh6bfaa8c3E6d4g1'
+      - 'Bearer 3f45be6Z1aVkEgv6DP8cahd'
     controller: null
     method: null
     route: null
@@ -5079,26 +5664,26 @@ endpoints:
         name: id
         description: 'The id of the record'
         required: true
-        example: 14
+        example: 6
         type: integer
         custom: []
       sequence:
         name: sequence
         description: 'The sequence of the record'
         required: true
-        example: 17
+        example: 20
         type: integer
         custom: []
     cleanBodyParameters:
-      id: 14
-      sequence: 17
+      id: 6
+      sequence: 20
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer gcv8aEDPe4a5dfbh3V661Zk'
+      - 'Bearer aEagVkP6ZDc1bvf6e34d85h'
     controller: null
     method: null
     route: null
@@ -5130,26 +5715,26 @@ endpoints:
         name: id
         description: 'The id of the record'
         required: true
-        example: 14
+        example: 19
         type: integer
         custom: []
       sequence:
         name: sequence
         description: 'The sequence of the record'
         required: true
-        example: 16
+        example: 15
         type: integer
         custom: []
     cleanBodyParameters:
-      id: 14
-      sequence: 16
+      id: 19
+      sequence: 15
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer Pd4e315bDZvcE66hafkagV8'
+      - 'Bearer 4E8c6DgP5be3V6ahfZvak1d'
     controller: null
     method: null
     route: null
@@ -5181,26 +5766,77 @@ endpoints:
         name: id
         description: 'The id of the record'
         required: true
-        example: 4
+        example: 19
         type: integer
         custom: []
       sequence:
         name: sequence
         description: 'The sequence of the record'
         required: true
-        example: 6
+        example: 1
         type: integer
         custom: []
     cleanBodyParameters:
-      id: 4
-      sequence: 6
+      id: 19
+      sequence: 1
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer bV1aDcfge86Z3E546hdPvka'
+      - 'Bearer dP86h1EDVaav6be5cZgfk43'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/row_updates/latest_news
+    metadata:
+      groupName: 'CMS API'
+      groupDescription: ''
+      subgroup: 'Latest News'
+      subgroupDescription: ''
+      title: 'Row Update Latest News'
+      description: 'Datatable row update Latest News sequence'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      id:
+        name: id
+        description: 'The id of the record'
+        required: true
+        example: 12
+        type: integer
+        custom: []
+      sequence:
+        name: sequence
+        description: 'The sequence of the record'
+        required: true
+        example: 10
+        type: integer
+        custom: []
+    cleanBodyParameters:
+      id: 12
+      sequence: 10
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 8Eah3Pvfbe5cak6d4V1ZDg6'
     controller: null
     method: null
     route: null
@@ -5233,33 +5869,33 @@ endpoints:
         description: ''
         required: true
         example:
-          - consequatur
+          - reiciendis
         type: 'string[]'
         custom: []
       'rows[].id':
         name: 'rows[].id'
         description: 'The id of the record'
         required: true
-        example: 6
+        example: 19
         type: integer
         custom: []
       'rows[].sequence':
         name: 'rows[].sequence'
         description: 'The sequence of the record'
         required: true
-        example: 7
+        example: 15
         type: integer
         custom: []
     cleanBodyParameters:
       rows:
-        - consequatur
+        - reiciendis
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer 6VDbdeZ8EvkhgPcf5143aa6'
+      - 'Bearer bgcakDh3V6vaf14eZ5d8PE6'
     controller: null
     method: null
     route: null
@@ -5292,33 +5928,33 @@ endpoints:
         description: ''
         required: true
         example:
-          - consequatur
+          - dolores
         type: 'string[]'
         custom: []
       'rows[].id':
         name: 'rows[].id'
         description: 'The id of the record'
         required: true
-        example: 14
+        example: 2
         type: integer
         custom: []
       'rows[].sequence':
         name: 'rows[].sequence'
         description: 'The sequence of the record'
         required: true
-        example: 7
+        example: 5
         type: integer
         custom: []
     cleanBodyParameters:
       rows:
-        - consequatur
+        - dolores
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer dvb6814D5VkhcEf3PZa6age'
+      - 'Bearer 5f1eb8VPkhEZ66aacdv3D4g'
     controller: null
     method: null
     route: null
@@ -5351,14 +5987,14 @@ endpoints:
         description: ''
         required: true
         example:
-          - rerum
+          - quia
         type: 'string[]'
         custom: []
       'rows[].id':
         name: 'rows[].id'
         description: 'The id of the record'
         required: true
-        example: 2
+        example: 18
         type: integer
         custom: []
       'rows[].sequence':
@@ -5370,14 +6006,14 @@ endpoints:
         custom: []
     cleanBodyParameters:
       rows:
-        - rerum
+        - quia
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer vdcZa64h8ab1f6VDeg5Pk3E'
+      - 'Bearer 1h6EaVgvP3k5a6ec8D4fbZd'
     controller: null
     method: null
     route: null
@@ -5410,7 +6046,7 @@ endpoints:
         description: ''
         required: true
         example:
-          - voluptatum
+          - tempore
         type: 'string[]'
         custom: []
       'rows[].id':
@@ -5424,19 +6060,78 @@ endpoints:
         name: 'rows[].sequence'
         description: 'The sequence of the record'
         required: true
-        example: 16
+        example: 7
         type: integer
         custom: []
     cleanBodyParameters:
       rows:
-        - voluptatum
+        - tempore
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer 6cDa4Ebv83Va1kZdfhgPe56'
+      - 'Bearer 54eP1Zkd3bgahDa6V68vEfc'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/drags/latest_news
+    metadata:
+      groupName: 'CMS API'
+      groupDescription: ''
+      subgroup: 'Latest News'
+      subgroupDescription: ''
+      title: 'Drag Update Latest News'
+      description: 'Datatable drag update Latest News sequence'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      rows:
+        name: rows
+        description: ''
+        required: true
+        example:
+          - voluptas
+        type: 'string[]'
+        custom: []
+      'rows[].id':
+        name: 'rows[].id'
+        description: 'The id of the record'
+        required: true
+        example: 16
+        type: integer
+        custom: []
+      'rows[].sequence':
+        name: 'rows[].sequence'
+        description: 'The sequence of the record'
+        required: true
+        example: 9
+        type: integer
+        custom: []
+    cleanBodyParameters:
+      rows:
+        - voluptas
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6dD16ZcPgfbE3vhk8a5V4ae'
     controller: null
     method: null
     route: null
@@ -5469,7 +6164,7 @@ endpoints:
         description: 'The id of the record'
         required: true
         example:
-          - 4
+          - 14
         type: 'integer[]'
         custom: []
       enable:
@@ -5483,29 +6178,29 @@ endpoints:
         name: hot
         description: 'Update hot(Apply to service API only)'
         required: true
-        example: true
+        example: false
         type: boolean
         custom: []
       delete:
         name: delete
         description: 'Delete selected record'
         required: true
-        example: true
+        example: false
         type: boolean
         custom: []
     cleanBodyParameters:
       ids:
-        - 4
+        - 14
       enable: false
-      hot: true
-      delete: true
+      hot: false
+      delete: false
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer Z6Ve3E1fgvkacbP65Dh8ad4'
+      - 'Bearer PDVZ61Edeh8vf5ckab6a43g'
     controller: null
     method: null
     route: null
@@ -5538,14 +6233,14 @@ endpoints:
         description: 'The id of the record'
         required: true
         example:
-          - 2
+          - 12
         type: 'integer[]'
         custom: []
       enable:
         name: enable
         description: 'Enable or disable the record'
         required: true
-        example: false
+        example: true
         type: boolean
         custom: []
       hot:
@@ -5564,8 +6259,8 @@ endpoints:
         custom: []
     cleanBodyParameters:
       ids:
-        - 2
-      enable: false
+        - 12
+      enable: true
       hot: false
       delete: true
     fileParameters: []
@@ -5574,7 +6269,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer V65g6dfP4cZhb1av3eaE8Dk'
+      - 'Bearer Z4DhvdaEga6b8cP13fkeV65'
     controller: null
     method: null
     route: null
@@ -5607,7 +6302,7 @@ endpoints:
         description: 'The id of the record'
         required: true
         example:
-          - 5
+          - 13
         type: 'integer[]'
         custom: []
       enable:
@@ -5633,7 +6328,7 @@ endpoints:
         custom: []
     cleanBodyParameters:
       ids:
-        - 5
+        - 13
       enable: true
       hot: false
       delete: true
@@ -5643,7 +6338,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer db8af6DVachgP3eZ45E1kv6'
+      - 'Bearer a6fv3aEVk5hZ4ePdb8Dg16c'
     controller: null
     method: null
     route: null
@@ -5676,7 +6371,7 @@ endpoints:
         description: 'The id of the record'
         required: true
         example:
-          - 9
+          - 18
         type: 'integer[]'
         custom: []
       enable:
@@ -5690,7 +6385,7 @@ endpoints:
         name: hot
         description: 'Update hot(Apply to service API only)'
         required: true
-        example: false
+        example: true
         type: boolean
         custom: []
       delete:
@@ -5702,9 +6397,9 @@ endpoints:
         custom: []
     cleanBodyParameters:
       ids:
-        - 9
+        - 18
       enable: false
-      hot: false
+      hot: true
       delete: true
     fileParameters: []
     responses: []
@@ -5712,7 +6407,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer dV8Zb6cP3gkf4aaE56ve1Dh'
+      - 'Bearer Daf46316kVdvcag5ebZ8hEP'
     controller: null
     method: null
     route: null
@@ -5745,7 +6440,7 @@ endpoints:
         description: 'The id of the record'
         required: true
         example:
-          - 11
+          - 7
         type: 'integer[]'
         custom: []
       enable:
@@ -5759,7 +6454,7 @@ endpoints:
         name: hot
         description: 'Update hot(Apply to service API only)'
         required: true
-        example: true
+        example: false
         type: boolean
         custom: []
       delete:
@@ -5771,9 +6466,9 @@ endpoints:
         custom: []
     cleanBodyParameters:
       ids:
-        - 11
+        - 7
       enable: true
-      hot: true
+      hot: false
       delete: false
     fileParameters: []
     responses: []
@@ -5781,7 +6476,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer vD5E3afdakhZ1g6P86e4bcV'
+      - 'Bearer kgb5dV1aDhP3e66vfca84ZE'
     controller: null
     method: null
     route: null
@@ -5814,14 +6509,14 @@ endpoints:
         description: 'The id of the record'
         required: true
         example:
-          - 10
+          - 3
         type: 'integer[]'
         custom: []
       enable:
         name: enable
         description: 'Enable or disable the record'
         required: true
-        example: false
+        example: true
         type: boolean
         custom: []
       hot:
@@ -5835,22 +6530,91 @@ endpoints:
         name: delete
         description: 'Delete selected record'
         required: true
-        example: false
+        example: true
         type: boolean
         custom: []
     cleanBodyParameters:
       ids:
-        - 10
-      enable: false
+        - 3
+      enable: true
       hot: false
-      delete: false
+      delete: true
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer 41c66P3adavfEkgVDeZ8h5b'
+      - 'Bearer ZafDe4db6Pak583Ec1Vghv6'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/bulk_updates/latest_news
+    metadata:
+      groupName: 'CMS API'
+      groupDescription: ''
+      subgroup: 'Latest News'
+      subgroupDescription: ''
+      title: 'Bulk Update Latest News'
+      description: 'Bulk update Latest News param or delete on listing page'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      ids:
+        name: ids
+        description: 'The id of the record'
+        required: true
+        example:
+          - 18
+        type: 'integer[]'
+        custom: []
+      enable:
+        name: enable
+        description: 'Enable or disable the record'
+        required: true
+        example: false
+        type: boolean
+        custom: []
+      hot:
+        name: hot
+        description: 'Update hot(Apply to service API only)'
+        required: true
+        example: true
+        type: boolean
+        custom: []
+      delete:
+        name: delete
+        description: 'Delete selected record'
+        required: true
+        example: true
+        type: boolean
+        custom: []
+    cleanBodyParameters:
+      ids:
+        - 18
+      enable: false
+      hot: true
+      delete: true
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer VdevhEZ6fcD83k4bP1a56ga'
     controller: null
     method: null
     route: null

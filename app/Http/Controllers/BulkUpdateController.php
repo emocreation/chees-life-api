@@ -6,6 +6,7 @@ use App\Http\Requests\Common\BulkUpdateRequest;
 use App\Models\Banner;
 use App\Models\Category;
 use App\Models\District;
+use App\Models\LatestNews;
 use App\Models\Review;
 use App\Models\Service;
 use App\Models\SocialMedia;
@@ -94,6 +95,15 @@ class BulkUpdateController extends Controller
     {
         $validated = $request->validated();
         $this->bulkUpdate($validated, SocialMedia::class);
+        $this->success();
+    }
+
+    #[Subgroup("Latest News")]
+    #[Endpoint('Bulk Update Latest News', 'Bulk update Latest News param or delete on listing page')]
+    public function latestNews(BulkUpdateRequest $request)
+    {
+        $validated = $request->validated();
+        $this->bulkUpdate($validated, LatestNews::class);
         $this->success();
     }
 }

@@ -10,6 +10,7 @@ use App\Mail\Invoice;
 use App\Models\Customer;
 use App\Models\CustomerHistory;
 use App\Models\District;
+use App\Models\ReportExplanation;
 use App\Models\Service;
 use App\Models\Timeslot;
 use App\Models\TimeslotQuota;
@@ -126,6 +127,18 @@ class ServiceController extends Controller
                     ],
                     'tc' => [
                         'title' => $district->{'name:tc'}
+                    ]
+                ];
+            }
+            $explanation = ReportExplanation::where('type', $validated['report_explanation'])->first();
+            if ($explanation->price > 0) {
+                $data[] = [
+                    'price' => $explanation->price,
+                    'en' => [
+                        'title' => __('base.' . $explanation->type, ['d' => $explanation->price], 'en')
+                    ],
+                    'tc' => [
+                        'title' => __('base.' . $explanation->type, ['d' => $explanation->price], 'tc')
                     ]
                 ];
             }
