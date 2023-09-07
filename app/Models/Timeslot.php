@@ -34,6 +34,18 @@ class Timeslot extends BaseTimeslot
 
     public function scopeAvailableDates(Builder $query): void
     {
-        $query->where('available_date', '>', now());
+        $query->whereDate('available_date', '>', now()->format('Y-m-d'));
+    }
+
+    public function scopeDateRange(Builder $query, $from, $to): void
+    {
+        if ($from && $to) {
+            $query->whereBetween('available_date', [$from, $to]);
+            //$query->whereDate('available_date', '>=', $from)->whereDate('available_date', '<=', $to);
+        } elseif ($from) {
+            $query->whereDate('available_date', '>=', $from);
+        } elseif ($to) {
+            $query->whereDate('available_date', '<=', $to);
+        }
     }
 }

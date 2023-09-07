@@ -522,11 +522,11 @@
                                 <a href="#frontend-api-latest-news">Latest News</a>
                             </li>
                                                             <ul id="tocify-subheader-frontend-api-latest-news" class="tocify-subheader">
-                                                                            <li class="tocify-item level-3" data-unique="frontend-api-GETapi-v1-latest_news--slug-">
-                                            <a href="#frontend-api-GETapi-v1-latest_news--slug-">Latest News List</a>
+                                                                            <li class="tocify-item level-3" data-unique="frontend-api-GETapi-v1-latest_news">
+                                            <a href="#frontend-api-GETapi-v1-latest_news">Latest News List</a>
                                         </li>
-                                                                            <li class="tocify-item level-3" data-unique="frontend-api-GETapi-v1-latest_news-details--slug-">
-                                            <a href="#frontend-api-GETapi-v1-latest_news-details--slug-">Service Detail</a>
+                                                                            <li class="tocify-item level-3" data-unique="frontend-api-GETapi-v1-latest_news--slug-">
+                                            <a href="#frontend-api-GETapi-v1-latest_news--slug-">Latest News Detail</a>
                                         </li>
                                                                     </ul>
                                                                         </ul>
@@ -540,7 +540,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: September 4, 2023</li>
+        <li>Last updated: September 7, 2023</li>
     </ul>
 </div>
 
@@ -1121,8 +1121,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --data "{
-    \"currentPassword\": \"delectus\",
-    \"newPassword\": \"consequatur\"
+    \"currentPassword\": \"ullam\",
+    \"newPassword\": \"minima\"
 }"
 </code></pre></div>
 
@@ -1140,8 +1140,8 @@ const headers = {
 };
 
 let body = {
-    "currentPassword": "delectus",
-    "newPassword": "consequatur"
+    "currentPassword": "ullam",
+    "newPassword": "minima"
 };
 
 fetch(url, {
@@ -1163,8 +1163,8 @@ $response = $client-&gt;post(
             'Accept-Language' =&gt; 'en',
         ],
         'json' =&gt; [
-            'currentPassword' =&gt; 'delectus',
-            'newPassword' =&gt; 'consequatur',
+            'currentPassword' =&gt; 'ullam',
+            'newPassword' =&gt; 'minima',
         ],
     ]
 );
@@ -1273,10 +1273,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="currentPassword"                data-endpoint="POSTapi-auth-user-update-password"
-               value="delectus"
+               value="ullam"
                data-component="body">
     <br>
-<p>Example: <code>delectus</code></p>
+<p>Example: <code>ullam</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>newPassword</code></b>&nbsp;&nbsp;
@@ -1284,10 +1284,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="newPassword"                data-endpoint="POSTapi-auth-user-update-password"
-               value="consequatur"
+               value="minima"
                data-component="body">
     <br>
-<p>Example: <code>consequatur</code></p>
+<p>Example: <code>minima</code></p>
         </div>
         </form>
 
@@ -1306,7 +1306,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://chees-api.dev.com/api/users?s=non&amp;p=19&amp;sort=id&amp;filter%5Bid%5D=sed&amp;filter%5Bname%5D=17&amp;filter%5Bemail%5D=nostrum" \
+    --get "https://chees-api.dev.com/api/users?s=nam&amp;p=8&amp;sort=id&amp;filter%5Bid%5D=fugit&amp;filter%5Bname%5D=13&amp;filter%5Bemail%5D=omnis" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -1319,12 +1319,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "s": "non",
-    "p": "19",
+    "s": "nam",
+    "p": "8",
     "sort": "id",
-    "filter[id]": "sed",
-    "filter[name]": "17",
-    "filter[email]": "nostrum",
+    "filter[id]": "fugit",
+    "filter[name]": "13",
+    "filter[email]": "omnis",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -1354,12 +1354,12 @@ $response = $client-&gt;get(
             'Accept-Language' =&gt; 'en',
         ],
         'query' =&gt; [
-            's' =&gt; 'non',
-            'p' =&gt; '19',
+            's' =&gt; 'nam',
+            'p' =&gt; '8',
             'sort' =&gt; 'id',
-            'filter[id]' =&gt; 'sed',
-            'filter[name]' =&gt; '17',
-            'filter[email]' =&gt; 'nostrum',
+            'filter[id]' =&gt; 'fugit',
+            'filter[name]' =&gt; '13',
+            'filter[email]' =&gt; 'omnis',
         ],
     ]
 );
@@ -1484,10 +1484,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="s"                data-endpoint="GETapi-users"
-               value="non"
+               value="nam"
                data-component="query">
     <br>
-<p>Search keyword Example: <code>non</code></p>
+<p>Search keyword Example: <code>nam</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>p</code></b>&nbsp;&nbsp;
@@ -1495,10 +1495,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="p"                data-endpoint="GETapi-users"
-               value="19"
+               value="8"
                data-component="query">
     <br>
-<p>Page number, default=20 Example: <code>19</code></p>
+<p>Page number, default=20 Example: <code>8</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>sort</code></b>&nbsp;&nbsp;
@@ -1517,10 +1517,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[id]"                data-endpoint="GETapi-users"
-               value="sed"
+               value="fugit"
                data-component="query">
     <br>
-<p>Filter by id Example: <code>sed</code></p>
+<p>Filter by id Example: <code>fugit</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[name]</code></b>&nbsp;&nbsp;
@@ -1528,10 +1528,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="filter[name]"                data-endpoint="GETapi-users"
-               value="17"
+               value="13"
                data-component="query">
     <br>
-<p>Filter by name Example: <code>17</code></p>
+<p>Filter by name Example: <code>13</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[email]</code></b>&nbsp;&nbsp;
@@ -1539,10 +1539,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[email]"                data-endpoint="GETapi-users"
-               value="nostrum"
+               value="omnis"
                data-component="query">
     <br>
-<p>Filter by email Example: <code>nostrum</code></p>
+<p>Filter by email Example: <code>omnis</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[role.name]</code></b>&nbsp;&nbsp;
@@ -1550,10 +1550,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[role.name]"                data-endpoint="GETapi-users"
-               value="culpa"
+               value="modi"
                data-component="query">
     <br>
-<p>Filter by role name Example: <code>culpa</code></p>
+<p>Filter by role name Example: <code>modi</code></p>
             </div>
                 </form>
 
@@ -1577,10 +1577,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --data "{
-    \"name\": \"sequi\",
-    \"email\": \"lura19@example.com\",
-    \"password\": \"T\'tvbXVi.cg6UtwW\",
-    \"role_name\": \"aut\"
+    \"name\": \"recusandae\",
+    \"email\": \"nlemke@example.com\",
+    \"password\": \"gX+]]$B\",
+    \"role_name\": \"sequi\"
 }"
 </code></pre></div>
 
@@ -1598,10 +1598,10 @@ const headers = {
 };
 
 let body = {
-    "name": "sequi",
-    "email": "lura19@example.com",
-    "password": "T'tvbXVi.cg6UtwW",
-    "role_name": "aut"
+    "name": "recusandae",
+    "email": "nlemke@example.com",
+    "password": "gX+]]$B",
+    "role_name": "sequi"
 };
 
 fetch(url, {
@@ -1623,10 +1623,10 @@ $response = $client-&gt;post(
             'Accept-Language' =&gt; 'en',
         ],
         'json' =&gt; [
-            'name' =&gt; 'sequi',
-            'email' =&gt; 'lura19@example.com',
-            'password' =&gt; 'T\'tvbXVi.cg6UtwW',
-            'role_name' =&gt; 'aut',
+            'name' =&gt; 'recusandae',
+            'email' =&gt; 'nlemke@example.com',
+            'password' =&gt; 'gX+]]$B',
+            'role_name' =&gt; 'sequi',
         ],
     ]
 );
@@ -1735,10 +1735,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-users"
-               value="sequi"
+               value="recusandae"
                data-component="body">
     <br>
-<p>Example: <code>sequi</code></p>
+<p>Example: <code>recusandae</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -1746,10 +1746,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-users"
-               value="lura19@example.com"
+               value="nlemke@example.com"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>lura19@example.com</code></p>
+<p>Must be a valid email address. Example: <code>nlemke@example.com</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -1757,10 +1757,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-users"
-               value="T'tvbXVi.cg6UtwW"
+               value="gX+]]$B"
                data-component="body">
     <br>
-<p>Example: <code>T'tvbXVi.cg6UtwW</code></p>
+<p>Example: <code>gX+]]$B</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>role_name</code></b>&nbsp;&nbsp;
@@ -1768,10 +1768,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="role_name"                data-endpoint="POSTapi-users"
-               value="aut"
+               value="sequi"
                data-component="body">
     <br>
-<p>Example: <code>aut</code></p>
+<p>Example: <code>sequi</code></p>
         </div>
         </form>
 
@@ -1975,10 +1975,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --data "{
-    \"name\": \"ex\",
-    \"email\": \"jbernhard@example.org\",
-    \"password\": \"4HZLd~0A\",
-    \"role_name\": \"eligendi\"
+    \"name\": \"qui\",
+    \"email\": \"vkunde@example.net\",
+    \"password\": \"4.cQv`+&lt;Zed5avv:z~NY\",
+    \"role_name\": \"eum\"
 }"
 </code></pre></div>
 
@@ -1996,10 +1996,10 @@ const headers = {
 };
 
 let body = {
-    "name": "ex",
-    "email": "jbernhard@example.org",
-    "password": "4HZLd~0A",
-    "role_name": "eligendi"
+    "name": "qui",
+    "email": "vkunde@example.net",
+    "password": "4.cQv`+&lt;Zed5avv:z~NY",
+    "role_name": "eum"
 };
 
 fetch(url, {
@@ -2021,10 +2021,10 @@ $response = $client-&gt;put(
             'Accept-Language' =&gt; 'en',
         ],
         'json' =&gt; [
-            'name' =&gt; 'ex',
-            'email' =&gt; 'jbernhard@example.org',
-            'password' =&gt; '4HZLd~0A',
-            'role_name' =&gt; 'eligendi',
+            'name' =&gt; 'qui',
+            'email' =&gt; 'vkunde@example.net',
+            'password' =&gt; '4.cQv`+&lt;Zed5avv:z~NY',
+            'role_name' =&gt; 'eum',
         ],
     ]
 );
@@ -2149,10 +2149,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="PUTapi-users--id-"
-               value="ex"
+               value="qui"
                data-component="body">
     <br>
-<p>Example: <code>ex</code></p>
+<p>Example: <code>qui</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -2160,10 +2160,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="PUTapi-users--id-"
-               value="jbernhard@example.org"
+               value="vkunde@example.net"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>jbernhard@example.org</code></p>
+<p>Must be a valid email address. Example: <code>vkunde@example.net</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -2171,10 +2171,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="PUTapi-users--id-"
-               value="4HZLd~0A"
+               value="4.cQv`+<Zed5avv:z~NY"
                data-component="body">
     <br>
-<p>Example: <code>4HZLd~0A</code></p>
+<p>Example: <code>4.cQv</code>+&lt;Zed5avv:z~NY`</p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>role_name</code></b>&nbsp;&nbsp;
@@ -2182,10 +2182,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="role_name"                data-endpoint="PUTapi-users--id-"
-               value="eligendi"
+               value="eum"
                data-component="body">
     <br>
-<p>Example: <code>eligendi</code></p>
+<p>Example: <code>eum</code></p>
         </div>
         </form>
 
@@ -2368,7 +2368,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://chees-api.dev.com/api/reviews?s=in&amp;p=18&amp;sort=-id&amp;filter%5Breview_date%5D=eos&amp;filter%5Brating%5D=1&amp;filter%5Benable%5D=6" \
+    --get "https://chees-api.dev.com/api/reviews?s=quas&amp;p=2&amp;sort=-id&amp;filter%5Breview_date%5D=eius&amp;filter%5Brating%5D=18&amp;filter%5Benable%5D=10" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -2381,12 +2381,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "s": "in",
-    "p": "18",
+    "s": "quas",
+    "p": "2",
     "sort": "-id",
-    "filter[review_date]": "eos",
-    "filter[rating]": "1",
-    "filter[enable]": "6",
+    "filter[review_date]": "eius",
+    "filter[rating]": "18",
+    "filter[enable]": "10",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -2416,12 +2416,12 @@ $response = $client-&gt;get(
             'Accept-Language' =&gt; 'en',
         ],
         'query' =&gt; [
-            's' =&gt; 'in',
-            'p' =&gt; '18',
+            's' =&gt; 'quas',
+            'p' =&gt; '2',
             'sort' =&gt; '-id',
-            'filter[review_date]' =&gt; 'eos',
-            'filter[rating]' =&gt; '1',
-            'filter[enable]' =&gt; '6',
+            'filter[review_date]' =&gt; 'eius',
+            'filter[rating]' =&gt; '18',
+            'filter[enable]' =&gt; '10',
         ],
     ]
 );
@@ -2546,10 +2546,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="s"                data-endpoint="GETapi-reviews"
-               value="in"
+               value="quas"
                data-component="query">
     <br>
-<p>Search keyword Example: <code>in</code></p>
+<p>Search keyword Example: <code>quas</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>p</code></b>&nbsp;&nbsp;
@@ -2557,10 +2557,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="p"                data-endpoint="GETapi-reviews"
-               value="18"
+               value="2"
                data-component="query">
     <br>
-<p>Page number, default=20 Example: <code>18</code></p>
+<p>Page number, default=20 Example: <code>2</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>sort</code></b>&nbsp;&nbsp;
@@ -2579,10 +2579,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[review_date]"                data-endpoint="GETapi-reviews"
-               value="eos"
+               value="eius"
                data-component="query">
     <br>
-<p>Filter by review_date Example: <code>eos</code></p>
+<p>Filter by review_date Example: <code>eius</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[rating]</code></b>&nbsp;&nbsp;
@@ -2590,10 +2590,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="filter[rating]"                data-endpoint="GETapi-reviews"
-               value="1"
+               value="18"
                data-component="query">
     <br>
-<p>Filter by rating Example: <code>1</code></p>
+<p>Filter by rating Example: <code>18</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[enable]</code></b>&nbsp;&nbsp;
@@ -2601,10 +2601,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="filter[enable]"                data-endpoint="GETapi-reviews"
-               value="6"
+               value="10"
                data-component="query">
     <br>
-<p>Filter by enable Example: <code>6</code></p>
+<p>Filter by enable Example: <code>10</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[translations.customer_name]</code></b>&nbsp;&nbsp;
@@ -2612,10 +2612,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[translations.customer_name]"                data-endpoint="GETapi-reviews"
-               value="consequatur"
+               value="rerum"
                data-component="query">
     <br>
-<p>Filter by translations.customer_name Example: <code>consequatur</code></p>
+<p>Filter by translations.customer_name Example: <code>rerum</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[translations.content]</code></b>&nbsp;&nbsp;
@@ -2623,10 +2623,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[translations.content]"                data-endpoint="GETapi-reviews"
-               value="inventore"
+               value="ut"
                data-component="query">
     <br>
-<p>Filter by translations.content Example: <code>inventore</code></p>
+<p>Filter by translations.content Example: <code>ut</code></p>
             </div>
                 </form>
 
@@ -2650,15 +2650,15 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --data "{
-    \"review_date\": \"2023-09-04T02:01:37\",
-    \"rating\": 4,
+    \"review_date\": \"2023-09-07T01:01:03\",
+    \"rating\": 1,
     \"en\": {
-        \"customer_name\": \"dolorem\",
-        \"content\": \"nihil\"
+        \"customer_name\": \"et\",
+        \"content\": \"consequatur\"
     },
     \"tc\": {
-        \"customer_name\": \"aut\",
-        \"content\": \"alias\"
+        \"customer_name\": \"saepe\",
+        \"content\": \"porro\"
     },
     \"enable\": true
 }"
@@ -2678,15 +2678,15 @@ const headers = {
 };
 
 let body = {
-    "review_date": "2023-09-04T02:01:37",
-    "rating": 4,
+    "review_date": "2023-09-07T01:01:03",
+    "rating": 1,
     "en": {
-        "customer_name": "dolorem",
-        "content": "nihil"
+        "customer_name": "et",
+        "content": "consequatur"
     },
     "tc": {
-        "customer_name": "aut",
-        "content": "alias"
+        "customer_name": "saepe",
+        "content": "porro"
     },
     "enable": true
 };
@@ -2710,15 +2710,15 @@ $response = $client-&gt;post(
             'Accept-Language' =&gt; 'en',
         ],
         'json' =&gt; [
-            'review_date' =&gt; '2023-09-04T02:01:37',
-            'rating' =&gt; 4,
+            'review_date' =&gt; '2023-09-07T01:01:03',
+            'rating' =&gt; 1,
             'en' =&gt; [
-                'customer_name' =&gt; 'dolorem',
-                'content' =&gt; 'nihil',
+                'customer_name' =&gt; 'et',
+                'content' =&gt; 'consequatur',
             ],
             'tc' =&gt; [
-                'customer_name' =&gt; 'aut',
-                'content' =&gt; 'alias',
+                'customer_name' =&gt; 'saepe',
+                'content' =&gt; 'porro',
             ],
             'enable' =&gt; true,
         ],
@@ -2829,10 +2829,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="review_date"                data-endpoint="POSTapi-reviews"
-               value="2023-09-04T02:01:37"
+               value="2023-09-07T01:01:03"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-04T02:01:37</code></p>
+<p>Must be a valid date. Example: <code>2023-09-07T01:01:03</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>rating</code></b>&nbsp;&nbsp;
@@ -2840,10 +2840,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="rating"                data-endpoint="POSTapi-reviews"
-               value="4"
+               value="1"
                data-component="body">
     <br>
-<p>Must be at least 0. Must not be greater than 5. Example: <code>4</code></p>
+<p>Must be at least 0. Must not be greater than 5. Example: <code>1</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
         <details>
@@ -2860,10 +2860,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="en.customer_name"                data-endpoint="POSTapi-reviews"
-               value="dolorem"
+               value="et"
                data-component="body">
     <br>
-<p>Example: <code>dolorem</code></p>
+<p>Example: <code>et</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>content</code></b>&nbsp;&nbsp;
@@ -2871,10 +2871,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="en.content"                data-endpoint="POSTapi-reviews"
-               value="nihil"
+               value="consequatur"
                data-component="body">
     <br>
-<p>Example: <code>nihil</code></p>
+<p>Example: <code>consequatur</code></p>
                     </div>
                                     </details>
         </div>
@@ -2893,10 +2893,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="tc.customer_name"                data-endpoint="POSTapi-reviews"
-               value="aut"
+               value="saepe"
                data-component="body">
     <br>
-<p>Example: <code>aut</code></p>
+<p>Example: <code>saepe</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>content</code></b>&nbsp;&nbsp;
@@ -2904,10 +2904,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="tc.content"                data-endpoint="POSTapi-reviews"
-               value="alias"
+               value="porro"
                data-component="body">
     <br>
-<p>Example: <code>alias</code></p>
+<p>Example: <code>porro</code></p>
                     </div>
                                     </details>
         </div>
@@ -3134,15 +3134,15 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --data "{
-    \"review_date\": \"2023-09-04T02:01:37\",
-    \"rating\": 1,
+    \"review_date\": \"2023-09-07T01:01:03\",
+    \"rating\": 4,
     \"en\": {
-        \"customer_name\": \"nobis\",
-        \"content\": \"voluptatibus\"
+        \"customer_name\": \"dolor\",
+        \"content\": \"doloremque\"
     },
     \"tc\": {
-        \"customer_name\": \"occaecati\",
-        \"content\": \"eveniet\"
+        \"customer_name\": \"error\",
+        \"content\": \"est\"
     },
     \"enable\": false
 }"
@@ -3162,15 +3162,15 @@ const headers = {
 };
 
 let body = {
-    "review_date": "2023-09-04T02:01:37",
-    "rating": 1,
+    "review_date": "2023-09-07T01:01:03",
+    "rating": 4,
     "en": {
-        "customer_name": "nobis",
-        "content": "voluptatibus"
+        "customer_name": "dolor",
+        "content": "doloremque"
     },
     "tc": {
-        "customer_name": "occaecati",
-        "content": "eveniet"
+        "customer_name": "error",
+        "content": "est"
     },
     "enable": false
 };
@@ -3194,15 +3194,15 @@ $response = $client-&gt;put(
             'Accept-Language' =&gt; 'en',
         ],
         'json' =&gt; [
-            'review_date' =&gt; '2023-09-04T02:01:37',
-            'rating' =&gt; 1,
+            'review_date' =&gt; '2023-09-07T01:01:03',
+            'rating' =&gt; 4,
             'en' =&gt; [
-                'customer_name' =&gt; 'nobis',
-                'content' =&gt; 'voluptatibus',
+                'customer_name' =&gt; 'dolor',
+                'content' =&gt; 'doloremque',
             ],
             'tc' =&gt; [
-                'customer_name' =&gt; 'occaecati',
-                'content' =&gt; 'eveniet',
+                'customer_name' =&gt; 'error',
+                'content' =&gt; 'est',
             ],
             'enable' =&gt; false,
         ],
@@ -3329,10 +3329,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="review_date"                data-endpoint="PUTapi-reviews--id-"
-               value="2023-09-04T02:01:37"
+               value="2023-09-07T01:01:03"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-04T02:01:37</code></p>
+<p>Must be a valid date. Example: <code>2023-09-07T01:01:03</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>rating</code></b>&nbsp;&nbsp;
@@ -3340,10 +3340,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="rating"                data-endpoint="PUTapi-reviews--id-"
-               value="1"
+               value="4"
                data-component="body">
     <br>
-<p>Must be at least 0. Must not be greater than 5. Example: <code>1</code></p>
+<p>Must be at least 0. Must not be greater than 5. Example: <code>4</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
         <details>
@@ -3360,10 +3360,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="en.customer_name"                data-endpoint="PUTapi-reviews--id-"
-               value="nobis"
+               value="dolor"
                data-component="body">
     <br>
-<p>Example: <code>nobis</code></p>
+<p>Example: <code>dolor</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>content</code></b>&nbsp;&nbsp;
@@ -3371,10 +3371,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="en.content"                data-endpoint="PUTapi-reviews--id-"
-               value="voluptatibus"
+               value="doloremque"
                data-component="body">
     <br>
-<p>Example: <code>voluptatibus</code></p>
+<p>Example: <code>doloremque</code></p>
                     </div>
                                     </details>
         </div>
@@ -3393,10 +3393,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="tc.customer_name"                data-endpoint="PUTapi-reviews--id-"
-               value="occaecati"
+               value="error"
                data-component="body">
     <br>
-<p>Example: <code>occaecati</code></p>
+<p>Example: <code>error</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>content</code></b>&nbsp;&nbsp;
@@ -3404,10 +3404,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="tc.content"                data-endpoint="PUTapi-reviews--id-"
-               value="eveniet"
+               value="est"
                data-component="body">
     <br>
-<p>Example: <code>eveniet</code></p>
+<p>Example: <code>est</code></p>
                     </div>
                                     </details>
         </div>
@@ -3619,11 +3619,11 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept-Language: en" \
     --data "{
     \"ids\": [
-        7
+        13
     ],
-    \"enable\": true,
-    \"hot\": false,
-    \"delete\": false
+    \"enable\": false,
+    \"hot\": true,
+    \"delete\": true
 }"
 </code></pre></div>
 
@@ -3642,11 +3642,11 @@ const headers = {
 
 let body = {
     "ids": [
-        7
+        13
     ],
-    "enable": true,
-    "hot": false,
-    "delete": false
+    "enable": false,
+    "hot": true,
+    "delete": true
 };
 
 fetch(url, {
@@ -3669,11 +3669,11 @@ $response = $client-&gt;post(
         ],
         'json' =&gt; [
             'ids' =&gt; [
-                7,
+                13,
             ],
-            'enable' =&gt; true,
-            'hot' =&gt; false,
-            'delete' =&gt; false,
+            'enable' =&gt; false,
+            'hot' =&gt; true,
+            'delete' =&gt; true,
         ],
     ]
 );
@@ -3808,7 +3808,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Enable or disable the record Example: <code>true</code></p>
+<p>Enable or disable the record Example: <code>false</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>hot</code></b>&nbsp;&nbsp;
@@ -3829,7 +3829,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Update hot(Apply to service API only) Example: <code>false</code></p>
+<p>Update hot(Apply to service API only) Example: <code>true</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>delete</code></b>&nbsp;&nbsp;
@@ -3850,7 +3850,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Delete selected record Example: <code>false</code></p>
+<p>Delete selected record Example: <code>true</code></p>
         </div>
         </form>
 
@@ -3869,7 +3869,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://chees-api.dev.com/api/districts?s=dolorem&amp;p=17&amp;sort=-id&amp;filter%5Bsequence%5D=9&amp;filter%5Benable%5D=10" \
+    --get "https://chees-api.dev.com/api/districts?s=nulla&amp;p=14&amp;sort=-id&amp;filter%5Bsequence%5D=4&amp;filter%5Benable%5D=11" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -3882,11 +3882,11 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "s": "dolorem",
-    "p": "17",
+    "s": "nulla",
+    "p": "14",
     "sort": "-id",
-    "filter[sequence]": "9",
-    "filter[enable]": "10",
+    "filter[sequence]": "4",
+    "filter[enable]": "11",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -3916,11 +3916,11 @@ $response = $client-&gt;get(
             'Accept-Language' =&gt; 'en',
         ],
         'query' =&gt; [
-            's' =&gt; 'dolorem',
-            'p' =&gt; '17',
+            's' =&gt; 'nulla',
+            'p' =&gt; '14',
             'sort' =&gt; '-id',
-            'filter[sequence]' =&gt; '9',
-            'filter[enable]' =&gt; '10',
+            'filter[sequence]' =&gt; '4',
+            'filter[enable]' =&gt; '11',
         ],
     ]
 );
@@ -4045,10 +4045,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="s"                data-endpoint="GETapi-districts"
-               value="dolorem"
+               value="nulla"
                data-component="query">
     <br>
-<p>Search keyword Example: <code>dolorem</code></p>
+<p>Search keyword Example: <code>nulla</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>p</code></b>&nbsp;&nbsp;
@@ -4056,10 +4056,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="p"                data-endpoint="GETapi-districts"
-               value="17"
+               value="14"
                data-component="query">
     <br>
-<p>Page number, default=20 Example: <code>17</code></p>
+<p>Page number, default=20 Example: <code>14</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>sort</code></b>&nbsp;&nbsp;
@@ -4078,10 +4078,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="filter[sequence]"                data-endpoint="GETapi-districts"
-               value="9"
+               value="4"
                data-component="query">
     <br>
-<p>Filter by sequence Example: <code>9</code></p>
+<p>Filter by sequence Example: <code>4</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[enable]</code></b>&nbsp;&nbsp;
@@ -4089,10 +4089,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="filter[enable]"                data-endpoint="GETapi-districts"
-               value="10"
+               value="11"
                data-component="query">
     <br>
-<p>Filter by enable Example: <code>10</code></p>
+<p>Filter by enable Example: <code>11</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[translations.name]</code></b>&nbsp;&nbsp;
@@ -4100,10 +4100,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[translations.name]"                data-endpoint="GETapi-districts"
-               value="dolores"
+               value="occaecati"
                data-component="query">
     <br>
-<p>Filter by translations.name Example: <code>dolores</code></p>
+<p>Filter by translations.name Example: <code>occaecati</code></p>
             </div>
                 </form>
 
@@ -4127,14 +4127,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --data "{
-    \"extra_charge\": 3,
+    \"extra_charge\": 16,
     \"en\": {
-        \"name\": \"nisi\"
+        \"name\": \"deleniti\"
     },
     \"tc\": {
-        \"name\": \"voluptas\"
+        \"name\": \"eveniet\"
     },
-    \"enable\": false
+    \"enable\": true
 }"
 </code></pre></div>
 
@@ -4152,14 +4152,14 @@ const headers = {
 };
 
 let body = {
-    "extra_charge": 3,
+    "extra_charge": 16,
     "en": {
-        "name": "nisi"
+        "name": "deleniti"
     },
     "tc": {
-        "name": "voluptas"
+        "name": "eveniet"
     },
-    "enable": false
+    "enable": true
 };
 
 fetch(url, {
@@ -4181,14 +4181,14 @@ $response = $client-&gt;post(
             'Accept-Language' =&gt; 'en',
         ],
         'json' =&gt; [
-            'extra_charge' =&gt; 3,
+            'extra_charge' =&gt; 16,
             'en' =&gt; [
-                'name' =&gt; 'nisi',
+                'name' =&gt; 'deleniti',
             ],
             'tc' =&gt; [
-                'name' =&gt; 'voluptas',
+                'name' =&gt; 'eveniet',
             ],
-            'enable' =&gt; false,
+            'enable' =&gt; true,
         ],
     ]
 );
@@ -4297,10 +4297,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="extra_charge"                data-endpoint="POSTapi-districts"
-               value="3"
+               value="16"
                data-component="body">
     <br>
-<p>Example: <code>3</code></p>
+<p>Example: <code>16</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
         <details>
@@ -4317,10 +4317,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="en.name"                data-endpoint="POSTapi-districts"
-               value="nisi"
+               value="deleniti"
                data-component="body">
     <br>
-<p>Example: <code>nisi</code></p>
+<p>Example: <code>deleniti</code></p>
                     </div>
                                     </details>
         </div>
@@ -4339,10 +4339,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="tc.name"                data-endpoint="POSTapi-districts"
-               value="voluptas"
+               value="eveniet"
                data-component="body">
     <br>
-<p>Example: <code>voluptas</code></p>
+<p>Example: <code>eveniet</code></p>
                     </div>
                                     </details>
         </div>
@@ -4365,7 +4365,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>false</code></p>
+<p>Example: <code>true</code></p>
         </div>
         </form>
 
@@ -4569,9 +4569,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --data "{
-    \"extra_charge\": 4,
+    \"extra_charge\": 8,
     \"en\": {
-        \"name\": \"dolor\"
+        \"name\": \"ab\"
     },
     \"tc\": {
         \"name\": \"laborum\"
@@ -4594,9 +4594,9 @@ const headers = {
 };
 
 let body = {
-    "extra_charge": 4,
+    "extra_charge": 8,
     "en": {
-        "name": "dolor"
+        "name": "ab"
     },
     "tc": {
         "name": "laborum"
@@ -4623,9 +4623,9 @@ $response = $client-&gt;put(
             'Accept-Language' =&gt; 'en',
         ],
         'json' =&gt; [
-            'extra_charge' =&gt; 4,
+            'extra_charge' =&gt; 8,
             'en' =&gt; [
-                'name' =&gt; 'dolor',
+                'name' =&gt; 'ab',
             ],
             'tc' =&gt; [
                 'name' =&gt; 'laborum',
@@ -4755,10 +4755,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="extra_charge"                data-endpoint="PUTapi-districts--id-"
-               value="4"
+               value="8"
                data-component="body">
     <br>
-<p>Example: <code>4</code></p>
+<p>Example: <code>8</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
         <details>
@@ -4775,10 +4775,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="en.name"                data-endpoint="PUTapi-districts--id-"
-               value="dolor"
+               value="ab"
                data-component="body">
     <br>
-<p>Example: <code>dolor</code></p>
+<p>Example: <code>ab</code></p>
                     </div>
                                     </details>
         </div>
@@ -5011,8 +5011,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --data "{
-    \"id\": 19,
-    \"sequence\": 1
+    \"id\": 20,
+    \"sequence\": 6
 }"
 </code></pre></div>
 
@@ -5030,8 +5030,8 @@ const headers = {
 };
 
 let body = {
-    "id": 19,
-    "sequence": 1
+    "id": 20,
+    "sequence": 6
 };
 
 fetch(url, {
@@ -5053,8 +5053,8 @@ $response = $client-&gt;post(
             'Accept-Language' =&gt; 'en',
         ],
         'json' =&gt; [
-            'id' =&gt; 19,
-            'sequence' =&gt; 1,
+            'id' =&gt; 20,
+            'sequence' =&gt; 6,
         ],
     ]
 );
@@ -5163,10 +5163,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="POSTapi-row_updates-districts"
-               value="19"
+               value="20"
                data-component="body">
     <br>
-<p>The id of the record Example: <code>19</code></p>
+<p>The id of the record Example: <code>20</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>sequence</code></b>&nbsp;&nbsp;
@@ -5174,10 +5174,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="sequence"                data-endpoint="POSTapi-row_updates-districts"
-               value="1"
+               value="6"
                data-component="body">
     <br>
-<p>The sequence of the record Example: <code>1</code></p>
+<p>The sequence of the record Example: <code>6</code></p>
         </div>
         </form>
 
@@ -5202,7 +5202,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept-Language: en" \
     --data "{
     \"rows\": [
-        \"tempore\"
+        \"fugit\"
     ]
 }"
 </code></pre></div>
@@ -5222,7 +5222,7 @@ const headers = {
 
 let body = {
     "rows": [
-        "tempore"
+        "fugit"
     ]
 };
 
@@ -5246,7 +5246,7 @@ $response = $client-&gt;post(
         ],
         'json' =&gt; [
             'rows' =&gt; [
-                'tempore',
+                'fugit',
             ],
         ],
     ]
@@ -5365,10 +5365,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="rows.0.id"                data-endpoint="POSTapi-drags-districts"
-               value="4"
+               value="9"
                data-component="body">
     <br>
-<p>The id of the record Example: <code>4</code></p>
+<p>The id of the record Example: <code>9</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>sequence</code></b>&nbsp;&nbsp;
@@ -5376,10 +5376,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="rows.0.sequence"                data-endpoint="POSTapi-drags-districts"
-               value="7"
+               value="15"
                data-component="body">
     <br>
-<p>The sequence of the record Example: <code>7</code></p>
+<p>The sequence of the record Example: <code>15</code></p>
                     </div>
                                     </details>
         </div>
@@ -5406,9 +5406,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept-Language: en" \
     --data "{
     \"ids\": [
-        18
+        9
     ],
-    \"enable\": false,
+    \"enable\": true,
     \"hot\": true,
     \"delete\": true
 }"
@@ -5429,9 +5429,9 @@ const headers = {
 
 let body = {
     "ids": [
-        18
+        9
     ],
-    "enable": false,
+    "enable": true,
     "hot": true,
     "delete": true
 };
@@ -5456,9 +5456,9 @@ $response = $client-&gt;post(
         ],
         'json' =&gt; [
             'ids' =&gt; [
-                18,
+                9,
             ],
-            'enable' =&gt; false,
+            'enable' =&gt; true,
             'hot' =&gt; true,
             'delete' =&gt; true,
         ],
@@ -5595,7 +5595,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Enable or disable the record Example: <code>false</code></p>
+<p>Enable or disable the record Example: <code>true</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>hot</code></b>&nbsp;&nbsp;
@@ -5656,7 +5656,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://chees-api.dev.com/api/categories?s=hic&amp;p=10&amp;sort=-sequence&amp;filter%5Bsequence%5D=18&amp;filter%5Benable%5D=12&amp;filter%5Bslug%5D=repellendus" \
+    --get "https://chees-api.dev.com/api/categories?s=sequi&amp;p=3&amp;sort=-sequence&amp;filter%5Bsequence%5D=7&amp;filter%5Benable%5D=10&amp;filter%5Bslug%5D=reprehenderit" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -5669,12 +5669,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "s": "hic",
-    "p": "10",
+    "s": "sequi",
+    "p": "3",
     "sort": "-sequence",
-    "filter[sequence]": "18",
-    "filter[enable]": "12",
-    "filter[slug]": "repellendus",
+    "filter[sequence]": "7",
+    "filter[enable]": "10",
+    "filter[slug]": "reprehenderit",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -5704,12 +5704,12 @@ $response = $client-&gt;get(
             'Accept-Language' =&gt; 'en',
         ],
         'query' =&gt; [
-            's' =&gt; 'hic',
-            'p' =&gt; '10',
+            's' =&gt; 'sequi',
+            'p' =&gt; '3',
             'sort' =&gt; '-sequence',
-            'filter[sequence]' =&gt; '18',
-            'filter[enable]' =&gt; '12',
-            'filter[slug]' =&gt; 'repellendus',
+            'filter[sequence]' =&gt; '7',
+            'filter[enable]' =&gt; '10',
+            'filter[slug]' =&gt; 'reprehenderit',
         ],
     ]
 );
@@ -5834,10 +5834,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="s"                data-endpoint="GETapi-categories"
-               value="hic"
+               value="sequi"
                data-component="query">
     <br>
-<p>Search keyword Example: <code>hic</code></p>
+<p>Search keyword Example: <code>sequi</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>p</code></b>&nbsp;&nbsp;
@@ -5845,10 +5845,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="p"                data-endpoint="GETapi-categories"
-               value="10"
+               value="3"
                data-component="query">
     <br>
-<p>Page number, default=20 Example: <code>10</code></p>
+<p>Page number, default=20 Example: <code>3</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>sort</code></b>&nbsp;&nbsp;
@@ -5867,10 +5867,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="filter[sequence]"                data-endpoint="GETapi-categories"
-               value="18"
+               value="7"
                data-component="query">
     <br>
-<p>Filter by sequence Example: <code>18</code></p>
+<p>Filter by sequence Example: <code>7</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[enable]</code></b>&nbsp;&nbsp;
@@ -5878,10 +5878,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="filter[enable]"                data-endpoint="GETapi-categories"
-               value="12"
+               value="10"
                data-component="query">
     <br>
-<p>Filter by enable Example: <code>12</code></p>
+<p>Filter by enable Example: <code>10</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[slug]</code></b>&nbsp;&nbsp;
@@ -5889,10 +5889,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[slug]"                data-endpoint="GETapi-categories"
-               value="repellendus"
+               value="reprehenderit"
                data-component="query">
     <br>
-<p>Filter by slug Example: <code>repellendus</code></p>
+<p>Filter by slug Example: <code>reprehenderit</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[translations.name]</code></b>&nbsp;&nbsp;
@@ -5900,10 +5900,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[translations.name]"                data-endpoint="GETapi-categories"
-               value="ipsa"
+               value="quisquam"
                data-component="query">
     <br>
-<p>Filter by name Example: <code>ipsa</code></p>
+<p>Filter by name Example: <code>quisquam</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[translations.description]</code></b>&nbsp;&nbsp;
@@ -5911,10 +5911,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[translations.description]"                data-endpoint="GETapi-categories"
-               value="est"
+               value="et"
                data-component="query">
     <br>
-<p>Filter by description Example: <code>est</code></p>
+<p>Filter by description Example: <code>et</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[translations.title]</code></b>&nbsp;&nbsp;
@@ -5922,10 +5922,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[translations.title]"                data-endpoint="GETapi-categories"
-               value="ipsa"
+               value="quo"
                data-component="query">
     <br>
-<p>Filter by title Example: <code>ipsa</code></p>
+<p>Filter by title Example: <code>quo</code></p>
             </div>
                 </form>
 
@@ -5948,15 +5948,15 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
-    --form "en[name]=quidem"\
-    --form "en[title]=quos"\
-    --form "en[description]=Qui molestiae tempore ab voluptatibus qui modi."\
-    --form "tc[name]=est"\
-    --form "tc[title]=consectetur"\
-    --form "tc[description]=Et asperiores ipsam ut exercitationem."\
-    --form "youtube=sunt"\
-    --form "enable="\
-    --form "image=@C:\Users\USER\AppData\Local\Temp\phpBD30.tmp" </code></pre></div>
+    --form "en[name]=occaecati"\
+    --form "en[title]=enim"\
+    --form "en[description]=Amet est illum accusamus sed expedita ut."\
+    --form "tc[name]=officiis"\
+    --form "tc[title]=assumenda"\
+    --form "tc[description]=Sunt quia consequatur id ipsum non cumque maxime."\
+    --form "youtube=incidunt"\
+    --form "enable=1"\
+    --form "image=@C:\Users\USER\AppData\Local\Temp\php59E8.tmp" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -5972,14 +5972,14 @@ const headers = {
 };
 
 const body = new FormData();
-body.append('en[name]', 'quidem');
-body.append('en[title]', 'quos');
-body.append('en[description]', 'Qui molestiae tempore ab voluptatibus qui modi.');
-body.append('tc[name]', 'est');
-body.append('tc[title]', 'consectetur');
-body.append('tc[description]', 'Et asperiores ipsam ut exercitationem.');
-body.append('youtube', 'sunt');
-body.append('enable', '');
+body.append('en[name]', 'occaecati');
+body.append('en[title]', 'enim');
+body.append('en[description]', 'Amet est illum accusamus sed expedita ut.');
+body.append('tc[name]', 'officiis');
+body.append('tc[title]', 'assumenda');
+body.append('tc[description]', 'Sunt quia consequatur id ipsum non cumque maxime.');
+body.append('youtube', 'incidunt');
+body.append('enable', '1');
 body.append('image', document.querySelector('input[name="image"]').files[0]);
 
 fetch(url, {
@@ -6003,39 +6003,39 @@ $response = $client-&gt;post(
         'multipart' =&gt; [
             [
                 'name' =&gt; 'en[name]',
-                'contents' =&gt; 'quidem'
+                'contents' =&gt; 'occaecati'
             ],
             [
                 'name' =&gt; 'en[title]',
-                'contents' =&gt; 'quos'
+                'contents' =&gt; 'enim'
             ],
             [
                 'name' =&gt; 'en[description]',
-                'contents' =&gt; 'Qui molestiae tempore ab voluptatibus qui modi.'
+                'contents' =&gt; 'Amet est illum accusamus sed expedita ut.'
             ],
             [
                 'name' =&gt; 'tc[name]',
-                'contents' =&gt; 'est'
+                'contents' =&gt; 'officiis'
             ],
             [
                 'name' =&gt; 'tc[title]',
-                'contents' =&gt; 'consectetur'
+                'contents' =&gt; 'assumenda'
             ],
             [
                 'name' =&gt; 'tc[description]',
-                'contents' =&gt; 'Et asperiores ipsam ut exercitationem.'
+                'contents' =&gt; 'Sunt quia consequatur id ipsum non cumque maxime.'
             ],
             [
                 'name' =&gt; 'youtube',
-                'contents' =&gt; 'sunt'
+                'contents' =&gt; 'incidunt'
             ],
             [
                 'name' =&gt; 'enable',
-                'contents' =&gt; ''
+                'contents' =&gt; '1'
             ],
             [
                 'name' =&gt; 'image',
-                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\phpBD30.tmp', 'r')
+                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\php59E8.tmp', 'r')
             ],
         ],
     ]
@@ -6154,10 +6154,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="en.name"                data-endpoint="POSTapi-categories"
-               value="quidem"
+               value="occaecati"
                data-component="body">
     <br>
-<p>Example: <code>quidem</code></p>
+<p>Example: <code>occaecati</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>title</code></b>&nbsp;&nbsp;
@@ -6165,10 +6165,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="en.title"                data-endpoint="POSTapi-categories"
-               value="quos"
+               value="enim"
                data-component="body">
     <br>
-<p>Example: <code>quos</code></p>
+<p>Example: <code>enim</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -6176,10 +6176,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="en.description"                data-endpoint="POSTapi-categories"
-               value="Qui molestiae tempore ab voluptatibus qui modi."
+               value="Amet est illum accusamus sed expedita ut."
                data-component="body">
     <br>
-<p>Example: <code>Qui molestiae tempore ab voluptatibus qui modi.</code></p>
+<p>Example: <code>Amet est illum accusamus sed expedita ut.</code></p>
                     </div>
                                     </details>
         </div>
@@ -6198,10 +6198,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="tc.name"                data-endpoint="POSTapi-categories"
-               value="est"
+               value="officiis"
                data-component="body">
     <br>
-<p>Example: <code>est</code></p>
+<p>Example: <code>officiis</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>title</code></b>&nbsp;&nbsp;
@@ -6209,10 +6209,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="tc.title"                data-endpoint="POSTapi-categories"
-               value="consectetur"
+               value="assumenda"
                data-component="body">
     <br>
-<p>Example: <code>consectetur</code></p>
+<p>Example: <code>assumenda</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -6220,10 +6220,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="tc.description"                data-endpoint="POSTapi-categories"
-               value="Et asperiores ipsam ut exercitationem."
+               value="Sunt quia consequatur id ipsum non cumque maxime."
                data-component="body">
     <br>
-<p>Example: <code>Et asperiores ipsam ut exercitationem.</code></p>
+<p>Example: <code>Sunt quia consequatur id ipsum non cumque maxime.</code></p>
                     </div>
                                     </details>
         </div>
@@ -6236,7 +6236,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\phpBD30.tmp</code></p>
+<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\php59E8.tmp</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>youtube</code></b>&nbsp;&nbsp;
@@ -6244,10 +6244,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="youtube"                data-endpoint="POSTapi-categories"
-               value="sunt"
+               value="incidunt"
                data-component="body">
     <br>
-<p>Example: <code>sunt</code></p>
+<p>Example: <code>incidunt</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>enable</code></b>&nbsp;&nbsp;
@@ -6268,7 +6268,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>false</code></p>
+<p>Example: <code>true</code></p>
         </div>
         </form>
 
@@ -6471,15 +6471,15 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
-    --form "en[name]=consequatur"\
-    --form "en[title]=assumenda"\
-    --form "en[description]=Aut minus voluptatem voluptates qui non ut."\
-    --form "tc[name]=nihil"\
-    --form "tc[title]=deleniti"\
-    --form "tc[description]=Sapiente a enim molestiae non."\
-    --form "youtube=omnis"\
+    --form "en[name]=asperiores"\
+    --form "en[title]=voluptas"\
+    --form "en[description]=Vel illum omnis et ex voluptatibus."\
+    --form "tc[name]=voluptatem"\
+    --form "tc[title]=exercitationem"\
+    --form "tc[description]=Deserunt voluptate hic nobis."\
+    --form "youtube=qui"\
     --form "enable="\
-    --form "image=@C:\Users\USER\AppData\Local\Temp\phpBD41.tmp" </code></pre></div>
+    --form "image=@C:\Users\USER\AppData\Local\Temp\php59F9.tmp" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -6495,13 +6495,13 @@ const headers = {
 };
 
 const body = new FormData();
-body.append('en[name]', 'consequatur');
-body.append('en[title]', 'assumenda');
-body.append('en[description]', 'Aut minus voluptatem voluptates qui non ut.');
-body.append('tc[name]', 'nihil');
-body.append('tc[title]', 'deleniti');
-body.append('tc[description]', 'Sapiente a enim molestiae non.');
-body.append('youtube', 'omnis');
+body.append('en[name]', 'asperiores');
+body.append('en[title]', 'voluptas');
+body.append('en[description]', 'Vel illum omnis et ex voluptatibus.');
+body.append('tc[name]', 'voluptatem');
+body.append('tc[title]', 'exercitationem');
+body.append('tc[description]', 'Deserunt voluptate hic nobis.');
+body.append('youtube', 'qui');
 body.append('enable', '');
 body.append('image', document.querySelector('input[name="image"]').files[0]);
 
@@ -6526,31 +6526,31 @@ $response = $client-&gt;put(
         'multipart' =&gt; [
             [
                 'name' =&gt; 'en[name]',
-                'contents' =&gt; 'consequatur'
+                'contents' =&gt; 'asperiores'
             ],
             [
                 'name' =&gt; 'en[title]',
-                'contents' =&gt; 'assumenda'
+                'contents' =&gt; 'voluptas'
             ],
             [
                 'name' =&gt; 'en[description]',
-                'contents' =&gt; 'Aut minus voluptatem voluptates qui non ut.'
+                'contents' =&gt; 'Vel illum omnis et ex voluptatibus.'
             ],
             [
                 'name' =&gt; 'tc[name]',
-                'contents' =&gt; 'nihil'
+                'contents' =&gt; 'voluptatem'
             ],
             [
                 'name' =&gt; 'tc[title]',
-                'contents' =&gt; 'deleniti'
+                'contents' =&gt; 'exercitationem'
             ],
             [
                 'name' =&gt; 'tc[description]',
-                'contents' =&gt; 'Sapiente a enim molestiae non.'
+                'contents' =&gt; 'Deserunt voluptate hic nobis.'
             ],
             [
                 'name' =&gt; 'youtube',
-                'contents' =&gt; 'omnis'
+                'contents' =&gt; 'qui'
             ],
             [
                 'name' =&gt; 'enable',
@@ -6558,7 +6558,7 @@ $response = $client-&gt;put(
             ],
             [
                 'name' =&gt; 'image',
-                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\phpBD41.tmp', 'r')
+                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\php59F9.tmp', 'r')
             ],
         ],
     ]
@@ -6693,10 +6693,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="en.name"                data-endpoint="PUTapi-categories--id-"
-               value="consequatur"
+               value="asperiores"
                data-component="body">
     <br>
-<p>Example: <code>consequatur</code></p>
+<p>Example: <code>asperiores</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>title</code></b>&nbsp;&nbsp;
@@ -6704,10 +6704,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="en.title"                data-endpoint="PUTapi-categories--id-"
-               value="assumenda"
+               value="voluptas"
                data-component="body">
     <br>
-<p>Example: <code>assumenda</code></p>
+<p>Example: <code>voluptas</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -6715,10 +6715,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="en.description"                data-endpoint="PUTapi-categories--id-"
-               value="Aut minus voluptatem voluptates qui non ut."
+               value="Vel illum omnis et ex voluptatibus."
                data-component="body">
     <br>
-<p>Example: <code>Aut minus voluptatem voluptates qui non ut.</code></p>
+<p>Example: <code>Vel illum omnis et ex voluptatibus.</code></p>
                     </div>
                                     </details>
         </div>
@@ -6737,10 +6737,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="tc.name"                data-endpoint="PUTapi-categories--id-"
-               value="nihil"
+               value="voluptatem"
                data-component="body">
     <br>
-<p>Example: <code>nihil</code></p>
+<p>Example: <code>voluptatem</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>title</code></b>&nbsp;&nbsp;
@@ -6748,10 +6748,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="tc.title"                data-endpoint="PUTapi-categories--id-"
-               value="deleniti"
+               value="exercitationem"
                data-component="body">
     <br>
-<p>Example: <code>deleniti</code></p>
+<p>Example: <code>exercitationem</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -6759,10 +6759,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="tc.description"                data-endpoint="PUTapi-categories--id-"
-               value="Sapiente a enim molestiae non."
+               value="Deserunt voluptate hic nobis."
                data-component="body">
     <br>
-<p>Example: <code>Sapiente a enim molestiae non.</code></p>
+<p>Example: <code>Deserunt voluptate hic nobis.</code></p>
                     </div>
                                     </details>
         </div>
@@ -6775,7 +6775,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\phpBD41.tmp</code></p>
+<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\php59F9.tmp</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>youtube</code></b>&nbsp;&nbsp;
@@ -6783,10 +6783,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="youtube"                data-endpoint="PUTapi-categories--id-"
-               value="omnis"
+               value="qui"
                data-component="body">
     <br>
-<p>Example: <code>omnis</code></p>
+<p>Example: <code>qui</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>enable</code></b>&nbsp;&nbsp;
@@ -7163,8 +7163,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --data "{
-    \"id\": 6,
-    \"sequence\": 20
+    \"id\": 11,
+    \"sequence\": 4
 }"
 </code></pre></div>
 
@@ -7182,8 +7182,8 @@ const headers = {
 };
 
 let body = {
-    "id": 6,
-    "sequence": 20
+    "id": 11,
+    "sequence": 4
 };
 
 fetch(url, {
@@ -7205,8 +7205,8 @@ $response = $client-&gt;post(
             'Accept-Language' =&gt; 'en',
         ],
         'json' =&gt; [
-            'id' =&gt; 6,
-            'sequence' =&gt; 20,
+            'id' =&gt; 11,
+            'sequence' =&gt; 4,
         ],
     ]
 );
@@ -7315,10 +7315,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="POSTapi-row_updates-categories"
-               value="6"
+               value="11"
                data-component="body">
     <br>
-<p>The id of the record Example: <code>6</code></p>
+<p>The id of the record Example: <code>11</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>sequence</code></b>&nbsp;&nbsp;
@@ -7326,10 +7326,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="sequence"                data-endpoint="POSTapi-row_updates-categories"
-               value="20"
+               value="4"
                data-component="body">
     <br>
-<p>The sequence of the record Example: <code>20</code></p>
+<p>The sequence of the record Example: <code>4</code></p>
         </div>
         </form>
 
@@ -7354,7 +7354,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept-Language: en" \
     --data "{
     \"rows\": [
-        \"dolores\"
+        \"et\"
     ]
 }"
 </code></pre></div>
@@ -7374,7 +7374,7 @@ const headers = {
 
 let body = {
     "rows": [
-        "dolores"
+        "et"
     ]
 };
 
@@ -7398,7 +7398,7 @@ $response = $client-&gt;post(
         ],
         'json' =&gt; [
             'rows' =&gt; [
-                'dolores',
+                'et',
             ],
         ],
     ]
@@ -7517,10 +7517,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="rows.0.id"                data-endpoint="POSTapi-drags-categories"
-               value="2"
+               value="16"
                data-component="body">
     <br>
-<p>The id of the record Example: <code>2</code></p>
+<p>The id of the record Example: <code>16</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>sequence</code></b>&nbsp;&nbsp;
@@ -7528,10 +7528,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="rows.0.sequence"                data-endpoint="POSTapi-drags-categories"
-               value="5"
+               value="13"
                data-component="body">
     <br>
-<p>The sequence of the record Example: <code>5</code></p>
+<p>The sequence of the record Example: <code>13</code></p>
                     </div>
                                     </details>
         </div>
@@ -7558,10 +7558,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept-Language: en" \
     --data "{
     \"ids\": [
-        12
+        2
     ],
-    \"enable\": true,
-    \"hot\": false,
+    \"enable\": false,
+    \"hot\": true,
     \"delete\": true
 }"
 </code></pre></div>
@@ -7581,10 +7581,10 @@ const headers = {
 
 let body = {
     "ids": [
-        12
+        2
     ],
-    "enable": true,
-    "hot": false,
+    "enable": false,
+    "hot": true,
     "delete": true
 };
 
@@ -7608,10 +7608,10 @@ $response = $client-&gt;post(
         ],
         'json' =&gt; [
             'ids' =&gt; [
-                12,
+                2,
             ],
-            'enable' =&gt; true,
-            'hot' =&gt; false,
+            'enable' =&gt; false,
+            'hot' =&gt; true,
             'delete' =&gt; true,
         ],
     ]
@@ -7747,7 +7747,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Enable or disable the record Example: <code>true</code></p>
+<p>Enable or disable the record Example: <code>false</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>hot</code></b>&nbsp;&nbsp;
@@ -7768,7 +7768,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Update hot(Apply to service API only) Example: <code>false</code></p>
+<p>Update hot(Apply to service API only) Example: <code>true</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>delete</code></b>&nbsp;&nbsp;
@@ -7808,7 +7808,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://chees-api.dev.com/api/customers?s=voluptatibus&amp;p=17&amp;sort=-id&amp;filter%5Bname%5D=praesentium&amp;filter%5Bgender%5D=qui&amp;filter%5Bemail%5D=officia&amp;filter%5Baddress%5D=tempora&amp;filter%5Btel%5D=harum&amp;filter%5Bhkid%5D=dolor&amp;filter%5Bbirthday%5D=omnis" \
+    --get "https://chees-api.dev.com/api/customers?s=facere&amp;p=4&amp;sort=-id&amp;filter%5Bname%5D=dolor&amp;filter%5Bgender%5D=soluta&amp;filter%5Bemail%5D=sequi&amp;filter%5Baddress%5D=maxime&amp;filter%5Btel%5D=excepturi&amp;filter%5Bhkid%5D=ipsum&amp;filter%5Bbirthday%5D=beatae" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -7821,16 +7821,16 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "s": "voluptatibus",
-    "p": "17",
+    "s": "facere",
+    "p": "4",
     "sort": "-id",
-    "filter[name]": "praesentium",
-    "filter[gender]": "qui",
-    "filter[email]": "officia",
-    "filter[address]": "tempora",
-    "filter[tel]": "harum",
-    "filter[hkid]": "dolor",
-    "filter[birthday]": "omnis",
+    "filter[name]": "dolor",
+    "filter[gender]": "soluta",
+    "filter[email]": "sequi",
+    "filter[address]": "maxime",
+    "filter[tel]": "excepturi",
+    "filter[hkid]": "ipsum",
+    "filter[birthday]": "beatae",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -7860,16 +7860,16 @@ $response = $client-&gt;get(
             'Accept-Language' =&gt; 'en',
         ],
         'query' =&gt; [
-            's' =&gt; 'voluptatibus',
-            'p' =&gt; '17',
+            's' =&gt; 'facere',
+            'p' =&gt; '4',
             'sort' =&gt; '-id',
-            'filter[name]' =&gt; 'praesentium',
-            'filter[gender]' =&gt; 'qui',
-            'filter[email]' =&gt; 'officia',
-            'filter[address]' =&gt; 'tempora',
-            'filter[tel]' =&gt; 'harum',
-            'filter[hkid]' =&gt; 'dolor',
-            'filter[birthday]' =&gt; 'omnis',
+            'filter[name]' =&gt; 'dolor',
+            'filter[gender]' =&gt; 'soluta',
+            'filter[email]' =&gt; 'sequi',
+            'filter[address]' =&gt; 'maxime',
+            'filter[tel]' =&gt; 'excepturi',
+            'filter[hkid]' =&gt; 'ipsum',
+            'filter[birthday]' =&gt; 'beatae',
         ],
     ]
 );
@@ -7994,10 +7994,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="s"                data-endpoint="GETapi-customers"
-               value="voluptatibus"
+               value="facere"
                data-component="query">
     <br>
-<p>Search keyword Example: <code>voluptatibus</code></p>
+<p>Search keyword Example: <code>facere</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>p</code></b>&nbsp;&nbsp;
@@ -8005,10 +8005,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="p"                data-endpoint="GETapi-customers"
-               value="17"
+               value="4"
                data-component="query">
     <br>
-<p>Page number, default=20 Example: <code>17</code></p>
+<p>Page number, default=20 Example: <code>4</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>sort</code></b>&nbsp;&nbsp;
@@ -8027,10 +8027,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[name]"                data-endpoint="GETapi-customers"
-               value="praesentium"
+               value="dolor"
                data-component="query">
     <br>
-<p>Filter by name Example: <code>praesentium</code></p>
+<p>Filter by name Example: <code>dolor</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[gender]</code></b>&nbsp;&nbsp;
@@ -8038,10 +8038,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[gender]"                data-endpoint="GETapi-customers"
-               value="qui"
+               value="soluta"
                data-component="query">
     <br>
-<p>Filter by gender Example: <code>qui</code></p>
+<p>Filter by gender Example: <code>soluta</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[email]</code></b>&nbsp;&nbsp;
@@ -8049,10 +8049,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[email]"                data-endpoint="GETapi-customers"
-               value="officia"
+               value="sequi"
                data-component="query">
     <br>
-<p>Filter by email Example: <code>officia</code></p>
+<p>Filter by email Example: <code>sequi</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[address]</code></b>&nbsp;&nbsp;
@@ -8060,10 +8060,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[address]"                data-endpoint="GETapi-customers"
-               value="tempora"
+               value="maxime"
                data-component="query">
     <br>
-<p>Filter by address Example: <code>tempora</code></p>
+<p>Filter by address Example: <code>maxime</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[tel]</code></b>&nbsp;&nbsp;
@@ -8071,10 +8071,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[tel]"                data-endpoint="GETapi-customers"
-               value="harum"
+               value="excepturi"
                data-component="query">
     <br>
-<p>Filter by tel Example: <code>harum</code></p>
+<p>Filter by tel Example: <code>excepturi</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[hkid]</code></b>&nbsp;&nbsp;
@@ -8082,10 +8082,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[hkid]"                data-endpoint="GETapi-customers"
-               value="dolor"
+               value="ipsum"
                data-component="query">
     <br>
-<p>Filter by hkid Example: <code>dolor</code></p>
+<p>Filter by hkid Example: <code>ipsum</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[birthday]</code></b>&nbsp;&nbsp;
@@ -8093,10 +8093,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[birthday]"                data-endpoint="GETapi-customers"
-               value="omnis"
+               value="beatae"
                data-component="query">
     <br>
-<p>Filter by birthday Example: <code>omnis</code></p>
+<p>Filter by birthday Example: <code>beatae</code></p>
             </div>
                 </form>
 
@@ -8120,14 +8120,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --data "{
-    \"name\": \"beatae\",
-    \"gender\": \"qui\",
-    \"birthday\": \"2023-09-04T02:01:37\",
-    \"hkid\": \"doloremque\",
-    \"tel\": \"non\",
-    \"email\": \"mbogisich@example.net\",
-    \"address\": \"voluptate\",
-    \"password\": \"l)EMd\\\"s73z^~-yyB8O-\",
+    \"name\": \"quae\",
+    \"gender\": \"et\",
+    \"birthday\": \"2023-09-07T01:01:03\",
+    \"hkid\": \"facilis\",
+    \"tel\": \"provident\",
+    \"email\": \"kutch.abigayle@example.com\",
+    \"address\": \"rem\",
+    \"password\": \"\',8^Z`f$Ebu&amp;&amp;j[\",
     \"is_verified\": false
 }"
 </code></pre></div>
@@ -8146,14 +8146,14 @@ const headers = {
 };
 
 let body = {
-    "name": "beatae",
-    "gender": "qui",
-    "birthday": "2023-09-04T02:01:37",
-    "hkid": "doloremque",
-    "tel": "non",
-    "email": "mbogisich@example.net",
-    "address": "voluptate",
-    "password": "l)EMd\"s73z^~-yyB8O-",
+    "name": "quae",
+    "gender": "et",
+    "birthday": "2023-09-07T01:01:03",
+    "hkid": "facilis",
+    "tel": "provident",
+    "email": "kutch.abigayle@example.com",
+    "address": "rem",
+    "password": "',8^Z`f$Ebu&amp;&amp;j[",
     "is_verified": false
 };
 
@@ -8176,14 +8176,14 @@ $response = $client-&gt;post(
             'Accept-Language' =&gt; 'en',
         ],
         'json' =&gt; [
-            'name' =&gt; 'beatae',
-            'gender' =&gt; 'qui',
-            'birthday' =&gt; '2023-09-04T02:01:37',
-            'hkid' =&gt; 'doloremque',
-            'tel' =&gt; 'non',
-            'email' =&gt; 'mbogisich@example.net',
-            'address' =&gt; 'voluptate',
-            'password' =&gt; 'l)EMd"s73z^~-yyB8O-',
+            'name' =&gt; 'quae',
+            'gender' =&gt; 'et',
+            'birthday' =&gt; '2023-09-07T01:01:03',
+            'hkid' =&gt; 'facilis',
+            'tel' =&gt; 'provident',
+            'email' =&gt; 'kutch.abigayle@example.com',
+            'address' =&gt; 'rem',
+            'password' =&gt; '\',8^Z`f$Ebu&amp;&amp;j[',
             'is_verified' =&gt; false,
         ],
     ]
@@ -8293,10 +8293,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-customers"
-               value="beatae"
+               value="quae"
                data-component="body">
     <br>
-<p>Example: <code>beatae</code></p>
+<p>Example: <code>quae</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>gender</code></b>&nbsp;&nbsp;
@@ -8304,10 +8304,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="gender"                data-endpoint="POSTapi-customers"
-               value="qui"
+               value="et"
                data-component="body">
     <br>
-<p>Example: <code>qui</code></p>
+<p>Example: <code>et</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>birthday</code></b>&nbsp;&nbsp;
@@ -8315,10 +8315,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="birthday"                data-endpoint="POSTapi-customers"
-               value="2023-09-04T02:01:37"
+               value="2023-09-07T01:01:03"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-04T02:01:37</code></p>
+<p>Must be a valid date. Example: <code>2023-09-07T01:01:03</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>hkid</code></b>&nbsp;&nbsp;
@@ -8326,10 +8326,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="hkid"                data-endpoint="POSTapi-customers"
-               value="doloremque"
+               value="facilis"
                data-component="body">
     <br>
-<p>Example: <code>doloremque</code></p>
+<p>Example: <code>facilis</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>tel</code></b>&nbsp;&nbsp;
@@ -8337,10 +8337,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="tel"                data-endpoint="POSTapi-customers"
-               value="non"
+               value="provident"
                data-component="body">
     <br>
-<p>Example: <code>non</code></p>
+<p>Example: <code>provident</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -8348,10 +8348,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-customers"
-               value="mbogisich@example.net"
+               value="kutch.abigayle@example.com"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>mbogisich@example.net</code></p>
+<p>Must be a valid email address. Example: <code>kutch.abigayle@example.com</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
@@ -8359,10 +8359,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="address"                data-endpoint="POSTapi-customers"
-               value="voluptate"
+               value="rem"
                data-component="body">
     <br>
-<p>Example: <code>voluptate</code></p>
+<p>Example: <code>rem</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -8370,10 +8370,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-customers"
-               value="l)EMd"s73z^~-yyB8O-"
+               value="',8^Z`f$Ebu&&j["
                data-component="body">
     <br>
-<p>Example: <code>l)EMd"s73z^~-yyB8O-</code></p>
+<p>Example: <code>',8^Z</code>f$Ebu&amp;&amp;j[`</p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>is_verified</code></b>&nbsp;&nbsp;
@@ -8598,15 +8598,15 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --data "{
-    \"name\": \"est\",
-    \"gender\": \"voluptatem\",
-    \"birthday\": \"2023-09-04T02:01:37\",
-    \"hkid\": \"velit\",
-    \"tel\": \"id\",
-    \"email\": \"block.marcos@example.com\",
-    \"address\": \"ea\",
-    \"password\": \"z[%?kb$fMP2J\",
-    \"is_verified\": false
+    \"name\": \"hic\",
+    \"gender\": \"pariatur\",
+    \"birthday\": \"2023-09-07T01:01:03\",
+    \"hkid\": \"eum\",
+    \"tel\": \"est\",
+    \"email\": \"gideon.ebert@example.com\",
+    \"address\": \"rem\",
+    \"password\": \"?dpTgBkQ2?.A+z?a.5m\",
+    \"is_verified\": true
 }"
 </code></pre></div>
 
@@ -8624,15 +8624,15 @@ const headers = {
 };
 
 let body = {
-    "name": "est",
-    "gender": "voluptatem",
-    "birthday": "2023-09-04T02:01:37",
-    "hkid": "velit",
-    "tel": "id",
-    "email": "block.marcos@example.com",
-    "address": "ea",
-    "password": "z[%?kb$fMP2J",
-    "is_verified": false
+    "name": "hic",
+    "gender": "pariatur",
+    "birthday": "2023-09-07T01:01:03",
+    "hkid": "eum",
+    "tel": "est",
+    "email": "gideon.ebert@example.com",
+    "address": "rem",
+    "password": "?dpTgBkQ2?.A+z?a.5m",
+    "is_verified": true
 };
 
 fetch(url, {
@@ -8654,15 +8654,15 @@ $response = $client-&gt;put(
             'Accept-Language' =&gt; 'en',
         ],
         'json' =&gt; [
-            'name' =&gt; 'est',
-            'gender' =&gt; 'voluptatem',
-            'birthday' =&gt; '2023-09-04T02:01:37',
-            'hkid' =&gt; 'velit',
-            'tel' =&gt; 'id',
-            'email' =&gt; 'block.marcos@example.com',
-            'address' =&gt; 'ea',
-            'password' =&gt; 'z[%?kb$fMP2J',
-            'is_verified' =&gt; false,
+            'name' =&gt; 'hic',
+            'gender' =&gt; 'pariatur',
+            'birthday' =&gt; '2023-09-07T01:01:03',
+            'hkid' =&gt; 'eum',
+            'tel' =&gt; 'est',
+            'email' =&gt; 'gideon.ebert@example.com',
+            'address' =&gt; 'rem',
+            'password' =&gt; '?dpTgBkQ2?.A+z?a.5m',
+            'is_verified' =&gt; true,
         ],
     ]
 );
@@ -8787,10 +8787,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="PUTapi-customers--id-"
-               value="est"
+               value="hic"
                data-component="body">
     <br>
-<p>Example: <code>est</code></p>
+<p>Example: <code>hic</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>gender</code></b>&nbsp;&nbsp;
@@ -8798,10 +8798,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="gender"                data-endpoint="PUTapi-customers--id-"
-               value="voluptatem"
+               value="pariatur"
                data-component="body">
     <br>
-<p>Example: <code>voluptatem</code></p>
+<p>Example: <code>pariatur</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>birthday</code></b>&nbsp;&nbsp;
@@ -8809,10 +8809,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="birthday"                data-endpoint="PUTapi-customers--id-"
-               value="2023-09-04T02:01:37"
+               value="2023-09-07T01:01:03"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-04T02:01:37</code></p>
+<p>Must be a valid date. Example: <code>2023-09-07T01:01:03</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>hkid</code></b>&nbsp;&nbsp;
@@ -8820,10 +8820,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="hkid"                data-endpoint="PUTapi-customers--id-"
-               value="velit"
+               value="eum"
                data-component="body">
     <br>
-<p>Example: <code>velit</code></p>
+<p>Example: <code>eum</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>tel</code></b>&nbsp;&nbsp;
@@ -8831,10 +8831,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="tel"                data-endpoint="PUTapi-customers--id-"
-               value="id"
+               value="est"
                data-component="body">
     <br>
-<p>Example: <code>id</code></p>
+<p>Example: <code>est</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -8842,10 +8842,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="PUTapi-customers--id-"
-               value="block.marcos@example.com"
+               value="gideon.ebert@example.com"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>block.marcos@example.com</code></p>
+<p>Must be a valid email address. Example: <code>gideon.ebert@example.com</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
@@ -8853,10 +8853,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="address"                data-endpoint="PUTapi-customers--id-"
-               value="ea"
+               value="rem"
                data-component="body">
     <br>
-<p>Example: <code>ea</code></p>
+<p>Example: <code>rem</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -8864,10 +8864,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="PUTapi-customers--id-"
-               value="z[%?kb$fMP2J"
+               value="?dpTgBkQ2?.A+z?a.5m"
                data-component="body">
     <br>
-<p>Example: <code>z[%?kb$fMP2J</code></p>
+<p>Example: <code>?dpTgBkQ2?.A+z?a.5m</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>is_verified</code></b>&nbsp;&nbsp;
@@ -8888,7 +8888,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>false</code></p>
+<p>Example: <code>true</code></p>
         </div>
         </form>
 
@@ -9070,7 +9070,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://chees-api.dev.com/api/options/customers?filter%5Bid%5D=17&amp;filter%5Bname%5D=corporis&amp;filter%5Btel%5D=quam&amp;filter%5Bemail%5D=explicabo&amp;sort=-id" \
+    --get "https://chees-api.dev.com/api/options/customers?filter%5Bid%5D=18&amp;filter%5Bname%5D=vel&amp;filter%5Btel%5D=consectetur&amp;filter%5Bemail%5D=tenetur&amp;sort=-id" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -9083,10 +9083,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "filter[id]": "17",
-    "filter[name]": "corporis",
-    "filter[tel]": "quam",
-    "filter[email]": "explicabo",
+    "filter[id]": "18",
+    "filter[name]": "vel",
+    "filter[tel]": "consectetur",
+    "filter[email]": "tenetur",
     "sort": "-id",
 };
 Object.keys(params)
@@ -9117,10 +9117,10 @@ $response = $client-&gt;get(
             'Accept-Language' =&gt; 'en',
         ],
         'query' =&gt; [
-            'filter[id]' =&gt; '17',
-            'filter[name]' =&gt; 'corporis',
-            'filter[tel]' =&gt; 'quam',
-            'filter[email]' =&gt; 'explicabo',
+            'filter[id]' =&gt; '18',
+            'filter[name]' =&gt; 'vel',
+            'filter[tel]' =&gt; 'consectetur',
+            'filter[email]' =&gt; 'tenetur',
             'sort' =&gt; '-id',
         ],
     ]
@@ -9246,10 +9246,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="filter[id]"                data-endpoint="GETapi-options-customers"
-               value="17"
+               value="18"
                data-component="query">
     <br>
-<p>Filter by customer id Example: <code>17</code></p>
+<p>Filter by customer id Example: <code>18</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[name]</code></b>&nbsp;&nbsp;
@@ -9257,10 +9257,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[name]"                data-endpoint="GETapi-options-customers"
-               value="corporis"
+               value="vel"
                data-component="query">
     <br>
-<p>Filter by customer name Example: <code>corporis</code></p>
+<p>Filter by customer name Example: <code>vel</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[tel]</code></b>&nbsp;&nbsp;
@@ -9268,10 +9268,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[tel]"                data-endpoint="GETapi-options-customers"
-               value="quam"
+               value="consectetur"
                data-component="query">
     <br>
-<p>Filter by customer tel Example: <code>quam</code></p>
+<p>Filter by customer tel Example: <code>consectetur</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[email]</code></b>&nbsp;&nbsp;
@@ -9279,10 +9279,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[email]"                data-endpoint="GETapi-options-customers"
-               value="explicabo"
+               value="tenetur"
                data-component="query">
     <br>
-<p>Filter by customer email Example: <code>explicabo</code></p>
+<p>Filter by customer email Example: <code>tenetur</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>sort</code></b>&nbsp;&nbsp;
@@ -9312,7 +9312,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://chees-api.dev.com/api/banners?s=temporibus&amp;p=19&amp;sort=-id&amp;filter%5Bid%5D=et&amp;filter%5Bsequence%5D=2&amp;filter%5Benable%5D=7" \
+    --get "https://chees-api.dev.com/api/banners?s=dolor&amp;p=13&amp;sort=-id&amp;filter%5Bid%5D=earum&amp;filter%5Bsequence%5D=7&amp;filter%5Benable%5D=13" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -9325,12 +9325,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "s": "temporibus",
-    "p": "19",
+    "s": "dolor",
+    "p": "13",
     "sort": "-id",
-    "filter[id]": "et",
-    "filter[sequence]": "2",
-    "filter[enable]": "7",
+    "filter[id]": "earum",
+    "filter[sequence]": "7",
+    "filter[enable]": "13",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -9360,12 +9360,12 @@ $response = $client-&gt;get(
             'Accept-Language' =&gt; 'en',
         ],
         'query' =&gt; [
-            's' =&gt; 'temporibus',
-            'p' =&gt; '19',
+            's' =&gt; 'dolor',
+            'p' =&gt; '13',
             'sort' =&gt; '-id',
-            'filter[id]' =&gt; 'et',
-            'filter[sequence]' =&gt; '2',
-            'filter[enable]' =&gt; '7',
+            'filter[id]' =&gt; 'earum',
+            'filter[sequence]' =&gt; '7',
+            'filter[enable]' =&gt; '13',
         ],
     ]
 );
@@ -9490,10 +9490,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="s"                data-endpoint="GETapi-banners"
-               value="temporibus"
+               value="dolor"
                data-component="query">
     <br>
-<p>Search keyword Example: <code>temporibus</code></p>
+<p>Search keyword Example: <code>dolor</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>p</code></b>&nbsp;&nbsp;
@@ -9501,10 +9501,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="p"                data-endpoint="GETapi-banners"
-               value="19"
+               value="13"
                data-component="query">
     <br>
-<p>Page number, default=20 Example: <code>19</code></p>
+<p>Page number, default=20 Example: <code>13</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>sort</code></b>&nbsp;&nbsp;
@@ -9523,10 +9523,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[id]"                data-endpoint="GETapi-banners"
-               value="et"
+               value="earum"
                data-component="query">
     <br>
-<p>Filter by id Example: <code>et</code></p>
+<p>Filter by id Example: <code>earum</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[sequence]</code></b>&nbsp;&nbsp;
@@ -9534,10 +9534,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="filter[sequence]"                data-endpoint="GETapi-banners"
-               value="2"
+               value="7"
                data-component="query">
     <br>
-<p>Filter by sequence Example: <code>2</code></p>
+<p>Filter by sequence Example: <code>7</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[enable]</code></b>&nbsp;&nbsp;
@@ -9545,10 +9545,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="filter[enable]"                data-endpoint="GETapi-banners"
-               value="7"
+               value="13"
                data-component="query">
     <br>
-<p>Filter by enable Example: <code>7</code></p>
+<p>Filter by enable Example: <code>13</code></p>
             </div>
                 </form>
 
@@ -9572,10 +9572,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --form "enable=1"\
-    --form "image_web_en=@C:\Users\USER\AppData\Local\Temp\phpBD71.tmp" \
-    --form "image_web_tc=@C:\Users\USER\AppData\Local\Temp\phpBD72.tmp" \
-    --form "image_mobile_en=@C:\Users\USER\AppData\Local\Temp\phpBD73.tmp" \
-    --form "image_mobile_tc=@C:\Users\USER\AppData\Local\Temp\phpBD74.tmp" </code></pre></div>
+    --form "image_web_en=@C:\Users\USER\AppData\Local\Temp\php5A19.tmp" \
+    --form "image_web_tc=@C:\Users\USER\AppData\Local\Temp\php5A1A.tmp" \
+    --form "image_mobile_en=@C:\Users\USER\AppData\Local\Temp\php5A1B.tmp" \
+    --form "image_mobile_tc=@C:\Users\USER\AppData\Local\Temp\php5A1C.tmp" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -9622,19 +9622,19 @@ $response = $client-&gt;post(
             ],
             [
                 'name' =&gt; 'image_web_en',
-                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\phpBD71.tmp', 'r')
+                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\php5A19.tmp', 'r')
             ],
             [
                 'name' =&gt; 'image_web_tc',
-                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\phpBD72.tmp', 'r')
+                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\php5A1A.tmp', 'r')
             ],
             [
                 'name' =&gt; 'image_mobile_en',
-                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\phpBD73.tmp', 'r')
+                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\php5A1B.tmp', 'r')
             ],
             [
                 'name' =&gt; 'image_mobile_tc',
-                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\phpBD74.tmp', 'r')
+                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\php5A1C.tmp', 'r')
             ],
         ],
     ]
@@ -9747,7 +9747,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\phpBD71.tmp</code></p>
+<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\php5A19.tmp</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>image_web_tc</code></b>&nbsp;&nbsp;
@@ -9758,7 +9758,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\phpBD72.tmp</code></p>
+<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\php5A1A.tmp</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>image_mobile_en</code></b>&nbsp;&nbsp;
@@ -9769,7 +9769,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\phpBD73.tmp</code></p>
+<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\php5A1B.tmp</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>image_mobile_tc</code></b>&nbsp;&nbsp;
@@ -9780,7 +9780,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\phpBD74.tmp</code></p>
+<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\php5A1C.tmp</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>enable</code></b>&nbsp;&nbsp;
@@ -10005,10 +10005,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --form "enable="\
-    --form "image_web_en=@C:\Users\USER\AppData\Local\Temp\phpBD79.tmp" \
-    --form "image_web_tc=@C:\Users\USER\AppData\Local\Temp\phpBD7A.tmp" \
-    --form "image_mobile_en=@C:\Users\USER\AppData\Local\Temp\phpBD7B.tmp" \
-    --form "image_mobile_tc=@C:\Users\USER\AppData\Local\Temp\phpBD7C.tmp" </code></pre></div>
+    --form "image_web_en=@C:\Users\USER\AppData\Local\Temp\php5A31.tmp" \
+    --form "image_web_tc=@C:\Users\USER\AppData\Local\Temp\php5A32.tmp" \
+    --form "image_mobile_en=@C:\Users\USER\AppData\Local\Temp\php5A33.tmp" \
+    --form "image_mobile_tc=@C:\Users\USER\AppData\Local\Temp\php5A34.tmp" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -10055,19 +10055,19 @@ $response = $client-&gt;put(
             ],
             [
                 'name' =&gt; 'image_web_en',
-                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\phpBD79.tmp', 'r')
+                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\php5A31.tmp', 'r')
             ],
             [
                 'name' =&gt; 'image_web_tc',
-                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\phpBD7A.tmp', 'r')
+                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\php5A32.tmp', 'r')
             ],
             [
                 'name' =&gt; 'image_mobile_en',
-                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\phpBD7B.tmp', 'r')
+                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\php5A33.tmp', 'r')
             ],
             [
                 'name' =&gt; 'image_mobile_tc',
-                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\phpBD7C.tmp', 'r')
+                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\php5A34.tmp', 'r')
             ],
         ],
     ]
@@ -10196,7 +10196,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\phpBD79.tmp</code></p>
+<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\php5A31.tmp</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>image_web_tc</code></b>&nbsp;&nbsp;
@@ -10207,7 +10207,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\phpBD7A.tmp</code></p>
+<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\php5A32.tmp</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>image_mobile_en</code></b>&nbsp;&nbsp;
@@ -10218,7 +10218,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\phpBD7B.tmp</code></p>
+<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\php5A33.tmp</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>image_mobile_tc</code></b>&nbsp;&nbsp;
@@ -10229,7 +10229,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\phpBD7C.tmp</code></p>
+<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\php5A34.tmp</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>enable</code></b>&nbsp;&nbsp;
@@ -10438,8 +10438,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --data "{
-    \"id\": 18,
-    \"sequence\": 6
+    \"id\": 10,
+    \"sequence\": 8
 }"
 </code></pre></div>
 
@@ -10457,8 +10457,8 @@ const headers = {
 };
 
 let body = {
-    "id": 18,
-    "sequence": 6
+    "id": 10,
+    "sequence": 8
 };
 
 fetch(url, {
@@ -10480,8 +10480,8 @@ $response = $client-&gt;post(
             'Accept-Language' =&gt; 'en',
         ],
         'json' =&gt; [
-            'id' =&gt; 18,
-            'sequence' =&gt; 6,
+            'id' =&gt; 10,
+            'sequence' =&gt; 8,
         ],
     ]
 );
@@ -10590,10 +10590,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="POSTapi-row_updates-banners"
-               value="18"
+               value="10"
                data-component="body">
     <br>
-<p>The id of the record Example: <code>18</code></p>
+<p>The id of the record Example: <code>10</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>sequence</code></b>&nbsp;&nbsp;
@@ -10601,10 +10601,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="sequence"                data-endpoint="POSTapi-row_updates-banners"
-               value="6"
+               value="8"
                data-component="body">
     <br>
-<p>The sequence of the record Example: <code>6</code></p>
+<p>The sequence of the record Example: <code>8</code></p>
         </div>
         </form>
 
@@ -10629,7 +10629,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept-Language: en" \
     --data "{
     \"rows\": [
-        \"reiciendis\"
+        \"porro\"
     ]
 }"
 </code></pre></div>
@@ -10649,7 +10649,7 @@ const headers = {
 
 let body = {
     "rows": [
-        "reiciendis"
+        "porro"
     ]
 };
 
@@ -10673,7 +10673,7 @@ $response = $client-&gt;post(
         ],
         'json' =&gt; [
             'rows' =&gt; [
-                'reiciendis',
+                'porro',
             ],
         ],
     ]
@@ -10792,10 +10792,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="rows.0.id"                data-endpoint="POSTapi-drags-banners"
-               value="19"
+               value="8"
                data-component="body">
     <br>
-<p>The id of the record Example: <code>19</code></p>
+<p>The id of the record Example: <code>8</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>sequence</code></b>&nbsp;&nbsp;
@@ -10803,10 +10803,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="rows.0.sequence"                data-endpoint="POSTapi-drags-banners"
-               value="15"
+               value="5"
                data-component="body">
     <br>
-<p>The sequence of the record Example: <code>15</code></p>
+<p>The sequence of the record Example: <code>5</code></p>
                     </div>
                                     </details>
         </div>
@@ -10833,10 +10833,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept-Language: en" \
     --data "{
     \"ids\": [
-        14
+        13
     ],
-    \"enable\": false,
-    \"hot\": false,
+    \"enable\": true,
+    \"hot\": true,
     \"delete\": false
 }"
 </code></pre></div>
@@ -10856,10 +10856,10 @@ const headers = {
 
 let body = {
     "ids": [
-        14
+        13
     ],
-    "enable": false,
-    "hot": false,
+    "enable": true,
+    "hot": true,
     "delete": false
 };
 
@@ -10883,10 +10883,10 @@ $response = $client-&gt;post(
         ],
         'json' =&gt; [
             'ids' =&gt; [
-                14,
+                13,
             ],
-            'enable' =&gt; false,
-            'hot' =&gt; false,
+            'enable' =&gt; true,
+            'hot' =&gt; true,
             'delete' =&gt; false,
         ],
     ]
@@ -11022,7 +11022,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Enable or disable the record Example: <code>false</code></p>
+<p>Enable or disable the record Example: <code>true</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>hot</code></b>&nbsp;&nbsp;
@@ -11043,7 +11043,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Update hot(Apply to service API only) Example: <code>false</code></p>
+<p>Update hot(Apply to service API only) Example: <code>true</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>delete</code></b>&nbsp;&nbsp;
@@ -11083,7 +11083,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://chees-api.dev.com/api/services?s=quis&amp;p=3&amp;sort=-sequence&amp;filter%5Bsequence%5D=voluptatum&amp;filter%5Bslug%5D=ullam&amp;filter%5Bprice%5D=qui&amp;filter%5Bhot%5D=reiciendis&amp;filter%5Benable%5D=rerum" \
+    --get "https://chees-api.dev.com/api/services?s=non&amp;p=20&amp;sort=-sequence&amp;filter%5Bsequence%5D=consequuntur&amp;filter%5Bslug%5D=corrupti&amp;filter%5Bprice%5D=et&amp;filter%5Bhot%5D=sunt&amp;filter%5Benable%5D=cupiditate" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -11096,14 +11096,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "s": "quis",
-    "p": "3",
+    "s": "non",
+    "p": "20",
     "sort": "-sequence",
-    "filter[sequence]": "voluptatum",
-    "filter[slug]": "ullam",
-    "filter[price]": "qui",
-    "filter[hot]": "reiciendis",
-    "filter[enable]": "rerum",
+    "filter[sequence]": "consequuntur",
+    "filter[slug]": "corrupti",
+    "filter[price]": "et",
+    "filter[hot]": "sunt",
+    "filter[enable]": "cupiditate",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -11133,14 +11133,14 @@ $response = $client-&gt;get(
             'Accept-Language' =&gt; 'en',
         ],
         'query' =&gt; [
-            's' =&gt; 'quis',
-            'p' =&gt; '3',
+            's' =&gt; 'non',
+            'p' =&gt; '20',
             'sort' =&gt; '-sequence',
-            'filter[sequence]' =&gt; 'voluptatum',
-            'filter[slug]' =&gt; 'ullam',
-            'filter[price]' =&gt; 'qui',
-            'filter[hot]' =&gt; 'reiciendis',
-            'filter[enable]' =&gt; 'rerum',
+            'filter[sequence]' =&gt; 'consequuntur',
+            'filter[slug]' =&gt; 'corrupti',
+            'filter[price]' =&gt; 'et',
+            'filter[hot]' =&gt; 'sunt',
+            'filter[enable]' =&gt; 'cupiditate',
         ],
     ]
 );
@@ -11265,10 +11265,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="s"                data-endpoint="GETapi-services"
-               value="quis"
+               value="non"
                data-component="query">
     <br>
-<p>Search keyword Example: <code>quis</code></p>
+<p>Search keyword Example: <code>non</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>p</code></b>&nbsp;&nbsp;
@@ -11276,10 +11276,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="p"                data-endpoint="GETapi-services"
-               value="3"
+               value="20"
                data-component="query">
     <br>
-<p>Page number, default=20 Example: <code>3</code></p>
+<p>Page number, default=20 Example: <code>20</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>sort</code></b>&nbsp;&nbsp;
@@ -11298,10 +11298,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[sequence]"                data-endpoint="GETapi-services"
-               value="voluptatum"
+               value="consequuntur"
                data-component="query">
     <br>
-<p>Filter by sequence Example: <code>voluptatum</code></p>
+<p>Filter by sequence Example: <code>consequuntur</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[slug]</code></b>&nbsp;&nbsp;
@@ -11309,10 +11309,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[slug]"                data-endpoint="GETapi-services"
-               value="ullam"
+               value="corrupti"
                data-component="query">
     <br>
-<p>Filter by slug Example: <code>ullam</code></p>
+<p>Filter by slug Example: <code>corrupti</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[price]</code></b>&nbsp;&nbsp;
@@ -11320,10 +11320,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[price]"                data-endpoint="GETapi-services"
-               value="qui"
+               value="et"
                data-component="query">
     <br>
-<p>Filter by price Example: <code>qui</code></p>
+<p>Filter by price Example: <code>et</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[hot]</code></b>&nbsp;&nbsp;
@@ -11331,10 +11331,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[hot]"                data-endpoint="GETapi-services"
-               value="reiciendis"
+               value="sunt"
                data-component="query">
     <br>
-<p>Filter by hot Example: <code>reiciendis</code></p>
+<p>Filter by hot Example: <code>sunt</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[enable]</code></b>&nbsp;&nbsp;
@@ -11342,10 +11342,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[enable]"                data-endpoint="GETapi-services"
-               value="rerum"
+               value="cupiditate"
                data-component="query">
     <br>
-<p>Filter by enable Example: <code>rerum</code></p>
+<p>Filter by enable Example: <code>cupiditate</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[translations.title]</code></b>&nbsp;&nbsp;
@@ -11353,10 +11353,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[translations.title]"                data-endpoint="GETapi-services"
-               value="inventore"
+               value="laborum"
                data-component="query">
     <br>
-<p>Filter by title Example: <code>inventore</code></p>
+<p>Filter by title Example: <code>laborum</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[translations.subtitle]</code></b>&nbsp;&nbsp;
@@ -11364,10 +11364,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[translations.subtitle]"                data-endpoint="GETapi-services"
-               value="aut"
+               value="asperiores"
                data-component="query">
     <br>
-<p>Filter by subtitle Example: <code>aut</code></p>
+<p>Filter by subtitle Example: <code>asperiores</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[category.translations.name]</code></b>&nbsp;&nbsp;
@@ -11375,10 +11375,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[category.translations.name]"                data-endpoint="GETapi-services"
-               value="qui"
+               value="necessitatibus"
                data-component="query">
     <br>
-<p>Filter by category name Example: <code>qui</code></p>
+<p>Filter by category name Example: <code>necessitatibus</code></p>
             </div>
                 </form>
 
@@ -11401,19 +11401,19 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
-    --form "category_id=5"\
-    --form "price=8"\
-    --form "description_en=ad"\
-    --form "description_tc=voluptatibus"\
-    --form "detail_en=qui"\
+    --form "category_id=9"\
+    --form "price=16"\
+    --form "description_en=voluptatem"\
+    --form "description_tc=iusto"\
+    --form "detail_en=reiciendis"\
     --form "detail_tc=rerum"\
-    --form "hot="\
+    --form "hot=1"\
     --form "enable="\
-    --form "en[title]=distinctio"\
-    --form "en[subtitle]=aut"\
-    --form "tc[title]=neque"\
-    --form "tc[subtitle]=quo"\
-    --form "image=@C:\Users\USER\AppData\Local\Temp\phpBD8C.tmp" </code></pre></div>
+    --form "en[title]=eum"\
+    --form "en[subtitle]=autem"\
+    --form "tc[title]=assumenda"\
+    --form "tc[subtitle]=beatae"\
+    --form "image=@C:\Users\USER\AppData\Local\Temp\php5A45.tmp" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -11429,18 +11429,18 @@ const headers = {
 };
 
 const body = new FormData();
-body.append('category_id', '5');
-body.append('price', '8');
-body.append('description_en', 'ad');
-body.append('description_tc', 'voluptatibus');
-body.append('detail_en', 'qui');
+body.append('category_id', '9');
+body.append('price', '16');
+body.append('description_en', 'voluptatem');
+body.append('description_tc', 'iusto');
+body.append('detail_en', 'reiciendis');
 body.append('detail_tc', 'rerum');
-body.append('hot', '');
+body.append('hot', '1');
 body.append('enable', '');
-body.append('en[title]', 'distinctio');
-body.append('en[subtitle]', 'aut');
-body.append('tc[title]', 'neque');
-body.append('tc[subtitle]', 'quo');
+body.append('en[title]', 'eum');
+body.append('en[subtitle]', 'autem');
+body.append('tc[title]', 'assumenda');
+body.append('tc[subtitle]', 'beatae');
 body.append('image', document.querySelector('input[name="image"]').files[0]);
 
 fetch(url, {
@@ -11464,23 +11464,23 @@ $response = $client-&gt;post(
         'multipart' =&gt; [
             [
                 'name' =&gt; 'category_id',
-                'contents' =&gt; '5'
+                'contents' =&gt; '9'
             ],
             [
                 'name' =&gt; 'price',
-                'contents' =&gt; '8'
+                'contents' =&gt; '16'
             ],
             [
                 'name' =&gt; 'description_en',
-                'contents' =&gt; 'ad'
+                'contents' =&gt; 'voluptatem'
             ],
             [
                 'name' =&gt; 'description_tc',
-                'contents' =&gt; 'voluptatibus'
+                'contents' =&gt; 'iusto'
             ],
             [
                 'name' =&gt; 'detail_en',
-                'contents' =&gt; 'qui'
+                'contents' =&gt; 'reiciendis'
             ],
             [
                 'name' =&gt; 'detail_tc',
@@ -11488,7 +11488,7 @@ $response = $client-&gt;post(
             ],
             [
                 'name' =&gt; 'hot',
-                'contents' =&gt; ''
+                'contents' =&gt; '1'
             ],
             [
                 'name' =&gt; 'enable',
@@ -11496,23 +11496,23 @@ $response = $client-&gt;post(
             ],
             [
                 'name' =&gt; 'en[title]',
-                'contents' =&gt; 'distinctio'
+                'contents' =&gt; 'eum'
             ],
             [
                 'name' =&gt; 'en[subtitle]',
-                'contents' =&gt; 'aut'
+                'contents' =&gt; 'autem'
             ],
             [
                 'name' =&gt; 'tc[title]',
-                'contents' =&gt; 'neque'
+                'contents' =&gt; 'assumenda'
             ],
             [
                 'name' =&gt; 'tc[subtitle]',
-                'contents' =&gt; 'quo'
+                'contents' =&gt; 'beatae'
             ],
             [
                 'name' =&gt; 'image',
-                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\phpBD8C.tmp', 'r')
+                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\php5A45.tmp', 'r')
             ],
         ],
     ]
@@ -11622,10 +11622,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="category_id"                data-endpoint="POSTapi-services"
-               value="5"
+               value="9"
                data-component="body">
     <br>
-<p>Example: <code>5</code></p>
+<p>Example: <code>9</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>price</code></b>&nbsp;&nbsp;
@@ -11633,10 +11633,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="price"                data-endpoint="POSTapi-services"
-               value="8"
+               value="16"
                data-component="body">
     <br>
-<p>Example: <code>8</code></p>
+<p>Example: <code>16</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description_en</code></b>&nbsp;&nbsp;
@@ -11644,10 +11644,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="description_en"                data-endpoint="POSTapi-services"
-               value="ad"
+               value="voluptatem"
                data-component="body">
     <br>
-<p>Example: <code>ad</code></p>
+<p>Example: <code>voluptatem</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description_tc</code></b>&nbsp;&nbsp;
@@ -11655,10 +11655,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="description_tc"                data-endpoint="POSTapi-services"
-               value="voluptatibus"
+               value="iusto"
                data-component="body">
     <br>
-<p>Example: <code>voluptatibus</code></p>
+<p>Example: <code>iusto</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>detail_en</code></b>&nbsp;&nbsp;
@@ -11666,10 +11666,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="detail_en"                data-endpoint="POSTapi-services"
-               value="qui"
+               value="reiciendis"
                data-component="body">
     <br>
-<p>Example: <code>qui</code></p>
+<p>Example: <code>reiciendis</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>detail_tc</code></b>&nbsp;&nbsp;
@@ -11701,7 +11701,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>false</code></p>
+<p>Example: <code>true</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>enable</code></b>&nbsp;&nbsp;
@@ -11739,10 +11739,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="en.title"                data-endpoint="POSTapi-services"
-               value="distinctio"
+               value="eum"
                data-component="body">
     <br>
-<p>Example: <code>distinctio</code></p>
+<p>Example: <code>eum</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>subtitle</code></b>&nbsp;&nbsp;
@@ -11750,10 +11750,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="en.subtitle"                data-endpoint="POSTapi-services"
-               value="aut"
+               value="autem"
                data-component="body">
     <br>
-<p>Example: <code>aut</code></p>
+<p>Example: <code>autem</code></p>
                     </div>
                                     </details>
         </div>
@@ -11772,10 +11772,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="tc.title"                data-endpoint="POSTapi-services"
-               value="neque"
+               value="assumenda"
                data-component="body">
     <br>
-<p>Example: <code>neque</code></p>
+<p>Example: <code>assumenda</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>subtitle</code></b>&nbsp;&nbsp;
@@ -11783,10 +11783,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="tc.subtitle"                data-endpoint="POSTapi-services"
-               value="quo"
+               value="beatae"
                data-component="body">
     <br>
-<p>Example: <code>quo</code></p>
+<p>Example: <code>beatae</code></p>
                     </div>
                                     </details>
         </div>
@@ -11799,7 +11799,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\phpBD8C.tmp</code></p>
+<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\php5A45.tmp</code></p>
         </div>
         </form>
 
@@ -12002,19 +12002,19 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
-    --form "category_id=15"\
-    --form "price=8"\
-    --form "description_en=rem"\
-    --form "description_tc=vel"\
-    --form "detail_en=et"\
-    --form "detail_tc=doloribus"\
-    --form "hot=1"\
-    --form "enable="\
-    --form "en[title]=quo"\
-    --form "en[subtitle]=nesciunt"\
-    --form "tc[title]=culpa"\
-    --form "tc[subtitle]=id"\
-    --form "image=@C:\Users\USER\AppData\Local\Temp\phpBD9D.tmp" </code></pre></div>
+    --form "category_id=14"\
+    --form "price=15"\
+    --form "description_en=id"\
+    --form "description_tc=mollitia"\
+    --form "detail_en=maxime"\
+    --form "detail_tc=eos"\
+    --form "hot="\
+    --form "enable=1"\
+    --form "en[title]=molestiae"\
+    --form "en[subtitle]=eum"\
+    --form "tc[title]=laboriosam"\
+    --form "tc[subtitle]=nemo"\
+    --form "image=@C:\Users\USER\AppData\Local\Temp\php5A55.tmp" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -12030,18 +12030,18 @@ const headers = {
 };
 
 const body = new FormData();
-body.append('category_id', '15');
-body.append('price', '8');
-body.append('description_en', 'rem');
-body.append('description_tc', 'vel');
-body.append('detail_en', 'et');
-body.append('detail_tc', 'doloribus');
-body.append('hot', '1');
-body.append('enable', '');
-body.append('en[title]', 'quo');
-body.append('en[subtitle]', 'nesciunt');
-body.append('tc[title]', 'culpa');
-body.append('tc[subtitle]', 'id');
+body.append('category_id', '14');
+body.append('price', '15');
+body.append('description_en', 'id');
+body.append('description_tc', 'mollitia');
+body.append('detail_en', 'maxime');
+body.append('detail_tc', 'eos');
+body.append('hot', '');
+body.append('enable', '1');
+body.append('en[title]', 'molestiae');
+body.append('en[subtitle]', 'eum');
+body.append('tc[title]', 'laboriosam');
+body.append('tc[subtitle]', 'nemo');
 body.append('image', document.querySelector('input[name="image"]').files[0]);
 
 fetch(url, {
@@ -12065,55 +12065,55 @@ $response = $client-&gt;put(
         'multipart' =&gt; [
             [
                 'name' =&gt; 'category_id',
-                'contents' =&gt; '15'
+                'contents' =&gt; '14'
             ],
             [
                 'name' =&gt; 'price',
-                'contents' =&gt; '8'
+                'contents' =&gt; '15'
             ],
             [
                 'name' =&gt; 'description_en',
-                'contents' =&gt; 'rem'
-            ],
-            [
-                'name' =&gt; 'description_tc',
-                'contents' =&gt; 'vel'
-            ],
-            [
-                'name' =&gt; 'detail_en',
-                'contents' =&gt; 'et'
-            ],
-            [
-                'name' =&gt; 'detail_tc',
-                'contents' =&gt; 'doloribus'
-            ],
-            [
-                'name' =&gt; 'hot',
-                'contents' =&gt; '1'
-            ],
-            [
-                'name' =&gt; 'enable',
-                'contents' =&gt; ''
-            ],
-            [
-                'name' =&gt; 'en[title]',
-                'contents' =&gt; 'quo'
-            ],
-            [
-                'name' =&gt; 'en[subtitle]',
-                'contents' =&gt; 'nesciunt'
-            ],
-            [
-                'name' =&gt; 'tc[title]',
-                'contents' =&gt; 'culpa'
-            ],
-            [
-                'name' =&gt; 'tc[subtitle]',
                 'contents' =&gt; 'id'
             ],
             [
+                'name' =&gt; 'description_tc',
+                'contents' =&gt; 'mollitia'
+            ],
+            [
+                'name' =&gt; 'detail_en',
+                'contents' =&gt; 'maxime'
+            ],
+            [
+                'name' =&gt; 'detail_tc',
+                'contents' =&gt; 'eos'
+            ],
+            [
+                'name' =&gt; 'hot',
+                'contents' =&gt; ''
+            ],
+            [
+                'name' =&gt; 'enable',
+                'contents' =&gt; '1'
+            ],
+            [
+                'name' =&gt; 'en[title]',
+                'contents' =&gt; 'molestiae'
+            ],
+            [
+                'name' =&gt; 'en[subtitle]',
+                'contents' =&gt; 'eum'
+            ],
+            [
+                'name' =&gt; 'tc[title]',
+                'contents' =&gt; 'laboriosam'
+            ],
+            [
+                'name' =&gt; 'tc[subtitle]',
+                'contents' =&gt; 'nemo'
+            ],
+            [
                 'name' =&gt; 'image',
-                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\phpBD9D.tmp', 'r')
+                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\php5A55.tmp', 'r')
             ],
         ],
     ]
@@ -12239,10 +12239,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="category_id"                data-endpoint="PUTapi-services--id-"
-               value="15"
+               value="14"
                data-component="body">
     <br>
-<p>Example: <code>15</code></p>
+<p>Example: <code>14</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>price</code></b>&nbsp;&nbsp;
@@ -12250,10 +12250,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="price"                data-endpoint="PUTapi-services--id-"
-               value="8"
+               value="15"
                data-component="body">
     <br>
-<p>Example: <code>8</code></p>
+<p>Example: <code>15</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description_en</code></b>&nbsp;&nbsp;
@@ -12261,10 +12261,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="description_en"                data-endpoint="PUTapi-services--id-"
-               value="rem"
+               value="id"
                data-component="body">
     <br>
-<p>Example: <code>rem</code></p>
+<p>Example: <code>id</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description_tc</code></b>&nbsp;&nbsp;
@@ -12272,10 +12272,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="description_tc"                data-endpoint="PUTapi-services--id-"
-               value="vel"
+               value="mollitia"
                data-component="body">
     <br>
-<p>Example: <code>vel</code></p>
+<p>Example: <code>mollitia</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>detail_en</code></b>&nbsp;&nbsp;
@@ -12283,10 +12283,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="detail_en"                data-endpoint="PUTapi-services--id-"
-               value="et"
+               value="maxime"
                data-component="body">
     <br>
-<p>Example: <code>et</code></p>
+<p>Example: <code>maxime</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>detail_tc</code></b>&nbsp;&nbsp;
@@ -12294,10 +12294,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="detail_tc"                data-endpoint="PUTapi-services--id-"
-               value="doloribus"
+               value="eos"
                data-component="body">
     <br>
-<p>Example: <code>doloribus</code></p>
+<p>Example: <code>eos</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>hot</code></b>&nbsp;&nbsp;
@@ -12318,7 +12318,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>true</code></p>
+<p>Example: <code>false</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>enable</code></b>&nbsp;&nbsp;
@@ -12339,7 +12339,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>false</code></p>
+<p>Example: <code>true</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
         <details>
@@ -12356,10 +12356,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="en.title"                data-endpoint="PUTapi-services--id-"
-               value="quo"
+               value="molestiae"
                data-component="body">
     <br>
-<p>Example: <code>quo</code></p>
+<p>Example: <code>molestiae</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>subtitle</code></b>&nbsp;&nbsp;
@@ -12367,10 +12367,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="en.subtitle"                data-endpoint="PUTapi-services--id-"
-               value="nesciunt"
+               value="eum"
                data-component="body">
     <br>
-<p>Example: <code>nesciunt</code></p>
+<p>Example: <code>eum</code></p>
                     </div>
                                     </details>
         </div>
@@ -12389,10 +12389,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="tc.title"                data-endpoint="PUTapi-services--id-"
-               value="culpa"
+               value="laboriosam"
                data-component="body">
     <br>
-<p>Example: <code>culpa</code></p>
+<p>Example: <code>laboriosam</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>subtitle</code></b>&nbsp;&nbsp;
@@ -12400,10 +12400,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="tc.subtitle"                data-endpoint="PUTapi-services--id-"
-               value="id"
+               value="nemo"
                data-component="body">
     <br>
-<p>Example: <code>id</code></p>
+<p>Example: <code>nemo</code></p>
                     </div>
                                     </details>
         </div>
@@ -12416,7 +12416,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\phpBD9D.tmp</code></p>
+<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\php5A55.tmp</code></p>
         </div>
         </form>
 
@@ -12604,8 +12604,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --data "{
-    \"id\": 19,
-    \"sequence\": 15
+    \"id\": 4,
+    \"sequence\": 2
 }"
 </code></pre></div>
 
@@ -12623,8 +12623,8 @@ const headers = {
 };
 
 let body = {
-    "id": 19,
-    "sequence": 15
+    "id": 4,
+    "sequence": 2
 };
 
 fetch(url, {
@@ -12646,8 +12646,8 @@ $response = $client-&gt;post(
             'Accept-Language' =&gt; 'en',
         ],
         'json' =&gt; [
-            'id' =&gt; 19,
-            'sequence' =&gt; 15,
+            'id' =&gt; 4,
+            'sequence' =&gt; 2,
         ],
     ]
 );
@@ -12756,10 +12756,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="POSTapi-row_updates-services"
-               value="19"
+               value="4"
                data-component="body">
     <br>
-<p>The id of the record Example: <code>19</code></p>
+<p>The id of the record Example: <code>4</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>sequence</code></b>&nbsp;&nbsp;
@@ -12767,10 +12767,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="sequence"                data-endpoint="POSTapi-row_updates-services"
-               value="15"
+               value="2"
                data-component="body">
     <br>
-<p>The sequence of the record Example: <code>15</code></p>
+<p>The sequence of the record Example: <code>2</code></p>
         </div>
         </form>
 
@@ -12795,7 +12795,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept-Language: en" \
     --data "{
     \"rows\": [
-        \"quia\"
+        \"deleniti\"
     ]
 }"
 </code></pre></div>
@@ -12815,7 +12815,7 @@ const headers = {
 
 let body = {
     "rows": [
-        "quia"
+        "deleniti"
     ]
 };
 
@@ -12839,7 +12839,7 @@ $response = $client-&gt;post(
         ],
         'json' =&gt; [
             'rows' =&gt; [
-                'quia',
+                'deleniti',
             ],
         ],
     ]
@@ -12958,10 +12958,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="rows.0.id"                data-endpoint="POSTapi-drags-services"
-               value="18"
+               value="12"
                data-component="body">
     <br>
-<p>The id of the record Example: <code>18</code></p>
+<p>The id of the record Example: <code>12</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>sequence</code></b>&nbsp;&nbsp;
@@ -12969,10 +12969,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="rows.0.sequence"                data-endpoint="POSTapi-drags-services"
-               value="12"
+               value="5"
                data-component="body">
     <br>
-<p>The sequence of the record Example: <code>12</code></p>
+<p>The sequence of the record Example: <code>5</code></p>
                     </div>
                                     </details>
         </div>
@@ -12999,11 +12999,11 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept-Language: en" \
     --data "{
     \"ids\": [
-        13
+        9
     ],
-    \"enable\": true,
+    \"enable\": false,
     \"hot\": false,
-    \"delete\": true
+    \"delete\": false
 }"
 </code></pre></div>
 
@@ -13022,11 +13022,11 @@ const headers = {
 
 let body = {
     "ids": [
-        13
+        9
     ],
-    "enable": true,
+    "enable": false,
     "hot": false,
-    "delete": true
+    "delete": false
 };
 
 fetch(url, {
@@ -13049,11 +13049,11 @@ $response = $client-&gt;post(
         ],
         'json' =&gt; [
             'ids' =&gt; [
-                13,
+                9,
             ],
-            'enable' =&gt; true,
+            'enable' =&gt; false,
             'hot' =&gt; false,
-            'delete' =&gt; true,
+            'delete' =&gt; false,
         ],
     ]
 );
@@ -13188,7 +13188,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Enable or disable the record Example: <code>true</code></p>
+<p>Enable or disable the record Example: <code>false</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>hot</code></b>&nbsp;&nbsp;
@@ -13230,7 +13230,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Delete selected record Example: <code>true</code></p>
+<p>Delete selected record Example: <code>false</code></p>
         </div>
         </form>
 
@@ -13249,7 +13249,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://chees-api.dev.com/api/roles?s=soluta&amp;p=6&amp;sort=id&amp;filter%5Bid%5D=et&amp;filter%5Bsequence%5D=6" \
+    --get "https://chees-api.dev.com/api/roles?s=eos&amp;p=3&amp;sort=id&amp;filter%5Bid%5D=quae&amp;filter%5Bsequence%5D=7" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -13262,11 +13262,11 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "s": "soluta",
-    "p": "6",
+    "s": "eos",
+    "p": "3",
     "sort": "id",
-    "filter[id]": "et",
-    "filter[sequence]": "6",
+    "filter[id]": "quae",
+    "filter[sequence]": "7",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -13296,11 +13296,11 @@ $response = $client-&gt;get(
             'Accept-Language' =&gt; 'en',
         ],
         'query' =&gt; [
-            's' =&gt; 'soluta',
-            'p' =&gt; '6',
+            's' =&gt; 'eos',
+            'p' =&gt; '3',
             'sort' =&gt; 'id',
-            'filter[id]' =&gt; 'et',
-            'filter[sequence]' =&gt; '6',
+            'filter[id]' =&gt; 'quae',
+            'filter[sequence]' =&gt; '7',
         ],
     ]
 );
@@ -13425,10 +13425,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="s"                data-endpoint="GETapi-roles"
-               value="soluta"
+               value="eos"
                data-component="query">
     <br>
-<p>Search keyword Example: <code>soluta</code></p>
+<p>Search keyword Example: <code>eos</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>p</code></b>&nbsp;&nbsp;
@@ -13436,10 +13436,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="p"                data-endpoint="GETapi-roles"
-               value="6"
+               value="3"
                data-component="query">
     <br>
-<p>Page number, default=20 Example: <code>6</code></p>
+<p>Page number, default=20 Example: <code>3</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>sort</code></b>&nbsp;&nbsp;
@@ -13458,10 +13458,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[id]"                data-endpoint="GETapi-roles"
-               value="et"
+               value="quae"
                data-component="query">
     <br>
-<p>Filter by id Example: <code>et</code></p>
+<p>Filter by id Example: <code>quae</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[sequence]</code></b>&nbsp;&nbsp;
@@ -13469,10 +13469,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="filter[sequence]"                data-endpoint="GETapi-roles"
-               value="6"
+               value="7"
                data-component="query">
     <br>
-<p>Filter by sequence Example: <code>6</code></p>
+<p>Filter by sequence Example: <code>7</code></p>
             </div>
                 </form>
 
@@ -13496,9 +13496,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --data "{
-    \"name\": \"rerum\",
+    \"name\": \"ea\",
     \"permissions\": [
-        \"amet\"
+        \"provident\"
     ]
 }"
 </code></pre></div>
@@ -13517,9 +13517,9 @@ const headers = {
 };
 
 let body = {
-    "name": "rerum",
+    "name": "ea",
     "permissions": [
-        "amet"
+        "provident"
     ]
 };
 
@@ -13542,9 +13542,9 @@ $response = $client-&gt;post(
             'Accept-Language' =&gt; 'en',
         ],
         'json' =&gt; [
-            'name' =&gt; 'rerum',
+            'name' =&gt; 'ea',
             'permissions' =&gt; [
-                'amet',
+                'provident',
             ],
         ],
     ]
@@ -13654,10 +13654,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-roles"
-               value="rerum"
+               value="ea"
                data-component="body">
     <br>
-<p>Example: <code>rerum</code></p>
+<p>Example: <code>ea</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>permissions</code></b>&nbsp;&nbsp;
@@ -13874,9 +13874,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --data "{
-    \"name\": \"excepturi\",
+    \"name\": \"voluptas\",
     \"permissions\": [
-        \"labore\"
+        \"qui\"
     ]
 }"
 </code></pre></div>
@@ -13895,9 +13895,9 @@ const headers = {
 };
 
 let body = {
-    "name": "excepturi",
+    "name": "voluptas",
     "permissions": [
-        "labore"
+        "qui"
     ]
 };
 
@@ -13920,9 +13920,9 @@ $response = $client-&gt;put(
             'Accept-Language' =&gt; 'en',
         ],
         'json' =&gt; [
-            'name' =&gt; 'excepturi',
+            'name' =&gt; 'voluptas',
             'permissions' =&gt; [
-                'labore',
+                'qui',
             ],
         ],
     ]
@@ -14048,10 +14048,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="PUTapi-roles--id-"
-               value="excepturi"
+               value="voluptas"
                data-component="body">
     <br>
-<p>Example: <code>excepturi</code></p>
+<p>Example: <code>voluptas</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>permissions</code></b>&nbsp;&nbsp;
@@ -14415,7 +14415,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://chees-api.dev.com/api/customer_histories?s=ipsum&amp;p=18&amp;sort=-created_at&amp;filter%5Bcustomer_id%5D=dolore&amp;filter%5Bname%5D=omnis&amp;filter%5Bgender%5D=eum&amp;filter%5Bbirthday%5D=cupiditate&amp;filter%5Bhkid%5D=blanditiis&amp;filter%5Btel%5D=quae&amp;filter%5Bemail%5D=eius&amp;filter%5Baddress%5D=dignissimos&amp;filter%5Bamount%5D=eos&amp;filter%5Bcreated_at%5D=dolore" \
+    --get "https://chees-api.dev.com/api/customer_histories?s=dolorem&amp;p=3&amp;sort=-created_at&amp;filter%5Bcustomer_id%5D=beatae&amp;filter%5Bname%5D=eius&amp;filter%5Bgender%5D=excepturi&amp;filter%5Bbirthday%5D=hic&amp;filter%5Bhkid%5D=sunt&amp;filter%5Btel%5D=ipsa&amp;filter%5Bemail%5D=rerum&amp;filter%5Baddress%5D=ut&amp;filter%5Bamount%5D=reiciendis&amp;filter%5Bcreated_at%5D=provident" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -14428,19 +14428,19 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "s": "ipsum",
-    "p": "18",
+    "s": "dolorem",
+    "p": "3",
     "sort": "-created_at",
-    "filter[customer_id]": "dolore",
-    "filter[name]": "omnis",
-    "filter[gender]": "eum",
-    "filter[birthday]": "cupiditate",
-    "filter[hkid]": "blanditiis",
-    "filter[tel]": "quae",
-    "filter[email]": "eius",
-    "filter[address]": "dignissimos",
-    "filter[amount]": "eos",
-    "filter[created_at]": "dolore",
+    "filter[customer_id]": "beatae",
+    "filter[name]": "eius",
+    "filter[gender]": "excepturi",
+    "filter[birthday]": "hic",
+    "filter[hkid]": "sunt",
+    "filter[tel]": "ipsa",
+    "filter[email]": "rerum",
+    "filter[address]": "ut",
+    "filter[amount]": "reiciendis",
+    "filter[created_at]": "provident",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -14470,19 +14470,19 @@ $response = $client-&gt;get(
             'Accept-Language' =&gt; 'en',
         ],
         'query' =&gt; [
-            's' =&gt; 'ipsum',
-            'p' =&gt; '18',
+            's' =&gt; 'dolorem',
+            'p' =&gt; '3',
             'sort' =&gt; '-created_at',
-            'filter[customer_id]' =&gt; 'dolore',
-            'filter[name]' =&gt; 'omnis',
-            'filter[gender]' =&gt; 'eum',
-            'filter[birthday]' =&gt; 'cupiditate',
-            'filter[hkid]' =&gt; 'blanditiis',
-            'filter[tel]' =&gt; 'quae',
-            'filter[email]' =&gt; 'eius',
-            'filter[address]' =&gt; 'dignissimos',
-            'filter[amount]' =&gt; 'eos',
-            'filter[created_at]' =&gt; 'dolore',
+            'filter[customer_id]' =&gt; 'beatae',
+            'filter[name]' =&gt; 'eius',
+            'filter[gender]' =&gt; 'excepturi',
+            'filter[birthday]' =&gt; 'hic',
+            'filter[hkid]' =&gt; 'sunt',
+            'filter[tel]' =&gt; 'ipsa',
+            'filter[email]' =&gt; 'rerum',
+            'filter[address]' =&gt; 'ut',
+            'filter[amount]' =&gt; 'reiciendis',
+            'filter[created_at]' =&gt; 'provident',
         ],
     ]
 );
@@ -14607,10 +14607,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="s"                data-endpoint="GETapi-customer_histories"
-               value="ipsum"
+               value="dolorem"
                data-component="query">
     <br>
-<p>Search keyword Example: <code>ipsum</code></p>
+<p>Search keyword Example: <code>dolorem</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>p</code></b>&nbsp;&nbsp;
@@ -14618,10 +14618,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="p"                data-endpoint="GETapi-customer_histories"
-               value="18"
+               value="3"
                data-component="query">
     <br>
-<p>Page number, default=20 Example: <code>18</code></p>
+<p>Page number, default=20 Example: <code>3</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>sort</code></b>&nbsp;&nbsp;
@@ -14640,10 +14640,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[customer_id]"                data-endpoint="GETapi-customer_histories"
-               value="dolore"
+               value="beatae"
                data-component="query">
     <br>
-<p>Filter by customer_id Example: <code>dolore</code></p>
+<p>Filter by customer_id Example: <code>beatae</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[name]</code></b>&nbsp;&nbsp;
@@ -14651,10 +14651,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[name]"                data-endpoint="GETapi-customer_histories"
-               value="omnis"
+               value="eius"
                data-component="query">
     <br>
-<p>Filter by name Example: <code>omnis</code></p>
+<p>Filter by name Example: <code>eius</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[gender]</code></b>&nbsp;&nbsp;
@@ -14662,10 +14662,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[gender]"                data-endpoint="GETapi-customer_histories"
-               value="eum"
+               value="excepturi"
                data-component="query">
     <br>
-<p>Filter by gender Example: <code>eum</code></p>
+<p>Filter by gender Example: <code>excepturi</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[birthday]</code></b>&nbsp;&nbsp;
@@ -14673,10 +14673,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[birthday]"                data-endpoint="GETapi-customer_histories"
-               value="cupiditate"
+               value="hic"
                data-component="query">
     <br>
-<p>Filter by birthday Example: <code>cupiditate</code></p>
+<p>Filter by birthday Example: <code>hic</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[hkid]</code></b>&nbsp;&nbsp;
@@ -14684,10 +14684,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[hkid]"                data-endpoint="GETapi-customer_histories"
-               value="blanditiis"
+               value="sunt"
                data-component="query">
     <br>
-<p>Filter by hkid Example: <code>blanditiis</code></p>
+<p>Filter by hkid Example: <code>sunt</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[tel]</code></b>&nbsp;&nbsp;
@@ -14695,10 +14695,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[tel]"                data-endpoint="GETapi-customer_histories"
-               value="quae"
+               value="ipsa"
                data-component="query">
     <br>
-<p>Filter by tel Example: <code>quae</code></p>
+<p>Filter by tel Example: <code>ipsa</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[email]</code></b>&nbsp;&nbsp;
@@ -14706,10 +14706,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[email]"                data-endpoint="GETapi-customer_histories"
-               value="eius"
+               value="rerum"
                data-component="query">
     <br>
-<p>Filter by email Example: <code>eius</code></p>
+<p>Filter by email Example: <code>rerum</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[address]</code></b>&nbsp;&nbsp;
@@ -14717,10 +14717,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[address]"                data-endpoint="GETapi-customer_histories"
-               value="dignissimos"
+               value="ut"
                data-component="query">
     <br>
-<p>Filter by address Example: <code>dignissimos</code></p>
+<p>Filter by address Example: <code>ut</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[amount]</code></b>&nbsp;&nbsp;
@@ -14728,10 +14728,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[amount]"                data-endpoint="GETapi-customer_histories"
-               value="eos"
+               value="reiciendis"
                data-component="query">
     <br>
-<p>Filter by amount Example: <code>eos</code></p>
+<p>Filter by amount Example: <code>reiciendis</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[created_at]</code></b>&nbsp;&nbsp;
@@ -14739,10 +14739,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[created_at]"                data-endpoint="GETapi-customer_histories"
-               value="dolore"
+               value="provident"
                data-component="query">
     <br>
-<p>Filter by created_at Example: <code>dolore</code></p>
+<p>Filter by created_at Example: <code>provident</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[translations.district]</code></b>&nbsp;&nbsp;
@@ -14750,10 +14750,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[translations.district]"                data-endpoint="GETapi-customer_histories"
-               value="in"
+               value="et"
                data-component="query">
     <br>
-<p>Filter by district Example: <code>in</code></p>
+<p>Filter by district Example: <code>et</code></p>
             </div>
                 </form>
 
@@ -14776,35 +14776,35 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
-    --form "order_no=voluptates"\
-    --form "name=expedita"\
+    --form "order_no=voluptatem"\
+    --form "name=voluptatum"\
     --form "gender=F"\
-    --form "birthday=2023-09-04T02:01:37"\
-    --form "id_type=other"\
-    --form "hkid=ullam"\
-    --form "tel=consequuntur"\
-    --form "email=carroll.ambrose@example.com"\
-    --form "contact_address=aperiam"\
-    --form "medical_record=quae"\
-    --form "covid_diagnosed=1"\
+    --form "birthday=2023-09-07T01:01:03"\
+    --form "id_type=hkid"\
+    --form "hkid=eaque"\
+    --form "tel=et"\
+    --form "email=tsporer@example.com"\
+    --form "contact_address=qui"\
+    --form "medical_record=laborum"\
+    --form "covid_diagnosed="\
     --form "covid_close_contacts="\
-    --form "covid_date=2023-09-04T02:01:37"\
-    --form "height="\
+    --form "covid_date=2023-09-07T01:01:03"\
+    --form "height=5"\
     --form "weight="\
-    --form "blood_date=2023-09-04T02:01:37"\
-    --form "blood_time=laborum"\
-    --form "address=et"\
-    --form "report=post"\
-    --form "remark=voluptas"\
+    --form "blood_date=2023-09-07T01:01:03"\
+    --form "blood_time=quia"\
+    --form "address=repudiandae"\
+    --form "report=email"\
+    --form "remark=vel"\
     --form "paid=1"\
-    --form "en[district]=non"\
-    --form "en[subtitle]=corporis"\
-    --form "tc[district]=at"\
-    --form "tc[subtitle]=quo"\
-    --form "customer_history_details[][price]=voluptas"\
-    --form "customer_history_details[][en][title]=itaque"\
-    --form "customer_history_details[][tc][title]=harum"\
-    --form "report_pdf=@C:\Users\USER\AppData\Local\Temp\phpBDBD.tmp" </code></pre></div>
+    --form "en[district]=et"\
+    --form "en[subtitle]=qui"\
+    --form "tc[district]=animi"\
+    --form "tc[subtitle]=corporis"\
+    --form "customer_history_details[][price]=rerum"\
+    --form "customer_history_details[][en][title]=minima"\
+    --form "customer_history_details[][tc][title]=enim"\
+    --form "report_pdf=@C:\Users\USER\AppData\Local\Temp\php5A75.tmp" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -14820,34 +14820,34 @@ const headers = {
 };
 
 const body = new FormData();
-body.append('order_no', 'voluptates');
-body.append('name', 'expedita');
+body.append('order_no', 'voluptatem');
+body.append('name', 'voluptatum');
 body.append('gender', 'F');
-body.append('birthday', '2023-09-04T02:01:37');
-body.append('id_type', 'other');
-body.append('hkid', 'ullam');
-body.append('tel', 'consequuntur');
-body.append('email', 'carroll.ambrose@example.com');
-body.append('contact_address', 'aperiam');
-body.append('medical_record', 'quae');
-body.append('covid_diagnosed', '1');
+body.append('birthday', '2023-09-07T01:01:03');
+body.append('id_type', 'hkid');
+body.append('hkid', 'eaque');
+body.append('tel', 'et');
+body.append('email', 'tsporer@example.com');
+body.append('contact_address', 'qui');
+body.append('medical_record', 'laborum');
+body.append('covid_diagnosed', '');
 body.append('covid_close_contacts', '');
-body.append('covid_date', '2023-09-04T02:01:37');
-body.append('height', '');
+body.append('covid_date', '2023-09-07T01:01:03');
+body.append('height', '5');
 body.append('weight', '');
-body.append('blood_date', '2023-09-04T02:01:37');
-body.append('blood_time', 'laborum');
-body.append('address', 'et');
-body.append('report', 'post');
-body.append('remark', 'voluptas');
+body.append('blood_date', '2023-09-07T01:01:03');
+body.append('blood_time', 'quia');
+body.append('address', 'repudiandae');
+body.append('report', 'email');
+body.append('remark', 'vel');
 body.append('paid', '1');
-body.append('en[district]', 'non');
-body.append('en[subtitle]', 'corporis');
-body.append('tc[district]', 'at');
-body.append('tc[subtitle]', 'quo');
-body.append('customer_history_details[][price]', 'voluptas');
-body.append('customer_history_details[][en][title]', 'itaque');
-body.append('customer_history_details[][tc][title]', 'harum');
+body.append('en[district]', 'et');
+body.append('en[subtitle]', 'qui');
+body.append('tc[district]', 'animi');
+body.append('tc[subtitle]', 'corporis');
+body.append('customer_history_details[][price]', 'rerum');
+body.append('customer_history_details[][en][title]', 'minima');
+body.append('customer_history_details[][tc][title]', 'enim');
 body.append('report_pdf', document.querySelector('input[name="report_pdf"]').files[0]);
 
 fetch(url, {
@@ -14871,11 +14871,11 @@ $response = $client-&gt;post(
         'multipart' =&gt; [
             [
                 'name' =&gt; 'order_no',
-                'contents' =&gt; 'voluptates'
+                'contents' =&gt; 'voluptatem'
             ],
             [
                 'name' =&gt; 'name',
-                'contents' =&gt; 'expedita'
+                'contents' =&gt; 'voluptatum'
             ],
             [
                 'name' =&gt; 'gender',
@@ -14883,35 +14883,35 @@ $response = $client-&gt;post(
             ],
             [
                 'name' =&gt; 'birthday',
-                'contents' =&gt; '2023-09-04T02:01:37'
+                'contents' =&gt; '2023-09-07T01:01:03'
             ],
             [
                 'name' =&gt; 'id_type',
-                'contents' =&gt; 'other'
+                'contents' =&gt; 'hkid'
             ],
             [
                 'name' =&gt; 'hkid',
-                'contents' =&gt; 'ullam'
+                'contents' =&gt; 'eaque'
             ],
             [
                 'name' =&gt; 'tel',
-                'contents' =&gt; 'consequuntur'
+                'contents' =&gt; 'et'
             ],
             [
                 'name' =&gt; 'email',
-                'contents' =&gt; 'carroll.ambrose@example.com'
+                'contents' =&gt; 'tsporer@example.com'
             ],
             [
                 'name' =&gt; 'contact_address',
-                'contents' =&gt; 'aperiam'
+                'contents' =&gt; 'qui'
             ],
             [
                 'name' =&gt; 'medical_record',
-                'contents' =&gt; 'quae'
+                'contents' =&gt; 'laborum'
             ],
             [
                 'name' =&gt; 'covid_diagnosed',
-                'contents' =&gt; '1'
+                'contents' =&gt; ''
             ],
             [
                 'name' =&gt; 'covid_close_contacts',
@@ -14919,11 +14919,11 @@ $response = $client-&gt;post(
             ],
             [
                 'name' =&gt; 'covid_date',
-                'contents' =&gt; '2023-09-04T02:01:37'
+                'contents' =&gt; '2023-09-07T01:01:03'
             ],
             [
                 'name' =&gt; 'height',
-                'contents' =&gt; ''
+                'contents' =&gt; '5'
             ],
             [
                 'name' =&gt; 'weight',
@@ -14931,23 +14931,23 @@ $response = $client-&gt;post(
             ],
             [
                 'name' =&gt; 'blood_date',
-                'contents' =&gt; '2023-09-04T02:01:37'
+                'contents' =&gt; '2023-09-07T01:01:03'
             ],
             [
                 'name' =&gt; 'blood_time',
-                'contents' =&gt; 'laborum'
+                'contents' =&gt; 'quia'
             ],
             [
                 'name' =&gt; 'address',
-                'contents' =&gt; 'et'
+                'contents' =&gt; 'repudiandae'
             ],
             [
                 'name' =&gt; 'report',
-                'contents' =&gt; 'post'
+                'contents' =&gt; 'email'
             ],
             [
                 'name' =&gt; 'remark',
-                'contents' =&gt; 'voluptas'
+                'contents' =&gt; 'vel'
             ],
             [
                 'name' =&gt; 'paid',
@@ -14955,35 +14955,35 @@ $response = $client-&gt;post(
             ],
             [
                 'name' =&gt; 'en[district]',
-                'contents' =&gt; 'non'
+                'contents' =&gt; 'et'
             ],
             [
                 'name' =&gt; 'en[subtitle]',
-                'contents' =&gt; 'corporis'
+                'contents' =&gt; 'qui'
             ],
             [
                 'name' =&gt; 'tc[district]',
-                'contents' =&gt; 'at'
+                'contents' =&gt; 'animi'
             ],
             [
                 'name' =&gt; 'tc[subtitle]',
-                'contents' =&gt; 'quo'
+                'contents' =&gt; 'corporis'
             ],
             [
                 'name' =&gt; 'customer_history_details[][price]',
-                'contents' =&gt; 'voluptas'
+                'contents' =&gt; 'rerum'
             ],
             [
                 'name' =&gt; 'customer_history_details[][en][title]',
-                'contents' =&gt; 'itaque'
+                'contents' =&gt; 'minima'
             ],
             [
                 'name' =&gt; 'customer_history_details[][tc][title]',
-                'contents' =&gt; 'harum'
+                'contents' =&gt; 'enim'
             ],
             [
                 'name' =&gt; 'report_pdf',
-                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\phpBDBD.tmp', 'r')
+                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\php5A75.tmp', 'r')
             ],
         ],
     ]
@@ -15104,10 +15104,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="order_no"                data-endpoint="POSTapi-customer_histories"
-               value="voluptates"
+               value="voluptatem"
                data-component="body">
     <br>
-<p>Example: <code>voluptates</code></p>
+<p>Example: <code>voluptatem</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>name</code></b>&nbsp;&nbsp;
@@ -15115,10 +15115,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-customer_histories"
-               value="expedita"
+               value="voluptatum"
                data-component="body">
     <br>
-<p>Example: <code>expedita</code></p>
+<p>Example: <code>voluptatum</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>gender</code></b>&nbsp;&nbsp;
@@ -15137,10 +15137,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="birthday"                data-endpoint="POSTapi-customer_histories"
-               value="2023-09-04T02:01:37"
+               value="2023-09-07T01:01:03"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-04T02:01:37</code></p>
+<p>Must be a valid date. Example: <code>2023-09-07T01:01:03</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>id_type</code></b>&nbsp;&nbsp;
@@ -15148,10 +15148,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id_type"                data-endpoint="POSTapi-customer_histories"
-               value="other"
+               value="hkid"
                data-component="body">
     <br>
-<p>Must be one of <code>hkid</code>, <code>passport</code>, or <code>other</code>. Example: <code>other</code></p>
+<p>Must be one of <code>hkid</code>, <code>passport</code>, or <code>other</code>. Example: <code>hkid</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>hkid</code></b>&nbsp;&nbsp;
@@ -15159,10 +15159,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="hkid"                data-endpoint="POSTapi-customer_histories"
-               value="ullam"
+               value="eaque"
                data-component="body">
     <br>
-<p>Example: <code>ullam</code></p>
+<p>Example: <code>eaque</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>tel</code></b>&nbsp;&nbsp;
@@ -15170,10 +15170,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="tel"                data-endpoint="POSTapi-customer_histories"
-               value="consequuntur"
+               value="et"
                data-component="body">
     <br>
-<p>Example: <code>consequuntur</code></p>
+<p>Example: <code>et</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -15181,10 +15181,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-customer_histories"
-               value="carroll.ambrose@example.com"
+               value="tsporer@example.com"
                data-component="body">
     <br>
-<p>Example: <code>carroll.ambrose@example.com</code></p>
+<p>Example: <code>tsporer@example.com</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>contact_address</code></b>&nbsp;&nbsp;
@@ -15192,10 +15192,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="contact_address"                data-endpoint="POSTapi-customer_histories"
-               value="aperiam"
+               value="qui"
                data-component="body">
     <br>
-<p>Example: <code>aperiam</code></p>
+<p>Example: <code>qui</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>medical_record</code></b>&nbsp;&nbsp;
@@ -15203,10 +15203,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="medical_record"                data-endpoint="POSTapi-customer_histories"
-               value="quae"
+               value="laborum"
                data-component="body">
     <br>
-<p>Example: <code>quae</code></p>
+<p>Example: <code>laborum</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>covid_diagnosed</code></b>&nbsp;&nbsp;
@@ -15227,7 +15227,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>true</code></p>
+<p>Example: <code>false</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>covid_close_contacts</code></b>&nbsp;&nbsp;
@@ -15256,10 +15256,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="covid_date"                data-endpoint="POSTapi-customer_histories"
-               value="2023-09-04T02:01:37"
+               value="2023-09-07T01:01:03"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-04T02:01:37</code></p>
+<p>Must be a valid date. Example: <code>2023-09-07T01:01:03</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>height</code></b>&nbsp;&nbsp;
@@ -15267,10 +15267,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="height"                data-endpoint="POSTapi-customer_histories"
-               value=""
+               value="5"
                data-component="body">
     <br>
-<p>Must be between 0 and 3 digits.</p>
+<p>Must be between 0 and 3 digits. Example: <code>5</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>weight</code></b>&nbsp;&nbsp;
@@ -15289,10 +15289,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="blood_date"                data-endpoint="POSTapi-customer_histories"
-               value="2023-09-04T02:01:37"
+               value="2023-09-07T01:01:03"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-04T02:01:37</code></p>
+<p>Must be a valid date. Example: <code>2023-09-07T01:01:03</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>blood_time</code></b>&nbsp;&nbsp;
@@ -15300,10 +15300,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="blood_time"                data-endpoint="POSTapi-customer_histories"
-               value="laborum"
+               value="quia"
                data-component="body">
     <br>
-<p>Example: <code>laborum</code></p>
+<p>Example: <code>quia</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
@@ -15311,10 +15311,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="address"                data-endpoint="POSTapi-customer_histories"
-               value="et"
+               value="repudiandae"
                data-component="body">
     <br>
-<p>Example: <code>et</code></p>
+<p>Example: <code>repudiandae</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>report</code></b>&nbsp;&nbsp;
@@ -15322,10 +15322,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="report"                data-endpoint="POSTapi-customer_histories"
-               value="post"
+               value="email"
                data-component="body">
     <br>
-<p>Must be one of <code>email</code>, <code>whatsapp</code>, or <code>post</code>. Example: <code>post</code></p>
+<p>Must be one of <code>email</code>, <code>whatsapp</code>, or <code>post</code>. Example: <code>email</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>remark</code></b>&nbsp;&nbsp;
@@ -15333,10 +15333,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="remark"                data-endpoint="POSTapi-customer_histories"
-               value="voluptas"
+               value="vel"
                data-component="body">
     <br>
-<p>Example: <code>voluptas</code></p>
+<p>Example: <code>vel</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>paid</code></b>&nbsp;&nbsp;
@@ -15374,10 +15374,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="en.district"                data-endpoint="POSTapi-customer_histories"
-               value="non"
+               value="et"
                data-component="body">
     <br>
-<p>Example: <code>non</code></p>
+<p>Example: <code>et</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>subtitle</code></b>&nbsp;&nbsp;
@@ -15385,10 +15385,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="en.subtitle"                data-endpoint="POSTapi-customer_histories"
-               value="corporis"
+               value="qui"
                data-component="body">
     <br>
-<p>Example: <code>corporis</code></p>
+<p>Example: <code>qui</code></p>
                     </div>
                                     </details>
         </div>
@@ -15407,10 +15407,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="tc.district"                data-endpoint="POSTapi-customer_histories"
-               value="at"
+               value="animi"
                data-component="body">
     <br>
-<p>Example: <code>at</code></p>
+<p>Example: <code>animi</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>subtitle</code></b>&nbsp;&nbsp;
@@ -15418,10 +15418,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="tc.subtitle"                data-endpoint="POSTapi-customer_histories"
-               value="quo"
+               value="corporis"
                data-component="body">
     <br>
-<p>Example: <code>quo</code></p>
+<p>Example: <code>corporis</code></p>
                     </div>
                                     </details>
         </div>
@@ -15434,7 +15434,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be a file. Example: <code>C:\Users\USER\AppData\Local\Temp\phpBDBD.tmp</code></p>
+<p>Must be a file. Example: <code>C:\Users\USER\AppData\Local\Temp\php5A75.tmp</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
         <details>
@@ -15451,10 +15451,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="customer_history_details.0.price"                data-endpoint="POSTapi-customer_histories"
-               value="voluptas"
+               value="rerum"
                data-component="body">
     <br>
-<p>Example: <code>voluptas</code></p>
+<p>Example: <code>rerum</code></p>
                     </div>
                                                                 <div style=" margin-left: 14px; clear: unset;">
         <details>
@@ -15471,10 +15471,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="customer_history_details.0.en.title"                data-endpoint="POSTapi-customer_histories"
-               value="itaque"
+               value="minima"
                data-component="body">
     <br>
-<p>Example: <code>itaque</code></p>
+<p>Example: <code>minima</code></p>
                     </div>
                                     </details>
         </div>
@@ -15493,10 +15493,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="customer_history_details.0.tc.title"                data-endpoint="POSTapi-customer_histories"
-               value="harum"
+               value="enim"
                data-component="body">
     <br>
-<p>Example: <code>harum</code></p>
+<p>Example: <code>enim</code></p>
                     </div>
                                     </details>
         </div>
@@ -15703,35 +15703,35 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
-    --form "order_no=hic"\
-    --form "name=deleniti"\
+    --form "order_no=quibusdam"\
+    --form "name=in"\
     --form "gender=F"\
-    --form "birthday=2023-09-04T02:01:37"\
-    --form "id_type=other"\
-    --form "hkid=ad"\
-    --form "tel=sit"\
-    --form "email=ymann@example.net"\
-    --form "contact_address=est"\
-    --form "medical_record=aut"\
+    --form "birthday=2023-09-07T01:01:03"\
+    --form "id_type=passport"\
+    --form "hkid=sint"\
+    --form "tel=distinctio"\
+    --form "email=jackeline31@example.com"\
+    --form "contact_address=esse"\
+    --form "medical_record=id"\
     --form "covid_diagnosed="\
     --form "covid_close_contacts="\
-    --form "covid_date=2023-09-04T02:01:37"\
-    --form "height=0"\
-    --form "weight=52"\
-    --form "blood_date=2023-09-04T02:01:37"\
-    --form "blood_time=quisquam"\
-    --form "address=sit"\
-    --form "report=whatsapp"\
-    --form "remark=quasi"\
-    --form "paid="\
-    --form "en[district]=ut"\
-    --form "en[subtitle]=a"\
-    --form "tc[district]=ut"\
-    --form "tc[subtitle]=minus"\
-    --form "customer_history_details[][price]=totam"\
-    --form "customer_history_details[][en][title]=quaerat"\
-    --form "customer_history_details[][tc][title]=quo"\
-    --form "report_pdf=@C:\Users\USER\AppData\Local\Temp\phpBDCE.tmp" </code></pre></div>
+    --form "covid_date=2023-09-07T01:01:03"\
+    --form "height=3"\
+    --form "weight=57"\
+    --form "blood_date=2023-09-07T01:01:03"\
+    --form "blood_time=quia"\
+    --form "address=aut"\
+    --form "report=email"\
+    --form "remark=provident"\
+    --form "paid=1"\
+    --form "en[district]=iusto"\
+    --form "en[subtitle]=ut"\
+    --form "tc[district]=laborum"\
+    --form "tc[subtitle]=quod"\
+    --form "customer_history_details[][price]=unde"\
+    --form "customer_history_details[][en][title]=hic"\
+    --form "customer_history_details[][tc][title]=assumenda"\
+    --form "report_pdf=@C:\Users\USER\AppData\Local\Temp\php5A76.tmp" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -15747,34 +15747,34 @@ const headers = {
 };
 
 const body = new FormData();
-body.append('order_no', 'hic');
-body.append('name', 'deleniti');
+body.append('order_no', 'quibusdam');
+body.append('name', 'in');
 body.append('gender', 'F');
-body.append('birthday', '2023-09-04T02:01:37');
-body.append('id_type', 'other');
-body.append('hkid', 'ad');
-body.append('tel', 'sit');
-body.append('email', 'ymann@example.net');
-body.append('contact_address', 'est');
-body.append('medical_record', 'aut');
+body.append('birthday', '2023-09-07T01:01:03');
+body.append('id_type', 'passport');
+body.append('hkid', 'sint');
+body.append('tel', 'distinctio');
+body.append('email', 'jackeline31@example.com');
+body.append('contact_address', 'esse');
+body.append('medical_record', 'id');
 body.append('covid_diagnosed', '');
 body.append('covid_close_contacts', '');
-body.append('covid_date', '2023-09-04T02:01:37');
-body.append('height', '0');
-body.append('weight', '52');
-body.append('blood_date', '2023-09-04T02:01:37');
-body.append('blood_time', 'quisquam');
-body.append('address', 'sit');
-body.append('report', 'whatsapp');
-body.append('remark', 'quasi');
-body.append('paid', '');
-body.append('en[district]', 'ut');
-body.append('en[subtitle]', 'a');
-body.append('tc[district]', 'ut');
-body.append('tc[subtitle]', 'minus');
-body.append('customer_history_details[][price]', 'totam');
-body.append('customer_history_details[][en][title]', 'quaerat');
-body.append('customer_history_details[][tc][title]', 'quo');
+body.append('covid_date', '2023-09-07T01:01:03');
+body.append('height', '3');
+body.append('weight', '57');
+body.append('blood_date', '2023-09-07T01:01:03');
+body.append('blood_time', 'quia');
+body.append('address', 'aut');
+body.append('report', 'email');
+body.append('remark', 'provident');
+body.append('paid', '1');
+body.append('en[district]', 'iusto');
+body.append('en[subtitle]', 'ut');
+body.append('tc[district]', 'laborum');
+body.append('tc[subtitle]', 'quod');
+body.append('customer_history_details[][price]', 'unde');
+body.append('customer_history_details[][en][title]', 'hic');
+body.append('customer_history_details[][tc][title]', 'assumenda');
 body.append('report_pdf', document.querySelector('input[name="report_pdf"]').files[0]);
 
 fetch(url, {
@@ -15798,11 +15798,11 @@ $response = $client-&gt;put(
         'multipart' =&gt; [
             [
                 'name' =&gt; 'order_no',
-                'contents' =&gt; 'hic'
+                'contents' =&gt; 'quibusdam'
             ],
             [
                 'name' =&gt; 'name',
-                'contents' =&gt; 'deleniti'
+                'contents' =&gt; 'in'
             ],
             [
                 'name' =&gt; 'gender',
@@ -15810,31 +15810,31 @@ $response = $client-&gt;put(
             ],
             [
                 'name' =&gt; 'birthday',
-                'contents' =&gt; '2023-09-04T02:01:37'
+                'contents' =&gt; '2023-09-07T01:01:03'
             ],
             [
                 'name' =&gt; 'id_type',
-                'contents' =&gt; 'other'
+                'contents' =&gt; 'passport'
             ],
             [
                 'name' =&gt; 'hkid',
-                'contents' =&gt; 'ad'
+                'contents' =&gt; 'sint'
             ],
             [
                 'name' =&gt; 'tel',
-                'contents' =&gt; 'sit'
+                'contents' =&gt; 'distinctio'
             ],
             [
                 'name' =&gt; 'email',
-                'contents' =&gt; 'ymann@example.net'
+                'contents' =&gt; 'jackeline31@example.com'
             ],
             [
                 'name' =&gt; 'contact_address',
-                'contents' =&gt; 'est'
+                'contents' =&gt; 'esse'
             ],
             [
                 'name' =&gt; 'medical_record',
-                'contents' =&gt; 'aut'
+                'contents' =&gt; 'id'
             ],
             [
                 'name' =&gt; 'covid_diagnosed',
@@ -15846,71 +15846,71 @@ $response = $client-&gt;put(
             ],
             [
                 'name' =&gt; 'covid_date',
-                'contents' =&gt; '2023-09-04T02:01:37'
+                'contents' =&gt; '2023-09-07T01:01:03'
             ],
             [
                 'name' =&gt; 'height',
-                'contents' =&gt; '0'
+                'contents' =&gt; '3'
             ],
             [
                 'name' =&gt; 'weight',
-                'contents' =&gt; '52'
+                'contents' =&gt; '57'
             ],
             [
                 'name' =&gt; 'blood_date',
-                'contents' =&gt; '2023-09-04T02:01:37'
+                'contents' =&gt; '2023-09-07T01:01:03'
             ],
             [
                 'name' =&gt; 'blood_time',
-                'contents' =&gt; 'quisquam'
+                'contents' =&gt; 'quia'
             ],
             [
                 'name' =&gt; 'address',
-                'contents' =&gt; 'sit'
+                'contents' =&gt; 'aut'
             ],
             [
                 'name' =&gt; 'report',
-                'contents' =&gt; 'whatsapp'
+                'contents' =&gt; 'email'
             ],
             [
                 'name' =&gt; 'remark',
-                'contents' =&gt; 'quasi'
+                'contents' =&gt; 'provident'
             ],
             [
                 'name' =&gt; 'paid',
-                'contents' =&gt; ''
+                'contents' =&gt; '1'
             ],
             [
                 'name' =&gt; 'en[district]',
-                'contents' =&gt; 'ut'
+                'contents' =&gt; 'iusto'
             ],
             [
                 'name' =&gt; 'en[subtitle]',
-                'contents' =&gt; 'a'
-            ],
-            [
-                'name' =&gt; 'tc[district]',
                 'contents' =&gt; 'ut'
             ],
             [
+                'name' =&gt; 'tc[district]',
+                'contents' =&gt; 'laborum'
+            ],
+            [
                 'name' =&gt; 'tc[subtitle]',
-                'contents' =&gt; 'minus'
+                'contents' =&gt; 'quod'
             ],
             [
                 'name' =&gt; 'customer_history_details[][price]',
-                'contents' =&gt; 'totam'
+                'contents' =&gt; 'unde'
             ],
             [
                 'name' =&gt; 'customer_history_details[][en][title]',
-                'contents' =&gt; 'quaerat'
+                'contents' =&gt; 'hic'
             ],
             [
                 'name' =&gt; 'customer_history_details[][tc][title]',
-                'contents' =&gt; 'quo'
+                'contents' =&gt; 'assumenda'
             ],
             [
                 'name' =&gt; 'report_pdf',
-                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\phpBDCE.tmp', 'r')
+                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\php5A76.tmp', 'r')
             ],
         ],
     ]
@@ -16047,10 +16047,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="order_no"                data-endpoint="PUTapi-customer_histories--id-"
-               value="hic"
+               value="quibusdam"
                data-component="body">
     <br>
-<p>Example: <code>hic</code></p>
+<p>Example: <code>quibusdam</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>name</code></b>&nbsp;&nbsp;
@@ -16058,10 +16058,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="PUTapi-customer_histories--id-"
-               value="deleniti"
+               value="in"
                data-component="body">
     <br>
-<p>Example: <code>deleniti</code></p>
+<p>Example: <code>in</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>gender</code></b>&nbsp;&nbsp;
@@ -16080,10 +16080,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="birthday"                data-endpoint="PUTapi-customer_histories--id-"
-               value="2023-09-04T02:01:37"
+               value="2023-09-07T01:01:03"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-04T02:01:37</code></p>
+<p>Must be a valid date. Example: <code>2023-09-07T01:01:03</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>id_type</code></b>&nbsp;&nbsp;
@@ -16091,10 +16091,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id_type"                data-endpoint="PUTapi-customer_histories--id-"
-               value="other"
+               value="passport"
                data-component="body">
     <br>
-<p>Must be one of <code>hkid</code>, <code>passport</code>, or <code>other</code>. Example: <code>other</code></p>
+<p>Must be one of <code>hkid</code>, <code>passport</code>, or <code>other</code>. Example: <code>passport</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>hkid</code></b>&nbsp;&nbsp;
@@ -16102,10 +16102,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="hkid"                data-endpoint="PUTapi-customer_histories--id-"
-               value="ad"
+               value="sint"
                data-component="body">
     <br>
-<p>Example: <code>ad</code></p>
+<p>Example: <code>sint</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>tel</code></b>&nbsp;&nbsp;
@@ -16113,10 +16113,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="tel"                data-endpoint="PUTapi-customer_histories--id-"
-               value="sit"
+               value="distinctio"
                data-component="body">
     <br>
-<p>Example: <code>sit</code></p>
+<p>Example: <code>distinctio</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -16124,10 +16124,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="PUTapi-customer_histories--id-"
-               value="ymann@example.net"
+               value="jackeline31@example.com"
                data-component="body">
     <br>
-<p>Example: <code>ymann@example.net</code></p>
+<p>Example: <code>jackeline31@example.com</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>contact_address</code></b>&nbsp;&nbsp;
@@ -16135,10 +16135,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="contact_address"                data-endpoint="PUTapi-customer_histories--id-"
-               value="est"
+               value="esse"
                data-component="body">
     <br>
-<p>Example: <code>est</code></p>
+<p>Example: <code>esse</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>medical_record</code></b>&nbsp;&nbsp;
@@ -16146,10 +16146,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="medical_record"                data-endpoint="PUTapi-customer_histories--id-"
-               value="aut"
+               value="id"
                data-component="body">
     <br>
-<p>Example: <code>aut</code></p>
+<p>Example: <code>id</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>covid_diagnosed</code></b>&nbsp;&nbsp;
@@ -16199,10 +16199,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="covid_date"                data-endpoint="PUTapi-customer_histories--id-"
-               value="2023-09-04T02:01:37"
+               value="2023-09-07T01:01:03"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-04T02:01:37</code></p>
+<p>Must be a valid date. Example: <code>2023-09-07T01:01:03</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>height</code></b>&nbsp;&nbsp;
@@ -16210,10 +16210,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="height"                data-endpoint="PUTapi-customer_histories--id-"
-               value="0"
+               value="3"
                data-component="body">
     <br>
-<p>Must be between 0 and 3 digits. Example: <code>0</code></p>
+<p>Must be between 0 and 3 digits. Example: <code>3</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>weight</code></b>&nbsp;&nbsp;
@@ -16221,10 +16221,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="weight"                data-endpoint="PUTapi-customer_histories--id-"
-               value="52"
+               value="57"
                data-component="body">
     <br>
-<p>Must be between 0 and 3 digits. Example: <code>52</code></p>
+<p>Must be between 0 and 3 digits. Example: <code>57</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>blood_date</code></b>&nbsp;&nbsp;
@@ -16232,10 +16232,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="blood_date"                data-endpoint="PUTapi-customer_histories--id-"
-               value="2023-09-04T02:01:37"
+               value="2023-09-07T01:01:03"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-04T02:01:37</code></p>
+<p>Must be a valid date. Example: <code>2023-09-07T01:01:03</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>blood_time</code></b>&nbsp;&nbsp;
@@ -16243,10 +16243,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="blood_time"                data-endpoint="PUTapi-customer_histories--id-"
-               value="quisquam"
+               value="quia"
                data-component="body">
     <br>
-<p>Example: <code>quisquam</code></p>
+<p>Example: <code>quia</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
@@ -16254,10 +16254,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="address"                data-endpoint="PUTapi-customer_histories--id-"
-               value="sit"
+               value="aut"
                data-component="body">
     <br>
-<p>Example: <code>sit</code></p>
+<p>Example: <code>aut</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>report</code></b>&nbsp;&nbsp;
@@ -16265,10 +16265,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="report"                data-endpoint="PUTapi-customer_histories--id-"
-               value="whatsapp"
+               value="email"
                data-component="body">
     <br>
-<p>Must be one of <code>email</code>, <code>whatsapp</code>, or <code>post</code>. Example: <code>whatsapp</code></p>
+<p>Must be one of <code>email</code>, <code>whatsapp</code>, or <code>post</code>. Example: <code>email</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>remark</code></b>&nbsp;&nbsp;
@@ -16276,10 +16276,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="remark"                data-endpoint="PUTapi-customer_histories--id-"
-               value="quasi"
+               value="provident"
                data-component="body">
     <br>
-<p>Example: <code>quasi</code></p>
+<p>Example: <code>provident</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>paid</code></b>&nbsp;&nbsp;
@@ -16300,7 +16300,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>false</code></p>
+<p>Example: <code>true</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
         <details>
@@ -16317,10 +16317,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="en.district"                data-endpoint="PUTapi-customer_histories--id-"
-               value="ut"
+               value="iusto"
                data-component="body">
     <br>
-<p>Example: <code>ut</code></p>
+<p>Example: <code>iusto</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>subtitle</code></b>&nbsp;&nbsp;
@@ -16328,10 +16328,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="en.subtitle"                data-endpoint="PUTapi-customer_histories--id-"
-               value="a"
+               value="ut"
                data-component="body">
     <br>
-<p>Example: <code>a</code></p>
+<p>Example: <code>ut</code></p>
                     </div>
                                     </details>
         </div>
@@ -16350,10 +16350,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="tc.district"                data-endpoint="PUTapi-customer_histories--id-"
-               value="ut"
+               value="laborum"
                data-component="body">
     <br>
-<p>Example: <code>ut</code></p>
+<p>Example: <code>laborum</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>subtitle</code></b>&nbsp;&nbsp;
@@ -16361,10 +16361,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="tc.subtitle"                data-endpoint="PUTapi-customer_histories--id-"
-               value="minus"
+               value="quod"
                data-component="body">
     <br>
-<p>Example: <code>minus</code></p>
+<p>Example: <code>quod</code></p>
                     </div>
                                     </details>
         </div>
@@ -16377,7 +16377,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be a file. Example: <code>C:\Users\USER\AppData\Local\Temp\phpBDCE.tmp</code></p>
+<p>Must be a file. Example: <code>C:\Users\USER\AppData\Local\Temp\php5A76.tmp</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
         <details>
@@ -16394,10 +16394,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="customer_history_details.0.price"                data-endpoint="PUTapi-customer_histories--id-"
-               value="totam"
+               value="unde"
                data-component="body">
     <br>
-<p>Example: <code>totam</code></p>
+<p>Example: <code>unde</code></p>
                     </div>
                                                                 <div style=" margin-left: 14px; clear: unset;">
         <details>
@@ -16414,10 +16414,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="customer_history_details.0.en.title"                data-endpoint="PUTapi-customer_histories--id-"
-               value="quaerat"
+               value="hic"
                data-component="body">
     <br>
-<p>Example: <code>quaerat</code></p>
+<p>Example: <code>hic</code></p>
                     </div>
                                     </details>
         </div>
@@ -16436,10 +16436,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="customer_history_details.0.tc.title"                data-endpoint="PUTapi-customer_histories--id-"
-               value="quo"
+               value="assumenda"
                data-component="body">
     <br>
-<p>Example: <code>quo</code></p>
+<p>Example: <code>assumenda</code></p>
                     </div>
                                     </details>
         </div>
@@ -16626,7 +16626,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://chees-api.dev.com/api/timeslots?s=placeat&amp;p=5&amp;sort=-available_date&amp;filter%5Bavailable%5D=corporis&amp;filter%5Benable%5D=11" \
+    --get "https://chees-api.dev.com/api/timeslots?s=deleniti&amp;p=1&amp;sort=-available_date&amp;filter%5Bavailable%5D=sed&amp;filter%5Benable%5D=19" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -16639,11 +16639,11 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "s": "placeat",
-    "p": "5",
+    "s": "deleniti",
+    "p": "1",
     "sort": "-available_date",
-    "filter[available]": "corporis",
-    "filter[enable]": "11",
+    "filter[available]": "sed",
+    "filter[enable]": "19",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -16673,11 +16673,11 @@ $response = $client-&gt;get(
             'Accept-Language' =&gt; 'en',
         ],
         'query' =&gt; [
-            's' =&gt; 'placeat',
-            'p' =&gt; '5',
+            's' =&gt; 'deleniti',
+            'p' =&gt; '1',
             'sort' =&gt; '-available_date',
-            'filter[available]' =&gt; 'corporis',
-            'filter[enable]' =&gt; '11',
+            'filter[available]' =&gt; 'sed',
+            'filter[enable]' =&gt; '19',
         ],
     ]
 );
@@ -16802,10 +16802,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="s"                data-endpoint="GETapi-timeslots"
-               value="placeat"
+               value="deleniti"
                data-component="query">
     <br>
-<p>Search keyword Example: <code>placeat</code></p>
+<p>Search keyword Example: <code>deleniti</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>p</code></b>&nbsp;&nbsp;
@@ -16813,10 +16813,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="p"                data-endpoint="GETapi-timeslots"
-               value="5"
+               value="1"
                data-component="query">
     <br>
-<p>Page number, default=20 Example: <code>5</code></p>
+<p>Page number, default=20 Example: <code>1</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>sort</code></b>&nbsp;&nbsp;
@@ -16835,10 +16835,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[available]"                data-endpoint="GETapi-timeslots"
-               value="corporis"
+               value="sed"
                data-component="query">
     <br>
-<p>Filter by available Example: <code>corporis</code></p>
+<p>Filter by available Example: <code>sed</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[enable]</code></b>&nbsp;&nbsp;
@@ -16846,10 +16846,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="filter[enable]"                data-endpoint="GETapi-timeslots"
-               value="11"
+               value="19"
                data-component="query">
     <br>
-<p>Filter by enable Example: <code>11</code></p>
+<p>Filter by enable Example: <code>19</code></p>
             </div>
                 </form>
 
@@ -16873,13 +16873,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --data "{
-    \"date_from\": \"2023-09-04T02:01:37\",
-    \"date_to\": \"2023-09-04T02:01:37\",
-    \"time_from\": \"02:01:37\",
-    \"time_to\": \"02:01:37\",
-    \"interval\": 12,
-    \"enable\": true,
-    \"quota\": 10
+    \"date_from\": \"2023-09-07T01:01:03\",
+    \"date_to\": \"2023-09-07T01:01:03\",
+    \"time_from\": \"01:01:03\",
+    \"time_to\": \"01:01:03\",
+    \"interval\": 10,
+    \"enable\": false,
+    \"quota\": 2
 }"
 </code></pre></div>
 
@@ -16897,13 +16897,13 @@ const headers = {
 };
 
 let body = {
-    "date_from": "2023-09-04T02:01:37",
-    "date_to": "2023-09-04T02:01:37",
-    "time_from": "02:01:37",
-    "time_to": "02:01:37",
-    "interval": 12,
-    "enable": true,
-    "quota": 10
+    "date_from": "2023-09-07T01:01:03",
+    "date_to": "2023-09-07T01:01:03",
+    "time_from": "01:01:03",
+    "time_to": "01:01:03",
+    "interval": 10,
+    "enable": false,
+    "quota": 2
 };
 
 fetch(url, {
@@ -16925,13 +16925,13 @@ $response = $client-&gt;post(
             'Accept-Language' =&gt; 'en',
         ],
         'json' =&gt; [
-            'date_from' =&gt; '2023-09-04T02:01:37',
-            'date_to' =&gt; '2023-09-04T02:01:37',
-            'time_from' =&gt; '02:01:37',
-            'time_to' =&gt; '02:01:37',
-            'interval' =&gt; 12,
-            'enable' =&gt; true,
-            'quota' =&gt; 10,
+            'date_from' =&gt; '2023-09-07T01:01:03',
+            'date_to' =&gt; '2023-09-07T01:01:03',
+            'time_from' =&gt; '01:01:03',
+            'time_to' =&gt; '01:01:03',
+            'interval' =&gt; 10,
+            'enable' =&gt; false,
+            'quota' =&gt; 2,
         ],
     ]
 );
@@ -17040,10 +17040,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="date_from"                data-endpoint="POSTapi-timeslots"
-               value="2023-09-04T02:01:37"
+               value="2023-09-07T01:01:03"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-04T02:01:37</code></p>
+<p>Must be a valid date. Example: <code>2023-09-07T01:01:03</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>date_to</code></b>&nbsp;&nbsp;
@@ -17051,10 +17051,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="date_to"                data-endpoint="POSTapi-timeslots"
-               value="2023-09-04T02:01:37"
+               value="2023-09-07T01:01:03"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-04T02:01:37</code></p>
+<p>Must be a valid date. Example: <code>2023-09-07T01:01:03</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>time_from</code></b>&nbsp;&nbsp;
@@ -17062,10 +17062,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="time_from"                data-endpoint="POSTapi-timeslots"
-               value="02:01:37"
+               value="01:01:03"
                data-component="body">
     <br>
-<p>Must be a valid date in the format <code>H:i:s</code>. Example: <code>02:01:37</code></p>
+<p>Must be a valid date in the format <code>H:i:s</code>. Example: <code>01:01:03</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>time_to</code></b>&nbsp;&nbsp;
@@ -17073,10 +17073,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="time_to"                data-endpoint="POSTapi-timeslots"
-               value="02:01:37"
+               value="01:01:03"
                data-component="body">
     <br>
-<p>Must be a valid date in the format <code>H:i:s</code>. Example: <code>02:01:37</code></p>
+<p>Must be a valid date in the format <code>H:i:s</code>. Example: <code>01:01:03</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>interval</code></b>&nbsp;&nbsp;
@@ -17084,10 +17084,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="interval"                data-endpoint="POSTapi-timeslots"
-               value="12"
+               value="10"
                data-component="body">
     <br>
-<p>Example: <code>12</code></p>
+<p>Example: <code>10</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>enable</code></b>&nbsp;&nbsp;
@@ -17108,7 +17108,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>true</code></p>
+<p>Example: <code>false</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>quota</code></b>&nbsp;&nbsp;
@@ -17116,10 +17116,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="quota"                data-endpoint="POSTapi-timeslots"
-               value="10"
+               value="2"
                data-component="body">
     <br>
-<p>Example: <code>10</code></p>
+<p>Example: <code>2</code></p>
         </div>
         </form>
 
@@ -17323,10 +17323,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --data "{
-    \"available_date\": \"2023-09-04T02:01:37\",
-    \"enable\": true,
+    \"available_date\": \"2023-09-07T01:01:03\",
+    \"enable\": false,
     \"timeslot_quotas\": [
-        \"qui\"
+        \"esse\"
     ]
 }"
 </code></pre></div>
@@ -17345,10 +17345,10 @@ const headers = {
 };
 
 let body = {
-    "available_date": "2023-09-04T02:01:37",
-    "enable": true,
+    "available_date": "2023-09-07T01:01:03",
+    "enable": false,
     "timeslot_quotas": [
-        "qui"
+        "esse"
     ]
 };
 
@@ -17371,10 +17371,10 @@ $response = $client-&gt;put(
             'Accept-Language' =&gt; 'en',
         ],
         'json' =&gt; [
-            'available_date' =&gt; '2023-09-04T02:01:37',
-            'enable' =&gt; true,
+            'available_date' =&gt; '2023-09-07T01:01:03',
+            'enable' =&gt; false,
             'timeslot_quotas' =&gt; [
-                'qui',
+                'esse',
             ],
         ],
     ]
@@ -17500,10 +17500,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="available_date"                data-endpoint="PUTapi-timeslots--id-"
-               value="2023-09-04T02:01:37"
+               value="2023-09-07T01:01:03"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-04T02:01:37</code></p>
+<p>Must be a valid date. Example: <code>2023-09-07T01:01:03</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>enable</code></b>&nbsp;&nbsp;
@@ -17524,7 +17524,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>true</code></p>
+<p>Example: <code>false</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
         <details>
@@ -17541,10 +17541,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="timeslot_quotas.0.id"                data-endpoint="PUTapi-timeslots--id-"
-               value="14"
+               value="2"
                data-component="body">
     <br>
-<p>Example: <code>14</code></p>
+<p>Example: <code>2</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>from</code></b>&nbsp;&nbsp;
@@ -17552,10 +17552,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="timeslot_quotas.0.from"                data-endpoint="PUTapi-timeslots--id-"
-               value="02:01:37"
+               value="01:01:03"
                data-component="body">
     <br>
-<p>Must be a valid date in the format <code>H:i:s</code>. Example: <code>02:01:37</code></p>
+<p>Must be a valid date in the format <code>H:i:s</code>. Example: <code>01:01:03</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>to</code></b>&nbsp;&nbsp;
@@ -17563,10 +17563,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="timeslot_quotas.0.to"                data-endpoint="PUTapi-timeslots--id-"
-               value="02:01:37"
+               value="01:01:03"
                data-component="body">
     <br>
-<p>Must be a valid date in the format <code>H:i:s</code>. Example: <code>02:01:37</code></p>
+<p>Must be a valid date in the format <code>H:i:s</code>. Example: <code>01:01:03</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>quota</code></b>&nbsp;&nbsp;
@@ -17762,7 +17762,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://chees-api.dev.com/api/latest_news?s=voluptatibus&amp;p=9&amp;sort=-news_date&amp;filter%5Bsequence%5D=dignissimos&amp;filter%5Bslug%5D=alias&amp;filter%5Bnews_date%5D=qui&amp;filter%5Benable%5D=asperiores" \
+    --get "https://chees-api.dev.com/api/latest_news?s=totam&amp;p=5&amp;sort=-news_date&amp;filter%5Bsequence%5D=tenetur&amp;filter%5Bslug%5D=voluptatibus&amp;filter%5Bnews_date%5D=corporis&amp;filter%5Benable%5D=perferendis" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -17775,13 +17775,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "s": "voluptatibus",
-    "p": "9",
+    "s": "totam",
+    "p": "5",
     "sort": "-news_date",
-    "filter[sequence]": "dignissimos",
-    "filter[slug]": "alias",
-    "filter[news_date]": "qui",
-    "filter[enable]": "asperiores",
+    "filter[sequence]": "tenetur",
+    "filter[slug]": "voluptatibus",
+    "filter[news_date]": "corporis",
+    "filter[enable]": "perferendis",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -17811,13 +17811,13 @@ $response = $client-&gt;get(
             'Accept-Language' =&gt; 'en',
         ],
         'query' =&gt; [
-            's' =&gt; 'voluptatibus',
-            'p' =&gt; '9',
+            's' =&gt; 'totam',
+            'p' =&gt; '5',
             'sort' =&gt; '-news_date',
-            'filter[sequence]' =&gt; 'dignissimos',
-            'filter[slug]' =&gt; 'alias',
-            'filter[news_date]' =&gt; 'qui',
-            'filter[enable]' =&gt; 'asperiores',
+            'filter[sequence]' =&gt; 'tenetur',
+            'filter[slug]' =&gt; 'voluptatibus',
+            'filter[news_date]' =&gt; 'corporis',
+            'filter[enable]' =&gt; 'perferendis',
         ],
     ]
 );
@@ -17942,10 +17942,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="s"                data-endpoint="GETapi-latest_news"
-               value="voluptatibus"
+               value="totam"
                data-component="query">
     <br>
-<p>Search keyword Example: <code>voluptatibus</code></p>
+<p>Search keyword Example: <code>totam</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>p</code></b>&nbsp;&nbsp;
@@ -17953,10 +17953,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="p"                data-endpoint="GETapi-latest_news"
-               value="9"
+               value="5"
                data-component="query">
     <br>
-<p>Page number, default=20 Example: <code>9</code></p>
+<p>Page number, default=20 Example: <code>5</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>sort</code></b>&nbsp;&nbsp;
@@ -17975,10 +17975,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[sequence]"                data-endpoint="GETapi-latest_news"
-               value="dignissimos"
+               value="tenetur"
                data-component="query">
     <br>
-<p>Filter by sequence Example: <code>dignissimos</code></p>
+<p>Filter by sequence Example: <code>tenetur</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[slug]</code></b>&nbsp;&nbsp;
@@ -17986,10 +17986,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[slug]"                data-endpoint="GETapi-latest_news"
-               value="alias"
+               value="voluptatibus"
                data-component="query">
     <br>
-<p>Filter by slug Example: <code>alias</code></p>
+<p>Filter by slug Example: <code>voluptatibus</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[news_date]</code></b>&nbsp;&nbsp;
@@ -17997,10 +17997,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[news_date]"                data-endpoint="GETapi-latest_news"
-               value="qui"
+               value="corporis"
                data-component="query">
     <br>
-<p>Filter by news_date Example: <code>qui</code></p>
+<p>Filter by news_date Example: <code>corporis</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[enable]</code></b>&nbsp;&nbsp;
@@ -18008,10 +18008,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[enable]"                data-endpoint="GETapi-latest_news"
-               value="asperiores"
+               value="perferendis"
                data-component="query">
     <br>
-<p>Filter by enable Example: <code>asperiores</code></p>
+<p>Filter by enable Example: <code>perferendis</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[translations.title]</code></b>&nbsp;&nbsp;
@@ -18019,10 +18019,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[translations.title]"                data-endpoint="GETapi-latest_news"
-               value="animi"
+               value="quaerat"
                data-component="query">
     <br>
-<p>Filter by title Example: <code>animi</code></p>
+<p>Filter by title Example: <code>quaerat</code></p>
             </div>
                 </form>
 
@@ -18045,15 +18045,15 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
-    --form "news_date=2023-09-04T02:01:37"\
-    --form "enable="\
-    --form "en[title]=aliquid"\
-    --form "en[introduction]=quos"\
-    --form "en[description]=Totam quibusdam cum qui."\
-    --form "tc[title]=rerum"\
-    --form "tc[introduction]=eligendi"\
-    --form "tc[description]=Sapiente aut qui tempore dolorum et."\
-    --form "image=@C:\Users\USER\AppData\Local\Temp\phpBDEE.tmp" </code></pre></div>
+    --form "news_date=2023-09-07T01:01:03"\
+    --form "enable=1"\
+    --form "en[title]=corrupti"\
+    --form "en[introduction]=ab"\
+    --form "en[description]=Consequatur ullam illo suscipit quos."\
+    --form "tc[title]=doloremque"\
+    --form "tc[introduction]=quis"\
+    --form "tc[description]=Deleniti tempore dolores architecto qui est a dolorem."\
+    --form "image=@C:\Users\USER\AppData\Local\Temp\php5AA6.tmp" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -18069,14 +18069,14 @@ const headers = {
 };
 
 const body = new FormData();
-body.append('news_date', '2023-09-04T02:01:37');
-body.append('enable', '');
-body.append('en[title]', 'aliquid');
-body.append('en[introduction]', 'quos');
-body.append('en[description]', 'Totam quibusdam cum qui.');
-body.append('tc[title]', 'rerum');
-body.append('tc[introduction]', 'eligendi');
-body.append('tc[description]', 'Sapiente aut qui tempore dolorum et.');
+body.append('news_date', '2023-09-07T01:01:03');
+body.append('enable', '1');
+body.append('en[title]', 'corrupti');
+body.append('en[introduction]', 'ab');
+body.append('en[description]', 'Consequatur ullam illo suscipit quos.');
+body.append('tc[title]', 'doloremque');
+body.append('tc[introduction]', 'quis');
+body.append('tc[description]', 'Deleniti tempore dolores architecto qui est a dolorem.');
 body.append('image', document.querySelector('input[name="image"]').files[0]);
 
 fetch(url, {
@@ -18100,39 +18100,39 @@ $response = $client-&gt;post(
         'multipart' =&gt; [
             [
                 'name' =&gt; 'news_date',
-                'contents' =&gt; '2023-09-04T02:01:37'
+                'contents' =&gt; '2023-09-07T01:01:03'
             ],
             [
                 'name' =&gt; 'enable',
-                'contents' =&gt; ''
+                'contents' =&gt; '1'
             ],
             [
                 'name' =&gt; 'en[title]',
-                'contents' =&gt; 'aliquid'
+                'contents' =&gt; 'corrupti'
             ],
             [
                 'name' =&gt; 'en[introduction]',
-                'contents' =&gt; 'quos'
+                'contents' =&gt; 'ab'
             ],
             [
                 'name' =&gt; 'en[description]',
-                'contents' =&gt; 'Totam quibusdam cum qui.'
+                'contents' =&gt; 'Consequatur ullam illo suscipit quos.'
             ],
             [
                 'name' =&gt; 'tc[title]',
-                'contents' =&gt; 'rerum'
+                'contents' =&gt; 'doloremque'
             ],
             [
                 'name' =&gt; 'tc[introduction]',
-                'contents' =&gt; 'eligendi'
+                'contents' =&gt; 'quis'
             ],
             [
                 'name' =&gt; 'tc[description]',
-                'contents' =&gt; 'Sapiente aut qui tempore dolorum et.'
+                'contents' =&gt; 'Deleniti tempore dolores architecto qui est a dolorem.'
             ],
             [
                 'name' =&gt; 'image',
-                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\phpBDEE.tmp', 'r')
+                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\php5AA6.tmp', 'r')
             ],
         ],
     ]
@@ -18242,10 +18242,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="news_date"                data-endpoint="POSTapi-latest_news"
-               value="2023-09-04T02:01:37"
+               value="2023-09-07T01:01:03"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-04T02:01:37</code></p>
+<p>Must be a valid date. Example: <code>2023-09-07T01:01:03</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>enable</code></b>&nbsp;&nbsp;
@@ -18266,7 +18266,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>false</code></p>
+<p>Example: <code>true</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
         <details>
@@ -18283,10 +18283,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="en.title"                data-endpoint="POSTapi-latest_news"
-               value="aliquid"
+               value="corrupti"
                data-component="body">
     <br>
-<p>Example: <code>aliquid</code></p>
+<p>Example: <code>corrupti</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>introduction</code></b>&nbsp;&nbsp;
@@ -18294,10 +18294,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="en.introduction"                data-endpoint="POSTapi-latest_news"
-               value="quos"
+               value="ab"
                data-component="body">
     <br>
-<p>Example: <code>quos</code></p>
+<p>Example: <code>ab</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -18305,10 +18305,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="en.description"                data-endpoint="POSTapi-latest_news"
-               value="Totam quibusdam cum qui."
+               value="Consequatur ullam illo suscipit quos."
                data-component="body">
     <br>
-<p>Example: <code>Totam quibusdam cum qui.</code></p>
+<p>Example: <code>Consequatur ullam illo suscipit quos.</code></p>
                     </div>
                                     </details>
         </div>
@@ -18327,10 +18327,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="tc.title"                data-endpoint="POSTapi-latest_news"
-               value="rerum"
+               value="doloremque"
                data-component="body">
     <br>
-<p>Example: <code>rerum</code></p>
+<p>Example: <code>doloremque</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>introduction</code></b>&nbsp;&nbsp;
@@ -18338,10 +18338,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="tc.introduction"                data-endpoint="POSTapi-latest_news"
-               value="eligendi"
+               value="quis"
                data-component="body">
     <br>
-<p>Example: <code>eligendi</code></p>
+<p>Example: <code>quis</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -18349,10 +18349,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="tc.description"                data-endpoint="POSTapi-latest_news"
-               value="Sapiente aut qui tempore dolorum et."
+               value="Deleniti tempore dolores architecto qui est a dolorem."
                data-component="body">
     <br>
-<p>Example: <code>Sapiente aut qui tempore dolorum et.</code></p>
+<p>Example: <code>Deleniti tempore dolores architecto qui est a dolorem.</code></p>
                     </div>
                                     </details>
         </div>
@@ -18365,7 +18365,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\phpBDEE.tmp</code></p>
+<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\php5AA6.tmp</code></p>
         </div>
         </form>
 
@@ -18383,7 +18383,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://chees-api.dev.com/api/latest_news/12" \
+    --get "https://chees-api.dev.com/api/latest_news/6" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -18392,7 +18392,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://chees-api.dev.com/api/latest_news/12"
+    "https://chees-api.dev.com/api/latest_news/6"
 );
 
 const headers = {
@@ -18411,7 +18411,7 @@ fetch(url, {
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
 $response = $client-&gt;get(
-    'https://chees-api.dev.com/api/latest_news/12',
+    'https://chees-api.dev.com/api/latest_news/6',
     [
         'headers' =&gt; [
             'Authorization' =&gt; 'Bearer {YOUR_AUTH_KEY}',
@@ -18542,10 +18542,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="GETapi-latest_news--id-"
-               value="12"
+               value="6"
                data-component="url">
     <br>
-<p>The ID of the latest news. Example: <code>12</code></p>
+<p>The ID of the latest news. Example: <code>6</code></p>
             </div>
                     </form>
 
@@ -18563,25 +18563,25 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "https://chees-api.dev.com/api/latest_news/4" \
+    "https://chees-api.dev.com/api/latest_news/14" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
-    --form "news_date=2023-09-04T02:01:37"\
-    --form "enable="\
-    --form "en[title]=ipsa"\
+    --form "news_date=2023-09-07T01:01:03"\
+    --form "enable=1"\
+    --form "en[title]=est"\
     --form "en[introduction]=quia"\
-    --form "en[description]=Quia voluptate harum ratione tenetur eligendi."\
-    --form "tc[title]=ipsa"\
-    --form "tc[introduction]=velit"\
-    --form "tc[description]=Ut nemo illum molestiae."\
-    --form "image=@C:\Users\USER\AppData\Local\Temp\phpBDEF.tmp" </code></pre></div>
+    --form "en[description]=Aut sit accusamus adipisci id et id."\
+    --form "tc[title]=alias"\
+    --form "tc[introduction]=deserunt"\
+    --form "tc[description]=Velit aut quisquam voluptatem quo maiores ea."\
+    --form "image=@C:\Users\USER\AppData\Local\Temp\php5AA7.tmp" </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://chees-api.dev.com/api/latest_news/4"
+    "https://chees-api.dev.com/api/latest_news/14"
 );
 
 const headers = {
@@ -18592,14 +18592,14 @@ const headers = {
 };
 
 const body = new FormData();
-body.append('news_date', '2023-09-04T02:01:37');
-body.append('enable', '');
-body.append('en[title]', 'ipsa');
+body.append('news_date', '2023-09-07T01:01:03');
+body.append('enable', '1');
+body.append('en[title]', 'est');
 body.append('en[introduction]', 'quia');
-body.append('en[description]', 'Quia voluptate harum ratione tenetur eligendi.');
-body.append('tc[title]', 'ipsa');
-body.append('tc[introduction]', 'velit');
-body.append('tc[description]', 'Ut nemo illum molestiae.');
+body.append('en[description]', 'Aut sit accusamus adipisci id et id.');
+body.append('tc[title]', 'alias');
+body.append('tc[introduction]', 'deserunt');
+body.append('tc[description]', 'Velit aut quisquam voluptatem quo maiores ea.');
 body.append('image', document.querySelector('input[name="image"]').files[0]);
 
 fetch(url, {
@@ -18612,7 +18612,7 @@ fetch(url, {
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
 $response = $client-&gt;put(
-    'https://chees-api.dev.com/api/latest_news/4',
+    'https://chees-api.dev.com/api/latest_news/14',
     [
         'headers' =&gt; [
             'Authorization' =&gt; 'Bearer {YOUR_AUTH_KEY}',
@@ -18623,15 +18623,15 @@ $response = $client-&gt;put(
         'multipart' =&gt; [
             [
                 'name' =&gt; 'news_date',
-                'contents' =&gt; '2023-09-04T02:01:37'
+                'contents' =&gt; '2023-09-07T01:01:03'
             ],
             [
                 'name' =&gt; 'enable',
-                'contents' =&gt; ''
+                'contents' =&gt; '1'
             ],
             [
                 'name' =&gt; 'en[title]',
-                'contents' =&gt; 'ipsa'
+                'contents' =&gt; 'est'
             ],
             [
                 'name' =&gt; 'en[introduction]',
@@ -18639,23 +18639,23 @@ $response = $client-&gt;put(
             ],
             [
                 'name' =&gt; 'en[description]',
-                'contents' =&gt; 'Quia voluptate harum ratione tenetur eligendi.'
+                'contents' =&gt; 'Aut sit accusamus adipisci id et id.'
             ],
             [
                 'name' =&gt; 'tc[title]',
-                'contents' =&gt; 'ipsa'
+                'contents' =&gt; 'alias'
             ],
             [
                 'name' =&gt; 'tc[introduction]',
-                'contents' =&gt; 'velit'
+                'contents' =&gt; 'deserunt'
             ],
             [
                 'name' =&gt; 'tc[description]',
-                'contents' =&gt; 'Ut nemo illum molestiae.'
+                'contents' =&gt; 'Velit aut quisquam voluptatem quo maiores ea.'
             ],
             [
                 'name' =&gt; 'image',
-                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\phpBDEF.tmp', 'r')
+                'contents' =&gt; fopen('C:\Users\USER\AppData\Local\Temp\php5AA7.tmp', 'r')
             ],
         ],
     ]
@@ -18769,10 +18769,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="PUTapi-latest_news--id-"
-               value="4"
+               value="14"
                data-component="url">
     <br>
-<p>The ID of the latest news. Example: <code>4</code></p>
+<p>The ID of the latest news. Example: <code>14</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -18781,10 +18781,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="news_date"                data-endpoint="PUTapi-latest_news--id-"
-               value="2023-09-04T02:01:37"
+               value="2023-09-07T01:01:03"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-04T02:01:37</code></p>
+<p>Must be a valid date. Example: <code>2023-09-07T01:01:03</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>enable</code></b>&nbsp;&nbsp;
@@ -18805,7 +18805,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>false</code></p>
+<p>Example: <code>true</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
         <details>
@@ -18822,10 +18822,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="en.title"                data-endpoint="PUTapi-latest_news--id-"
-               value="ipsa"
+               value="est"
                data-component="body">
     <br>
-<p>Example: <code>ipsa</code></p>
+<p>Example: <code>est</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>introduction</code></b>&nbsp;&nbsp;
@@ -18844,10 +18844,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="en.description"                data-endpoint="PUTapi-latest_news--id-"
-               value="Quia voluptate harum ratione tenetur eligendi."
+               value="Aut sit accusamus adipisci id et id."
                data-component="body">
     <br>
-<p>Example: <code>Quia voluptate harum ratione tenetur eligendi.</code></p>
+<p>Example: <code>Aut sit accusamus adipisci id et id.</code></p>
                     </div>
                                     </details>
         </div>
@@ -18866,10 +18866,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="tc.title"                data-endpoint="PUTapi-latest_news--id-"
-               value="ipsa"
+               value="alias"
                data-component="body">
     <br>
-<p>Example: <code>ipsa</code></p>
+<p>Example: <code>alias</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>introduction</code></b>&nbsp;&nbsp;
@@ -18877,10 +18877,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="tc.introduction"                data-endpoint="PUTapi-latest_news--id-"
-               value="velit"
+               value="deserunt"
                data-component="body">
     <br>
-<p>Example: <code>velit</code></p>
+<p>Example: <code>deserunt</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -18888,10 +18888,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="tc.description"                data-endpoint="PUTapi-latest_news--id-"
-               value="Ut nemo illum molestiae."
+               value="Velit aut quisquam voluptatem quo maiores ea."
                data-component="body">
     <br>
-<p>Example: <code>Ut nemo illum molestiae.</code></p>
+<p>Example: <code>Velit aut quisquam voluptatem quo maiores ea.</code></p>
                     </div>
                                     </details>
         </div>
@@ -18904,7 +18904,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\phpBDEF.tmp</code></p>
+<p>Must be an image. Example: <code>C:\Users\USER\AppData\Local\Temp\php5AA7.tmp</code></p>
         </div>
         </form>
 
@@ -18922,7 +18922,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "https://chees-api.dev.com/api/latest_news/18" \
+    "https://chees-api.dev.com/api/latest_news/12" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -18931,7 +18931,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://chees-api.dev.com/api/latest_news/18"
+    "https://chees-api.dev.com/api/latest_news/12"
 );
 
 const headers = {
@@ -18950,7 +18950,7 @@ fetch(url, {
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
 $response = $client-&gt;delete(
-    'https://chees-api.dev.com/api/latest_news/18',
+    'https://chees-api.dev.com/api/latest_news/12',
     [
         'headers' =&gt; [
             'Authorization' =&gt; 'Bearer {YOUR_AUTH_KEY}',
@@ -19065,10 +19065,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="DELETEapi-latest_news--id-"
-               value="18"
+               value="12"
                data-component="url">
     <br>
-<p>The ID of the latest news. Example: <code>18</code></p>
+<p>The ID of the latest news. Example: <code>12</code></p>
             </div>
                     </form>
 
@@ -19092,8 +19092,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --data "{
-    \"id\": 12,
-    \"sequence\": 10
+    \"id\": 14,
+    \"sequence\": 6
 }"
 </code></pre></div>
 
@@ -19111,8 +19111,8 @@ const headers = {
 };
 
 let body = {
-    "id": 12,
-    "sequence": 10
+    "id": 14,
+    "sequence": 6
 };
 
 fetch(url, {
@@ -19134,8 +19134,8 @@ $response = $client-&gt;post(
             'Accept-Language' =&gt; 'en',
         ],
         'json' =&gt; [
-            'id' =&gt; 12,
-            'sequence' =&gt; 10,
+            'id' =&gt; 14,
+            'sequence' =&gt; 6,
         ],
     ]
 );
@@ -19244,10 +19244,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="POSTapi-row_updates-latest_news"
-               value="12"
+               value="14"
                data-component="body">
     <br>
-<p>The id of the record Example: <code>12</code></p>
+<p>The id of the record Example: <code>14</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>sequence</code></b>&nbsp;&nbsp;
@@ -19255,10 +19255,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="sequence"                data-endpoint="POSTapi-row_updates-latest_news"
-               value="10"
+               value="6"
                data-component="body">
     <br>
-<p>The sequence of the record Example: <code>10</code></p>
+<p>The sequence of the record Example: <code>6</code></p>
         </div>
         </form>
 
@@ -19283,7 +19283,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept-Language: en" \
     --data "{
     \"rows\": [
-        \"voluptas\"
+        \"eaque\"
     ]
 }"
 </code></pre></div>
@@ -19303,7 +19303,7 @@ const headers = {
 
 let body = {
     "rows": [
-        "voluptas"
+        "eaque"
     ]
 };
 
@@ -19327,7 +19327,7 @@ $response = $client-&gt;post(
         ],
         'json' =&gt; [
             'rows' =&gt; [
-                'voluptas',
+                'eaque',
             ],
         ],
     ]
@@ -19446,10 +19446,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="rows.0.id"                data-endpoint="POSTapi-drags-latest_news"
-               value="16"
+               value="6"
                data-component="body">
     <br>
-<p>The id of the record Example: <code>16</code></p>
+<p>The id of the record Example: <code>6</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>sequence</code></b>&nbsp;&nbsp;
@@ -19491,7 +19491,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     ],
     \"enable\": false,
     \"hot\": true,
-    \"delete\": true
+    \"delete\": false
 }"
 </code></pre></div>
 
@@ -19514,7 +19514,7 @@ let body = {
     ],
     "enable": false,
     "hot": true,
-    "delete": true
+    "delete": false
 };
 
 fetch(url, {
@@ -19541,7 +19541,7 @@ $response = $client-&gt;post(
             ],
             'enable' =&gt; false,
             'hot' =&gt; true,
-            'delete' =&gt; true,
+            'delete' =&gt; false,
         ],
     ]
 );
@@ -19718,7 +19718,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Delete selected record Example: <code>true</code></p>
+<p>Delete selected record Example: <code>false</code></p>
         </div>
         </form>
 
@@ -19737,7 +19737,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://chees-api.dev.com/api/social_medias?s=necessitatibus&amp;p=3&amp;sort=type&amp;filter%5Btype%5D=voluptates&amp;filter%5Benable%5D=4&amp;filter%5Blink%5D=aut" \
+    --get "https://chees-api.dev.com/api/social_medias?s=voluptates&amp;p=16&amp;sort=type&amp;filter%5Btype%5D=sed&amp;filter%5Benable%5D=9&amp;filter%5Blink%5D=voluptatum" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -19750,12 +19750,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "s": "necessitatibus",
-    "p": "3",
+    "s": "voluptates",
+    "p": "16",
     "sort": "type",
-    "filter[type]": "voluptates",
-    "filter[enable]": "4",
-    "filter[link]": "aut",
+    "filter[type]": "sed",
+    "filter[enable]": "9",
+    "filter[link]": "voluptatum",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -19785,12 +19785,12 @@ $response = $client-&gt;get(
             'Accept-Language' =&gt; 'en',
         ],
         'query' =&gt; [
-            's' =&gt; 'necessitatibus',
-            'p' =&gt; '3',
+            's' =&gt; 'voluptates',
+            'p' =&gt; '16',
             'sort' =&gt; 'type',
-            'filter[type]' =&gt; 'voluptates',
-            'filter[enable]' =&gt; '4',
-            'filter[link]' =&gt; 'aut',
+            'filter[type]' =&gt; 'sed',
+            'filter[enable]' =&gt; '9',
+            'filter[link]' =&gt; 'voluptatum',
         ],
     ]
 );
@@ -19915,10 +19915,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="s"                data-endpoint="GETapi-social_medias"
-               value="necessitatibus"
+               value="voluptates"
                data-component="query">
     <br>
-<p>Search keyword Example: <code>necessitatibus</code></p>
+<p>Search keyword Example: <code>voluptates</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>p</code></b>&nbsp;&nbsp;
@@ -19926,10 +19926,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="p"                data-endpoint="GETapi-social_medias"
-               value="3"
+               value="16"
                data-component="query">
     <br>
-<p>Page number, default=20 Example: <code>3</code></p>
+<p>Page number, default=20 Example: <code>16</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>sort</code></b>&nbsp;&nbsp;
@@ -19948,10 +19948,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[type]"                data-endpoint="GETapi-social_medias"
-               value="voluptates"
+               value="sed"
                data-component="query">
     <br>
-<p>Filter by type Example: <code>voluptates</code></p>
+<p>Filter by type Example: <code>sed</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[enable]</code></b>&nbsp;&nbsp;
@@ -19959,10 +19959,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="filter[enable]"                data-endpoint="GETapi-social_medias"
-               value="4"
+               value="9"
                data-component="query">
     <br>
-<p>Filter by enable Example: <code>4</code></p>
+<p>Filter by enable Example: <code>9</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>filter[link]</code></b>&nbsp;&nbsp;
@@ -19970,10 +19970,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="filter[link]"                data-endpoint="GETapi-social_medias"
-               value="aut"
+               value="voluptatum"
                data-component="query">
     <br>
-<p>Filter by link Example: <code>aut</code></p>
+<p>Filter by link Example: <code>voluptatum</code></p>
             </div>
                 </form>
 
@@ -20177,8 +20177,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --data "{
-    \"link\": \"quae\",
-    \"enable\": false
+    \"link\": \"veritatis\",
+    \"enable\": true
 }"
 </code></pre></div>
 
@@ -20196,8 +20196,8 @@ const headers = {
 };
 
 let body = {
-    "link": "quae",
-    "enable": false
+    "link": "veritatis",
+    "enable": true
 };
 
 fetch(url, {
@@ -20219,8 +20219,8 @@ $response = $client-&gt;put(
             'Accept-Language' =&gt; 'en',
         ],
         'json' =&gt; [
-            'link' =&gt; 'quae',
-            'enable' =&gt; false,
+            'link' =&gt; 'veritatis',
+            'enable' =&gt; true,
         ],
     ]
 );
@@ -20345,10 +20345,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="link"                data-endpoint="PUTapi-social_medias--id-"
-               value="quae"
+               value="veritatis"
                data-component="body">
     <br>
-<p>Example: <code>quae</code></p>
+<p>Example: <code>veritatis</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>enable</code></b>&nbsp;&nbsp;
@@ -20369,7 +20369,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>false</code></p>
+<p>Example: <code>true</code></p>
         </div>
         </form>
 
@@ -20558,11 +20558,11 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept-Language: en" \
     --data "{
     \"ids\": [
-        3
+        4
     ],
-    \"enable\": true,
-    \"hot\": false,
-    \"delete\": true
+    \"enable\": false,
+    \"hot\": true,
+    \"delete\": false
 }"
 </code></pre></div>
 
@@ -20581,11 +20581,11 @@ const headers = {
 
 let body = {
     "ids": [
-        3
+        4
     ],
-    "enable": true,
-    "hot": false,
-    "delete": true
+    "enable": false,
+    "hot": true,
+    "delete": false
 };
 
 fetch(url, {
@@ -20608,11 +20608,11 @@ $response = $client-&gt;post(
         ],
         'json' =&gt; [
             'ids' =&gt; [
-                3,
+                4,
             ],
-            'enable' =&gt; true,
-            'hot' =&gt; false,
-            'delete' =&gt; true,
+            'enable' =&gt; false,
+            'hot' =&gt; true,
+            'delete' =&gt; false,
         ],
     ]
 );
@@ -20747,7 +20747,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Enable or disable the record Example: <code>true</code></p>
+<p>Enable or disable the record Example: <code>false</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>hot</code></b>&nbsp;&nbsp;
@@ -20768,7 +20768,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Update hot(Apply to service API only) Example: <code>false</code></p>
+<p>Update hot(Apply to service API only) Example: <code>true</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>delete</code></b>&nbsp;&nbsp;
@@ -20789,7 +20789,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Delete selected record Example: <code>true</code></p>
+<p>Delete selected record Example: <code>false</code></p>
         </div>
         </form>
 
@@ -20985,13 +20985,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --data "{
-    \"name\": \"voluptatem\",
+    \"name\": \"placeat\",
     \"gender\": \"F\",
-    \"birthday\": \"2023-09-04T02:01:37\",
-    \"hkid\": \"et\",
-    \"tel\": \"rerum\",
-    \"email\": \"robert02@example.com\",
-    \"password\": \"Q,.h),sHFU\"
+    \"birthday\": \"2023-09-07T01:01:03\",
+    \"hkid\": \"sint\",
+    \"tel\": \"cupiditate\",
+    \"email\": \"uhickle@example.com\",
+    \"password\": \"URj9@Oi&gt;;$9LQNC\"
 }"
 </code></pre></div>
 
@@ -21008,13 +21008,13 @@ const headers = {
 };
 
 let body = {
-    "name": "voluptatem",
+    "name": "placeat",
     "gender": "F",
-    "birthday": "2023-09-04T02:01:37",
-    "hkid": "et",
-    "tel": "rerum",
-    "email": "robert02@example.com",
-    "password": "Q,.h),sHFU"
+    "birthday": "2023-09-07T01:01:03",
+    "hkid": "sint",
+    "tel": "cupiditate",
+    "email": "uhickle@example.com",
+    "password": "URj9@Oi&gt;;$9LQNC"
 };
 
 fetch(url, {
@@ -21035,13 +21035,13 @@ $response = $client-&gt;post(
             'Accept-Language' =&gt; 'en',
         ],
         'json' =&gt; [
-            'name' =&gt; 'voluptatem',
+            'name' =&gt; 'placeat',
             'gender' =&gt; 'F',
-            'birthday' =&gt; '2023-09-04T02:01:37',
-            'hkid' =&gt; 'et',
-            'tel' =&gt; 'rerum',
-            'email' =&gt; 'robert02@example.com',
-            'password' =&gt; 'Q,.h),sHFU',
+            'birthday' =&gt; '2023-09-07T01:01:03',
+            'hkid' =&gt; 'sint',
+            'tel' =&gt; 'cupiditate',
+            'email' =&gt; 'uhickle@example.com',
+            'password' =&gt; 'URj9@Oi&gt;;$9LQNC',
         ],
     ]
 );
@@ -21139,10 +21139,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-v1-auth-register"
-               value="voluptatem"
+               value="placeat"
                data-component="body">
     <br>
-<p>Example: <code>voluptatem</code></p>
+<p>Example: <code>placeat</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>gender</code></b>&nbsp;&nbsp;
@@ -21161,10 +21161,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="birthday"                data-endpoint="POSTapi-v1-auth-register"
-               value="2023-09-04T02:01:37"
+               value="2023-09-07T01:01:03"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-04T02:01:37</code></p>
+<p>Must be a valid date. Example: <code>2023-09-07T01:01:03</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>hkid</code></b>&nbsp;&nbsp;
@@ -21172,10 +21172,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="hkid"                data-endpoint="POSTapi-v1-auth-register"
-               value="et"
+               value="sint"
                data-component="body">
     <br>
-<p>Example: <code>et</code></p>
+<p>Example: <code>sint</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>tel</code></b>&nbsp;&nbsp;
@@ -21183,10 +21183,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="tel"                data-endpoint="POSTapi-v1-auth-register"
-               value="rerum"
+               value="cupiditate"
                data-component="body">
     <br>
-<p>Example: <code>rerum</code></p>
+<p>Example: <code>cupiditate</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -21194,10 +21194,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-v1-auth-register"
-               value="robert02@example.com"
+               value="uhickle@example.com"
                data-component="body">
     <br>
-<p>Example: <code>robert02@example.com</code></p>
+<p>Example: <code>uhickle@example.com</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -21205,10 +21205,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-v1-auth-register"
-               value="Q,.h),sHFU"
+               value="URj9@Oi>;$9LQNC"
                data-component="body">
     <br>
-<p>Example: <code>Q,.h),sHFU</code></p>
+<p>Example: <code>URj9@Oi&gt;;$9LQNC</code></p>
         </div>
         </form>
 
@@ -21230,8 +21230,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --data "{
-    \"email\": \"schuster.rolando@example.net\",
-    \"password\": \"3$n;b4N\"
+    \"email\": \"quitzon.elinore@example.org\",
+    \"password\": \"A\\\\F^X\'ZsI?\"
 }"
 </code></pre></div>
 
@@ -21248,8 +21248,8 @@ const headers = {
 };
 
 let body = {
-    "email": "schuster.rolando@example.net",
-    "password": "3$n;b4N"
+    "email": "quitzon.elinore@example.org",
+    "password": "A\\F^X'ZsI?"
 };
 
 fetch(url, {
@@ -21270,8 +21270,8 @@ $response = $client-&gt;post(
             'Accept-Language' =&gt; 'en',
         ],
         'json' =&gt; [
-            'email' =&gt; 'schuster.rolando@example.net',
-            'password' =&gt; '3$n;b4N',
+            'email' =&gt; 'quitzon.elinore@example.org',
+            'password' =&gt; 'A\\F^X\'ZsI?',
         ],
     ]
 );
@@ -21369,10 +21369,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-v1-auth-login"
-               value="schuster.rolando@example.net"
+               value="quitzon.elinore@example.org"
                data-component="body">
     <br>
-<p>Example: <code>schuster.rolando@example.net</code></p>
+<p>Example: <code>quitzon.elinore@example.org</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -21380,10 +21380,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-v1-auth-login"
-               value="3$n;b4N"
+               value="A\F^X'ZsI?"
                data-component="body">
     <br>
-<p>Example: <code>3$n;b4N</code></p>
+<p>Example: <code>A\F^X'ZsI?</code></p>
         </div>
         </form>
 
@@ -21400,7 +21400,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://chees-api.dev.com/api/v1/auth/verify/commodi" \
+    --get "https://chees-api.dev.com/api/v1/auth/verify/a" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --header "Accept-Language: en"</code></pre></div>
@@ -21408,7 +21408,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://chees-api.dev.com/api/v1/auth/verify/commodi"
+    "https://chees-api.dev.com/api/v1/auth/verify/a"
 );
 
 const headers = {
@@ -21426,7 +21426,7 @@ fetch(url, {
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
 $response = $client-&gt;get(
-    'https://chees-api.dev.com/api/v1/auth/verify/commodi',
+    'https://chees-api.dev.com/api/v1/auth/verify/a',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -21451,7 +21451,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 59
+x-ratelimit-remaining: 45
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -21548,10 +21548,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="token"                data-endpoint="GETapi-v1-auth-verify--token-"
-               value="commodi"
+               value="a"
                data-component="url">
     <br>
-<p>Example: <code>commodi</code></p>
+<p>Example: <code>a</code></p>
             </div>
                     </form>
 
@@ -21573,7 +21573,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --data "{
-    \"email\": \"ruben48@example.org\"
+    \"email\": \"wokon@example.net\"
 }"
 </code></pre></div>
 
@@ -21590,7 +21590,7 @@ const headers = {
 };
 
 let body = {
-    "email": "ruben48@example.org"
+    "email": "wokon@example.net"
 };
 
 fetch(url, {
@@ -21611,7 +21611,7 @@ $response = $client-&gt;post(
             'Accept-Language' =&gt; 'en',
         ],
         'json' =&gt; [
-            'email' =&gt; 'ruben48@example.org',
+            'email' =&gt; 'wokon@example.net',
         ],
     ]
 );
@@ -21709,10 +21709,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-v1-auth-verify"
-               value="ruben48@example.org"
+               value="wokon@example.net"
                data-component="body">
     <br>
-<p>Example: <code>ruben48@example.org</code></p>
+<p>Example: <code>wokon@example.net</code></p>
         </div>
         </form>
 
@@ -21734,7 +21734,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --data "{
-    \"email\": \"emely.carroll@example.com\"
+    \"email\": \"satterfield.darryl@example.org\"
 }"
 </code></pre></div>
 
@@ -21751,7 +21751,7 @@ const headers = {
 };
 
 let body = {
-    "email": "emely.carroll@example.com"
+    "email": "satterfield.darryl@example.org"
 };
 
 fetch(url, {
@@ -21772,7 +21772,7 @@ $response = $client-&gt;post(
             'Accept-Language' =&gt; 'en',
         ],
         'json' =&gt; [
-            'email' =&gt; 'emely.carroll@example.com',
+            'email' =&gt; 'satterfield.darryl@example.org',
         ],
     ]
 );
@@ -21870,10 +21870,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-v1-auth-reset_password"
-               value="emely.carroll@example.com"
+               value="satterfield.darryl@example.org"
                data-component="body">
     <br>
-<p>Example: <code>emely.carroll@example.com</code></p>
+<p>Example: <code>satterfield.darryl@example.org</code></p>
         </div>
         </form>
 
@@ -21890,19 +21890,19 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "https://chees-api.dev.com/api/v1/auth/reset_password/et" \
+    "https://chees-api.dev.com/api/v1/auth/reset_password/error" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --data "{
-    \"password\": \"xXp\\\\\\\";z2V$u!j\\\\}q.;1F\"
+    \"password\": \"@Y}e{OPq&amp;PM{Rh?*i8-\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://chees-api.dev.com/api/v1/auth/reset_password/et"
+    "https://chees-api.dev.com/api/v1/auth/reset_password/error"
 );
 
 const headers = {
@@ -21912,7 +21912,7 @@ const headers = {
 };
 
 let body = {
-    "password": "xXp\\\";z2V$u!j\\}q.;1F"
+    "password": "@Y}e{OPq&amp;PM{Rh?*i8-"
 };
 
 fetch(url, {
@@ -21925,7 +21925,7 @@ fetch(url, {
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
 $response = $client-&gt;post(
-    'https://chees-api.dev.com/api/v1/auth/reset_password/et',
+    'https://chees-api.dev.com/api/v1/auth/reset_password/error',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -21933,7 +21933,7 @@ $response = $client-&gt;post(
             'Accept-Language' =&gt; 'en',
         ],
         'json' =&gt; [
-            'password' =&gt; 'xXp\\";z2V$u!j\\}q.;1F',
+            'password' =&gt; '@Y}e{OPq&amp;PM{Rh?*i8-',
         ],
     ]
 );
@@ -22031,10 +22031,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="token"                data-endpoint="POSTapi-v1-auth-reset_password--token-"
-               value="et"
+               value="error"
                data-component="url">
     <br>
-<p>Example: <code>et</code></p>
+<p>Example: <code>error</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -22043,10 +22043,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-v1-auth-reset_password--token-"
-               value="xXp\";z2V$u!j\}q.;1F"
+               value="@Y}e{OPq&PM{Rh?*i8-"
                data-component="body">
     <br>
-<p>Example: <code>xXp\";z2V$u!j\}q.;1F</code></p>
+<p>Example: <code>@Y}e{OPq&amp;PM{Rh?*i8-</code></p>
         </div>
         </form>
 
@@ -22575,13 +22575,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --data "{
-    \"name\": \"natus\",
-    \"gender\": \"M\",
-    \"birthday\": \"2023-09-04T02:01:37\",
-    \"hkid\": \"exercitationem\",
-    \"tel\": \"quisquam\",
-    \"password\": \"M{,E]Ln&gt;|V\",
-    \"address\": \"ad\"
+    \"name\": \"sint\",
+    \"gender\": \"F\",
+    \"birthday\": \"2023-09-07T01:01:03\",
+    \"hkid\": \"qui\",
+    \"tel\": \"enim\",
+    \"password\": \"DyMsVP\",
+    \"address\": \"nihil\"
 }"
 </code></pre></div>
 
@@ -22599,13 +22599,13 @@ const headers = {
 };
 
 let body = {
-    "name": "natus",
-    "gender": "M",
-    "birthday": "2023-09-04T02:01:37",
-    "hkid": "exercitationem",
-    "tel": "quisquam",
-    "password": "M{,E]Ln&gt;|V",
-    "address": "ad"
+    "name": "sint",
+    "gender": "F",
+    "birthday": "2023-09-07T01:01:03",
+    "hkid": "qui",
+    "tel": "enim",
+    "password": "DyMsVP",
+    "address": "nihil"
 };
 
 fetch(url, {
@@ -22627,13 +22627,13 @@ $response = $client-&gt;put(
             'Accept-Language' =&gt; 'en',
         ],
         'json' =&gt; [
-            'name' =&gt; 'natus',
-            'gender' =&gt; 'M',
-            'birthday' =&gt; '2023-09-04T02:01:37',
-            'hkid' =&gt; 'exercitationem',
-            'tel' =&gt; 'quisquam',
-            'password' =&gt; 'M{,E]Ln&gt;|V',
-            'address' =&gt; 'ad',
+            'name' =&gt; 'sint',
+            'gender' =&gt; 'F',
+            'birthday' =&gt; '2023-09-07T01:01:03',
+            'hkid' =&gt; 'qui',
+            'tel' =&gt; 'enim',
+            'password' =&gt; 'DyMsVP',
+            'address' =&gt; 'nihil',
         ],
     ]
 );
@@ -22742,10 +22742,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="PUTapi-v1-users"
-               value="natus"
+               value="sint"
                data-component="body">
     <br>
-<p>Example: <code>natus</code></p>
+<p>Example: <code>sint</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>gender</code></b>&nbsp;&nbsp;
@@ -22753,10 +22753,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="gender"                data-endpoint="PUTapi-v1-users"
-               value="M"
+               value="F"
                data-component="body">
     <br>
-<p>Must be one of <code>F</code> or <code>M</code>. Example: <code>M</code></p>
+<p>Must be one of <code>F</code> or <code>M</code>. Example: <code>F</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>birthday</code></b>&nbsp;&nbsp;
@@ -22764,10 +22764,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="birthday"                data-endpoint="PUTapi-v1-users"
-               value="2023-09-04T02:01:37"
+               value="2023-09-07T01:01:03"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-04T02:01:37</code></p>
+<p>Must be a valid date. Example: <code>2023-09-07T01:01:03</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>hkid</code></b>&nbsp;&nbsp;
@@ -22775,10 +22775,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="hkid"                data-endpoint="PUTapi-v1-users"
-               value="exercitationem"
+               value="qui"
                data-component="body">
     <br>
-<p>Example: <code>exercitationem</code></p>
+<p>Example: <code>qui</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>tel</code></b>&nbsp;&nbsp;
@@ -22786,10 +22786,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="tel"                data-endpoint="PUTapi-v1-users"
-               value="quisquam"
+               value="enim"
                data-component="body">
     <br>
-<p>Example: <code>quisquam</code></p>
+<p>Example: <code>enim</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -22797,10 +22797,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="PUTapi-v1-users"
-               value="M{,E]Ln>|V"
+               value="DyMsVP"
                data-component="body">
     <br>
-<p>Example: <code>M{,E]Ln&gt;|V</code></p>
+<p>Example: <code>DyMsVP</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
@@ -22808,10 +22808,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="address"                data-endpoint="PUTapi-v1-users"
-               value="ad"
+               value="nihil"
                data-component="body">
     <br>
-<p>Example: <code>ad</code></p>
+<p>Example: <code>nihil</code></p>
         </div>
         </form>
 
@@ -22828,7 +22828,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://chees-api.dev.com/api/v1/histories/6290a0e9-b461-3e47-9387-1f58337cc4d2" \
+    --get "https://chees-api.dev.com/api/v1/histories/6e315f06-3d1e-3a6c-a5f6-04d1cea2708a" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --header "Accept-Language: en"</code></pre></div>
@@ -22836,7 +22836,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://chees-api.dev.com/api/v1/histories/6290a0e9-b461-3e47-9387-1f58337cc4d2"
+    "https://chees-api.dev.com/api/v1/histories/6e315f06-3d1e-3a6c-a5f6-04d1cea2708a"
 );
 
 const headers = {
@@ -22854,7 +22854,7 @@ fetch(url, {
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
 $response = $client-&gt;get(
-    'https://chees-api.dev.com/api/v1/histories/6290a0e9-b461-3e47-9387-1f58337cc4d2',
+    'https://chees-api.dev.com/api/v1/histories/6e315f06-3d1e-3a6c-a5f6-04d1cea2708a',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -22879,7 +22879,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 58
+x-ratelimit-remaining: 44
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -22976,10 +22976,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="uuid"                data-endpoint="GETapi-v1-histories--uuid-"
-               value="6290a0e9-b461-3e47-9387-1f58337cc4d2"
+               value="6e315f06-3d1e-3a6c-a5f6-04d1cea2708a"
                data-component="url">
     <br>
-<p>Example: <code>6290a0e9-b461-3e47-9387-1f58337cc4d2</code></p>
+<p>Example: <code>6e315f06-3d1e-3a6c-a5f6-04d1cea2708a</code></p>
             </div>
                     </form>
 
@@ -23048,7 +23048,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 57
+x-ratelimit-remaining: 43
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -23529,7 +23529,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 56
+x-ratelimit-remaining: 42
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -23846,7 +23846,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 55
+x-ratelimit-remaining: 41
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -23969,7 +23969,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://chees-api.dev.com/api/v1/categories/est" \
+    --get "https://chees-api.dev.com/api/v1/categories/molestias" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --header "Accept-Language: en"</code></pre></div>
@@ -23977,7 +23977,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://chees-api.dev.com/api/v1/categories/est"
+    "https://chees-api.dev.com/api/v1/categories/molestias"
 );
 
 const headers = {
@@ -23995,7 +23995,7 @@ fetch(url, {
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
 $response = $client-&gt;get(
-    'https://chees-api.dev.com/api/v1/categories/est',
+    'https://chees-api.dev.com/api/v1/categories/molestias',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -24020,7 +24020,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 54
+x-ratelimit-remaining: 40
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -24583,10 +24583,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="slug"                data-endpoint="GETapi-v1-categories--slug-"
-               value="est"
+               value="molestias"
                data-component="url">
     <br>
-<p>Category Slug or Id Example: <code>est</code></p>
+<p>Category Slug or Id Example: <code>molestias</code></p>
             </div>
                     </form>
 
@@ -24655,7 +24655,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 53
+x-ratelimit-remaining: 39
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -24826,7 +24826,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 52
+x-ratelimit-remaining: 38
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -25003,7 +25003,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 51
+x-ratelimit-remaining: 37
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -25127,7 +25127,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://chees-api.dev.com/api/v1/timeslots" \
+    --get "https://chees-api.dev.com/api/v1/timeslots?date_from=&amp;date_to=" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --header "Accept-Language: en"</code></pre></div>
@@ -25137,6 +25137,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <pre><code class="language-javascript">const url = new URL(
     "https://chees-api.dev.com/api/v1/timeslots"
 );
+
+const params = {
+    "date_from": "",
+    "date_to": "",
+};
+Object.keys(params)
+    .forEach(key =&gt; url.searchParams.append(key, params[key]));
 
 const headers = {
     "Content-Type": "application/json",
@@ -25160,6 +25167,10 @@ $response = $client-&gt;get(
             'Accept' =&gt; 'application/json',
             'Accept-Language' =&gt; 'en',
         ],
+        'query' =&gt; [
+            'date_from' =&gt; '',
+            'date_to' =&gt; '',
+        ],
     ]
 );
 $body = $response-&gt;getBody();
@@ -25178,7 +25189,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 50
+x-ratelimit-remaining: 36
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -25267,7 +25278,30 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <br>
 <p>Example: <code>en</code></p>
             </div>
-                        </form>
+                            <h4 class="fancy-heading-panel"><b>Query Parameters</b></h4>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>date_from</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="date_from"                data-endpoint="GETapi-v1-timeslots"
+               value=""
+               data-component="query">
+    <br>
+
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>date_to</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="date_to"                data-endpoint="GETapi-v1-timeslots"
+               value=""
+               data-component="query">
+    <br>
+
+            </div>
+                </form>
 
                                 <h2 id="frontend-api-service">Service</h2>
                                                     <h2 id="frontend-api-GETapi-v1-services--category_slug-">Service List</h2>
@@ -25283,7 +25317,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://chees-api.dev.com/api/v1/services/optio" \
+    --get "https://chees-api.dev.com/api/v1/services/earum" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --header "Accept-Language: en"</code></pre></div>
@@ -25291,7 +25325,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://chees-api.dev.com/api/v1/services/optio"
+    "https://chees-api.dev.com/api/v1/services/earum"
 );
 
 const headers = {
@@ -25309,7 +25343,7 @@ fetch(url, {
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
 $response = $client-&gt;get(
-    'https://chees-api.dev.com/api/v1/services/optio',
+    'https://chees-api.dev.com/api/v1/services/earum',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -25334,7 +25368,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 49
+x-ratelimit-remaining: 35
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -25430,10 +25464,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="category_slug"                data-endpoint="GETapi-v1-services--category_slug-"
-               value="optio"
+               value="earum"
                data-component="url">
     <br>
-<p>Category Slug or Id Example: <code>optio</code></p>
+<p>Category Slug or Id Example: <code>earum</code></p>
             </div>
                     </form>
 
@@ -25450,7 +25484,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://chees-api.dev.com/api/v1/services/details/mollitia" \
+    --get "https://chees-api.dev.com/api/v1/services/details/quidem" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --header "Accept-Language: en"</code></pre></div>
@@ -25458,7 +25492,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://chees-api.dev.com/api/v1/services/details/mollitia"
+    "https://chees-api.dev.com/api/v1/services/details/quidem"
 );
 
 const headers = {
@@ -25476,7 +25510,7 @@ fetch(url, {
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
 $response = $client-&gt;get(
-    'https://chees-api.dev.com/api/v1/services/details/mollitia',
+    'https://chees-api.dev.com/api/v1/services/details/quidem',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -25501,7 +25535,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 48
+x-ratelimit-remaining: 34
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -26064,10 +26098,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="slug"                data-endpoint="GETapi-v1-services-details--slug-"
-               value="mollitia"
+               value="quidem"
                data-component="url">
     <br>
-<p>Category Slug or Id Example: <code>mollitia</code></p>
+<p>Category Slug or Id Example: <code>quidem</code></p>
             </div>
                     </form>
 
@@ -26089,30 +26123,30 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --header "Accept-Language: en" \
     --data "{
-    \"name\": \"quam\",
+    \"name\": \"sint\",
     \"gender\": \"F\",
-    \"birthday\": \"2023-09-04T02:01:37\",
-    \"id_type\": \"other\",
-    \"id_type_other\": \"culpa\",
-    \"hkid\": \"nynkhsjwpwybieak\",
-    \"tel\": \"et\",
-    \"email\": \"dmoore@example.com\",
-    \"password\": \"LalqKI9&amp;\\/\",
-    \"service_id\": 18,
-    \"district_id\": 9,
-    \"contact_address\": \"optio\",
-    \"medical_record\": \"totam\",
-    \"covid_diagnosed\": true,
+    \"birthday\": \"2023-09-07T01:01:03\",
+    \"id_type\": \"hkid\",
+    \"id_type_other\": \"aperiam\",
+    \"hkid\": \"fowuvtbbkweqr\",
+    \"tel\": \"molestias\",
+    \"email\": \"brionna32@example.net\",
+    \"password\": \"h(`rOYnVg|I]7Zu=?A!\",
+    \"service_id\": 6,
+    \"district_id\": 8,
+    \"contact_address\": \"voluptas\",
+    \"medical_record\": \"doloribus\",
+    \"covid_diagnosed\": false,
     \"covid_close_contacts\": false,
-    \"covid_date\": \"2023-09-04T02:01:37\",
-    \"height\": \"\",
-    \"weight\": \"3\",
-    \"blood_date\": \"2023-09-04T02:01:37\",
-    \"blood_time\": \"atque\",
-    \"address\": \"facere\",
-    \"report\": \"post\",
-    \"report_explanation\": \"by_appointment\",
-    \"remark\": \"mollitia\"
+    \"covid_date\": \"2023-09-07T01:01:03\",
+    \"height\": \"89\",
+    \"weight\": \"01\",
+    \"blood_date\": \"2023-09-07T01:01:03\",
+    \"blood_time\": \"quo\",
+    \"address\": \"rerum\",
+    \"report\": \"email\",
+    \"report_explanation\": \"by_phone\",
+    \"remark\": \"vel\"
 }"
 </code></pre></div>
 
@@ -26129,30 +26163,30 @@ const headers = {
 };
 
 let body = {
-    "name": "quam",
+    "name": "sint",
     "gender": "F",
-    "birthday": "2023-09-04T02:01:37",
-    "id_type": "other",
-    "id_type_other": "culpa",
-    "hkid": "nynkhsjwpwybieak",
-    "tel": "et",
-    "email": "dmoore@example.com",
-    "password": "LalqKI9&amp;\/",
-    "service_id": 18,
-    "district_id": 9,
-    "contact_address": "optio",
-    "medical_record": "totam",
-    "covid_diagnosed": true,
+    "birthday": "2023-09-07T01:01:03",
+    "id_type": "hkid",
+    "id_type_other": "aperiam",
+    "hkid": "fowuvtbbkweqr",
+    "tel": "molestias",
+    "email": "brionna32@example.net",
+    "password": "h(`rOYnVg|I]7Zu=?A!",
+    "service_id": 6,
+    "district_id": 8,
+    "contact_address": "voluptas",
+    "medical_record": "doloribus",
+    "covid_diagnosed": false,
     "covid_close_contacts": false,
-    "covid_date": "2023-09-04T02:01:37",
-    "height": "",
-    "weight": "3",
-    "blood_date": "2023-09-04T02:01:37",
-    "blood_time": "atque",
-    "address": "facere",
-    "report": "post",
-    "report_explanation": "by_appointment",
-    "remark": "mollitia"
+    "covid_date": "2023-09-07T01:01:03",
+    "height": "89",
+    "weight": "01",
+    "blood_date": "2023-09-07T01:01:03",
+    "blood_time": "quo",
+    "address": "rerum",
+    "report": "email",
+    "report_explanation": "by_phone",
+    "remark": "vel"
 };
 
 fetch(url, {
@@ -26173,30 +26207,30 @@ $response = $client-&gt;post(
             'Accept-Language' =&gt; 'en',
         ],
         'json' =&gt; [
-            'name' =&gt; 'quam',
+            'name' =&gt; 'sint',
             'gender' =&gt; 'F',
-            'birthday' =&gt; '2023-09-04T02:01:37',
-            'id_type' =&gt; 'other',
-            'id_type_other' =&gt; 'culpa',
-            'hkid' =&gt; 'nynkhsjwpwybieak',
-            'tel' =&gt; 'et',
-            'email' =&gt; 'dmoore@example.com',
-            'password' =&gt; 'LalqKI9&amp;/',
-            'service_id' =&gt; 18,
-            'district_id' =&gt; 9,
-            'contact_address' =&gt; 'optio',
-            'medical_record' =&gt; 'totam',
-            'covid_diagnosed' =&gt; true,
+            'birthday' =&gt; '2023-09-07T01:01:03',
+            'id_type' =&gt; 'hkid',
+            'id_type_other' =&gt; 'aperiam',
+            'hkid' =&gt; 'fowuvtbbkweqr',
+            'tel' =&gt; 'molestias',
+            'email' =&gt; 'brionna32@example.net',
+            'password' =&gt; 'h(`rOYnVg|I]7Zu=?A!',
+            'service_id' =&gt; 6,
+            'district_id' =&gt; 8,
+            'contact_address' =&gt; 'voluptas',
+            'medical_record' =&gt; 'doloribus',
+            'covid_diagnosed' =&gt; false,
             'covid_close_contacts' =&gt; false,
-            'covid_date' =&gt; '2023-09-04T02:01:37',
-            'height' =&gt; '',
-            'weight' =&gt; '3',
-            'blood_date' =&gt; '2023-09-04T02:01:37',
-            'blood_time' =&gt; 'atque',
-            'address' =&gt; 'facere',
-            'report' =&gt; 'post',
-            'report_explanation' =&gt; 'by_appointment',
-            'remark' =&gt; 'mollitia',
+            'covid_date' =&gt; '2023-09-07T01:01:03',
+            'height' =&gt; '89',
+            'weight' =&gt; '01',
+            'blood_date' =&gt; '2023-09-07T01:01:03',
+            'blood_time' =&gt; 'quo',
+            'address' =&gt; 'rerum',
+            'report' =&gt; 'email',
+            'report_explanation' =&gt; 'by_phone',
+            'remark' =&gt; 'vel',
         ],
     ]
 );
@@ -26294,10 +26328,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-v1-services"
-               value="quam"
+               value="sint"
                data-component="body">
     <br>
-<p>Example: <code>quam</code></p>
+<p>Example: <code>sint</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>gender</code></b>&nbsp;&nbsp;
@@ -26316,10 +26350,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="birthday"                data-endpoint="POSTapi-v1-services"
-               value="2023-09-04T02:01:37"
+               value="2023-09-07T01:01:03"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-04T02:01:37</code></p>
+<p>Must be a valid date. Example: <code>2023-09-07T01:01:03</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>id_type</code></b>&nbsp;&nbsp;
@@ -26327,10 +26361,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="id_type"                data-endpoint="POSTapi-v1-services"
-               value="other"
+               value="hkid"
                data-component="body">
     <br>
-<p>Must be one of <code>hkid</code>, <code>cnid</code>, <code>passport</code>, or <code>other</code>. Example: <code>other</code></p>
+<p>Must be one of <code>hkid</code>, <code>cnid</code>, <code>passport</code>, or <code>other</code>. Example: <code>hkid</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>id_type_other</code></b>&nbsp;&nbsp;
@@ -26338,10 +26372,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="id_type_other"                data-endpoint="POSTapi-v1-services"
-               value="culpa"
+               value="aperiam"
                data-component="body">
     <br>
-<p>Example: <code>culpa</code></p>
+<p>Example: <code>aperiam</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>hkid</code></b>&nbsp;&nbsp;
@@ -26349,10 +26383,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="hkid"                data-endpoint="POSTapi-v1-services"
-               value="nynkhsjwpwybieak"
+               value="fowuvtbbkweqr"
                data-component="body">
     <br>
-<p>Must not be greater than 32 characters. Example: <code>nynkhsjwpwybieak</code></p>
+<p>Must not be greater than 32 characters. Example: <code>fowuvtbbkweqr</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>tel</code></b>&nbsp;&nbsp;
@@ -26360,10 +26394,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="tel"                data-endpoint="POSTapi-v1-services"
-               value="et"
+               value="molestias"
                data-component="body">
     <br>
-<p>Example: <code>et</code></p>
+<p>Example: <code>molestias</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -26371,10 +26405,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-v1-services"
-               value="dmoore@example.com"
+               value="brionna32@example.net"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>dmoore@example.com</code></p>
+<p>Must be a valid email address. Example: <code>brionna32@example.net</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -26382,10 +26416,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-v1-services"
-               value="LalqKI9&/"
+               value="h(`rOYnVg|I]7Zu=?A!"
                data-component="body">
     <br>
-<p>Example: <code>LalqKI9&amp;/</code></p>
+<p>Example: <code>h(</code>rOYnVg|I]7Zu=?A!`</p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>service_id</code></b>&nbsp;&nbsp;
@@ -26393,10 +26427,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="service_id"                data-endpoint="POSTapi-v1-services"
-               value="18"
+               value="6"
                data-component="body">
     <br>
-<p>Example: <code>18</code></p>
+<p>Example: <code>6</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>district_id</code></b>&nbsp;&nbsp;
@@ -26404,10 +26438,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="district_id"                data-endpoint="POSTapi-v1-services"
-               value="9"
+               value="8"
                data-component="body">
     <br>
-<p>Example: <code>9</code></p>
+<p>Example: <code>8</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>contact_address</code></b>&nbsp;&nbsp;
@@ -26415,10 +26449,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="contact_address"                data-endpoint="POSTapi-v1-services"
-               value="optio"
+               value="voluptas"
                data-component="body">
     <br>
-<p>Example: <code>optio</code></p>
+<p>Example: <code>voluptas</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>medical_record</code></b>&nbsp;&nbsp;
@@ -26426,10 +26460,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="medical_record"                data-endpoint="POSTapi-v1-services"
-               value="totam"
+               value="doloribus"
                data-component="body">
     <br>
-<p>Example: <code>totam</code></p>
+<p>Example: <code>doloribus</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>covid_diagnosed</code></b>&nbsp;&nbsp;
@@ -26450,7 +26484,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>true</code></p>
+<p>Example: <code>false</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>covid_close_contacts</code></b>&nbsp;&nbsp;
@@ -26479,10 +26513,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="covid_date"                data-endpoint="POSTapi-v1-services"
-               value="2023-09-04T02:01:37"
+               value="2023-09-07T01:01:03"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-04T02:01:37</code></p>
+<p>Must be a valid date. Example: <code>2023-09-07T01:01:03</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>height</code></b>&nbsp;&nbsp;
@@ -26490,10 +26524,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="height"                data-endpoint="POSTapi-v1-services"
-               value=""
+               value="89"
                data-component="body">
     <br>
-<p>Must be between 0 and 3 digits.</p>
+<p>Must be between 0 and 3 digits. Example: <code>89</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>weight</code></b>&nbsp;&nbsp;
@@ -26501,10 +26535,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="weight"                data-endpoint="POSTapi-v1-services"
-               value="3"
+               value="01"
                data-component="body">
     <br>
-<p>Must be between 0 and 3 digits. Example: <code>3</code></p>
+<p>Must be between 0 and 3 digits. Example: <code>01</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>blood_date</code></b>&nbsp;&nbsp;
@@ -26512,10 +26546,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="blood_date"                data-endpoint="POSTapi-v1-services"
-               value="2023-09-04T02:01:37"
+               value="2023-09-07T01:01:03"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-04T02:01:37</code></p>
+<p>Must be a valid date. Example: <code>2023-09-07T01:01:03</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>blood_time</code></b>&nbsp;&nbsp;
@@ -26523,10 +26557,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="blood_time"                data-endpoint="POSTapi-v1-services"
-               value="atque"
+               value="quo"
                data-component="body">
     <br>
-<p>Example: <code>atque</code></p>
+<p>Example: <code>quo</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
@@ -26534,10 +26568,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="address"                data-endpoint="POSTapi-v1-services"
-               value="facere"
+               value="rerum"
                data-component="body">
     <br>
-<p>Example: <code>facere</code></p>
+<p>Example: <code>rerum</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>report</code></b>&nbsp;&nbsp;
@@ -26545,10 +26579,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="report"                data-endpoint="POSTapi-v1-services"
-               value="post"
+               value="email"
                data-component="body">
     <br>
-<p>Must be one of <code>email</code>, <code>whatsapp</code>, <code>post</code>, or <code>wechat</code>. Example: <code>post</code></p>
+<p>Must be one of <code>email</code>, <code>whatsapp</code>, <code>post</code>, or <code>wechat</code>. Example: <code>email</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>report_explanation</code></b>&nbsp;&nbsp;
@@ -26556,10 +26590,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="report_explanation"                data-endpoint="POSTapi-v1-services"
-               value="by_appointment"
+               value="by_phone"
                data-component="body">
     <br>
-<p>Must be one of <code>na</code>, <code>by_phone</code>, or <code>by_appointment</code>. Example: <code>by_appointment</code></p>
+<p>Must be one of <code>na</code>, <code>by_phone</code>, or <code>by_appointment</code>. Example: <code>by_phone</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>remark</code></b>&nbsp;&nbsp;
@@ -26567,28 +26601,28 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="remark"                data-endpoint="POSTapi-v1-services"
-               value="mollitia"
+               value="vel"
                data-component="body">
     <br>
-<p>Example: <code>mollitia</code></p>
+<p>Example: <code>vel</code></p>
         </div>
         </form>
 
                                 <h2 id="frontend-api-latest-news">Latest News</h2>
-                                                    <h2 id="frontend-api-GETapi-v1-latest_news--slug-">Latest News List</h2>
+                                                    <h2 id="frontend-api-GETapi-v1-latest_news">Latest News List</h2>
 
 <p>
 </p>
 
 
 
-<span id="example-requests-GETapi-v1-latest_news--slug-">
+<span id="example-requests-GETapi-v1-latest_news">
 <blockquote>Example request:</blockquote>
 
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "https://chees-api.dev.com/api/v1/latest_news/ut" \
+    --get "https://chees-api.dev.com/api/v1/latest_news" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --header "Accept-Language: en"</code></pre></div>
@@ -26596,7 +26630,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "https://chees-api.dev.com/api/v1/latest_news/ut"
+    "https://chees-api.dev.com/api/v1/latest_news"
 );
 
 const headers = {
@@ -26614,7 +26648,162 @@ fetch(url, {
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
 $response = $client-&gt;get(
-    'https://chees-api.dev.com/api/v1/latest_news/ut',
+    'https://chees-api.dev.com/api/v1/latest_news',
+    [
+        'headers' =&gt; [
+            'Content-Type' =&gt; 'application/json',
+            'Accept' =&gt; 'application/json',
+            'Accept-Language' =&gt; 'en',
+        ],
+    ]
+);
+$body = $response-&gt;getBody();
+print_r(json_decode((string) $body));</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-v1-latest_news">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 33
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: []
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-latest_news" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-v1-latest_news"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-v1-latest_news"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-v1-latest_news" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-v1-latest_news">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-v1-latest_news" data-method="GET"
+      data-path="api/v1/latest_news"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-latest_news', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-v1-latest_news"
+                    onclick="tryItOut('GETapi-v1-latest_news');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-v1-latest_news"
+                    onclick="cancelTryOut('GETapi-v1-latest_news');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-v1-latest_news"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/latest_news</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-v1-latest_news"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-v1-latest_news"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept-Language</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept-Language"                data-endpoint="GETapi-v1-latest_news"
+               value="en"
+               data-component="header">
+    <br>
+<p>Example: <code>en</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="frontend-api-GETapi-v1-latest_news--slug-">Latest News Detail</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-v1-latest_news--slug-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "https://chees-api.dev.com/api/v1/latest_news/eos" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --header "Accept-Language: en"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "https://chees-api.dev.com/api/v1/latest_news/eos"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Accept-Language": "en",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+
+<div class="php-example">
+    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
+$response = $client-&gt;get(
+    'https://chees-api.dev.com/api/v1/latest_news/eos',
     [
         'headers' =&gt; [
             'Content-Type' =&gt; 'application/json',
@@ -26630,173 +26819,6 @@ print_r(json_decode((string) $body));</code></pre></div>
 
 <span id="example-responses-GETapi-v1-latest_news--slug-">
             <blockquote>
-            <p>Example response (200):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-x-ratelimit-limit: 60
-x-ratelimit-remaining: 47
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;data&quot;: []
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-v1-latest_news--slug-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-v1-latest_news--slug-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-v1-latest_news--slug-"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-v1-latest_news--slug-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-v1-latest_news--slug-">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-v1-latest_news--slug-" data-method="GET"
-      data-path="api/v1/latest_news/{slug}"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-latest_news--slug-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-v1-latest_news--slug-"
-                    onclick="tryItOut('GETapi-v1-latest_news--slug-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-v1-latest_news--slug-"
-                    onclick="cancelTryOut('GETapi-v1-latest_news--slug-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-v1-latest_news--slug-"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/v1/latest_news/{slug}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-v1-latest_news--slug-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-v1-latest_news--slug-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept-Language</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept-Language"                data-endpoint="GETapi-v1-latest_news--slug-"
-               value="en"
-               data-component="header">
-    <br>
-<p>Example: <code>en</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>slug</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="slug"                data-endpoint="GETapi-v1-latest_news--slug-"
-               value="ut"
-               data-component="url">
-    <br>
-<p>news Slug or Id Example: <code>ut</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="frontend-api-GETapi-v1-latest_news-details--slug-">Service Detail</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-GETapi-v1-latest_news-details--slug-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "https://chees-api.dev.com/api/v1/latest_news/details/ipsum" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json" \
-    --header "Accept-Language: en"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "https://chees-api.dev.com/api/v1/latest_news/details/ipsum"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-    "Accept-Language": "en",
-};
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-
-<div class="php-example">
-    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$response = $client-&gt;get(
-    'https://chees-api.dev.com/api/v1/latest_news/details/ipsum',
-    [
-        'headers' =&gt; [
-            'Content-Type' =&gt; 'application/json',
-            'Accept' =&gt; 'application/json',
-            'Accept-Language' =&gt; 'en',
-        ],
-    ]
-);
-$body = $response-&gt;getBody();
-print_r(json_decode((string) $body));</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-v1-latest_news-details--slug-">
-            <blockquote>
             <p>Example response (500):</p>
         </blockquote>
                 <details class="annotation">
@@ -26806,7 +26828,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 46
+x-ratelimit-remaining: 32
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -27282,43 +27304,43 @@ access-control-allow-origin: *
 }</code>
  </pre>
     </span>
-<span id="execution-results-GETapi-v1-latest_news-details--slug-" hidden>
+<span id="execution-results-GETapi-v1-latest_news--slug-" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-GETapi-v1-latest_news-details--slug-"></span>:
+                id="execution-response-status-GETapi-v1-latest_news--slug-"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-v1-latest_news-details--slug-"
+    <pre class="json"><code id="execution-response-content-GETapi-v1-latest_news--slug-"
       data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
 </span>
-<span id="execution-error-GETapi-v1-latest_news-details--slug-" hidden>
+<span id="execution-error-GETapi-v1-latest_news--slug-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-v1-latest_news-details--slug-">
+    <pre><code id="execution-error-message-GETapi-v1-latest_news--slug-">
 
 Tip: Check that you&#039;re properly connected to the network.
 If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
 You can check the Dev Tools console for debugging information.</code></pre>
 </span>
-<form id="form-GETapi-v1-latest_news-details--slug-" data-method="GET"
-      data-path="api/v1/latest_news/details/{slug}"
+<form id="form-GETapi-v1-latest_news--slug-" data-method="GET"
+      data-path="api/v1/latest_news/{slug}"
       data-authed="0"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-latest_news-details--slug-', this);">
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-latest_news--slug-', this);">
     <h3>
         Request&nbsp;&nbsp;&nbsp;
                     <button type="button"
                     style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-v1-latest_news-details--slug-"
-                    onclick="tryItOut('GETapi-v1-latest_news-details--slug-');">Try it out ⚡
+                    id="btn-tryout-GETapi-v1-latest_news--slug-"
+                    onclick="tryItOut('GETapi-v1-latest_news--slug-');">Try it out ⚡
             </button>
             <button type="button"
                     style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-v1-latest_news-details--slug-"
-                    onclick="cancelTryOut('GETapi-v1-latest_news-details--slug-');" hidden>Cancel 🛑
+                    id="btn-canceltryout-GETapi-v1-latest_news--slug-"
+                    onclick="cancelTryOut('GETapi-v1-latest_news--slug-');" hidden>Cancel 🛑
             </button>&nbsp;&nbsp;
             <button type="submit"
                     style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-v1-latest_news-details--slug-"
+                    id="btn-executetryout-GETapi-v1-latest_news--slug-"
                     data-initial-text="Send Request 💥"
                     data-loading-text="⏱ Sending..."
                     hidden>Send Request 💥
@@ -27326,7 +27348,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </h3>
             <p>
             <small class="badge badge-green">GET</small>
-            <b><code>api/v1/latest_news/details/{slug}</code></b>
+            <b><code>api/v1/latest_news/{slug}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
@@ -27334,7 +27356,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-v1-latest_news-details--slug-"
+                              name="Content-Type"                data-endpoint="GETapi-v1-latest_news--slug-"
                value="application/json"
                data-component="header">
     <br>
@@ -27345,7 +27367,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-v1-latest_news-details--slug-"
+                              name="Accept"                data-endpoint="GETapi-v1-latest_news--slug-"
                value="application/json"
                data-component="header">
     <br>
@@ -27356,7 +27378,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Accept-Language"                data-endpoint="GETapi-v1-latest_news-details--slug-"
+                              name="Accept-Language"                data-endpoint="GETapi-v1-latest_news--slug-"
                value="en"
                data-component="header">
     <br>
@@ -27368,11 +27390,11 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <small>string</small>&nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="slug"                data-endpoint="GETapi-v1-latest_news-details--slug-"
-               value="ipsum"
+                              name="slug"                data-endpoint="GETapi-v1-latest_news--slug-"
+               value="eos"
                data-component="url">
     <br>
-<p>news Slug or Id Example: <code>ipsum</code></p>
+<p>news Slug or Id Example: <code>eos</code></p>
             </div>
                     </form>
 

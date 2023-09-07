@@ -27,7 +27,7 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: voluptatem
+        example: placeat
         type: string
         custom: []
       gender:
@@ -41,45 +41,45 @@ endpoints:
         name: birthday
         description: 'Must be a valid date.'
         required: true
-        example: '2023-09-04T02:01:37'
+        example: '2023-09-07T01:01:03'
         type: string
         custom: []
       hkid:
         name: hkid
         description: ''
         required: true
-        example: et
+        example: sint
         type: string
         custom: []
       tel:
         name: tel
         description: ''
         required: true
-        example: rerum
+        example: cupiditate
         type: string
         custom: []
       email:
         name: email
         description: ''
         required: true
-        example: robert02@example.com
+        example: uhickle@example.com
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: 'Q,.h),sHFU'
+        example: URj9@Oi>;$9LQNC
         type: string
         custom: []
     cleanBodyParameters:
-      name: voluptatem
+      name: placeat
       gender: F
-      birthday: '2023-09-04T02:01:37'
-      hkid: et
-      tel: rerum
-      email: robert02@example.com
-      password: 'Q,.h),sHFU'
+      birthday: '2023-09-07T01:01:03'
+      hkid: sint
+      tel: cupiditate
+      email: uhickle@example.com
+      password: URj9@Oi>;$9LQNC
     fileParameters: []
     responses: []
     responseFields: []
@@ -114,19 +114,19 @@ endpoints:
         name: email
         description: ''
         required: true
-        example: schuster.rolando@example.net
+        example: quitzon.elinore@example.org
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: 3$n;b4N
+        example: 'A\F^X''ZsI?'
         type: string
         custom: []
     cleanBodyParameters:
-      email: schuster.rolando@example.net
-      password: 3$n;b4N
+      email: quitzon.elinore@example.org
+      password: 'A\F^X''ZsI?'
     fileParameters: []
     responses: []
     responseFields: []
@@ -157,11 +157,11 @@ endpoints:
         name: token
         description: ''
         required: true
-        example: commodi
+        example: a
         type: string
         custom: []
     cleanUrlParameters:
-      token: commodi
+      token: a
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -175,7 +175,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '59'
+          x-ratelimit-remaining: '45'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -211,11 +211,11 @@ endpoints:
         name: email
         description: ''
         required: true
-        example: ruben48@example.org
+        example: wokon@example.net
         type: string
         custom: []
     cleanBodyParameters:
-      email: ruben48@example.org
+      email: wokon@example.net
     fileParameters: []
     responses: []
     responseFields: []
@@ -250,11 +250,11 @@ endpoints:
         name: email
         description: ''
         required: true
-        example: emely.carroll@example.com
+        example: satterfield.darryl@example.org
         type: string
         custom: []
     cleanBodyParameters:
-      email: emely.carroll@example.com
+      email: satterfield.darryl@example.org
     fileParameters: []
     responses: []
     responseFields: []
@@ -285,11 +285,11 @@ endpoints:
         name: token
         description: ''
         required: true
-        example: et
+        example: error
         type: string
         custom: []
     cleanUrlParameters:
-      token: et
+      token: error
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -297,11 +297,11 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: 'xXp\";z2V$u!j\}q.;1F'
+        example: '@Y}e{OPq&PM{Rh?*i8-'
         type: string
         custom: []
     cleanBodyParameters:
-      password: 'xXp\";z2V$u!j\}q.;1F'
+      password: '@Y}e{OPq&PM{Rh?*i8-'
     fileParameters: []
     responses: []
     responseFields: []
@@ -349,7 +349,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer b851f6VEk6DvZag34acdehP'
+      - 'Bearer Z6kvDVeP6843f5cEgdah1ab'
     controller: null
     method: null
     route: null
@@ -393,7 +393,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 6DeE168VkgfP3c4h5vdZaba'
+      - 'Bearer khf1acv6Z5aP38bgD4VE6ed'
     controller: null
     method: null
     route: null
@@ -437,7 +437,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 4681aDbehPgf6dav5EkZ3cV'
+      - 'Bearer b6Ec6kgVv45DP3e8aZd1fha'
     controller: null
     method: null
     route: null
@@ -469,66 +469,66 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: natus
+        example: sint
         type: string
         custom: []
       gender:
         name: gender
         description: 'Must be one of <code>F</code> or <code>M</code>.'
         required: true
-        example: M
+        example: F
         type: string
         custom: []
       birthday:
         name: birthday
         description: 'Must be a valid date.'
         required: true
-        example: '2023-09-04T02:01:37'
+        example: '2023-09-07T01:01:03'
         type: string
         custom: []
       hkid:
         name: hkid
         description: ''
         required: true
-        example: exercitationem
+        example: qui
         type: string
         custom: []
       tel:
         name: tel
         description: ''
         required: true
-        example: quisquam
+        example: enim
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: false
-        example: 'M{,E]Ln>|V'
+        example: DyMsVP
         type: string
         custom: []
       address:
         name: address
         description: ''
         required: false
-        example: ad
+        example: nihil
         type: string
         custom: []
     cleanBodyParameters:
-      name: natus
-      gender: M
-      birthday: '2023-09-04T02:01:37'
-      hkid: exercitationem
-      tel: quisquam
-      password: 'M{,E]Ln>|V'
-      address: ad
+      name: sint
+      gender: F
+      birthday: '2023-09-07T01:01:03'
+      hkid: qui
+      tel: enim
+      password: DyMsVP
+      address: nihil
     fileParameters: []
     responses: []
     responseFields: []
     auth:
       - headers
       - Authorization
-      - 'Bearer 3c6EPDkaV15e8bd6fvgaZh4'
+      - 'Bearer Df4EcbPga6hekaZ6Vd1358v'
     controller: null
     method: null
     route: null
@@ -555,11 +555,11 @@ endpoints:
         name: uuid
         description: ''
         required: true
-        example: 6290a0e9-b461-3e47-9387-1f58337cc4d2
+        example: 6e315f06-3d1e-3a6c-a5f6-04d1cea2708a
         type: string
         custom: []
     cleanUrlParameters:
-      uuid: 6290a0e9-b461-3e47-9387-1f58337cc4d2
+      uuid: 6e315f06-3d1e-3a6c-a5f6-04d1cea2708a
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -573,7 +573,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '58'
+          x-ratelimit-remaining: '44'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -615,7 +615,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '57'
+          x-ratelimit-remaining: '43'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -657,7 +657,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '56'
+          x-ratelimit-remaining: '42'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -699,7 +699,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '55'
+          x-ratelimit-remaining: '41'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -731,11 +731,11 @@ endpoints:
         name: slug
         description: 'Category Slug or Id'
         required: true
-        example: est
+        example: molestias
         type: string
         custom: []
     cleanUrlParameters:
-      slug: est
+      slug: molestias
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1219,7 +1219,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '54'
+          x-ratelimit-remaining: '40'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -1261,7 +1261,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '53'
+          x-ratelimit-remaining: '39'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -1303,7 +1303,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '52'
+          x-ratelimit-remaining: '38'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -1345,7 +1345,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '51'
+          x-ratelimit-remaining: '37'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -1374,8 +1374,24 @@ endpoints:
       Accept-Language: en
     urlParameters: []
     cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
+    queryParameters:
+      date_from:
+        name: date_from
+        description: ''
+        required: true
+        example: null
+        type: string
+        custom: []
+      date_to:
+        name: date_to
+        description: ''
+        required: true
+        example: null
+        type: string
+        custom: []
+    cleanQueryParameters:
+      date_from: null
+      date_to: null
     bodyParameters: []
     cleanBodyParameters: []
     fileParameters: []
@@ -1387,7 +1403,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '50'
+          x-ratelimit-remaining: '36'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -1419,11 +1435,11 @@ endpoints:
         name: category_slug
         description: 'Category Slug or Id'
         required: true
-        example: optio
+        example: earum
         type: string
         custom: []
     cleanUrlParameters:
-      category_slug: optio
+      category_slug: earum
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1437,7 +1453,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '49'
+          x-ratelimit-remaining: '35'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -1469,11 +1485,11 @@ endpoints:
         name: slug
         description: 'Category Slug or Id'
         required: true
-        example: mollitia
+        example: quidem
         type: string
         custom: []
     cleanUrlParameters:
-      slug: mollitia
+      slug: quidem
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1957,7 +1973,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '48'
+          x-ratelimit-remaining: '34'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -1993,7 +2009,7 @@ endpoints:
         name: name
         description: ''
         required: false
-        example: quam
+        example: sint
         type: string
         custom: []
       gender:
@@ -2007,84 +2023,84 @@ endpoints:
         name: birthday
         description: 'Must be a valid date.'
         required: false
-        example: '2023-09-04T02:01:37'
+        example: '2023-09-07T01:01:03'
         type: string
         custom: []
       id_type:
         name: id_type
         description: 'Must be one of <code>hkid</code>, <code>cnid</code>, <code>passport</code>, or <code>other</code>.'
         required: false
-        example: other
+        example: hkid
         type: string
         custom: []
       id_type_other:
         name: id_type_other
         description: ''
         required: false
-        example: culpa
+        example: aperiam
         type: string
         custom: []
       hkid:
         name: hkid
         description: 'Must not be greater than 32 characters.'
         required: false
-        example: nynkhsjwpwybieak
+        example: fowuvtbbkweqr
         type: string
         custom: []
       tel:
         name: tel
         description: ''
         required: false
-        example: et
+        example: molestias
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: false
-        example: dmoore@example.com
+        example: brionna32@example.net
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: false
-        example: 'LalqKI9&/'
+        example: 'h(`rOYnVg|I]7Zu=?A!'
         type: string
         custom: []
       service_id:
         name: service_id
         description: ''
         required: true
-        example: 18
+        example: 6
         type: integer
         custom: []
       district_id:
         name: district_id
         description: ''
         required: true
-        example: 9
+        example: 8
         type: integer
         custom: []
       contact_address:
         name: contact_address
         description: ''
         required: false
-        example: optio
+        example: voluptas
         type: string
         custom: []
       medical_record:
         name: medical_record
         description: ''
         required: false
-        example: totam
+        example: doloribus
         type: string
         custom: []
       covid_diagnosed:
         name: covid_diagnosed
         description: ''
         required: true
-        example: true
+        example: false
         type: boolean
         custom: []
       covid_close_contacts:
@@ -2098,92 +2114,134 @@ endpoints:
         name: covid_date
         description: 'Must be a valid date.'
         required: false
-        example: '2023-09-04T02:01:37'
+        example: '2023-09-07T01:01:03'
         type: string
         custom: []
       height:
         name: height
         description: 'Must be between 0 and 3 digits.'
         required: true
-        example: ''
+        example: '89'
         type: string
         custom: []
       weight:
         name: weight
         description: 'Must be between 0 and 3 digits.'
         required: true
-        example: '3'
+        example: '01'
         type: string
         custom: []
       blood_date:
         name: blood_date
         description: 'Must be a valid date.'
         required: true
-        example: '2023-09-04T02:01:37'
+        example: '2023-09-07T01:01:03'
         type: string
         custom: []
       blood_time:
         name: blood_time
         description: ''
         required: true
-        example: atque
+        example: quo
         type: string
         custom: []
       address:
         name: address
         description: ''
         required: true
-        example: facere
+        example: rerum
         type: string
         custom: []
       report:
         name: report
         description: 'Must be one of <code>email</code>, <code>whatsapp</code>, <code>post</code>, or <code>wechat</code>.'
         required: true
-        example: post
+        example: email
         type: string
         custom: []
       report_explanation:
         name: report_explanation
         description: 'Must be one of <code>na</code>, <code>by_phone</code>, or <code>by_appointment</code>.'
         required: true
-        example: by_appointment
+        example: by_phone
         type: string
         custom: []
       remark:
         name: remark
         description: ''
         required: false
-        example: mollitia
+        example: vel
         type: string
         custom: []
     cleanBodyParameters:
-      name: quam
+      name: sint
       gender: F
-      birthday: '2023-09-04T02:01:37'
-      id_type: other
-      id_type_other: culpa
-      hkid: nynkhsjwpwybieak
-      tel: et
-      email: dmoore@example.com
-      password: 'LalqKI9&/'
-      service_id: 18
-      district_id: 9
-      contact_address: optio
-      medical_record: totam
-      covid_diagnosed: true
+      birthday: '2023-09-07T01:01:03'
+      id_type: hkid
+      id_type_other: aperiam
+      hkid: fowuvtbbkweqr
+      tel: molestias
+      email: brionna32@example.net
+      password: 'h(`rOYnVg|I]7Zu=?A!'
+      service_id: 6
+      district_id: 8
+      contact_address: voluptas
+      medical_record: doloribus
+      covid_diagnosed: false
       covid_close_contacts: false
-      covid_date: '2023-09-04T02:01:37'
-      height: ''
-      weight: '3'
-      blood_date: '2023-09-04T02:01:37'
-      blood_time: atque
-      address: facere
-      report: post
-      report_explanation: by_appointment
-      remark: mollitia
+      covid_date: '2023-09-07T01:01:03'
+      height: '89'
+      weight: '01'
+      blood_date: '2023-09-07T01:01:03'
+      blood_time: quo
+      address: rerum
+      report: email
+      report_explanation: by_phone
+      remark: vel
     fileParameters: []
     responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/latest_news
+    metadata:
+      groupName: 'Frontend API'
+      groupDescription: ''
+      subgroup: 'Latest News'
+      subgroupDescription: ''
+      title: 'Latest News List'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+      Accept-Language: en
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":[]}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '33'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
     responseFields: []
     auth: []
     controller: null
@@ -2199,7 +2257,7 @@ endpoints:
       groupDescription: ''
       subgroup: 'Latest News'
       subgroupDescription: ''
-      title: 'Latest News List'
+      title: 'Latest News Detail'
       description: ''
       authenticated: false
       custom: []
@@ -2212,61 +2270,11 @@ endpoints:
         name: slug
         description: 'news Slug or Id'
         required: true
-        example: ut
+        example: eos
         type: string
         custom: []
     cleanUrlParameters:
-      slug: ut
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses:
-      -
-        status: 200
-        content: '{"data":[]}'
-        headers:
-          cache-control: 'no-cache, private'
-          content-type: application/json
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '47'
-          access-control-allow-origin: '*'
-        description: null
-        custom: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-    custom: []
-  -
-    httpMethods:
-      - GET
-    uri: 'api/v1/latest_news/details/{slug}'
-    metadata:
-      groupName: 'Frontend API'
-      groupDescription: ''
-      subgroup: 'Latest News'
-      subgroupDescription: ''
-      title: 'Service Detail'
-      description: ''
-      authenticated: false
-      custom: []
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-      Accept-Language: en
-    urlParameters:
-      slug:
-        name: slug
-        description: 'news Slug or Id'
-        required: true
-        example: ipsum
-        type: string
-        custom: []
-    cleanUrlParameters:
-      slug: ipsum
+      slug: eos
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -2750,7 +2758,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '46'
+          x-ratelimit-remaining: '32'
           access-control-allow-origin: '*'
         description: null
         custom: []
