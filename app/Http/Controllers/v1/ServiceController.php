@@ -143,7 +143,7 @@ class ServiceController extends Controller
                 ];
             }
             $history->customer_history_details()->createMany($data);
-            $amount = $service->price + $district->extra_charge;
+            $amount = $service->price + $district->extra_charge + $explanation->price;
             if ($amount > 0) {
                 if ($amount < 4) {
                     DB::rollback();

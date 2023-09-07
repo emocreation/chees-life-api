@@ -15,8 +15,8 @@ return new class extends Migration {
             $table->foreignId('latest_news_id')->constrained()->cascadeOnDelete();
             $table->string('locale', 2)->index();
             $table->string('title');
-            $table->string('introduction')->nullable();
-            $table->string('description')->nullable();
+            $table->text('introduction')->nullable();
+            $table->text('description')->nullable();
             $table->timestamps();
         });
     }
