@@ -20,6 +20,8 @@ class UserInfoAndHistoryResource extends JsonResource
                 'name' => $this->resource->name,
                 'gender' => $this->resource->gender,
                 'birthday' => $this->resource->birthday,
+                'id_type' => $this->resource->id_type,
+                'id_type_other' => $this->resource->id_type_other,
                 'hkid' => $this->resource->hkid,
                 'tel' => $this->resource->tel,
                 'email' => $this->resource->email,

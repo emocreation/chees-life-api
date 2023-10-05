@@ -24,6 +24,8 @@ class Customer extends BaseCustomer implements MustVerifyEmail
         'name',
         'gender',
         'birthday',
+        'id_type',
+        'id_type_other',
         'hkid',
         'tel',
         'email',
