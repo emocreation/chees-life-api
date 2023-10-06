@@ -27,7 +27,7 @@ class StoreRequest extends FormRequest
             'name' => 'required|string',
             'gender' => 'required|in:F,M',
             'birthday' => 'required|date',
-            'id_type' => 'required|string|in:hkid,passport,other',
+            'id_type' => 'required|string|in:hkid,cnid,passport,other',
             'hkid' => 'required|string',
             'tel' => 'required|string',
             'email' => 'required|string',
