@@ -71,7 +71,7 @@ class ServiceController extends Controller
         $validated['tc']['district'] = $district->{'name:tc'};
         $customer_data = collect($validated)->only(['name', 'gender', 'birthday', 'hkid', 'tel', 'email', 'password'])->toArray();
         //Create customer
-        if (empty($validated['customer_id']) && Customer::emailOrHkid($customer_data['email'], $customer_data['hkid'])->count()) {
+        if (empty($validated['customer_id']) && Customer::email($customer_data['email'])->count()) {
             return $this->error(__('auth.already_registered'));
         }
 

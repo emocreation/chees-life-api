@@ -30,7 +30,9 @@ class CategoryController extends Controller
     public function show(string $slug)
     {
         $data = Category::enabled()->slugOrId($slug)->first();
+        if (!$data) {
+            return $this->error('Category not found', 404);
+        }
         return new CategoryResource($data);
-
     }
 }

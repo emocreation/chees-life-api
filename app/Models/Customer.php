@@ -50,10 +50,10 @@ class Customer extends BaseCustomer implements MustVerifyEmail
         return $this->hasMany(CustomerHistory::class)->orderByDesc('created_at');
     }
 
-    public function scopeEmailOrHkid(Builder $query, string $email, string $hkid)
+    public function scopeEmail(Builder $query, string $email)
     {
-        $query->where(function ($q) use ($hkid, $email) {
-            return $q->where('email', $email)->orWhere('hkid', $hkid);
+        $query->where(function ($q) use ($email) {
+            return $q->where('email', $email);
         });
     }
 }
