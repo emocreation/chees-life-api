@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers\v1;
 
+use App\Enums\CouponType;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\v1\Service\CalculateRequest;
 use App\Http\Requests\v1\Service\PurchaseRequest;
 use App\Http\Resources\v1\ServiceCollection;
 use App\Http\Resources\v1\ServiceResource;
 use App\Mail\Invoice;
+use App\Models\Coupon;
 use App\Models\Customer;
 use App\Models\CustomerHistory;
 use App\Models\District;
@@ -75,38 +78,55 @@ class ServiceController extends Controller
             return $this->error(__('auth.already_registered'));
         }
 
-
         $date_check = Timeslot::where('available_date', $validated['blood_date'])->enabled()->first();
         if (!$date_check) {
             return $this->error(__('auth.invalid_date'));
         }
 
-        [$from, $to] = explode('-', $validated['blood_time']);
-
-        $time_check = TimeslotQuota::where('timeslot_id', $date_check->id)
-            ->where('from', $from)->where('to', $to)->first();
-        if (!$time_check) {
-            return $this->error(__('auth.invalid_date'));
-        }
-        if ($time_check->quota === 0) {
-            return $this->error(__('auth.quota_exceeded'));
-        }
-
         try {
             DB::beginTransaction();
+            [$from, $to] = explode('-', $validated['blood_time']);
+
+            $time_check = TimeslotQuota::lockForUpdate()
+                ->where('timeslot_id', $date_check->id)
+                ->where('from', $from)->where('to', $to)
+                ->first();
+            if (!$time_check) {
+                return $this->error(__('auth.invalid_date'));
+            }
+            if ($time_check->quota === 0) {
+                return $this->error(__('auth.quota_exceeded'));
+            }
+            //Keep Quota
+            --$time_check->quota;
+            $time_check->save();
+
+            $service = Service::findOrFail($validated['service_id']);
+            $district = District::findOrFail($validated['district_id']);
+            $amount = $service->price;
+
+            if (!empty($validated['code'])) {
+                $coupon = Coupon::lockForUpdate()
+                    ->where('code', $validated['code'])
+                    ->validDate(now()->format('Y-m-d'))
+                    ->validLimitation($amount)
+                    ->first();
+                if ($coupon === null) {
+                    return $this->error(__('base.invalid_coupon_code'));
+                }
+
+                //Keep Quota
+                ++$coupon->used;
+                $coupon->save();
+            }
             if (empty($validated['customer_id'])) {
                 $customer_data['token'] = Str::random(64);
                 $customer = Customer::create($customer_data);
                 $validated['customer_id'] = $customer->id;
                 event(new Registered($customer));
             }
-            //Keep Quota
-            --$time_check->quota;
-            $time_check->save();
             //Create Order
             $history = CustomerHistory::create($validated);
-            $service = Service::findOrFail($validated['service_id']);
-            $district = District::findOrFail($validated['district_id']);
             //Prepare Order details
             $data = [
                 [
@@ -142,8 +162,32 @@ class ServiceController extends Controller
                     ]
                 ];
             }
+
+            $discount = 0;
+            if (!empty($validated['code'])) {
+                $coupon = Coupon::where('code', $validated['code'])
+                    ->validDate(now()->format('Y-m-d'))
+                    ->validLimitation($amount)
+                    ->first();
+                if ($coupon->type === CouponType::Amount) {
+                    $discount -= $coupon->value;
+                } else if ($coupon->type === CouponType::Percentage) {
+                    $discount -= $amount * $coupon->value / 100;
+                    $discount = round($discount);
+                }
+                $data[] = [
+                    'price' => -$discount,
+                    'en' => [
+                        'title' => $coupon->code
+                    ],
+                    'tc' => [
+                        'title' => $coupon->code
+                    ]
+                ];
+            }
+
             $history->customer_history_details()->createMany($data);
-            $amount = $service->price + $district->extra_charge + $explanation->price;
+            $amount = $service->price + $district->extra_charge + $explanation->price - $discount;
             if ($amount > 0) {
                 if ($amount < 4) {
                     DB::rollback();
@@ -186,6 +230,53 @@ class ServiceController extends Controller
             Log::error('purchase', ['message' => $e->getMessage()]);
             return $this->error();
         }
+    }
+
+    #[Endpoint('Calculate')]
+    #[Unauthenticated]
+    public function calculate(CalculateRequest $request)
+    {
+        $validated = $request->validated();
+        $service = Service::findOrFail($validated['service_id']);
+        $district = District::findOrFail($validated['district_id']);
+        $explanation = ReportExplanation::where('type', $validated['report_explanation'])->first();
+        $amount = $service->price;
+        $discount = 0;
+        $coupon_info = [];
+        if (!empty($validated['code'])) {
+            $coupon = Coupon::where('code', $validated['code'])
+                ->validDate(now()->format('Y-m-d'))
+                ->validLimitation($amount)
+                ->first();
+            if ($coupon === null) {
+                return $this->error(__('base.invalid_coupon_code'));
+            }
+            if ($coupon->type === CouponType::Amount) {
+                $discount -= $coupon->value;
+            } else if ($coupon->type === CouponType::Percentage) {
+                $discount -= $amount * $coupon->value / 100;
+                $discount = round($discount);
+            }
+            $coupon_info = [
+                'code' => $coupon->code,
+                'type' => $coupon->type,
+                'limitation' => $coupon->limitation,
+                'value' => $coupon->value,
+                'discount' => $discount
+            ];
+        }
+
+        $amount += $district->extra_charge + $explanation->price;
+
+        $data = [
+            'amount' => $amount,
+            'extra_charge' => $district->extra_charge,
+            'explanation' => $explanation->price,
+            'discount' => $discount,
+            'net_amount' => $amount - $discount,
+            'coupon' => $coupon_info
+        ];
+        return $this->success(data: $data);
     }
 
     public function webhook(Request $request)

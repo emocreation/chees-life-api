@@ -19,7 +19,8 @@ class PermissionSeeder extends Seeder
 
         $actions = ['read', 'create', 'update', 'delete'];
         $sections = [
-            'user', 'district', 'social_media', 'category', 'review', 'service', 'customer', 'customer_history', 'banner', 'role', 'timeslot', 'latest_new'
+            'user', 'district', 'social_media', 'category', 'review', 'service', 'customer', 'customer_history',
+            'banner', 'role', 'timeslot', 'latest_new', 'coupon'
         ];
 
         foreach ($sections as $section) {

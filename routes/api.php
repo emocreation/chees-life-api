@@ -4,6 +4,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BannerController;
 use App\Http\Controllers\BulkUpdateController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\CouponController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\CustomerHistoryController;
 use App\Http\Controllers\DistrictController;
@@ -66,6 +67,7 @@ Route::middleware(['middleware' => 'auth:sanctum', 'abilities:cms'])->group(func
         'customer_histories' => CustomerHistoryController::class,
         'timeslots' => TimeslotController::class,
         'latest_news' => LatestNewController::class,
+        'coupons' => CouponController::class,
     ]);
 
     Route::apiResources([
@@ -138,6 +140,7 @@ Route::name('v1.')->prefix('v1')->group(function () {
     Route::get('services/{category_slug}', [v1_ServiceController::class, 'index'])->name('services.index');
     Route::get('services/details/{slug}', [v1_ServiceController::class, 'show'])->name('services.show');
     Route::post('services', [v1_ServiceController::class, 'purchase'])->name('services.purchase');
+    Route::post('services/calculate', [v1_ServiceController::class, 'calculate'])->name('services.calculate');
     Route::post('services/webhook', [v1_ServiceController::class, 'webhook'])->name('services.webhook');
 
     Route::get('latest_news', [v1_LatestNewController::class, 'index'])->name('latest-news.index');

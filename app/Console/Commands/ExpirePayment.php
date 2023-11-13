@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Models\Coupon;
 use App\Models\CustomerHistory;
 use App\Models\Timeslot;
 use App\Models\TimeslotQuota;
@@ -37,6 +38,7 @@ class ExpirePayment extends Command
             $orders = CustomerHistory::where('paid', false)
                 ->whereNotNull('stripe_id')
                 ->where('created_at', '<', now()->subMinutes(30))
+                ->with('customer_history_details')
                 ->get();
             foreach ($orders as $order) {
                 $session = Session::retrieve($order->stripe_id);
@@ -56,6 +58,9 @@ class ExpirePayment extends Command
                             ++$time_check->quota;
                             $time_check->save();
                         }
+                    }
+                    foreach ($order->customer_history_details()->where('price', '<', 0) as $detail) {
+                        Coupon::where('code', $detail->title)->decrement('used');
                     }
                     $order->delete();
                 }
