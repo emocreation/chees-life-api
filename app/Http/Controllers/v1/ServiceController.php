@@ -176,7 +176,7 @@ class ServiceController extends Controller
                     $discount = round($discount);
                 }
                 $data[] = [
-                    'price' => -$discount,
+                    'price' => $discount,
                     'en' => [
                         'title' => $coupon->code
                     ],
@@ -187,7 +187,7 @@ class ServiceController extends Controller
             }
 
             $history->customer_history_details()->createMany($data);
-            $amount = $service->price + $district->extra_charge + $explanation->price - $discount;
+            $amount = $service->price + $district->extra_charge + $explanation->price + $discount;
             if ($amount > 0) {
                 if ($amount < 4) {
                     DB::rollback();
