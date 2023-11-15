@@ -271,7 +271,7 @@ class ServiceController extends Controller
         $data = [
             'service_price' => $amount,
             'discount' => $discount,
-            'net_price' => $amount - $discount,
+            'net_price' => $amount + $discount,
             //'extra_charge' => $district->extra_charge,
             //'explanation' => $explanation->price,
             //'coupon' => $coupon_info
