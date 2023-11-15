@@ -238,8 +238,8 @@ class ServiceController extends Controller
     {
         $validated = $request->validated();
         $service = Service::findOrFail($validated['service_id']);
-        $district = District::findOrFail($validated['district_id']);
-        $explanation = ReportExplanation::where('type', $validated['report_explanation'])->first();
+        //$district = District::findOrFail($validated['district_id']);
+        //$explanation = ReportExplanation::where('type', $validated['report_explanation'])->first();
         $amount = $service->price;
         $discount = 0;
         $coupon_info = [];
@@ -266,15 +266,15 @@ class ServiceController extends Controller
             ];
         }
 
-        $amount += $district->extra_charge + $explanation->price;
+        //$amount += $district->extra_charge + $explanation->price;
 
         $data = [
-            'amount' => $amount,
-            'extra_charge' => $district->extra_charge,
-            'explanation' => $explanation->price,
+            'service_price' => $amount,
             'discount' => $discount,
-            'net_amount' => $amount - $discount,
-            'coupon' => $coupon_info
+            'net_price' => $amount - $discount,
+            //'extra_charge' => $district->extra_charge,
+            //'explanation' => $explanation->price,
+            //'coupon' => $coupon_info
         ];
         return $this->success(data: $data);
     }

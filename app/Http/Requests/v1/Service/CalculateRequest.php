@@ -24,9 +24,9 @@ class CalculateRequest extends FormRequest
     {
         return [
             'service_id' => 'required|int|exists:services,id',
-            'district_id' => 'required|int|exists:districts,id',
-            'report_explanation' => 'required|in:na,by_phone,by_appointment',
-            'code' => 'nullable|string',
+            //'district_id' => 'required|int|exists:districts,id',
+            //'report_explanation' => 'required|in:na,by_phone,by_appointment',
+            'code' => 'required|string',
         ];
     }
 }
