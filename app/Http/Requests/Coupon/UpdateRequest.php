@@ -25,6 +25,7 @@ class UpdateRequest extends FormRequest
     public function rules(): array
     {
         return RuleFactory::make([
+            '%name%' => 'required|string',
             'type' => 'required|in:amount,percentage',
             'limitation' => 'nullable|numeric',
             'value' => ['required', 'numeric', 'min:0', Rule::when($this->input('type') === 'percentage', 'between:0,100')],

@@ -6,11 +6,14 @@ use App\Http\Requests\Coupon\DestroyRequest;
 use App\Http\Requests\Coupon\StoreRequest;
 use App\Http\Requests\Coupon\UpdateRequest;
 use App\Models\Coupon;
+use App\Sorts\SortByTranslation;
 use Illuminate\Http\Request;
 use Knuckles\Scribe\Attributes\Endpoint;
 use Knuckles\Scribe\Attributes\Group;
 use Knuckles\Scribe\Attributes\QueryParam;
 use Knuckles\Scribe\Attributes\Subgroup;
+use Spatie\QueryBuilder\AllowedFilter;
+use Spatie\QueryBuilder\AllowedSort;
 use Spatie\QueryBuilder\QueryBuilder;
 
 #[Group('CMS API')]
@@ -29,18 +32,17 @@ class CouponController extends Controller
     #[QueryParam('s', 'string', 'Search keyword')]
     #[QueryParam('p', 'int', 'Page number, default=20')]
     #[QueryParam('sort', 'string', 'Sort by column name, `-` equal to descending. Accept type,limitation,code,valid_from,valid_to,quota,used', example: '-id')]
-    #[QueryParam('filter[coupon_date]', 'string', 'Filter by coupon_date')]
-    #[QueryParam('filter[rating]', 'int', 'Filter by rating')]
-    #[QueryParam('filter[enable]', 'int', 'Filter by enable')]
-    #[QueryParam('filter[translations.customer_name]', 'string', 'Filter by translations.customer_name')]
-    #[QueryParam('filter[translations.content]', 'string', 'Filter by translations.content')]
+    #[QueryParam('filter[translations.name]', 'string', 'Filter by translations.name')]
     public function index(Request $request)
     {
         $data = QueryBuilder::for(Coupon::class)
             ->search($request->s)
             ->defaultSort('-valid_from', '-valid_to')
-            ->allowedSorts(['type', 'limitation', 'code', 'valid_from', 'valid_to', 'quota', 'used'])
-            ->allowedFilters(['type', 'limitation', 'code', 'valid_from', 'valid_to', 'quota', 'used'])
+            ->allowedSorts(['type', 'limitation', 'code', 'valid_from', 'valid_to', 'quota', 'used',
+                AllowedSort::custom('translations.name#en', new SortByTranslation()),
+                AllowedSort::custom('translations.name#tc', new SortByTranslation()),
+            ])
+            ->allowedFilters(['type', 'limitation', 'code', 'valid_from', 'valid_to', 'quota', 'used', AllowedFilter::partial('translations.name')])
             ->paginate($request->p ?? 20)
             ->appends($request->query());
         return $this->success(data: $data);

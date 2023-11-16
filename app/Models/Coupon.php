@@ -4,12 +4,15 @@ namespace App\Models;
 
 use App\Models\Base\Coupon as BaseCoupon;
 use App\Traits\Searchable;
+use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
+use Astrotomic\Translatable\Translatable;
 use Illuminate\Database\Eloquent\Builder;
 
-class Coupon extends BaseCoupon
+class Coupon extends BaseCoupon implements TranslatableContract
 {
-    use Searchable;
+    use Translatable, Searchable;
 
+    public array $translatedAttributes = ['name'];
     protected $fillable = [
         'type',
         'limitation',
@@ -29,7 +32,7 @@ class Coupon extends BaseCoupon
         'quota' => 'int',
         'used' => 'int'
     ];
-    public array $searchable = ['code', 'valid_from', 'valid_to', 'quota', 'used', 'type', 'limitation', 'value'];
+    public array $searchable = ['translations.name', 'code', 'valid_from', 'valid_to', 'quota', 'used', 'type', 'limitation', 'value'];
 
 
     /**

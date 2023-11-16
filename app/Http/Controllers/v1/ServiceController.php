@@ -178,10 +178,10 @@ class ServiceController extends Controller
                 $data[] = [
                     'price' => $discount,
                     'en' => [
-                        'title' => $coupon->code
+                        'title' => $coupon->{'name:en'}
                     ],
                     'tc' => [
-                        'title' => $coupon->code
+                        'title' => $coupon->{'name:tc'}
                     ]
                 ];
             }
