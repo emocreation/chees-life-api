@@ -29,7 +29,7 @@ class UpdateRequest extends FormRequest
             'type' => 'required|in:amount,percentage',
             'limitation' => 'nullable|numeric',
             'value' => ['required', 'numeric', 'min:0', Rule::when($this->input('type') === 'percentage', 'between:0,100')],
-            'code' => 'required|string',
+            'code' => ['required', 'string', Rule::unique('coupons')->ignore($this->coupon)],
             'valid_from' => 'nullable|date',
             'valid_to' => 'nullable|date',
             'quota' => 'required|numeric|min:0',
