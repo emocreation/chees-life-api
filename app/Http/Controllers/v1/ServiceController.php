@@ -114,6 +114,10 @@ class ServiceController extends Controller
                 if ($coupon === null) {
                     return $this->error(__('base.invalid_coupon_code'));
                 }
+                $services = $coupon->coupon_services->pluck('service_id');
+                if ($services->count() > 0 && !$services->contains($service->id)) {
+                    return $this->error(__('base.invalid_coupon_code'));
+                }
 
                 //Keep Quota
                 ++$coupon->used;
@@ -251,6 +255,11 @@ class ServiceController extends Controller
             if ($coupon === null) {
                 return $this->error(__('base.invalid_coupon_code'));
             }
+            $services = $coupon->coupon_services->pluck('service_id');
+            if ($services->count() > 0 && !$services->contains($service->id)) {
+                return $this->error(__('base.invalid_coupon_code'));
+            }
+
             if ($coupon->type === CouponType::Amount) {
                 $discount -= $coupon->value;
             } else if ($coupon->type === CouponType::Percentage) {

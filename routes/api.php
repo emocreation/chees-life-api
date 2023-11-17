@@ -79,6 +79,7 @@ Route::middleware(['middleware' => 'auth:sanctum', 'abilities:cms'])->group(func
         Route::get('permissions', 'permission')->name('permission');
         Route::get('customers', 'customer')->name('customer');
         Route::get('categories', 'category')->name('category');
+        Route::get('services', 'service')->name('service');
     });
 
     Route::name('row_updates.')->prefix('row_updates')->controller(RowUpdateController::class)->group(function () {

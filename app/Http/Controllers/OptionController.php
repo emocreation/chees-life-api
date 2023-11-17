@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Models\Customer;
 use App\Models\Role;
+use App\Models\Service;
 use Illuminate\Http\Request;
 use Knuckles\Scribe\Attributes\Endpoint;
 use Knuckles\Scribe\Attributes\Group;
@@ -55,6 +56,14 @@ class OptionController extends Controller
             ->allowedFilters(['id', 'name', 'tel', 'email'])
             ->cursorPaginate($request->p ?? 20)
             ->appends($request->query());
+        return $this->success(data: $data);
+    }
+
+    #[Subgroup('Services')]
+    #[Endpoint('Options', 'List out all records for select options')]
+    public function service()
+    {
+        $data = Service::get();
         return $this->success(data: $data);
     }
 }

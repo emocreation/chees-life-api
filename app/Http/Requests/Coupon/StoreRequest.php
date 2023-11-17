@@ -33,6 +33,7 @@ class StoreRequest extends FormRequest
             'valid_from' => 'nullable|date',
             'valid_to' => 'nullable|date',
             'quota' => 'required|numeric|min:0',
+            'coupon_services.*' => 'nullable|numeric|exists:services,id',
         ]);
     }
 }

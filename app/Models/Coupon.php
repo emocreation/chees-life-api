@@ -7,6 +7,7 @@ use App\Traits\Searchable;
 use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
 use Astrotomic\Translatable\Translatable;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Coupon extends BaseCoupon implements TranslatableContract
 {
@@ -60,5 +61,10 @@ class Coupon extends BaseCoupon implements TranslatableContract
         return $query->where(function ($q) use ($amount) {
             $q->whereNull('limitation')->orWhere('limitation', '<=', $amount);
         });
+    }
+
+    public function coupon_services(): HasMany
+    {
+        return $this->hasMany(CouponService::class);
     }
 }

@@ -51,21 +51,37 @@ class CouponController extends Controller
     #[Endpoint('Coupon Detail', 'Coupon detail')]
     public function show(Coupon $coupon)
     {
-        return $this->success(data: $coupon);
+        return $this->success(data: $coupon->load('coupon_services'));
     }
 
     #[Endpoint('Coupon Create', 'Coupon create')]
     public function store(StoreRequest $request)
     {
         $validated = $request->validated();
-        return $this->success(data: Coupon::create($validated));
+        $coupon = Coupon::create($validated);
+        //handle services
+        if (!empty($validated['coupon_services'])) {
+            foreach ($validated['coupon_services'] as $service_id) {
+                $coupon->coupon_services()->firstOrCreate(['service_id' => $service_id]);
+            }
+        }
+        return $this->success(data: $coupon->load('coupon_services'));
     }
 
     #[Endpoint('Coupon Update', 'Coupon update')]
     public function update(UpdateRequest $request, Coupon $coupon)
     {
         $validated = $request->validated();
-        return $this->success(data: tap($coupon)->update($validated));
+        //handle model_case_type
+        $coupon->update($validated);
+        $delete_list = $coupon->coupon_services()->whereNotIn('service_id', $validated['coupon_services'] ?? [])->delete();
+        //Create new model_case_type
+        if (!empty($validated['coupon_services'])) {
+            foreach ($validated['coupon_services'] as $service_id) {
+                $coupon->coupon_services()->firstOrCreate(['service_id' => $service_id]);
+            }
+        }
+        return $this->success(data: $coupon->load('coupon_services'));
     }
 
     #[Endpoint('Coupon Delete', 'Coupon delete')]
